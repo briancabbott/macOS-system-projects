@@ -1,0 +1,536 @@
+Last login: Mon Apr 20 09:08:21 on ttys001
+a%                                                                                                                                                                                                                                          ➜  Ramda-JS ls ~/Library/LaunchAgents
+com.adobe.GC.Invoker-1.0.plist          com.adobe.ccxprocess.plist              com.github.facebook.watchman.plist      com.logmein.GoToMeeting.G2MUpdate.plist
+➜  Ramda-JS cat ~/Library/Logs/
+cat: /Users/brian/Library/Logs/: Is a directory
+➜  Ramda-JS cat ~/Library/LaunchAgents/com.github.facebook.watchman.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.github.facebook.watchman</string>
+    <key>Disabled</key>
+    <false/>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/Cellar/watchman/4.9.0_3/libexec/bin/watchman</string>
+        <string>--foreground</string>
+        <string>--logfile=/usr/local/var/run/watchman/brian-state/log</string>
+        <string>--log-level=1</string>
+        <string>--sockname=/usr/local/var/run/watchman/brian-state/sock</string>
+        <string>--statefile=/usr/local/var/run/watchman/brian-state/state</string>
+        <string>--pidfile=/usr/local/var/run/watchman/brian-state/pid</string>
+    </array>
+    <key>KeepAlive</key>
+    <dict>
+        <key>Crashed</key>
+        <true/>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string><![CDATA[/opt/local/bin:/opt/local/sbin:/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home/bin:/usr/local/go/bin:/Users/brian/.istioctl/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/brian/bin:/Users/brian/dev_space/clojure-org/datomic-schema-agent/datomic-cli-tools/datomic-cli:/Applications/CMake.app/Contents/bin:/usr/local/bin:/Users/brian/Library/Android/sdk/tools:/Users/brian/Library/Android/sdk/platform-tools]]></string>
+    </dict>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+    <key>Nice</key>
+    <integer>-5</integer>
+</dict>
+</plist>
+➜  Ramda-JS ls -al /usr/local/var/run/watchman/
+total 0
+drwxrwxrwx  3 brian  admin   96 Apr  9 01:14 .
+drwxr-xr-x  3 brian  admin   96 Apr  9 01:14 ..
+drwx------  6 brian  admin  192 Apr 17 15:24 brian-state
+➜  Ramda-JS ls -al /usr/local/var/run/watchman/brian-state
+total 4120
+drwx------  6 brian  admin      192 Apr 17 15:24 .
+drwxrwxrwx  3 brian  admin       96 Apr  9 01:14 ..
+-rw-------  1 brian  admin  1132769 Apr 17 15:24 log
+-rw-r--r--  1 brian  admin        4 Apr 17 15:24 pid
+srw-------  1 brian  admin        0 Apr 17 15:24 sock
+-rw-------  1 brian  admin      174 Feb 11 13:00 state
+➜  Ramda-JS
+➜  Ramda-JS launchctl
+Usage: launchctl <subcommand> ... | help [subcommand]
+Many subcommands take a target specifier that refers to a domain or service
+within that domain. The available specifier forms are:
+
+system/[service-name]
+Targets the system-wide domain or service within. Root privileges are required
+to make modifications.
+
+user/<uid>/[service-name]
+Targets the user domain or service within. A process running as the target user
+may make modifications. Root may modify any user's domain. User domains do not
+exist on iOS.
+
+gui/<uid>/[service-name]
+Targets the GUI domain or service within. Each GUI domain is associated with a
+user domain, and a process running as the owner of that user domain may make
+modifications. Root may modify any GUI domain. GUI domains do not exist on iOS.
+
+session/<asid>/[service-name]
+Targets a session domain or service within. A process running within the target
+security audit session may make modifications. Root may modify any session
+domain.
+
+pid/<pid>/[service-name]
+Targets a process domain or service within. Only the process which owns the
+domain may modify it. Even root may not do so.
+
+When using a legacy subcommand which manipulates a domain, the target domain is
+inferred from the current execution context. When run as root (whether it is
+via a root shell or sudo(1)), the target domain is assumed to be the
+system-wide domain. When run from a normal user's shell, the target is assumed
+to be the per-user domain for that current user.
+
+Subcommands:
+	bootstrap       Bootstraps a domain or a service into a domain.
+	bootout         Tears down a domain or removes a service from a domain.
+	enable          Enables an existing service.
+	disable         Disables an existing service.
+	kickstart       Forces an existing service to start.
+	attach          Attach the system's debugger to a service.
+	debug           Configures the next invocation of a service for debugging.
+	kill            Sends a signal to the service instance.
+	blame           Prints the reason a service is running.
+	print           Prints a description of a domain or service.
+	print-cache     Prints information about the service cache.
+	print-disabled  Prints which services are disabled.
+	plist           Prints a property list embedded in a binary (targets the Info.plist by default).
+	procinfo        Prints port information about a process.
+	hostinfo        Prints port information about the host.
+	resolveport     Resolves a port name from a process to an endpoint in launchd.
+	limit           Reads or modifies launchd's resource limits.
+	runstats        Prints performance statistics for a service.
+	examine         Runs the specified analysis tool against launchd in a non-reentrant manner.
+	config          Modifies persistent configuration parameters for launchd domains.
+	dumpstate       Dumps launchd state to stdout.
+	dumpjpcategory  Dumps the jetsam properties category for all services.
+	reboot          Initiates a system reboot of the specified type.
+	bootshell       Brings the system up from single-user mode with a console shell.
+	load            Bootstraps a service or directory of services.
+	unload          Unloads a service or directory of services.
+	remove          Unloads the specified service name.
+	list            Lists information about services.
+	start           Starts the specified service.
+	stop            Stops the specified service if it is running.
+	setenv          Sets the specified environment variables for all services within the domain.
+	unsetenv        Unsets the specified environment variables for all services within the domain.
+	getenv          Gets the value of an environment variable from within launchd.
+	bsexec          Execute a program in another process' bootstrap context.
+	asuser          Execute a program in the bootstrap context of a given user.
+	submit          Submit a basic job from the command line.
+	managerpid      Prints the PID of the launchd controlling the session.
+	manageruid      Prints the UID of the current launchd session.
+	managername     Prints the name of the current launchd session.
+	error           Prints a description of an error.
+	variant         Prints the launchd variant.
+	version         Prints the launchd version.
+	help            Prints the usage for a given subcommand.
+➜  Ramda-JS launchctl runstats
+Usage: launchctl runstats <service-target>
+➜  Ramda-JS launchctl list
+PID	Status	Label
+-	0	com.apple.SafariHistoryServiceAgent
+937	0	com.apple.progressd
+984	0	com.apple.cloudphotod
+67503	-6	com.apple.Finder
+428	0	com.apple.homed
+590	0	com.apple.SafeEjectGPUAgent
+-	0	com.apple.quicklook
+-	0	com.apple.parentalcontrols.check
+2149	0	com.adobe.CCLibrary.6336
+-	0	com.apple.PackageKit.InstallStatus
+457	0	com.apple.mediaremoteagent
+-	0	com.apple.FontWorker
+419	0	com.apple.bird
+-	0	com.apple.amp.mediasharingd
+-	0	com.apple.familycontrols.useragent
+-	0	com.apple.AssetCache.agent
+1822	0	com.microsoft.OneDrive-mac.6340
+1879	0	com.apple.universalaccessAuthWarn
+405	0	com.apple.nsurlsessiond
+21386	0	com.apple.devicecheckd
+-	0	com.apple.syncservices.uihandler
+448	0	com.apple.iconservices.iconservicesagent
+-	0	com.apple.ContactsAgent
+981	0	com.apple.SafariBookmarksSyncAgent
+-	0	com.apple.ManagedClientAgent.agent
+-	0	com.apple.localizationswitcherd
+-	0	com.apple.screensharing.agent
+454	0	com.apple.commerce
+1821	0	com.adobe.CCXProcess.6324
+-	0	com.apple.TMHelperAgent.SetupOffer
+-	0	com.apple.AddressBook.SourceSync
+-	0	com.apple.installerauthagent
+7811	0	com.apple.xpc.launchd.oneshot.0x10000040.firefox
+-	0	com.apple.languageassetd
+-	0	com.apple.familynotificationd
+1682	0	com.adobe.GC.AGM
+703	0	com.apple.photolibraryd
+-	0	com.docker.helper
+-	0	com.apple.xpc.otherbsd
+-	0	com.apple.sysdiagnose_agent
+1693	0	com.apple.TextInputMenuAgent
+-	0	com.apple.bluetoothUIServer
+-	0	com.apple.universalaccessHUD
+3307	0	com.apple.assistant_service
+-	0	com.logmein.GoToMeeting.G2MUpdate
+-	0	com.apple.MRTa
+-	0	com.apple.touristd
+424	0	com.apple.CommCenter
+398	0	com.apple.trustd.agent
+-	0	com.apple.MailServiceAgent
+-	0	com.apple.mdworker.mail
+43922	0	com.apple.mdworker.shared.03000000-0500-0000-0000-000000000000
+-	0	com.apple.appkit.xpc.ColorSampler
+388	0	com.apple.cfprefsd.xpc.agent
+-	0	com.apple.coreimportd
+43897	0	com.apple.mdworker.shared.05000000-0100-0000-0000-000000000000
+433	0	com.apple.TrustedPeersHelper
+-	0	com.apple.DataDetectorsLocalSources
+-	0	com.apple.unmountassistant.useragent
+-	0	com.apple.java.InstallOnDemand
+-	0	com.adobe.Acrobat.Pro.6296
+503	0	com.apple.keyboardservicesd
+59708	0	com.google.Chrome.6304
+521	0	com.apple.quicklook.ThumbnailsAgent
+-	0	com.apple.csuseragent
+418	0	com.apple.ContextStoreAgent
+-	0	com.apple.AOSPushRelay
+1668	0	com.apple.SocialPushAgent
+-	0	com.apple.accessibility.AXVisualSupportAgent
+1931	0	com.apple.xpc.loginitemregisterd
+80055	0	com.apple.applespell
+-	0	com.apple.coreservices.UASharedPasteboardProgressUI
+-	0	com.apple.screensharing.menuextra
+461	0	com.apple.AddressBook.ContactsAccountsService
+-	0	com.apple.warmd_agent
+1677	0	com.wdc.WD-Discovery
+-	0	com.apple.universalaccesscontrol
+71065	0	com.apple.Safari.SafeBrowsing.Service
+-	0	com.apple.findmymacmessenger
+97408	0	com.apple.DiskUtility.5284
+-	0	com.apple.FilesystemUI
+426	0	com.apple.ScreenTimeAgent
+-	0	com.apple.pluginkit.pkreporter
+-	0	com.apple.systemprofiler
+1692	0	com.adobe.AdobeCreativeCloud
+400	0	com.apple.cloudd
+64314	0	com.apple.noticeboard.agent
+-	0	com.apple.UserNotificationCenterAgent
+484	0	com.apple.cmfsyncagent
+-	0	com.apple.dt.CommandLineTools.installondemand
+-	0	com.apple.ATS.FontValidator
+524	0	com.apple.diagnostics_agent
+43109	0	com.apple.ActivityMonitor.5280
+-	0	com.apple.appleseed.seedusaged
+69942	0	com.apple.LocalAuthentication.UIAgent
+-	-9	com.apple.ap.adprivacyd
+-	0	com.apple.PhotoLibraryMigrationUtility.XPC
+415	0	com.apple.apfsuseragent
+416	0	com.apple.networkserviceproxy
+471	0	com.apple.AMPLibraryAgent
+-	0	com.openssh.ssh-agent
+59751	0	com.apple.atsd
+2458	0	com.apple.tonelibraryd
+701	0	com.apple.CloudPhotosConfiguration
+-	0	com.apple.mdworker.bundles
+43902	0	com.apple.mdworker.shared.06000000-0500-0000-0000-000000000000
+443	0	com.apple.ctkd
+43921	0	com.apple.mdworker.shared.0C000000-0700-0000-0000-000000000000
+-	0	com.apple.DownloadFolderImporter
+425	0	com.apple.secinitd
+43901	0	com.apple.mdworker.shared.09000000-0200-0000-0000-000000000000
+43917	0	com.apple.mdworker.shared.0F000000-0400-0000-0000-000000000000
+-	0	com.apple.facebook.xpc
+43894	0	com.apple.mdworker.shared.07000000-0000-0000-0000-000000000000
+-	0	com.apple.contacts.donation-agent
+-	0	com.apple.ServicesUIAgent
+-	0	com.apple.ctkbind
+-	0	com.apple.mediastream.mstreamd
+4317	0	com.apple.alf.useragent
+-	0	com.microsoft.cascade.launcher.mac.10976
+404	0	com.apple.tccd
+-	0	com.google.keystone.system.agent
+517	0	com.apple.replayd
+80257	0	com.apple.coreservices.uiagent
+582	0	com.apple.icloud.searchpartyuseragent
+-	0	com.apple.AccessibilityVisualsAgent
+1672	0	com.apple.Siri.agent
+-	0	com.apple.installd.user
+450	0	com.apple.akd
+592	0	com.apple.CallHistoryPluginHelper
+451	0	com.apple.storeaccountd
+-	0	com.apple.AddressBook.AssistantService
+-	0	com.apple.PIPAgent
+-	0	com.apple.mbfloagent
+52239	0	com.apple.xpc.launchd.oneshot.0x1000003d.TextEdit
+59278	0	com.apple.printtool.agent
+410	0	com.apple.nsurlstoraged
+1680	0	com.apple.askpermissiond
+29896	0	com.apple.USBAgent
+-	0	com.apple.ssinvitationagent
+-	0	com.apple.webinspectord
+-	0	com.apple.speech.synthesisserver
+-	0	com.apple.WebKit.PluginAgent
+-	0	com.apple.DiagnosticReportCleanup.plist
+601	0	com.apple.storeuid
+-	0	com.apple.rcd
+-	0	com.apple.printuitool.agent
+-	0	com.apple.NVMeAgent
+-	0	com.apple.speech.speechdatainstallerd
+-	0	com.apple.AOSHeartbeat
+1719	0	com.apple.CryptoTokenKit.ahp.agent
+-	0	com.apple.SafariNotificationAgent
+-	0	com.apple.coredatad
+39375	0	com.apple.remindd
+-	0	com.apple.appsleep
+78793	0	org.videolan.vlc.6320
+-	0	org.macosforge.xquartz.startx
+458	0	com.apple.coreservices.useractivityd
+-	0	com.apple.screencaptureui.agent
+43891	0	com.apple.mdworker.shared.10000000-0000-0000-0000-000000000000
+43923	0	com.apple.mdworker.shared.02000000-0300-0000-0000-000000000000
+-	0	com.apple.cvmsCompAgent3600_x86_64_1
+-	0	com.apple.ContainerRepairAgent
+-	0	com.apple.netauth.user.auth
+486	0	com.apple.siri-distributed-evaluation
+442	0	com.apple.ViewBridgeAuxiliary
+-	0	com.apple.mbbackgrounduseragent
+43924	0	com.apple.mdworker.shared.0A000000-0100-0000-0000-000000000000
+-	0	com.apple.cvmsCompAgent_x86_64
+397	0	com.apple.lsd
+531	0	com.apple.siri.context.service
+-	0	com.apple.weibo.xpc
+430	0	com.apple.pluginkit.pkd
+-	0	com.apple.security.XPCTimeStampingService
+514	0	com.apple.cache_delete
+553	0	com.apple.AMPDeviceDiscoveryAgent
+-	0	com.apple.accessibility.dfrhud
+-	0	com.apple.CallHistorySyncHelper
+71441	0	com.apple.Terminal.5316
+602	0	com.apple.colorsync.useragent
+550	0	com.apple.parsecd
+88116	1	com.apple.Dock.agent
+-	0	com.apple.parsec-fbf
+420	0	com.apple.dmd
+22473	0	com.apple.transparencyd
+429	0	com.apple.AppSSOAgent
+-	0	com.apple.mbuseragent
+403	0	com.apple.security.cloudkeychainproxy3
+391	0	com.apple.UserEventAgent-Aqua
+464	0	com.apple.followupd
+423	0	com.apple.identityservicesd
+438	0	com.apple.telephonyutilities.callservicesd
+-	0	com.apple.DwellControl
+2183	0	com.adobe.accmac.10772
+51133	0	com.apple.security.DiskUnmountWatcher
+480	0	com.apple.CoreLocationAgent
+394	0	com.apple.SecureBackupDaemon
+-	0	com.apple.security.agent
+-	0	com.apple.cfnetwork.AuthBrokerAgent
+-	0	com.spotify.client.startuphelper
+-	0	com.microsoft.OneDriveLauncher
+2045	-9	com.wdc.WDTrashObserver
+1689	0	com.apple.cloudpaird
+523	0	com.apple.storedownloadd
+-	0	com.adobe.GC.Scheduler-1.0
+-	0	com.apple.SpacesTouchBarAgent.app
+22565	0	com.apple.coreparsec.silhouette
+465	0	com.apple.coreservices.sharedfilelistd
+434	0	com.apple.pboard
+35704	0	com.apple.nowplayingtouchui
+-	0	com.apple.MobileAccessoryUpdater.fudHelperAgent
+2334	0	com.apple.reversetemplated
+-	0	com.apple.SafariCloudHistoryPushAgent
+-	0	com.apple.AskPermissionUI
+-	0	com.apple.thermaltrap
+409	0	com.apple.rapportd
+1989	0	com.apple.SoftwareUpdateNotificationManager
+70148	0	com.apple.print.normalizerd
+-	0	com.apple.accounts.dom
+-	0	com.apple.metadata.mdflagwriter
+99252	0	com.apple.DictionaryServiceHelper
+2275	0	com.apple.speech.speechsynthesisd
+-	0	com.apple.mdworker.shared
+43920	0	com.apple.mdworker.shared.0E000000-0200-0000-0000-000000000000
+-	0	com.apple.usermanagerhelper
+-	0	com.apple.installandsetup.migrationhelper.user
+596	0	com.apple.SafeEjectGPUService
+441	0	com.apple.imdpersistence.IMDPersistenceAgent
+-	0	com.apple.TrustEvaluationAgent
+-	0	com.apple.Notes.datastore
+-	0	com.apple.preference.displays.MirrorDisplays
+13524	0	com.apple.corespotlightservice.33D6D087-0EF3-7BC4-A553-8E0EDFB64722
+436	0	com.apple.neagent.878568F8-CCE5-4157-8315-22F20DC8FB0A
+59014	-9	com.apple.accountsd
+455	0	com.apple.cdpd
+411	0	com.apple.routined
+-	111	com.adobe.ARMDCHelper.cc24aef4a1b90ed56a725c38014c95072f92651fb65e1bf9c8e43c37a23d420d
+-	0	com.apple.KeyboardAccessAgent
+-	0	com.apple.storelegacy
+21109	0	com.apple.OSDUIHelper
+1946	0	com.apple.audio.AudioComponentRegistrar
+462	0	com.apple.AssetCacheLocatorService
+414	0	com.apple.lockoutagent
+591	0	com.apple.locationmenu
+-	0	com.apple.videosubscriptionsd
+501	0	com.apple.pbs
+435	0	com.apple.notificationcenterui.agent
+13491	0	com.apple.protectedcloudstorage.protectedcloudkeysyncing
+470	0	com.apple.imklaunchagent
+522	0	com.apple.FileProvider
+-	0	com.apple.imcore.imtransferagent
+-	0	com.apple.btsa
+1674	0	com.apple.icdd
+21407	0	com.apple.EscrowSecurityAlert
+30324	0	com.apple.metadata.mdwrite
+-	0	com.apple.loginwindow.LWWeeklyMessageTracer
+431	0	com.apple.CalendarAgent
+-	0	com.apple.securityuploadd
+-	0	com.apple.RapportUIAgent
+3331	0	com.apple.siriknowledged
+79483	0	com.apple.powerchime
+460	0	com.apple.sharingd
+-	0	com.apple.iCloudUserNotificationsd
+-	0	com.apple.storeassetd
+449	0	com.apple.familycircled
+-	0	com.apple.FontRegistryUIAgent
+-	0	com.apple.RemoteManagementAgent
+-	0	com.apple.TextInputSwitcher
+22588	0	com.apple.AMPArtworkAgent
+439	0	com.apple.imagent
+2319	0	com.apple.sidecar-relay
+752	0	com.apple.photoanalysisd
+-	0	com.apple.syncservices.SyncServer
+67957	0	com.apple.imautomatichistorydeletionagent
+544	0	com.apple.SystemUIServer.agent
+-	0	com.apple.ATS.FontValidatorConduit
+440	0	com.apple.talagent
+31092	2	com.apple.suggestd
+73653	0	com.github.atom.6256
+-	0	com.apple.navd
+1706	0	com.google.drivefs.6368
+-	0	com.apple.RemoteDesktop.agent
+1694	0	com.apple.amsaccountsd
+-	0	com.apple.VoiceOver
+-	0	com.apple.AssistiveControl
+478	0	com.apple.icloud.fmfd
+50306	0	com.apple.iBooksX.DiskSpaceEfficiency
+612	0	com.apple.CoreSimulator.SimulatorTrampoline
+603	0	com.apple.CoreSimulator.CoreSimulatorService
+399	0	com.apple.secd
+599	0	com.apple.hiservices-xpcservice
+22587	0	com.apple.BKAgentService
+-	0	com.apple.cvmsCompAgent_x86_64_1
+-	0	com.apple.tencentweibo.xpc
+43914	0	com.apple.mdworker.shared.08000000-0300-0000-0000-000000000000
+-	0	com.apple.FCiCloudPrefUpdater
+422	0	com.apple.assistantd
+35695	0	com.spotify.client.10980
+88414	0	com.apple.studentd
+-	0	com.apple.FollowUpUI
+-	0	com.apple.videoconference.camera
+-	0	com.apple.corespotlightservice
+569	0	com.apple.uikitsystemapp
+413	0	com.apple.controlstrip
+-	0	com.apple.mediaanalysisd
+-	0	com.apple.DiskArbitrationAgent
+-	0	com.apple.assessmentagent
+-	0	com.apple.exchange.exchangesyncd
+-	0	com.google.keystone.system.xpcservice
+579	0	com.apple.scopedbookmarksagent.xpc
+1130	0	com.apple.ReportCrash
+-	1	org.chromium.chromoting
+6432	0	com.apple.UsageTrackingAgent
+-	0	com.apple.email.maild
+-	0	com.adobe.AdobeResourceSynchronizer.1764
+-	0	com.apple.menuextra.battery.helper
+-	0	com.apple.appleseed.seedusaged.postinstall
+444	0	com.apple.Maps.mapspushd
+-	0	com.apple.voicememod
+-	0	com.apple.gamed
+-	0	com.apple.STMUIHelper
+393	0	com.apple.knowledge-agent
+-	0	com.apple.midiserver
+402	0	com.apple.backgroundtaskmanagementagent
+-	0	com.apple.mobiledeviceupdater
+-	0	com.apple.helpd
+-	0	com.apple.quicklook.ui.helper
+427	0	com.apple.wifi.WiFiAgent
+-	0	com.apple.screensharing.MessagesAgent
+45606	0	com.apple.diskspaced
+942	0	com.apple.passd
+-	0	com.apple.DictationIM
+-	0	com.apple.mdmclient.agent
+45946	0	com.apple.iCloudHelper
+474	0	com.apple.CharacterPicker.FileService
+43925	0	com.apple.mdworker.shared.04000000-0700-0000-0000-000000000000
+43910	0	com.apple.mdworker.shared.0D000000-0000-0000-0000-000000000000
+43913	0	com.apple.mdworker.shared.0B000000-0400-0000-0000-000000000000
+-	0	com.apple.MessageUIMacHelperService
+-	0	com.apple.cvmsCompAgent3425AMD_x86_64
+-	0	com.apple.linkedin.xpc
+-	0	com.apple.security.XPCKeychainSandboxCheck
+-	0	com.apple.mdworker.single
+22586	0	com.apple.podcasts.PodcastContentService
+-	0	com.apple.twitter.xpc
+386	0	com.apple.CoreAuthentication.agent
+-	0	org.mozilla.firefoxdeveloperedition.11360
+-	0	com.apple.syncdefaultsd
+-	0	com.apple.sidecar-display-agent
+-	0	com.apple.accessibility.heard
+1662	0	com.apple.corespeechd
+-	0	com.apple.scrod
+-	0	com.adobe.ccxprocess
+704	0	com.apple.spindump_agent
+36327	0	com.monosnap.monosnap.6244
+-	0	com.apple.AquaAppearanceHelper
+-	0	com.apple.security.keychain-circle-notification
+956	0	com.apple.icloud.findmydeviced.findmydevice-user-agent
+1824	0	com.figma.agent.6360
+-	0	com.apple.ap.adservicesd
+-	0	com.apple.AirPortBaseStationAgent
+-	0	com.apple.proactiveeventtrackerd
+-	0	com.apple.universalaccessd
+-	0	com.apple.accessibility.MotionTrackingAgent
+-	0	com.apple.neagent
+-	0	com.apple.SafariLaunchAgent
+-	0	com.apple.idsfoundation.IDSRemoteURLConnectionAgent
+31101	-6	com.apple.recentsd
+560	0	com.apple.WiFiVelocityAgent
+412	0	com.apple.usernoted
+1804	0	com.adobe.AdobeResourceSynchronizer.1856
+-	0	com.apple.SafariPlugInUpdateNotifier
+-	0	com.apple.AddressBook.abd
+1679	0	com.github.facebook.watchman
+-	0	com.apple.ScreenReaderUIServer
+421	0	com.apple.swcd
+1683	0	com.apple.AirPlayUIAgent
+-	0	com.microsoft.VSCodeInsiders.ShipIt
+485	0	com.apple.corespotlightd
+-	0	com.apple.netauth.user.gui
+401	0	com.apple.xtyped
+-	0	com.apple.TMHelperAgent
+549	0	com.apple.Spotlight
+616	0	com.apple.appstoreagent
+-	0	com.apple.AMPDevicesAgent
+86898	0	com.apple.accessibility.mediaaccessibilityd
+-	0	com.apple.cvmsCompAgent3425AMD_x86_64_1
+6465	0	com.apple.mdworker.sizing
+-	0	com.apple.SpeechRecognitionCore.brokerd
+-	0	com.apple.metadata.mdbulkimport
+-	0	com.apple.iokit.IOServiceAuthorizeAgent
+-	0	com.apple.Safari.History
+-	0	com.apple.cvmsCompAgent3600_x86_64
+-	0	com.apple.CoreRoutine.helperservice
+395	0	com.apple.distnoted.xpc.agent
+43890	0	com.apple.mdworker.shared.01000000-0700-0000-0000-000000000000
+468	0	com.apple.geod
+➜  Ramda-JS

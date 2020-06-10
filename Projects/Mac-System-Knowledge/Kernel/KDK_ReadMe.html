@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1331.12">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 20.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Helvetica}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Courier New'}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p7 {margin: 0.0px 0.0px 12.0px 0.0px; font: 18.0px Helvetica}
+    p.p8 {margin: 0.0px 0.0px 12.0px 0.0px; font: 14.0px Helvetica}
+    p.p9 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Helvetica; color: #042eee}
+    p.p10 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px 'Courier New'; font-kerning: none}
+    span.s3 {font: 12.0px Times; font-kerning: none}
+    span.s4 {font: 12.0px Helvetica; text-decoration: underline ; font-kerning: none; color: #042eee}
+    span.s5 {font: 12.0px 'Lucida Grande'; font-kerning: none}
+    span.s6 {font-kerning: none; color: #000000}
+    span.s7 {text-decoration: underline ; font-kerning: none}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">macOS High Sierra Kernel Debug Kit Read Me<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1"><b>Please Note:</b> After installation, the Kernel Debug Kit will be available at:<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">/Library/Developer/KDKs/</span></p>
+<p class="p2"><span class="s1"><b>———————————————————————————————</b></span></p>
+<p class="p2"><span class="s1"><b>The kernel file location has changed.</b></span></p>
+<p class="p2"><span class="s1">The kernel file location has moved to /System/Library/Kernels/kernel</span></p>
+<p class="p3"><span class="s1"><b>DEVELOPMENT and DEBUG kernels</b></span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1">The macOS High Sierra Kernel Debug Kit includes the DEVELOPMENT and DEBUG kernel builds. These both have additional assertions and error checking compared to the RELEASE kernel. The DEVELOPMENT kernel can be used for every-day use and has minimal performance overhead, while the DEBUG kernel has much more error checking.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1">To allow development using the Kernel Development Kit on macOS High Sierra, you will need to modify the security configuration with the following steps:</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1">
+1. Reboot to the Recovery System by restarting your Mac and hold down the Command and R keys at startup.<br>
+2. From the Utilities menu, select “Terminal”.<br>
+3. Type, “csrutil disable” to disable System Integrity Protection, “csrutil enable” to reenable System Integrity Protection.<br>
+4. Restart your Mac.</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1">To install these kernels, copy the kernel.development or kernel.debug file from the KDK to /System/Library/Kernels, and add “kcsuffix=development” (or “kcsuffix=debug” as appropriate) to your boot args.<span class="Apple-converted-space">  </span>Please note, you will need to rebuild your kextcache to use the new kernel for debugging. This can be done by running the “kextcache -invalidate” command against the target volume as follows:</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">     sudo kextcache -invalidate /Volumes/&lt;Target Volume&gt;<br>
+     sudo reboot</span></p>
+<p class="p3"><span class="s1">To return to the Release kernel, delete the kernel.development/kernel.debug file, remove the “kcsuffix” boot-args and run the following:</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">     sudo rm /System/Library/Caches/com.apple.kext.caches/Startup/kernelcache.de*<br>
+     sudo rm /System/Library/PrelinkedKernels/prelinkedkernel.de*<br>
+     sudo kextcache -invalidate /<br>
+     sudo reboot</span></p>
+<p class="p7"><span class="s1"><b>Two Machine Debugging In macOS High Sierra</b></span></p>
+<p class="p8"><span class="s1"><b>Finding Symbols Automatically</b></span></p>
+<p class="p2"><span class="s1">lldb will search </span><span class="s2">/Library/Developer/KDKs/</span><span class="s1"> as well as any local directories indexed by Spotlight.</span></p>
+<p class="p2"><span class="s1">You invoke lldb by the simple command:</span></p>
+<p class="p5"><span class="s1">     lldb</span></p>
+<p class="p2"><span class="s1">Alternatively, you can specify the kernel file on the command line.</span></p>
+<p class="p5"><span class="s1">     lldb /Library/Developer/KDKs/&lt;KDK Version&gt;/System/Library/Kernels/kernel</span></p>
+<p class="p2"><span class="s1">To attach, you either use kdp-remote for a live connection, or file -c for a coredump.</span></p>
+<p class="p5"><span class="s1">     kdp-remote {name_or_ip_address}<br>
+     file -c {path_to_coredump}</span></p>
+<p class="p2"><span class="s1">Two machine debugging is not supported via USB Ethernet.<br>
+Two machine debugging is not supported via wireless.</span></p>
+<p class="p8"><span class="s1"><b>Network Debugging</b></span></p>
+<p class="p2"><span class="s1">The default setting for two machine debugging is as follows:</span></p>
+<p class="p5"><span class="s1">     sudo nvram boot-args="debug=0x146"<br>
+     sudo reboot</span></p>
+<p class="p2"><span class="s1">This assumes you are using the first Ethernet port, en0.</span></p>
+<p class="p2"><span class="s1">If you are running the development kernel, this would be enabled as follows:</span></p>
+<p class="p5"><span class="s1">     sudo nvram boot-args="&lt;existing boot-args&gt; kcsuffix=development"<br>
+     sudo kextcache -invalidate /<br>
+     sudo reboot</span></p>
+<p class="p2"><span class="s1">If you are on a machine with multiple Ethernet ports (e.g. a MacPro), use </span><span class="s2">ifconfig</span><span class="s1"> to determine the correct port. For instance, add "</span><span class="s2">kdp_match_name=en1</span><span class="s1">" if using port en1.</span></p>
+<p class="p2"><span class="s1">If you are on a machine without built-in Ethernet, you can use one of the following:</span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s1">Thunderbolt to Ethernet adaptor</span></li>
+  <li class="li3"><span class="s1">Ethernet port on a Apple Thunderbolt display</span></li>
+</ul>
+<p class="p2"><span class="s1">Use the </span><span class="s2">ifconfig</span><span class="s1"> command to determine the appropriate port. The output of </span><span class="s2">ifconfig</span><span class="s1"> will show all ports. You want to specify a port with a valid inet option. For example if this was the </span><span class="s2">ifconfig</span><span class="s1"> output:</span></p>
+<p class="p5"><span class="s1">     en1: flags=8963 mtu 1500<br>
+         options=60<br>
+         ether 32:00:13:ee:19:e0<br>
+         media: autoselect <br>
+         status: inactive<br>
+     en2: flags=8863 mtu 1500<br>
+         options=10b<br>
+         ether 40:6c:8f:5b:a2:96<br>
+         inet6 fe80::426c:8fff:fe5b:a296%en2 prefixlen 64 scopeid 0x4<br>
+         inet6 2620::1b07:114:426c:8fff:fe5b:a296 prefixlen 64 autoconf<br>
+         inet6 2620::1b07:114:88d6:bbba:7ac9:b0a7 prefixlen 64 autoconf temporary<br>
+         inet 10.128.19.135 netmask 0xfffff800 broadcast 10.128.23.255<br>
+         nd6 options=1<br>
+         media: autoselect (1000baseT )<br>
+         status: active</span></p>
+<p class="p2"><span class="s1">Port en2 is the valid port in this example. You would specify this as follows:</span></p>
+<p class="p5"><span class="s1">     sudo nvram boot-args="debug=0x146 kdp_match_name=en2"<br>
+     sudo reboot</span></p>
+<p class="p2"><span class="s1">Remember, neither USB nor Wireless work for two machine debugging.</span></p>
+<p class="p8"><span class="s1"><b>Firewire Debugging</b></span></p>
+<p class="p2"><span class="s1">The default setting for two machine debugging is as follows:</span></p>
+<p class="p5"><span class="s1">     sudo nvram boot-args="debug=0x146 kdp_match_name=firewire fwkdp=0x8000"<br>
+     sudo reboot</span></p>
+<p class="p2"><span class="s1">Non-built-in FireWire controllers are specifically excluded from working for both FireWireKDP and FireWireKPrintf. This is intentional. However there is an easy way to enable them.</span></p>
+<p class="p2"><span class="s1">To enable non-built-in interfaces for FireWireKDP, add the "</span><span class="s2">fwkdp=0x8000</span><span class="s1">" boot-arg. For FireWireKPrintf, use "</span><span class="s2">fwkpf=0x8000</span><span class="s1">".<br>
+<br>
+However, this support comes with a caveat. Once the FireWire controller has been "used" for either FireWireKDP or FireWireKPrintf, it must not be unplugged or the machine will likely panic. So, if you're using a Thunderbolt Display or a Thunderbolt to FireWire Adapter, you should just leave them connected until you disable the "0x8000" boot-arg and restart.</span></p>
+<p class="p2"><span class="s1">If you are on a machine without built-in firewire, you can use one of the following:</span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li3"><span class="s1">Thunderbolt -&gt; Firewire adaptor</span></li>
+  <li class="li3"><span class="s1">Firewire port on a Apple Thunderbolt display</span></li>
+</ul>
+<p class="p2"><span class="s1">On the host machine, open a terminal window and type the following:</span></p>
+<p class="p5"><span class="s1">     fwkdp</span></p>
+<p class="p2"><span class="s1">Leave that window open. Now in a second window, you can invoke lldb and issue the following command:</span></p>
+<p class="p5"><span class="s1">     kdp-remote localhost</span></p>
+<p class="p2"><span class="s1">The fwkdp redirector software redirects kdp packets as if the host machine was the panicked machine. Saving a coredump is done locally on the host, e.g. in lldb:</span></p>
+<p class="p5"><span class="s1">     (lldb) sendcore 1.2.3.4 # IP address does not matter for firewire debugging<br>
+     (lldb) detach</span></p>
+<p class="p8"><span class="s1"><b>Returning from the debugger</b></span></p>
+<p class="p2"><span class="s1">The "</span><span class="s2">watchdog=0</span><span class="s1">" boot-arg is necessary to prevent the macOS watchdog from firing when returning from the kernel debugger.
+</span></p>
+<p class="p7"><span class="s1"><b>Reporting Kernel Panics or System Hangs on macOS High Sierra</b></span></p>
+<p class="p8"><span class="s1"><b>Simple Technique</b></span></p>
+<p class="p2"><span class="s1">You may restore your system to default settings by deleting your nvram boot-args variable:</span></p>
+<p class="p5"><span class="s1">     sudo nvram -d boot-args<br>
+     sudo reboot</span></p>
+<p class="p2"><span class="s1">After doing this, your system will reboot after a panic, after which you may file a bug report at <a href="http://bugreport.apple.com/"><span class="s4">http://bugreport.apple.com</span></a>. Include a full system profiler report (not basic) and any panic logs from the /Library/Logs/DiagnosticReports directory.<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">Note that the automatic prompt to report a panic after you reboot is not sufficient. That goes into a giant database which aggregates panic reports and produces a bug report eventually. This automatically generated bug report may not have enough information for us to diagnose the issue. By following the instructions above and <b>always filing a bug report for your panics</b>, you make it possible for us to better diagnose your issue</span></p>
+<p class="p8"><span class="s1"><b>Coredumps</b></span></p>
+<p class="p2"><span class="s1">If you have another Mac, you can try to set up the second Mac as a coredump server.</span></p>
+<p class="p2"><span class="s1">For a coredump, you need an Ethernet connection (airport will not work, nor will USB Ethernet) from the panicking computer to another machine, or to a router. (Any Mac will work as a coredump server; you just need a gigabyte or so of free space per coredump.) On the server (non-panicking) machine run the following commands:</span></p>
+<p class="p5"><span class="s1">     sudo mkdir /PanicDumps<br>
+     sudo chown root:wheel /PanicDumps<br>
+     sudo chmod 1777 /PanicDumps<br>
+     sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.kdumpd.plist</span></p>
+<p class="p2"><span class="s1">On the client (panicking machine):</span></p>
+<p class="p5"><span class="s1">     sudo nvram boot-args="debug=0xd44 _panicd_ip=10.0.40.2"<br>
+     sudo reboot</span></p>
+<p class="p2"><span class="s1">where "10.0.40.2" is replaced by the IP address of the server. (You must reboot the client for the nvram settings to take effect.)</span></p>
+<p class="p2"><span class="s1">Note: if you are using a machine without built-in networking, or if you have a MacPro, or if you want to use firewire, see Two Machine Debugging for details.<br>
+<br>
+If you hang, NMI the machine by hitting the buttons Left-</span><span class="s5">⌘</span><span class="s1"> + Right-</span><span class="s5">⌘</span><span class="s1"> + Power. This will generate a coredump file on the server machine in the directory /PanicDumps.<br>
+<br>
+If you panic, the coredump file will be generated automatically on the server machine in the /PanicDumps directory.<br>
+<br>
+Compress the coredump file saved to /PanicDumps, and attach that to the bug report you file. Coredumps are mostly zeros, so they compress very well (an average coredump of 500Mb will compress down to 30Mb or so, so compress it before trying to attach it to a bug report.) Please file a new bug report for each panic.</span></p>
+<p class="p2"><span class="s1">To remove this behavior from the client machine, run the following:</span></p>
+<p class="p5"><span class="s1">     sudo nvram -d boot-args<br>
+     sudo reboot</span></p>
+<p class="p2"><span class="s1">You must reboot to make new nvram settings take effect.</span></p>
+<p class="p2"><span class="s1">Please note, coredumps may contain private data.</span></p>
+<p class="p8"><span class="s1"><b>Hangs</b></span></p>
+<p class="p2"><span class="s1">The best information is acquired by the sysdiagnose command. The sysdiagnose tool gathers system diagnostic information helpful in investigating system performance issues. A great deal of information is harvested, spanning system state and configuration. sysdiagnose needs to be run as root. sysdiagnose can be triggered upon pressing a special key chord; this is currently Control-Option-Command-Shift-Period. There is a man page with additional information available; open a terminal window and type the following:</span></p>
+<p class="p5"><span class="s1">     man sysdiagnose</span></p>
+<p class="p7"><span class="s1"><b>Additional Information</b></span></p>
+<p class="p2"><span class="s1">For more information on remote debugging of the macOS High Sierra kernel, please see the following references:</span></p>
+<p class="p9"><span class="s6">"Debugging Drivers" chapter of <a href="http://developer.apple.com/documentation/DeviceDrivers/Conceptual/WritingDeviceDriver/DebuggingDrivers/DebuggingDrivers.html"><span class="s7"><i>I/O Kit Device Driver Design Guidelines</i></span></a></span></p>
+<p class="p2"><span class="s1">"Building and Debugging Kernels" chapter of <a href="http://developer.apple.com/documentation/Darwin/Conceptual/KernelProgramming/build/build.html"><span class="s4"><i>Kernel Programming Guide</i></span></a></span></p>
+<p class="p9"><span class="s6">Technical Note 2063: <a href="http://developer.apple.com/technotes/tn2002/tn2063.html"><span class="s7"><i>Understanding and Debugging Kernel Panics</i></span></a></span></p>
+<p class="p9"><span class="s6">Technical Q&amp;A 1264: <a href="http://developer.apple.com/qa/qa2001/qa1264.html"><span class="s7"><i>Generating a Non-Maskable Interrupt (NMI)</i></span></a></span></p>
+<p class="p2"><span class="s1">Technical Note 2118: <a href="http://developer.apple.com/technotes/tn2004/tn2118.html"><span class="s4"><i>Kernel Core Dumps</i></span></a></span></p>
+<p class="p10"><span class="s1">© 2017 Apple Inc. All rights reserved. Apple, the Apple logo, Mac, and Macintosh are trademarks of Apple Inc., registered in the U.S. and other countries.</span></p>
+</body>
+</html>
