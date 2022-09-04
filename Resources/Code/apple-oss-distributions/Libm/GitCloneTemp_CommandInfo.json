@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/Libm undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Libm",
+    "repo": "https://github.com/apple-oss-distributions/Libm",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Libm",
+    "startTime": "2022-09-03T18:32:07.326Z",
+    "endTime": "2022-09-03T18:32:08.333Z",
+    "childProcessPid": 50405,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--Libm--50405",
+    "executionErrors": []
+}

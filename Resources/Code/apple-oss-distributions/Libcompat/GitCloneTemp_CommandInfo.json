@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/Libcompat undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Libcompat",
+    "repo": "https://github.com/apple-oss-distributions/Libcompat",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Libcompat",
+    "startTime": "2022-09-03T18:32:04.479Z",
+    "endTime": "2022-09-03T18:32:05.012Z",
+    "childProcessPid": 50376,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--Libcompat--50376",
+    "executionErrors": []
+}

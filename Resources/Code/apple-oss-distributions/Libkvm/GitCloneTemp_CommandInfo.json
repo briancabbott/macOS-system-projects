@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/Libkvm undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Libkvm",
+    "repo": "https://github.com/apple-oss-distributions/Libkvm",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Libkvm",
+    "startTime": "2022-09-03T18:32:06.773Z",
+    "endTime": "2022-09-03T18:32:07.326Z",
+    "childProcessPid": 50400,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--Libkvm--50400",
+    "executionErrors": []
+}
