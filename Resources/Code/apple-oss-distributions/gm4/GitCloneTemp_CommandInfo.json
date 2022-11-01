@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gm4 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gm4",
+    "repo": "https://github.com/apple-oss-distributions/gm4",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gm4",
+    "startTime": "2022-09-03T18:38:47.197Z",
+    "endTime": "2022-09-03T18:38:48.374Z",
+    "childProcessPid": 52430,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gm4--52430",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gperf undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gperf",
+    "repo": "https://github.com/apple-oss-distributions/gperf",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gperf",
+    "startTime": "2022-09-03T18:38:55.485Z",
+    "endTime": "2022-09-03T18:38:56.746Z",
+    "childProcessPid": 52512,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gperf--52512",
+    "executionErrors": []
+}

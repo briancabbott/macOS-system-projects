@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/fetchmail undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/fetchmail",
+    "repo": "https://github.com/apple-oss-distributions/fetchmail",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/fetchmail",
+    "startTime": "2022-09-03T18:37:27.865Z",
+    "endTime": "2022-09-03T18:37:29.331Z",
+    "childProcessPid": 52166,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--fetchmail--52166",
+    "executionErrors": []
+}

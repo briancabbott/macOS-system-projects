@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>OpenSourceProject</key>
+		<string>freeradius</string>
+		<key>OpenSourceVersion</key>
+		<string>2.2.0</string>
+		<key>OpenSourceWebsiteURL</key>
+		<string>http://freeradius.org/</string>
+                <key>OpenSourceURL</key>
+                <string>ftp://ftp.freeradius.org/pub/freeradius/freeradius-server-2.2.0.tar.bz2</string>
+		<key>OpenSourceImportDate</key>
+		<string>2013-05-14</string>
+		<key>OpenSourceLicense</key>
+		<string>GPLv2</string>
+		<key>OpenSourceLicenseFile</key>
+		<string>freeradius.txt</string>
+		<key>OpenSourceModifications</key>
+                <array>
+                  <string>Uses OpenDirectory Framework for user/group lookups</string>
+                  <string>Uses NetLogon to handle AD MSCHAP auths</string>
+		</array>
+	</dict>
+</array>
+</plist>

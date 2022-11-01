@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gcc3 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gcc3",
+    "repo": "https://github.com/apple-oss-distributions/gcc3",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gcc3",
+    "startTime": "2022-09-03T18:37:41.708Z",
+    "endTime": "2022-09-03T18:37:47.544Z",
+    "childProcessPid": 52224,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gcc3--52224",
+    "executionErrors": []
+}

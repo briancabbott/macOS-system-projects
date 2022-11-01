@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gimp_print undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gimp_print",
+    "repo": "https://github.com/apple-oss-distributions/gimp_print",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gimp_print",
+    "startTime": "2022-09-03T18:38:36.959Z",
+    "endTime": "2022-09-03T18:38:38.741Z",
+    "childProcessPid": 52389,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gimp_print--52389",
+    "executionErrors": []
+}

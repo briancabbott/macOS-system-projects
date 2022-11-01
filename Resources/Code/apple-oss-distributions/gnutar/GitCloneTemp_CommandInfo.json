@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gnutar undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gnutar",
+    "repo": "https://github.com/apple-oss-distributions/gnutar",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gnutar",
+    "startTime": "2022-09-03T18:38:51.609Z",
+    "endTime": "2022-09-03T18:38:53.123Z",
+    "childProcessPid": 52473,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gnutar--52473",
+    "executionErrors": []
+}

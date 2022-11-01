@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/graphviz undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/graphviz",
+    "repo": "https://github.com/apple-oss-distributions/graphviz",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/graphviz",
+    "startTime": "2022-09-03T18:38:57.433Z",
+    "endTime": "2022-09-03T18:38:59.145Z",
+    "childProcessPid": 52525,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--graphviz--52525",
+    "executionErrors": []
+}

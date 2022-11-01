@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gssd undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gssd",
+    "repo": "https://github.com/apple-oss-distributions/gssd",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gssd",
+    "startTime": "2022-09-03T18:39:02.145Z",
+    "endTime": "2022-09-03T18:39:02.927Z",
+    "childProcessPid": 52634,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gssd--52634",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gpt undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gpt",
+    "repo": "https://github.com/apple-oss-distributions/gpt",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gpt",
+    "startTime": "2022-09-03T18:38:56.747Z",
+    "endTime": "2022-09-03T18:38:57.432Z",
+    "childProcessPid": 52519,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gpt--52519",
+    "executionErrors": []
+}

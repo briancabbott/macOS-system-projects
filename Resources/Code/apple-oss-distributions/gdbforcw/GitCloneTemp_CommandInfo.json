@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/gdbforcw undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gdbforcw",
+    "repo": "https://github.com/apple-oss-distributions/gdbforcw",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/gdbforcw",
+    "startTime": "2022-09-03T18:38:34.113Z",
+    "endTime": "2022-09-03T18:38:36.959Z",
+    "childProcessPid": 52380,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--gdbforcw--52380",
+    "executionErrors": []
+}

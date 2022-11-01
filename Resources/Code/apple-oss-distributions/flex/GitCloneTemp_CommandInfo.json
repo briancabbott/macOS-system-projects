@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/flex undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/flex",
+    "repo": "https://github.com/apple-oss-distributions/flex",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/flex",
+    "startTime": "2022-09-03T18:37:33.124Z",
+    "endTime": "2022-09-03T18:37:35.073Z",
+    "childProcessPid": 52193,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--flex--52193",
+    "executionErrors": []
+}
