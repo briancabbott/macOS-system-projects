@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/isoutil undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/isoutil",
+    "repo": "https://github.com/apple-oss-distributions/isoutil",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/isoutil",
+    "startTime": "2022-09-03T18:39:11.303Z",
+    "endTime": "2022-09-03T18:39:11.978Z",
+    "childProcessPid": 52795,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--isoutil--52795",
+    "executionErrors": []
+}

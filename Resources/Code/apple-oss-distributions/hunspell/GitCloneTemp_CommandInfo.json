@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/hunspell undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/hunspell",
+    "repo": "https://github.com/apple-oss-distributions/hunspell",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/hunspell",
+    "startTime": "2022-09-03T18:39:07.079Z",
+    "endTime": "2022-09-03T18:39:08.216Z",
+    "childProcessPid": 52734,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--hunspell--52734",
+    "executionErrors": []
+}

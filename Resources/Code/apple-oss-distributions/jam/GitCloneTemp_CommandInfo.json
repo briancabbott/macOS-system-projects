@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/jam undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/jam",
+    "repo": "https://github.com/apple-oss-distributions/jam",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/jam",
+    "startTime": "2022-09-03T18:39:11.979Z",
+    "endTime": "2022-09-03T18:39:12.827Z",
+    "childProcessPid": 52800,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--jam--52800",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/keymgr undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/keymgr",
+    "repo": "https://github.com/apple-oss-distributions/keymgr",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/keymgr",
+    "startTime": "2022-09-03T18:39:14.649Z",
+    "endTime": "2022-09-03T18:39:15.709Z",
+    "childProcessPid": 52819,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--keymgr--52819",
+    "executionErrors": []
+}

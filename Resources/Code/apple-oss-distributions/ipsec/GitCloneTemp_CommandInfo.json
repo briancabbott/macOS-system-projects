@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/ipsec undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ipsec",
+    "repo": "https://github.com/apple-oss-distributions/ipsec",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ipsec",
+    "startTime": "2022-09-03T18:39:09.382Z",
+    "endTime": "2022-09-03T18:39:10.477Z",
+    "childProcessPid": 52764,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--ipsec--52764",
+    "executionErrors": []
+}

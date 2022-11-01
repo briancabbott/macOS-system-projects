@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/iodbc undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/iodbc",
+    "repo": "https://github.com/apple-oss-distributions/iodbc",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/iodbc",
+    "startTime": "2022-09-03T18:39:08.216Z",
+    "endTime": "2022-09-03T18:39:09.381Z",
+    "childProcessPid": 52739,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--iodbc--52739",
+    "executionErrors": []
+}
