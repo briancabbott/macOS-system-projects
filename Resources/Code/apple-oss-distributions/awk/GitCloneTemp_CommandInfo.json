@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/awk undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/awk",
+    "repo": "https://github.com/apple-oss-distributions/awk",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/awk",
+    "startTime": "2022-09-03T18:35:42.964Z",
+    "endTime": "2022-09-03T18:35:44.170Z",
+    "childProcessPid": 51629,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--awk--51629",
+    "executionErrors": []
+}

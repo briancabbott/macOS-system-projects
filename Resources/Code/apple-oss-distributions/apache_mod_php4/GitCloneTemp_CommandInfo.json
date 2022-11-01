@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/apache_mod_php4 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_php4",
+    "repo": "https://github.com/apple-oss-distributions/apache_mod_php4",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_php4",
+    "startTime": "2022-09-03T18:35:29.619Z",
+    "endTime": "2022-09-03T18:35:31.623Z",
+    "childProcessPid": 51557,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--apache_mod_php4--51557",
+    "executionErrors": []
+}

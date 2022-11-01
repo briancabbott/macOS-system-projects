@@ -1,0 +1,24 @@
+<plist version="1.0">
+<array>
+<dict>
+        <key>OpenSourceProject</key>
+        <string>apache_mod_jk</string>
+        <key>OpenSourceVersion</key>
+        <string>1.2.32</string>
+        <key>OpenSourceURL</key>
+        <string>http://www.apache.org/dist/tomcat/tomcat-connectors/jk/source/jk-1.2.32/tomcat-connectors-1.2.32-src.tar.gz</string>
+        <key>OpenSourceSHA1</key>
+        <string>f7eb958897134eabc26c0f83baab422eec125903</string>
+        <key>OpenSourceImportDate</key>
+        <string>2012-04-18</string>
+        <key>OpenSourceModifications</key>
+        <array>
+		<string>Patch Makefile to use /bin/sleep</string>
+	</array>
+        <key>OpenSourceLicense</key>
+        <string>Apache</string>
+        <key>OpenSourceLicenseFile</key>
+        <string>apache_mod_jk.txt</string>
+</dict>
+</array>
+</plist>

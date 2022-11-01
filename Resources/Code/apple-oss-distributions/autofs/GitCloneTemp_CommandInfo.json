@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/autofs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/autofs",
+    "repo": "https://github.com/apple-oss-distributions/autofs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/autofs",
+    "startTime": "2022-09-03T18:35:39.543Z",
+    "endTime": "2022-09-03T18:35:40.464Z",
+    "childProcessPid": 51610,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--autofs--51610",
+    "executionErrors": []
+}

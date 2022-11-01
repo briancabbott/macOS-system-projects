@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/apache_mod_hfs_apple undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_hfs_apple",
+    "repo": "https://github.com/apple-oss-distributions/apache_mod_hfs_apple",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_hfs_apple",
+    "startTime": "2022-09-03T18:35:03.044Z",
+    "endTime": "2022-09-03T18:35:03.739Z",
+    "childProcessPid": 51497,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--apache_mod_hfs_apple--51497",
+    "executionErrors": []
+}

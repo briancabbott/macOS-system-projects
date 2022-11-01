@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/apache_mod_dav undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_dav",
+    "repo": "https://github.com/apple-oss-distributions/apache_mod_dav",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_dav",
+    "startTime": "2022-09-03T18:35:00.441Z",
+    "endTime": "2022-09-03T18:35:01.300Z",
+    "childProcessPid": 51480,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--apache_mod_dav--51480",
+    "executionErrors": []
+}

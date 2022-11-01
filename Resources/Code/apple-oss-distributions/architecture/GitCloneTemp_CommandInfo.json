@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/architecture undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/architecture",
+    "repo": "https://github.com/apple-oss-distributions/architecture",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/architecture",
+    "startTime": "2022-09-03T18:35:36.725Z",
+    "endTime": "2022-09-03T18:35:37.569Z",
+    "childProcessPid": 51592,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--architecture--51592",
+    "executionErrors": []
+}

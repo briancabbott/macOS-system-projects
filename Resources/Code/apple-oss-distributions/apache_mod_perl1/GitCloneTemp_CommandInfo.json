@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/apache_mod_perl1 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_perl1",
+    "repo": "https://github.com/apple-oss-distributions/apache_mod_perl1",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_perl1",
+    "startTime": "2022-09-03T18:35:06.631Z",
+    "endTime": "2022-09-03T18:35:07.554Z",
+    "childProcessPid": 51518,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--apache_mod_perl1--51518",
+    "executionErrors": []
+}

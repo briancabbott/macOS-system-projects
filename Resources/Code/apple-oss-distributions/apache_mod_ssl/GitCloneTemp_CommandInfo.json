@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/apache_mod_ssl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_ssl",
+    "repo": "https://github.com/apple-oss-distributions/apache_mod_ssl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_ssl",
+    "startTime": "2022-09-03T18:35:33.224Z",
+    "endTime": "2022-09-03T18:35:34.425Z",
+    "childProcessPid": 51576,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--apache_mod_ssl--51576",
+    "executionErrors": []
+}

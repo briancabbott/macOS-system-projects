@@ -1,0 +1,49 @@
+--- a/amavisd	2011-07-01 10:21:07.000000000 -0600
++++ b/amavisd	2011-11-30 13:59:53.000000000 -0700
+@@ -694,6 +694,11 @@
+   $MYHOME = '/var/amavis';
+   $mydomain = '!change-mydomain-variable!.example.com';#intentionally bad deflt
+ 
++  # APPLE
++  # Add paths to @INC
++  push @INC, "/Applications/Server.app/Contents/ServerRoot/System/Library/Perl/Extras/5.12";
++  push @INC, "/Applications/Server.app/Contents/ServerRoot/System/Library/Perl/Extras/5.10";
++
+   # Create debugging output - true: log to stderr; false: log to syslog/file
+   $DEBUG = 0;
+ 
+@@ -702,7 +707,7 @@
+ 
+   # Cause Net::Server parameters 'background' and 'setsid' to be set,
+   # resulting in the program to detach itself from the terminal
+-  $daemonize = 1;
++  $daemonize = 0;
+ 
+   # Net::Server pre-forking settings - defaults, overruled by amavisd.conf
+   $max_servers  = 2;   # number of pre-forked children
+@@ -14289,6 +14294,24 @@
+   shift(@_)  if $_[0]->isa('Amavis::In::Connection');  # for compatibility
+   my($msginfo, $hdr_edits_inherited, $recips_ref,
+      $quarantine_method, @snmp_id) = @_;
++  # APPLE..
++  # send viruse detected event with virus list, sender & one recipient
++  my($virusname_list) = $msginfo->virusnames;
++  my($my_viruses) = !defined($virusname_list) ? '' : join(", ",@$virusname_list);
++  my($my_recip) = @{$msginfo->per_recip_data}[0];
++  my($my_recip_smtp) = $my_recip->recip_addr_smtp;
++  $my_recip_smtp =~ s/[<> ]//g;
++  my($my_sender_smtp) = $msginfo->sender_smtp;
++  $my_sender_smtp =~ s/[<> ]//g;
++  my($my_event) = "{eventType=com.apple.mail.virus.detected; virusName='$my_viruses'; recipientAddress='$my_recip_smtp'; senderAddress='$my_sender_smtp';}";
++  if ( open (MY_PIPE, "|/usr/libexec/xssendevent") ) {
++    print MY_PIPE "$my_event";
++    close MY_PIPE;
++    do_log(5, "virus alert sent: $my_event");
++  } else {
++    do_log(1, "Error: unable to open: /usr/libexec/xssendevent");
++  }
++  # ..APPLE
+   if ($quarantine_method eq '') {
+     do_log(5, "quarantine disabled");
+   } else {
+

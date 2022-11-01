@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/apache_mod_bonjour undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_bonjour",
+    "repo": "https://github.com/apple-oss-distributions/apache_mod_bonjour",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_bonjour",
+    "startTime": "2022-09-03T18:34:59.064Z",
+    "endTime": "2022-09-03T18:34:59.744Z",
+    "childProcessPid": 51468,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--apache_mod_bonjour--51468",
+    "executionErrors": []
+}
