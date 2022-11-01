@@ -1,0 +1,13 @@
+=======================================================================
+AlertController - Sample code for UIAlertController
+
+Version 1.1   26 April 2015       Use target-action for text field changes
+Version 1.0   05 September 2014   Initial version.
+=======================================================================
+
+Example code covering the use of UIAlertController to create alert and
+action sheet views. The UIAlertController class was introduced in iOS 8
+as a replacement for UIAlertView and UIActionSheet. Full details in the
+following post:
+
+https://useyourloaf.com/blog/uialertcontroller-changes-in-ios-8/

@@ -1,0 +1,751 @@
+.Dd March 4, 2014
+.Dt LIFTOFFRC 5
+.Os
+.
+.Sh NAME
+.Nm liftoffrc
+.Nd configuration for liftoff
+.
+.Sh DESCRIPTION
+The
+.Xr liftoff 1
+Xcode configuration tool can be configured using a
+.Pa .liftoffrc
+file in your home directory, or the directory from which you are running
+.Ic liftoff .
+This is a YAML file that defines a set of keys and values for configuring
+.Ic liftoff .
+.Pp
+.Ic liftoff
+will use the value for a given key from
+.Pa ./.liftoffrc ,
+then
+.Pa ~/.liftoffrc .
+If it can't find a value in those files, it will use the default configuration.
+.
+.Sh USAGE
+You can use the lookup order to improve the experience when creating new
+projects. For example, you can set the
+.Ic author
+key inside
+.Pa ~/.liftoffrc :
+.Pp
+.Dl author: Gordon Fontenot
+.Pp
+Now, any projects you create will have your name set as the author by default.
+.Pp
+You can also use local
+.Nm
+files to customize information at a higher level. For example, you can set the
+.Ic company
+key inside
+.Pa ~/dev/work-projects/.liftoffrc :
+.Pp
+.Dl company: thoughtbot
+.Pp
+Now, whenever you create projects for work, the company name will default to
+.Ic thoughtbot ,
+and the author name will default to
+.Ic Gordon Fontenot .
+.Pp
+You can continue to create these for any directory in order to tweak the
+settings for projects created inside them. For example, I also have
+.Ic company
+set inside
+.Pa ~/dev/personal/.liftoffrc :
+.Pp
+.Dl company: Gordon Fontenot
+.Pp
+I could also set the
+.Ic warnings
+key to enable different warnings based on client requirements, or personal
+preference.
+.
+.Sh CONFIGURATION
+.Bl -tag -width 10
+.It Ic project_template
+type: string
+.br
+default:
+.Ic swift
+.Pp
+Set the default template to use for project generation. This key corresponds to
+a top level key under
+.Ic app_target_templates .
+If the key also exists in
+.Ic test_target templates ,
+then that template will be used for the test target.
+.Pp
+This setting can be overridden on the command line by using the
+.Ic Fl -template Ar TEMPLATE_NAME
+option.
+.It Ic deployment_target
+type: float
+.br
+default:
+.Ic 8.0
+.Pp
+Set the desired deployment target for this project.
+.It Ic swift_version
+type: float
+.br
+default:
+.Ic 4.0
+.Pp
+Set the desired swift version for this project.
+.It Ic configure_git
+type: boolean
+.br
+default:
+.Ic true
+.Pp
+Create
+.Ic .gitignore ,
+.Ic .gitattributes ,
+and initialize git repo if needed.
+.It Ic warnings_as_errors
+type: boolean
+.br
+default:
+.Ic true
+.Pp
+Turn warnings into errors on release builds.
+.It Ic run_script_phases
+type: array
+.br
+default: See
+.Sx SCRIPT PHASES
+.Pp
+Install the specified scripts as individual Run Script Build Phases. The
+scripts that you want to add should be located inside either the local
+.Pa .liftoff/templates/
+directory, or the user's
+.Pa ~/.liftoff/templates/
+directory.
+.Pp
+Each item in the array should be a dictionary containing a single key/value
+pair. The key for the dictionary will be used as the template script's name.
+The value will be used as the name of the script phase inside Xcode.
+.It Ic enable_static_analyzer
+type: boolean
+.br
+default:
+.Ic true
+.Pp
+Turn on the static analyzer for the project.
+.It Ic indentation_level
+type: integer
+.br
+default:
+.Ic 4
+.Pp
+Set the indentation width on the project (in spaces).
+.It Ic use_tabs
+type: boolean
+.br
+default:
+.Ic false
+.Pp
+Configure the project to use spaces or tabs for indentation. As everyone knows,
+you should really be using spaces for indentation. If you prefer to be wrong,
+however, you can change this configuration to use tabs in your project.
+.Pp
+Note that this does
+.Em not
+affect the default templates. If you choose to be incorrect with your
+indentation settings, we recommend that you also override the default templates
+in order to be consistently wrong.
+.It Ic dependency_managers
+type: array
+.br
+default:
+.Ic cocoapods
+.Pp
+Specify the dependency managers to use.
+.Pp
+Currently, this accepts
+.Ic cocoapods ,
+.Ic carthage ,
+and/or
+.Ic bundler
+as options. For each dependency manager listed,
+.Ic liftoff
+will install the default dependency file, as well as perform any necessary
+actions.
+.Pp
+For example, if you specify
+.Ic carthage
+as your dependency manager,
+.Ic liftoff
+will link the default
+.Pa Cartfile
+into place, run
+.Ic carthage update ,
+and add a run script build phase with Carthage's
+.Ic copy-frameworks
+command.
+.Pp
+This replaces the old `use_cocoapods` key.
+.It Ic strict_prompts
+type: boolean
+.br
+default:
+.Ic false
+.Pp
+Only prompt for values that don't have a default value.
+.Pp
+This is useful when combined with command line options to speed up the project
+creation process, or when being used in environments where the interactive
+prompt can't be used.
+.It Ic warnings
+type: array
+.br
+default: See
+.Sx WARNINGS
+.Pp
+Enable the provided warnings for the Application target. Set to
+.Ic false
+to prevent warnings from being set.
+.It Ic templates
+type: array
+.br
+default: See
+.Sx TEMPLATES
+.Pp
+Generate the specified templates for the project. User-defined templates should
+be located either inside the local
+.Pa .liftoff/templates/
+directory, or in the user's
+.Pa ~/.liftoff/templates/
+directory.
+.Pp
+Each item in the array should be a single key/value pair. The key for the
+dictionary will be used as the template's name, and the value will be used as
+the destination relative to the project's root.
+.Pp
+See
+.Sx TEMPLATES
+for an example configuration.
+.It Ic app_target_templates
+type: dictionary
+.br
+default: See
+.Sx TEMPLATE DIRECTORY STRUCTURES
+.Pp
+Specify template directory structures for the main application target. By
+default, this comes with 2 templates:
+.Ic swift
+and
+.Ic objc .
+.It Ic test_target_groups
+type: dictionary
+.br
+default: See
+.Sx TEMPLATE DIRECTORY STRUCTURES
+.Pp
+Specify template directory structures for the unit test target. By default,
+this comes with 2 templates:
+.Ic swift
+and
+.Ic objc .
+.It Ic test_target_name
+type: string
+.br
+default:
+.Ic UnitTests
+.Pp
+Set the name of the unit test target.
+.It Ic project_name
+type: string
+.br
+default: none
+.Pp
+Set the default value for the project name when generating new projects. Not
+defined by default.
+.It Ic company
+type: string
+.br
+default: none
+.Pp
+Set the default value for the company name when generating new projects. Not
+defined by default.
+.It Ic company_identifier
+type: string
+.br
+default: based on company name
+.Pp
+Set the default value for the company identifier when generating new projects.
+Default value is the provided company name, downcased and stripped of special
+characters. For example:
+.Ic My Company Name!
+becomes
+.Ic com.mycompanyname .
+.It Ic author
+type: string
+.br
+default: Pulled from the
+.Ic gecos
+field in
+.Xr passwd 5
+.Pp
+Set the default value for the author name when generating new projects. The
+current user's name will be automatically set as the default.
+.It Ic prefix
+type: string
+.br
+default: none
+.Pp
+Set the default value for the project prefix when generating new projects. Not
+enabled by default.
+.It Ic xcode_command
+type: string
+.br
+default:
+.Ic open -a 'Xcode' .
+.Pp
+Set the command used to open the project after generation. By default we open
+the current folder with Xcode, which will search for a
+.Ic *.xcworkspace
+file to open, falling back to a
+.Ic *.pbxproj
+file if it can't find one.
+.Pp
+Set this key to
+.Ic false
+to disable the automatic-open functionality
+.It Ic build_configurations
+type: dictionary
+.br
+default: none
+.Pp
+Add additional build configurations to the project.
+By default this key isn't set. See
+.Sx BUILD CONFIGURATIONS
+for more information on the format of this key.
+.It Ic extra_config
+type: dictionary
+.br
+default: none
+.Pp
+Add additional per-configuration settings to the main application target. By
+default this key isn't set. See
+.Sx EXTRA CONFIGURATION
+for more information on the format of this key.
+.It Ic extra_test_config
+type: dictionary
+.br
+default: none
+.Pp
+Add additional per-configuration settings to the test target. By default this
+key isn't set. See
+.Sx EXTRA CONFIGURATION
+for more information on the format of this key.
+.It Ic enable_settings
+type: boolean
+.br
+default:
+.Ic true
+.Pp
+Create a settings bundle. If you also have
+.Ic use_cocoapods
+enabled, this settings bundle will automatically contain the acknowledgements
+for any installed pods.
+.It Ic schemes
+type: dictionary
+.br
+default: none
+.Pp
+Create additional custom schemes. By
+default this key isn't set. See
+.Sx CUSTOM SCHEMES
+for more information on the format of this key.
+.El
+.
+.Sh SCRIPT PHASES
+.Ic liftoff
+installs two Run Script Build Phases by default:
+.Bd -literal
+  - file: todo.sh
+    name: Warn for TODO and FIXME comments
+.Ed
+.Pp
+This script turns any
+.Ic TODO
+or
+.Ic FIXME
+comments into warnings at compilation time.
+.Bd -literal
+  - file: bundle_version.sh
+    name: Set the version number
+.Ed
+.Pp
+This script sets the build number based on the number of
+.Ic git
+commits on
+.Ic master ,
+and sets the marketing version based on the most recent
+.Ic git
+tag.
+.Pp
+You can also add an optional
+.Ic index
+key to the build phase. The value of this key (an
+.Ic integer )
+will be used to determine where to insert the build phase when adding it to the
+target. This list is zero-indexed. You can use
+.Ic -1
+to indicate that the script should be added to the end, which is the default
+behavior.
+.Bd -literal
+  - file: my_custon_script.sh
+    name: Run my custom script before anything else
+    index: 0
+.Ed
+.
+.Sh WARNINGS
+.Ic liftoff
+enables a set of warnings by default:
+.Bl -tag -width 10
+.It Ic GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED
+Warn if an aggregate or union initializer is not fully bracketed.
+.It Ic GCC_WARN_MISSING_PARENTHESES
+Warn if parentheses are omitted in certain contexts, such as when there is an
+assignment in a context where a truth value is expected, or when operators are
+nested whose precedence people often get confused about.
+.It Ic GCC_WARN_ABOUT_RETURN_TYPE
+Causes warnings to be emitted when a function with a defined return type (not
+void) contains a return statement without a return-value.  Also emits a warning
+when a function is defined without specifying a return type.
+.It Ic GCC_WARN_SIGN_COMPARE
+Warn when a comparison between signed and unsigned values could produce an
+incorrect result when the signed value is converted to unsigned.
+.It Ic GCC_WARN_CHECK_SWITCH_STATEMENTS
+Warn whenever a switch statement has an index of enumeral type and lacks a case
+for one or more of the named codes of that enumeration.
+.It Ic GCC_WARN_UNUSED_FUNCTION
+Warn whenever a static function is declared but not defined or a non-inline
+static function is unused.
+.It Ic GCC_WARN_UNUSED_LABEL
+Warn whenever a label is declared but not used.
+.It Ic GCC_WARN_UNUSED_VALUE
+Warn whenever a statement computes a result that is explicitly not used.
+.It Ic GCC_WARN_UNUSED_VARIABLE
+Warn whenever a local variable or non-constant static variable is unused aside
+from its declaration.
+.It Ic GCC_WARN_SHADOW
+Warn whenever a local variable shadows another local variable, parameter or
+global variable or whenever a built-in function is shadowed.
+.It Ic GCC_WARN_64_TO_32_BIT_CONVERSION
+Warn if a value is implicitly converted from a 64 bit type to a 32 bit type.
+.It Ic GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS
+Warn if a structure's initializer has some fields missing.
+.It Ic GCC_WARN_ABOUT_MISSING_NEWLINE
+Warn when a source file does not end with a newline.
+.It Ic GCC_WARN_UNDECLARED_SELECTOR
+Warn if a
+.Ic @selector(...)
+expression referring to an undeclared selector is found.
+.It Ic GCC_WARN_TYPECHECK_CALLS_TO_PRINTF
+Check calls to
+.Xr printf 3
+and
+.Xr scanf 3 ,
+etc., to make sure that the arguments supplied have types appropriate to the
+format string specified, and that the conversions specified in the format
+string make sense.
+.It Ic GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS
+Warn about the use of deprecated functions, variables, and types (as indicated
+by the
+.Ic deprecated
+attribute).
+.It Ic CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATION
+Warn if an Objective-C class either subclasses a deprecated class or overrides
+a method that has been marked deprecated.
+.It Ic CLANG_WARN_OBJC_IMPLICIT_RETAIN_SEL
+Warn about implicit retains of 'self' within blocks, which can create a
+retain-cycle.
+.It Ic CLANG_WARN_IMPLICIT_SIGN_CONVERSION
+Warn about implicit integer conversions that change the signedness of an
+integer value.
+.It Ic CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION
+Warn about various implicit conversions that can lose information or are
+otherwise suspicious.
+.It Ic CLANG_WARN_EMPTY_BODY
+Warn about loop bodies that are suspiciously empty.
+.It Ic CLANG_WARN_ENUM_CONVERSION
+Warn about implicit conversions between different kinds of enum values.  For
+example, this can catch issues when using the wrong enum flag as an argument to
+a function or method.
+.It Ic CLANG_WARN_INT_CONVERSION
+Warn about implicit conversions between pointers and integers. For example,
+this can catch issues when one incorrectly intermixes using
+.Ic NSNumber*
+and raw integers.
+.It Ic CLANG_WARN_CONSTANT_CONVERSION
+Warn about implicit conversions of constant values that cause the constant
+value to change, either through a loss of precision, or entirely in its
+meaning.
+.El
+.
+.Sh TEMPLATES
+.Ic liftoff
+installs a number of templates by default:
+.Bl -tag -width 10
+.It Pa travis.yml
+This template is installed to
+.Pa .travis.yml ,
+and contains a default setup for Travis integration.
+.It Pa Gemfile.rb
+This template is installed to
+.Pa Gemfile ,
+and contains a set of default gems for use with the project. Right now, it
+contains
+.Ic XCPretty
+and
+.Ic CocoaPods
+if the cocoapods dependency manager is enabled.
+.It Pa test.sh
+This template is installed to
+.Pa bin/test
+and enables the running of tests from the command line. This is used by the
+default
+.Pa travis.yml
+template to determine build status.
+.El
+.Pp
+.Ic liftoff
+expects templates in the following format:
+.Pp
+.Bd -literal
+  - travis.yml: .travis.yml
+.Ed
+.Pp
+This will install the template named
+.Pa travis.yml
+found inside the templates directory to
+.Pa .travis.yml
+inside the project directory.
+.Pp
+This file will be parsed with ERB with the project configuration, giving you
+access to any values that you can set via the
+.Nm
+.
+.Sh TEMPLATE DIRECTORY STRUCTURES
+.Ic liftoff
+creates default directory and group structures for application and unit test
+targets. These structures are specified with language specific keys inside the
+.Ic app_target_templates
+and
+.Ic test_target_templates
+configuration keys.
+.Ic liftoff
+will select the proper structure to build based on the
+.Ic project_template
+setting either in the
+.Nm
+or as provided on the command line with the
+.Ic Fl -template Ar [TEMPLATE_NAME]
+option.
+.Pp
+An example project template for Objective-C projects might look like the
+following:
+.Pp
+.Bd -literal
+app_target_templates:
+  objc:
+    - <%= project_name %>:
+      - Categories:
+      - Classes:
+        - Controllers:
+        - DataSources:
+        - Delegates:
+          - <%= prefix %>AppDelegate.h
+          - <%= prefix %>AppDelegate.m
+        - Models:
+        - ViewControllers:
+        - Views:
+      - Constants:
+      - Resources:
+        - Images.xcassets
+        - Storyboards:
+        - Nibs:
+        - Other-Sources:
+          - <%= project_name %>-Info.plist
+          - <%= project_name %>-Prefix.pch
+          - main.m
+.Ed
+.Pp
+This would override the default
+.Ic objc
+template for the main application target. This structure would also cause
+.Ic liftoff
+to generate templates for the
+.Ic AppDelegate
+class (prepending the proper prefix), as well as
+.Ic Info.plist,
+.Ic Prefix.pch,
+and
+.Ic main.m
+files. The
+.Ic Info.plist
+and
+.Ic Prefix.pch
+will be prepended with the project name.
+.
+.Pp
+See
+.Sx TEMPLATES
+for more information on
+.Ic liftoff 's
+templating ability.
+.
+.Pp
+These keys are special, in that you can add template specific keys inside your
+user or local
+.Nm
+files without overriding the defaults. This means that if I want to define a
+new
+.Ic empty
+template, I can do so with the following inside my local or user
+.Nm :
+.Pp
+.Bd -literal
+app_target_templates:
+  empty:
+    - Files:
+.Ed
+.Pp
+This would create a single
+.Pa Files
+directory inside the project root, and would not create a test target, since I
+haven't defined a template directory structure for that target. You can now
+specify this template by name by using
+.Ic Fl -template Ar empty
+on the command line, or even make it your default by setting
+.Ic project_template
+in your
+.Nm .
+.
+.Sh BUILD CONFIGURATIONS
+.Ic liftoff
+can add additional build configurations to the project. In order to do
+it, you should add the
+.Ic build_configurations
+key in your
+.Nm ,
+and add dictionaries that correspond to the build configurations you'd like to
+add.
+.Pp
+A new build configuration can either be of
+.Ic debug
+type or
+.Ic release .
+.Pp
+For example, you can create build configurations that will be used when
+uploading to the App Store:
+.Pp
+.Bd -literal
+build_configurations:
+  - name: Debug-AppStore
+    type: debug
+  - name: Release-AppStore
+    type: release
+.Ed
+.Pp
+Note that the value of
+.Ic type
+key must be either
+.Ic debug
+or
+.Ic release.
+.
+.Pp
+You can use the created build configurations to create a scheme with the
+.Pa schemes
+key. You can also customize the created configurations with the
+.Pa extra_config
+key.
+.
+.Sh EXTRA CONFIGURATION
+.Ic liftoff
+can perform additional arbitrary configuration to the main application target
+or the test target on a per-build configuration basis. In order to add
+arbitrary settings, you should add the
+.Ic extra_config
+or the
+.Ic extra_test_config
+key in your
+.Nm ,
+and add dictionaries that correspond to the build configuration you'd like to
+modify. For example, to set all warnings on your
+.Ic Debug
+build configuration, you can set the following:
+.Pp
+.Bd -literal
+extra_config:
+  Debug:
+    WARNING_CFLAGS:
+      - -Weverything
+.Ed
+.Pp
+Note that the key for the build configuration must match the name of the build
+configuration you'd like to modify exactly.
+.Pp
+If you would like to add a setting for all available build configurations, you
+can use the special
+.Ic all
+key in the configuration:
+.Pp
+.Bd -literal
+extra_config:
+  all:
+    WARNING_CFLAGS:
+      - -Weverything
+.Ed
+
+.
+.Sh CUSTOM SCHEMES
+.Ic liftoff
+can create additional custom schemes for your application. To do so, you need
+to specify a name and which build configuration will be used for each
+.Ic action
+(test, launch, profile, archive or analyze). In order to create additional
+schemes, you should add the
+.Ic schemes
+key in your
+.Nm ,
+and add dictionaries that correspond to the schemes you'd like to create.
+For example, to create a scheme that will be used when distributing your
+app to the App Store, you can set the following:
+.Pp
+.Bd -literal
+schemes:
+- name: <%= project_name %>-AppStore
+  actions:
+      test:
+          build_configuration: Debug
+      launch:
+          build_configuration: Debug
+      profile:
+          build_configuration: Release
+      archive:
+          build_configuration: Release
+      analyze:
+          build_configuration: Debug
+.Ed
+.Pp
+Note that the keys inside actions must match the predefined keys and the key
+for the build configuration must match the name of the build
+configuration you'd like to use exactly.
+.Ed
+.
+.Sh FILES
+.Pa ~/.liftoffrc
+.
+.Sh SEE ALSO
+.Xr liftoff 1
+.
+.Sh AUTHORS
+.An "Gordon Fontenot" Aq gordon@thoughtbot.com
+and
+.Lk http://thoughtbot.com thoughtbot

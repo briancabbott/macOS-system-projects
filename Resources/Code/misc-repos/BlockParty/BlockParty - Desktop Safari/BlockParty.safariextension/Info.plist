@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Krishna Kumar</string>
+	<key>Builder Version</key>
+	<string>13605.1.33.1.2</string>
+	<key>CFBundleDisplayName</key>
+	<string>BlockParty OS X</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.blackwaterpark.apps.blockpartyosx</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>100</string>
+	<key>Content</key>
+	<dict>
+		<key>Content Blocker</key>
+		<string>blockerList.json</string>
+	</dict>
+	<key>Description</key>
+	<string>Open Source Ad Blocker for OS X. Blocks ads and trackers on all websites. </string>
+	<key>DeveloperIdentifier</key>
+	<string>AE5DZKJHGN</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<false/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://github.com/krishkumar/BlockParty/</string>
+</dict>
+</plist>

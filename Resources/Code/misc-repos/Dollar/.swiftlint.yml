@@ -1,0 +1,13 @@
+disabled_rules:
+  - type_body_length
+  - file_length
+  - type_name
+  - line_length
+included:
+excluded:
+  - Sources/AutoCurry.swift
+  - Sources/AutoBind.swift
+  - scripts
+  - DollarTests/DollarTests.swift
+  - Carthage
+  - Pods

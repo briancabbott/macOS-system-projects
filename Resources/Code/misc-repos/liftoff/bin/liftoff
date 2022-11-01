@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+#
+# This is a stub of the liftoff executable for development purposes.
+# The actual executable is located at src/liftoff
+
+
+$LOAD_PATH.unshift(File.expand_path('../../lib', __FILE__))
+require 'liftoff'
+
+Liftoff::CLI.new(ARGV).run

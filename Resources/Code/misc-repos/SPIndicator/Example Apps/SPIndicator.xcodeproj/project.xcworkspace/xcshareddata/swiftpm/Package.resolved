@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SparrowKit",
+        "repositoryURL": "https://github.com/ivanvorobei/SparrowKit",
+        "state": {
+          "branch": null,
+          "revision": "f872b45a3e6aa5e2833ac8d3050a3f026d97ce0b",
+          "version": "3.5.2"
+        }
+      },
+      {
+        "package": "SPDiffable",
+        "repositoryURL": "https://github.com/ivanvorobei/SPDiffable",
+        "state": {
+          "branch": null,
+          "revision": "096ffb560906f762db4798ffa932d1c116ec8e9d",
+          "version": "4.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,36 @@
+# Run jazzy from the current directory to generate documentation
+
+module: SwiftInstagram
+module_version: 1.0.6
+author: Ander Goig
+author_url: https://github.com/AnderGoig
+github_url: https://github.com/AnderGoig/SwiftInstagram
+exclude:
+    - "**/KeychainSwiftDistrib.swift"
+
+clean: true
+skip_undocumented: true
+
+theme: fullwidth
+
+custom_categories:
+    - name: API
+      children:
+      - Instagram
+
+    - name: Authentication
+      children:
+      - InstagramScope
+
+    - name: Models
+      children:
+      - InstagramUser
+      - InstagramRelationship
+      - InstagramMedia
+      - InstagramComment
+      - InstagramTag
+      - InstagramLocation
+
+    - name: Errors
+      children:
+      - InstagramError

@@ -1,0 +1,201 @@
+---
+# The project spec version number - this is for struct to identify this spec's schema
+version: 2.2.0
+# Project-level configurations and build settings. You can add as many as you want here.
+# If you do add another configuration that's not one of debug, release, you must specify
+# its type as either 'debug' or 'release'.
+configurations:
+  # An individual project-level configuration
+  debug:
+    # Configuration overrides go here. After all of the configuration profiles have been
+    # applied, any settings here will be applied on top. This may be useful to provide
+    # defaults for code signing for example.
+    overrides:
+      IPHONEOS_DEPLOYMENT_TARGET: '13.0'
+    # Instead of overrides, you can also specify the location of an xcconfig
+    # file. This will be used to configure the project instead.
+    # source: config/debug.xcconfig
+  release:
+    overrides:
+      IPHONEOS_DEPLOYMENT_TARGET: '13.0'
+  appstore:
+    type: release
+    overrides:
+      IPHONEOS_DEPLOYMENT_TARGET: '13.0'
+# Build targets. Currently any kind of target should be supported, however only common
+# types have been tested.
+targets:
+  # An individual build target. The name you choose here will correlate to its name in
+  # the project navigator.
+  iOSTest:
+    # The directory where the source, resource and framework files for this project are located.
+    # Every file will be picked up recursively in this directory and added to the project.
+    sources: iOSTest
+    # Language-specific resources contained in lproj files have special mechanics in an Xcode
+    # project, so in order to simplify things, Struct will search in the root of the sources
+    # directory for your .lproj files. Subdirectories will not be scanned.
+    # If you wish to store your lproj files in another directory or a subdirectory, you can
+    # specify the 'i18n-resources' key. Any lproj folders will be ignored as normal
+    # source/resource files.
+    i18n-resources: iOSTest/lproj
+    # Excludes provide a means of customising which files are added to a project.
+    excludes:
+      # File excludes should be file globs, for example to exclude all markdown files from
+      # a project, you would add '**/*.md' to the list.
+      files:
+      - "**/*.md"
+    # References configure any dependencies this target has on other targets, both in this
+    # project and in external projects.
+    # There are three possible values for each reference entry:
+    # - A string beginning with 'sdkroot:' will be treated as a reference to a system library
+    #   or framework. Example values are 'sdkroot:UIKit.framework' and 'sdkroot:libz.tbd'
+    # - Any other string will be treated as a target name to search for within this project
+    # - An object will be treated as a local framework reference either via a subproject, or
+    #   a pre-built binary framework:
+    #   - location: Carthage/Checkouts/BrightFutures/BrightFutures.xcodeproj
+    #     frameworks:
+    #     - name: BrightFutures.framework
+    #       copy: true
+    #       codeSignOnCopy: false
+    #   - location: Carthage/Build/ISO8601.framework
+    #     copy: false
+    #     codeSignOnCopy: false
+    references:
+    - sdkroot:UIKit.framework
+    # The platform for this target. Supported platforms are 'ios', 'mac' and 'watch'.
+    platform: ios
+    # The type of target. This corresponds to the UTI Apple associates with each target type.
+    # ':' will be replaced with the namespace of Apple's UTI, e.g. ':application' will
+    # become 'com.apple.product-type.application'.
+    #
+    # Some common types are ':application', ':bundle.unit-test', and ':bundle.ui-testing'.
+    type: ":application"
+    # Configuration settings for this target. This will override project-level settings.
+    # This is generally useful for providing settings such as the location of the plist file,
+    # and the bundle identifier.
+    #
+    # The settings within this configuration object will be applied to every configuration
+    # for this target.
+    #
+    # If you wanted different settings applied for each configuration, you can use the
+    # following format instead:
+    # configurations:
+    #   debug:
+    #     ASSETCATALOG_COMPILER_APPICON_NAME: AppIconDebug
+    #   release:
+    #     ASSETCATALOG_COMPILER_APPICON_NAME: AppIconRelease
+    configuration:
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      INFOPLIST_FILE: iOSTest/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: uk.lyptt.iOSTest
+      IPHONEOS_DEPLOYMENT_TARGET: '13.0'
+    scripts:
+    - script: scripts/sample.sh
+      shell: /bin/bash
+      inputs:
+      - ABC
+      outputs:
+      - DEF
+  iOSTestTests:
+    sources: iOSTestTests
+    references:
+    - iOSTest
+    type: ":bundle.unit-test"
+    platform: ios
+    type: ":bundle.unit-test"
+    configuration:
+      TEST_HOST: "$(BUILT_PRODUCTS_DIR)/iOSTest.app/iOSTest"
+      INFOPLIST_FILE: iOSTestTests/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: uk.lyptt.iOSTestTests
+      IPHONEOS_DEPLOYMENT_TARGET: '13.0'
+  iOSTestUITests:
+    sources: iOSTestUITests
+    references:
+    - iOSTest
+    platform: ios
+    type: ":bundle.ui-testing"
+    configuration:
+      INFOPLIST_FILE: iOSTestUITests/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: uk.lyptt.iOSTestUITests
+      TEST_TARGET_NAME: iOSTest
+      IPHONEOS_DEPLOYMENT_TARGET: '13.0'
+# Project variants allow you to generate multiple xcode projects from one spec file.
+# Each variant will output an equivalent project file, e.g. 'dev.xcodeproj' and 'beta.xcodeproj'.
+#
+# A project variant can override or extend any property already set by the equivalent target
+# declared in the targets group. The target name specified in the variant must match the target
+# name in order for the overrides to apply.
+variants:
+  # A '$base' variant is a special variant that correlates directly to the default project generated
+  # by Struct - 'project.xcodeproj'. This variant will always output to 'project.xcodeproj'.
+  # If you omit this variant, it will be implicitly included when generating projects.
+  $base:
+    # By declaring a variant as abstract, it prevents an xcode project from being written. This can be
+    # useful in scenarios where the base variant is not useful without additional files and configuration
+    # defined by other variants. Any variant can be declared as abstract.
+    abstract: true
+  dev:
+    # Any target can be declared within a variant, and the declaration syntax is identical to the
+    # 'targets' group in behaviour, however there are no required parameters in these definitions
+    # as they act as overrides for the base target definitions.
+    iOSTest:
+      configuration:
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: APP_VARIANT_DEV
+  beta:
+    iOSTest:
+      # Any additional source files can be included from a separate source folder, these will be added
+      # in addition to the default sources directory declared on the target.
+      sources: iOSTest-Beta
+      # Any additional resources can be included from a separate folder, these will be added in addition
+      # to the default resources directory declared on the target.
+      i18n-resources: iOSTest-Beta/lproj
+      # Any excludes declared here will only apply to this variant's sources directory. The target's
+      # excludes should be declared within the target definition.
+      excludes:
+        files:
+        - "**/*.md"
+      # Additional references can be declared here, references are merged with the base target's
+      # references to produce the final set.
+      references:
+      - sdkroot:CoreData.framework
+      # Configuration options are merged with the base target's configuration options. This will
+      # replace any previous definitions for matching options.
+      configuration:
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: APP_VARIANT_BETA
+schemes:
+  iOSTest:
+    analyze:
+     build_configuration: debug
+    archive:
+      name: iOSTest.xcarchive
+      reveal: true
+      build_configuration: appstore
+    build:
+      parallel: true
+      build_implicit: true
+      targets:
+        iOSTest:
+          archiving_enabled: false
+          running_enabled: false
+          profiling_enabled: false
+          testing_enabled: false
+          analyzing_enabled: false
+    test:
+      build_configuration: debug
+      targets:
+      - iOSTestTests
+      inherit_launch_arguments: true
+      code_coverage_enabled: true
+      environment:
+        OS_ACTIVITY_MODE: disable
+    launch:
+      build_configuration: debug
+      simulate_location: true
+      target: iOSTest
+      arguments: -AppleLanguages (en-GB)
+      environment:
+        OS_ACTIVITY_MODE: disable
+    profile:
+      target: iOSTest
+      inherit_environment: true
+      build_configuration: debug

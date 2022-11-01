@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+gemspec :path => '..'
+gem 'xcodeproj', :git => 'https://github.com/CocoaPods/Xcodeproj'

@@ -1,0 +1,8 @@
+
+/* A string already localized in all languages. */
+"Test key" = "Test value (de)";
+
+/* A string where value only available in English. */
+"menu.cars" = "";
+
+"TEST.KEY.UNESCAPED_DOUBLE_QUOTES" = "";

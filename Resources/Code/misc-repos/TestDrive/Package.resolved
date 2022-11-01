@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Files",
+        "repositoryURL": "https://github.com/JohnSundell/Files.git",
+        "state": {
+          "branch": null,
+          "revision": "435965437ff7f149b9682aeb6553b5aa14b00402",
+          "version": "2.2.0"
+        }
+      },
+      {
+        "package": "Releases",
+        "repositoryURL": "https://github.com/JohnSundell/Releases.git",
+        "state": {
+          "branch": null,
+          "revision": "0a3c1ba8ce8bb27c02c225979bfd02888b38f0cc",
+          "version": "2.0.1"
+        }
+      },
+      {
+        "package": "Require",
+        "repositoryURL": "https://github.com/JohnSundell/Require.git",
+        "state": {
+          "branch": null,
+          "revision": "7cfbd0d8a2dede0e01f6f0d8ab2c7acef1df112e",
+          "version": "2.0.1"
+        }
+      },
+      {
+        "package": "ShellOut",
+        "repositoryURL": "https://github.com/JohnSundell/ShellOut.git",
+        "state": {
+          "branch": null,
+          "revision": "f1c253a34a40df4bfd268b09fdb101b059f6d52d",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "package": "Xgen",
+        "repositoryURL": "https://github.com/JohnSundell/Xgen.git",
+        "state": {
+          "branch": null,
+          "revision": "bc7ec3bf76e63c317d1523c865d65023f450eb0b",
+          "version": "2.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

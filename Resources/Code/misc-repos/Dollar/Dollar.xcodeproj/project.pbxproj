@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		_LinkFileRef_Dollar_via_DollarTests /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Dollar" /* Dollar.framework */; };
+		__src_cc_ref_Sources/AutoBind.swift /* AutoBind.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/AutoBind.swift /* AutoBind.swift */; };
+		__src_cc_ref_Sources/AutoCurry.swift /* AutoCurry.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/AutoCurry.swift /* AutoCurry.swift */; };
+		__src_cc_ref_Sources/Dollar.swift /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Dollar.swift /* Dollar.swift */; };
+		__src_cc_ref_Tests/DollarTests/CarExample.swift /* CarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/DollarTests/CarExample.swift /* CarExample.swift */; };
+		__src_cc_ref_Tests/DollarTests/DollarTests.swift /* DollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/DollarTests/DollarTests.swift /* DollarTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		925436FC1DBBC02000926BCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Dollar";
+			remoteInfo = Dollar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		__PBXFileRef_Dollar.xcodeproj/Configs/Project.xcconfig /* Dollar.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dollar.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/AutoBind.swift /* AutoBind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoBind.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/AutoCurry.swift /* AutoCurry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCurry.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/Dollar.swift /* Dollar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/DollarTests/CarExample.swift /* CarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarExample.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/DollarTests/DollarTests.swift /* DollarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarTests.swift; sourceTree = "<group>"; };
+		"_____Product_Dollar" /* Dollar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dollar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_DollarTests" /* DollarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = DollarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_Dollar" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_DollarTests" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Dollar_via_DollarTests /* Dollar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_DollarTests" /* DollarTests.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_Dollar" /* Dollar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Dollar.xcodeproj/Configs/Project.xcconfig /* Dollar.xcodeproj/Configs/Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_Dollar" /* Dollar */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_Dollar" /* Dollar */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/AutoBind.swift /* AutoBind.swift */,
+				__PBXFileRef_Sources/AutoCurry.swift /* AutoCurry.swift */,
+				__PBXFileRef_Sources/Dollar.swift /* Dollar.swift */,
+			);
+			name = Dollar;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_DollarTests" /* DollarTests */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/DollarTests/CarExample.swift /* CarExample.swift */,
+				__PBXFileRef_Tests/DollarTests/DollarTests.swift /* DollarTests.swift */,
+			);
+			name = DollarTests;
+			path = Tests/DollarTests;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_DollarTests" /* DollarTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_Dollar" /* Dollar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Dollar" /* Build configuration list for PBXNativeTarget "Dollar" */;
+			buildPhases = (
+				CompilePhase_Dollar /* Sources */,
+				"___LinkPhase_Dollar" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dollar;
+			productName = Dollar;
+			productReference = "_____Product_Dollar" /* Dollar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_DollarTests" /* DollarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_DollarTests" /* Build configuration list for PBXNativeTarget "DollarTests" */;
+			buildPhases = (
+				CompilePhase_DollarTests /* Sources */,
+				"___LinkPhase_DollarTests" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Dollar /* PBXTargetDependency */,
+			);
+			name = DollarTests;
+			productName = DollarTests;
+			productReference = "_____Product_DollarTests" /* DollarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"______Target_Dollar" = {
+						LastSwiftMigration = 1030;
+					};
+					"______Target_DollarTests" = {
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "Dollar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_Dollar" /* Dollar */,
+				"______Target_DollarTests" /* DollarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_Dollar /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Sources/AutoBind.swift /* AutoBind.swift in Sources */,
+				__src_cc_ref_Sources/AutoCurry.swift /* AutoCurry.swift in Sources */,
+				__src_cc_ref_Sources/Dollar.swift /* Dollar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_DollarTests /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/DollarTests/CarExample.swift /* CarExample.swift in Sources */,
+				__src_cc_ref_Tests/DollarTests/DollarTests.swift /* DollarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		__Dependency_Dollar /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Dollar" /* Dollar */;
+			targetProxy = 925436FC1DBBC02000926BCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_Dollar /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Dollar.xcodeproj/Dollar_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Dollar;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_DollarTests /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Dollar.xcodeproj/DollarTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		"___DebugConf_Dollar" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Dollar.xcodeproj/Dollar_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Dollar;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_DollarTests" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = Dollar.xcodeproj/DollarTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Dollar.xcodeproj/Configs/Project.xcconfig /* Dollar.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Dollar.xcodeproj/Configs/Project.xcconfig /* Dollar.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "Dollar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Dollar" /* Build configuration list for PBXNativeTarget "Dollar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Dollar" /* Debug */,
+				_ReleaseConf_Dollar /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_DollarTests" /* Build configuration list for PBXNativeTarget "DollarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_DollarTests" /* Debug */,
+				_ReleaseConf_DollarTests /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}

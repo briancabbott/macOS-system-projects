@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Source"
+      name = "Source">
+      <Group
+         location = "group:Extensions"
+         name = "Extensions">
+         <FileRef
+            location = "group:CALayer+FAAnimation.swift">
+         </FileRef>
+         <FileRef
+            location = "group:NSValue+FAAnimation.swift">
+         </FileRef>
+         <FileRef
+            location = "group:UIView+FAAnimation.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:FAAnimation"
+         name = "FAAnimation">
+         <FileRef
+            location = "group:FAAnimationGroup.swift">
+         </FileRef>
+         <FileRef
+            location = "group:FABasicAnimation.swift">
+         </FileRef>
+         <FileRef
+            location = "group:FlightAnimator.swift">
+         </FileRef>
+         <FileRef
+            location = "group:FAPropertyAnimator.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:FAInterpolation"
+         name = "FAInterpolation">
+         <FileRef
+            location = "group:FAEasing.swift">
+         </FileRef>
+         <FileRef
+            location = "group:FAInterpolator.swift">
+         </FileRef>
+         <FileRef
+            location = "group:FASpring.swift">
+         </FileRef>
+         <FileRef
+            location = "group:FAVector.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:FlightAnimator+API.swift">
+      </FileRef>
+      <FileRef
+         location = "group:FlightAnimator+Callbacks.swift">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:FlightAnimator/FlightAnimator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FlightAnimator-Demo/FlightAnimator-Demo.xcodeproj">
+   </FileRef>
+</Workspace>

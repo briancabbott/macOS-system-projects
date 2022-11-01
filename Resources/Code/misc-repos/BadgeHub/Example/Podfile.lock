@@ -1,0 +1,16 @@
+PODS:
+  - BadgeHub (0.1.1)
+
+DEPENDENCIES:
+  - BadgeHub (from `../`)
+
+EXTERNAL SOURCES:
+  BadgeHub:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BadgeHub: 8632dc9ab9cfb1bee903ebd40f9de77d29323dc7
+
+PODFILE CHECKSUM: c0e9ea82a511c7b3c636576ece9097ef9cc2e1ab
+
+COCOAPODS: 1.9.3

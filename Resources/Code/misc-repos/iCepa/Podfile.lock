@@ -1,0 +1,16 @@
+PODS:
+  - IPtProxy (1.2.0)
+
+DEPENDENCIES:
+  - IPtProxy (~> 1.2)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - IPtProxy
+
+SPEC CHECKSUMS:
+  IPtProxy: ab3cbf127f2e34e9c54ad5c5e818cf8cf93e0a7d
+
+PODFILE CHECKSUM: 56a6fcd03359375389f350e210c9a93b62bb3fcc
+
+COCOAPODS: 1.11.2

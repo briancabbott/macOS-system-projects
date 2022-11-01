@@ -1,0 +1,190 @@
+.Dd March 3, 2014
+.Dt LIFTOFF 1
+.Os
+.Sh NAME
+.Nm liftoff
+.Nd create and configure Xcode projects
+.
+.Sh SYNOPSIS
+.Nm
+.Op Fl -version
+.Op Fl -help
+.Op Fl -[no-]strict-prompts
+.Op Fl -dependency-managers Ar NAMES
+.Op Fl -[no-]cocoapods
+.Op Fl -[no-]git
+.Op Fl -no-open
+.Op Fl -[no-]settings
+.Op Fl -template Ar TEMPLATE_NAME
+.Op Fl -indentation Ar N
+.Op Fl -name Ar PROJECT_NAME
+.Op Fl -company Ar COMPANY_NAME
+.Op Fl -author Ar AUTHOR_NAME
+.Op Fl -prefix Ar PREFIX
+.Op Fl -identifier Ar IDENTIFIER
+.Op Fl -test-target-name Ar TEST_TARGET_NAME
+.Op Ar PATH
+.
+.Sh DESCRIPTION
+.Nm
+is designed to help iOS developers quickly get projects up and running without
+spending valuable time performing tedious configurations.
+.Pp
+Run the
+.Nm
+command inside a directory.
+.Pp
+It supports the following options:
+.Bl -tag -width "-i, --identifier IDENTIFIER"
+.It Fl v , Fl -version
+display the version number and exit
+.It Fl h , Fl -help
+display a help message and exit
+.It Fl -[no-]strict-prompts
+enable or disable strict prompts. If this is enabled,
+.Nm
+will only prompt for values that don't have a default set.
+.It Fl -dependency-managers Ar NAMES
+specify the dependency managers to use for the project
+.It Fl -[no-]cocoapods
+enable or disable CocoaPods support
+.It Fl -[no-]git
+enable or disable
+.Xr git 1
+configuration
+.It Fl -no-open
+Don't open Xcode after project generation
+.It Fl -[no-]settings
+enable or disable Settings.bundle
+.It Fl -template Ar TEMPLATE_NAME
+Use the specified template structure
+.It Fl t , Fl -indentation Ar N
+set the indentation width in spaces
+.It Fl n , Fl -name Ar PROJECT_NAME
+set the project name
+.It Fl c , Fl -company Ar COMPANY_NAME
+set the company name
+.It Fl a , Fl -author Ar AUTHOR_NAME
+set the author name. If you don't provide a default here or in the
+.Xr liftoffrc 5 ,
+.Nm
+will generate a default value by looking at the
+.Ic gecos
+field from
+.Xr passwd 5 .
+.It Fl p , Fl -prefix Ar PREFIX
+set the project's prefix
+.It Fl i , Fl -identifier Ar IDENTIFIER
+set the company identifier (com.mycompany). If you don't provide a default here
+or in the
+.Xr liftoffrc 5 ,
+.Nm
+will generate a default from a normalized version of the company name.
+.It Fl -test-target-name Ar TEST_TARGET_NAME
+set the name for the test target
+.El
+.Pp
+If an Xcode project is found inside the current directory,
+.Nm
+will configure the existing project.
+.Pp
+If no existing project is found,
+.Nm
+will generate a new project structure, create a new Xcode project, and perform
+the same configurations.
+.Pp
+If you pass a custom path on the command line,
+.Nm
+will use that path as the root folder for the project generation. Otherwise, it
+will use the project's name by default.
+.Pp
+The following configurations will be performed:
+.Pp
+.Bl -dash -compact -width 2 -offset indent
+.It
+Set the indentation level on the project (in spaces, 4 by default)
+.It
+Enable additional warnings at the project level
+.It
+Treat warnings as errors for release schemes
+.It
+Add a build phase shell script to turn
+.Ic TODO
+and
+.Ic FIXME
+comments into warnings
+.It
+Add a build phase shell script to automatically set the app's version
+information based on git
+.It
+Turn on static analysis for the project
+.It
+Perform arbitrary configuration as specified by the user's
+.Xr liftoffrc 5
+.It
+Add default
+.Pa .gitignore
+and
+.Pa .gitattributes
+files
+.It
+Initialize a new
+.Ic git
+repository and create an initial commit (if needed)
+.El
+.Pp
+.Sh CONFIGURATION
+You can use a
+.Pa .liftoffrc
+file to speed up and customize your configuration by pre-defining your
+preferred configurations. This is a YAML file that defines a set of keys and
+values for configuring
+.Nm .
+.Pp
+See
+.Xr liftoffrc 5
+for more detailed information on configuration.
+.
+.Sh Templates
+You can add custom templates or override the default templates by adding them
+to
+.Pa ~/.liftoff/templates/
+or
+.Pa ./.liftoff/templates/ .
+.Pp
+.Nm
+will use the same fallback order for the templates that it does for the
+.Pa .liftoffrc :
+.Bl -enum -offset indent -compact -width 10
+.It
+Local directory:
+.Pa ./.liftoff/templates/
+.It
+User directory:
+.Pa ~/.liftoff/templates/
+.It
+Default templates:
+.Pa <liftoff-installation-location>/templates/
+.El
+.Pp
+These templates and their filenames will be rendered with
+.Ic ERB .
+You can use any value available in the
+.Ic liftoffrc
+configuration inside the template.
+.
+.Sh FILES
+.Pa ~/.liftoffrc
+.
+.Sh SEE ALSO
+.Xr liftoffrc 5
+.
+.Sh AUTHORS
+.Nm
+is maintained by
+.An "Gordon Fontenot" Aq gordon@thoughtbot.com
+and
+.Lk http://thoughtbot.com thoughtbot
+.Pp
+Originally created and conceptualized by
+.An "Mark Adams" Aq mark@thoughtbot.com

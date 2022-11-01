@@ -1,0 +1,30 @@
+{
+    "tags": [
+        "",
+        "file_references",
+        "targets",
+        "headers",
+        "resources",
+        "run_scripts",
+        "configurations",
+        "settings",
+        "sources",
+        "source_trees",
+        "linked_dependencies"
+    ],
+    "targets": [
+        "",
+        "Project",
+        "NewFramework"
+    ],
+    "formats": [
+        "",
+        "console",
+        "json",
+        "markdown"
+    ],
+    "verbose": [
+        "",
+        "-v"
+    ]
+}

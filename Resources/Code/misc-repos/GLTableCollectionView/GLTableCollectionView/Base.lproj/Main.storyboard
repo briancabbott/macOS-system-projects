@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ClH-cz-IEW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table Collection View Controller-->
+        <scene sceneID="MYD-pX-siV">
+            <objects>
+                <tableViewController storyboardIdentifier="tableCollectionView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lzn-74-EiO" customClass="GLTableCollectionViewController" customModule="GLTableCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="1" id="l3B-sn-hQc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="9zB-mk-AEp"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="lzn-74-EiO" id="560-Iz-sbo"/>
+                            <outlet property="delegate" destination="lzn-74-EiO" id="YDl-Je-pUC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WzN-fZ-JZa"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uC6-kj-tec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="246"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nlg-y4-M8M">
+            <objects>
+                <navigationController storyboardIdentifier="navigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ClH-cz-IEW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fmK-uj-jX1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="d4y-hh-Xxj"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lzn-74-EiO" kind="relationship" relationship="rootViewController" id="7rc-7g-dv9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVy-2h-ZUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-550" y="245"/>
+        </scene>
+    </scenes>
+</document>

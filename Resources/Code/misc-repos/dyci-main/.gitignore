@@ -1,0 +1,6 @@
+.DS_Store
+*.xcuserdatad
+*.idea
+Build
+DerivedData
+Dynamic Code Injection/output

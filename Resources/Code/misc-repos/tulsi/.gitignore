@@ -1,0 +1,9 @@
+# AppCode files.
+*/.idea/
+
+# Build artifacts
+src/build/
+/bazel-*
+
+# CI collected testlogs
+/testlogs
