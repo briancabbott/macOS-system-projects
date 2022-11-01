@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/blojsom undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/blojsom",
+    "repo": "https://github.com/apple-oss-distributions/blojsom",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/blojsom",
+    "startTime": "2022-09-03T18:35:57.068Z",
+    "endTime": "2022-09-03T18:35:58.678Z",
+    "childProcessPid": 51693,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--blojsom--51693",
+    "executionErrors": []
+}

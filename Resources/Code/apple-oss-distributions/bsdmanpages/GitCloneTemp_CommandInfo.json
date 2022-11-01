@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/bsdmanpages undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bsdmanpages",
+    "repo": "https://github.com/apple-oss-distributions/bsdmanpages",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bsdmanpages",
+    "startTime": "2022-09-03T18:36:03.619Z",
+    "endTime": "2022-09-03T18:36:04.540Z",
+    "childProcessPid": 51730,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--bsdmanpages--51730",
+    "executionErrors": []
+}

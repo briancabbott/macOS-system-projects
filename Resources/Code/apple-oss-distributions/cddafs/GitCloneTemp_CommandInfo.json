@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/cddafs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cddafs",
+    "repo": "https://github.com/apple-oss-distributions/cddafs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cddafs",
+    "startTime": "2022-09-03T18:36:09.808Z",
+    "endTime": "2022-09-03T18:36:10.891Z",
+    "childProcessPid": 51764,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--cddafs--51764",
+    "executionErrors": []
+}

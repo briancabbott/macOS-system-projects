@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/cctools undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cctools",
+    "repo": "https://github.com/apple-oss-distributions/cctools",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cctools",
+    "startTime": "2022-09-03T18:36:08.401Z",
+    "endTime": "2022-09-03T18:36:09.808Z",
+    "childProcessPid": 51756,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--cctools--51756",
+    "executionErrors": []
+}

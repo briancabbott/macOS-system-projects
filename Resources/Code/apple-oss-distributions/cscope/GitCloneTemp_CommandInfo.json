@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/cscope undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cscope",
+    "repo": "https://github.com/apple-oss-distributions/cscope",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cscope",
+    "startTime": "2022-09-03T18:36:43.061Z",
+    "endTime": "2022-09-03T18:36:44.058Z",
+    "childProcessPid": 51873,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--cscope--51873",
+    "executionErrors": []
+}

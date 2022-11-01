@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/crontabs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/crontabs",
+    "repo": "https://github.com/apple-oss-distributions/crontabs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/crontabs",
+    "startTime": "2022-09-03T18:36:42.271Z",
+    "endTime": "2022-09-03T18:36:43.061Z",
+    "childProcessPid": 51866,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--crontabs--51866",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/cvs_wrapped undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cvs_wrapped",
+    "repo": "https://github.com/apple-oss-distributions/cvs_wrapped",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cvs_wrapped",
+    "startTime": "2022-09-03T18:36:56.868Z",
+    "endTime": "2022-09-03T18:36:58.016Z",
+    "childProcessPid": 51948,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--cvs_wrapped--51948",
+    "executionErrors": []
+}

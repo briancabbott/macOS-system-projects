@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>OpenSourceImportDate</key>
+		<string>2020-04-29</string>
+		<key>OpenSourceLicense</key>
+		<string>ASL2</string>
+		<key>OpenSourceLicenseFile</key>
+		<string>LICENSE</string>
+		<key>OpenSourceMD5</key>
+		<string></string>
+		<key>OpenSourceModifications</key>
+		<array>
+		</array>
+		<key>OpenSourceProject</key>
+		<string>CUPS</string>
+		<key>OpenSourceURL</key>
+		<string>https://github.com/apple/cups/releases</string>
+		<key>OpenSourceVersion</key>
+		<string>2.3.3</string>
+		<key>OpenSourceRevision</key>
+		<string>82e3ee0e3230287b76a76fb8f16b92ca6e50b444</string>
+		<key>OpenSourceWebsiteURL</key>
+		<string>https://www.cups.org/</string>
+	</dict>
+</array>
+</plist>

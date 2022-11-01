@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/cxxfilt undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cxxfilt",
+    "repo": "https://github.com/apple-oss-distributions/cxxfilt",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/cxxfilt",
+    "startTime": "2022-09-03T18:36:58.017Z",
+    "endTime": "2022-09-03T18:37:00.921Z",
+    "childProcessPid": 51971,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--cxxfilt--51971",
+    "executionErrors": []
+}

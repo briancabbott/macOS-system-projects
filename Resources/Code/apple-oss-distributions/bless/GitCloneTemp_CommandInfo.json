@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/bless undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bless",
+    "repo": "https://github.com/apple-oss-distributions/bless",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bless",
+    "startTime": "2022-09-03T18:35:56.042Z",
+    "endTime": "2022-09-03T18:35:57.067Z",
+    "childProcessPid": 51688,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--bless--51688",
+    "executionErrors": []
+}

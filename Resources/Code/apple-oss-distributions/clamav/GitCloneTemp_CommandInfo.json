@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/clamav undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/clamav",
+    "repo": "https://github.com/apple-oss-distributions/clamav",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/clamav",
+    "startTime": "2022-09-03T18:36:10.892Z",
+    "endTime": "2022-09-03T18:36:29.504Z",
+    "childProcessPid": 51771,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--clamav--51771",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/bc undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bc",
+    "repo": "https://github.com/apple-oss-distributions/bc",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bc",
+    "startTime": "2022-09-03T18:35:47.390Z",
+    "endTime": "2022-09-03T18:35:48.398Z",
+    "childProcessPid": 51650,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--bc--51650",
+    "executionErrors": []
+}

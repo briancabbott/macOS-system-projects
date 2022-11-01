@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/bison1 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bison1",
+    "repo": "https://github.com/apple-oss-distributions/bison1",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/bison1",
+    "startTime": "2022-09-03T18:35:54.039Z",
+    "endTime": "2022-09-03T18:35:56.042Z",
+    "childProcessPid": 51677,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--bison1--51677",
+    "executionErrors": []
+}
