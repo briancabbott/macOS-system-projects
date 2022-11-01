@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/lukemftpd undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/lukemftpd",
+    "repo": "https://github.com/apple-oss-distributions/lukemftpd",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/lukemftpd",
+    "startTime": "2022-09-03T18:41:44.018Z",
+    "endTime": "2022-09-03T18:41:44.702Z",
+    "childProcessPid": 53397,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--lukemftpd--53397",
+    "executionErrors": []
+}

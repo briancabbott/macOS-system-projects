@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libsecurity_filedb undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_filedb",
+    "repo": "https://github.com/apple-oss-distributions/libsecurity_filedb",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_filedb",
+    "startTime": "2022-09-03T18:40:21.225Z",
+    "endTime": "2022-09-03T18:40:22.315Z",
+    "childProcessPid": 53114,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libsecurity_filedb--53114",
+    "executionErrors": []
+}

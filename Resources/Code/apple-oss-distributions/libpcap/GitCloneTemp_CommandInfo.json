@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libpcap undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libpcap",
+    "repo": "https://github.com/apple-oss-distributions/libpcap",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libpcap",
+    "startTime": "2022-09-03T18:39:59.014Z",
+    "endTime": "2022-09-03T18:40:00.543Z",
+    "childProcessPid": 52978,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libpcap--52978",
+    "executionErrors": []
+}

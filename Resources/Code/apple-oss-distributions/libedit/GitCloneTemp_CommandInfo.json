@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libedit undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libedit",
+    "repo": "https://github.com/apple-oss-distributions/libedit",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libedit",
+    "startTime": "2022-09-03T18:39:35.670Z",
+    "endTime": "2022-09-03T18:39:39.449Z",
+    "childProcessPid": 52903,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libedit--52903",
+    "executionErrors": []
+}

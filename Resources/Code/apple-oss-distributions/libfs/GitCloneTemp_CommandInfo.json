@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libfs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libfs",
+    "repo": "https://github.com/apple-oss-distributions/libfs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libfs",
+    "startTime": "2022-09-03T18:39:41.834Z",
+    "endTime": "2022-09-03T18:39:42.638Z",
+    "childProcessPid": 52927,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libfs--52927",
+    "executionErrors": []
+}

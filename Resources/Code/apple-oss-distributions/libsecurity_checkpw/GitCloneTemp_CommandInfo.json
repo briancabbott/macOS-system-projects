@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libsecurity_checkpw undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_checkpw",
+    "repo": "https://github.com/apple-oss-distributions/libsecurity_checkpw",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_checkpw",
+    "startTime": "2022-09-03T18:40:15.766Z",
+    "endTime": "2022-09-03T18:40:16.726Z",
+    "childProcessPid": 53083,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libsecurity_checkpw--53083",
+    "executionErrors": []
+}

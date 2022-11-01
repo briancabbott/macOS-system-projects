@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libiconv undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libiconv",
+    "repo": "https://github.com/apple-oss-distributions/libiconv",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libiconv",
+    "startTime": "2022-09-03T18:39:51.843Z",
+    "endTime": "2022-09-03T18:39:54.014Z",
+    "childProcessPid": 52955,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libiconv--52955",
+    "executionErrors": []
+}

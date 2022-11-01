@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libutil undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libutil",
+    "repo": "https://github.com/apple-oss-distributions/libutil",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libutil",
+    "startTime": "2022-09-03T18:41:21.712Z",
+    "endTime": "2022-09-03T18:41:22.546Z",
+    "childProcessPid": 53322,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libutil--53322",
+    "executionErrors": []
+}

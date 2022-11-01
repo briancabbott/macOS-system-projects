@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libsecurity_cdsa_plugin undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_cdsa_plugin",
+    "repo": "https://github.com/apple-oss-distributions/libsecurity_cdsa_plugin",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_cdsa_plugin",
+    "startTime": "2022-09-03T18:40:12.885Z",
+    "endTime": "2022-09-03T18:40:13.820Z",
+    "childProcessPid": 53062,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libsecurity_cdsa_plugin--53062",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libsecurity_apple_x509_cl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_apple_x509_cl",
+    "repo": "https://github.com/apple-oss-distributions/libsecurity_apple_x509_cl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_apple_x509_cl",
+    "startTime": "2022-09-03T18:40:07.888Z",
+    "endTime": "2022-09-03T18:40:08.795Z",
+    "childProcessPid": 53031,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libsecurity_apple_x509_cl--53031",
+    "executionErrors": []
+}

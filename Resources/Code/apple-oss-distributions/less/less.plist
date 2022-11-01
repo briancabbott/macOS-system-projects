@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OpenSourceImportDate</key>
+	<string>2021-05-18</string>
+	<key>OpenSourceLicense</key>
+	<string>other</string>
+	<key>OpenSourceLicenseFile</key>
+	<string>less.txt</string>
+	<key>OpenSourceModifications</key>
+	<array>
+		<string>Patched to remain compatible with more(1).</string>
+		<string>call get_term() after determining that less_is_more</string>
+	</array>
+	<key>OpenSourceProject</key>
+	<string>less</string>
+	<key>OpenSourceSHA512</key>
+	<string>b1189396c798d7cb8655175f31b1af6163dcf8e8d7a72531161cc8396e72e0cf5858ce7b39173be603f9f16eda498f2805cf42c2b92ec6970fd9d2b603fb7b92</string>
+	<key>OpenSourceURL</key>
+	<string>http://www.greenwoodsoftware.com/less/less-581.2.tar.gz</string>
+	<key>OpenSourceVersion</key>
+	<string>581.2</string>
+	<key>OpenSourceWebsiteURL</key>
+	<string>http://www.greenwoodsoftware.com/less/</string>
+</dict>
+</plist>

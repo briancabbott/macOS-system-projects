@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libsecurity_sd_cspdl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_sd_cspdl",
+    "repo": "https://github.com/apple-oss-distributions/libsecurity_sd_cspdl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_sd_cspdl",
+    "startTime": "2022-09-03T18:40:33.554Z",
+    "endTime": "2022-09-03T18:40:35.174Z",
+    "childProcessPid": 53170,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libsecurity_sd_cspdl--53170",
+    "executionErrors": []
+}

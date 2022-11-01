@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libstdcxx_40 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libstdcxx_40",
+    "repo": "https://github.com/apple-oss-distributions/libstdcxx_40",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libstdcxx_40",
+    "startTime": "2022-09-03T18:40:53.884Z",
+    "endTime": "2022-09-03T18:41:08.370Z",
+    "childProcessPid": 53226,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libstdcxx_40--53226",
+    "executionErrors": []
+}

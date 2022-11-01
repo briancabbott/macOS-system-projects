@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libgcc undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libgcc",
+    "repo": "https://github.com/apple-oss-distributions/libgcc",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libgcc",
+    "startTime": "2022-09-03T18:39:42.639Z",
+    "endTime": "2022-09-03T18:39:45.444Z",
+    "childProcessPid": 52932,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libgcc--52932",
+    "executionErrors": []
+}

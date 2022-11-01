@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libcppabi undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libcppabi",
+    "repo": "https://github.com/apple-oss-distributions/libcppabi",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libcppabi",
+    "startTime": "2022-09-03T18:39:33.504Z",
+    "endTime": "2022-09-03T18:39:34.415Z",
+    "childProcessPid": 52889,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libcppabi--52889",
+    "executionErrors": []
+}

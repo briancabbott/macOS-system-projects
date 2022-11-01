@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libsecurity_dotmacdl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_dotmacdl",
+    "repo": "https://github.com/apple-oss-distributions/libsecurity_dotmacdl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_dotmacdl",
+    "startTime": "2022-09-03T18:40:20.155Z",
+    "endTime": "2022-09-03T18:40:21.224Z",
+    "childProcessPid": 53109,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libsecurity_dotmacdl--53109",
+    "executionErrors": []
+}

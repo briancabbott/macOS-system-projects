@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libresolv undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libresolv",
+    "repo": "https://github.com/apple-oss-distributions/libresolv",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libresolv",
+    "startTime": "2022-09-03T18:40:03.137Z",
+    "endTime": "2022-09-03T18:40:04.094Z",
+    "childProcessPid": 53000,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libresolv--53000",
+    "executionErrors": []
+}

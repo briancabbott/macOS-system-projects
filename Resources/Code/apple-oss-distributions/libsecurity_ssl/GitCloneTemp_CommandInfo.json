@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/libsecurity_ssl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_ssl",
+    "repo": "https://github.com/apple-oss-distributions/libsecurity_ssl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/libsecurity_ssl",
+    "startTime": "2022-09-03T18:40:37.009Z",
+    "endTime": "2022-09-03T18:40:38.979Z",
+    "childProcessPid": 53186,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--libsecurity_ssl--53186",
+    "executionErrors": []
+}

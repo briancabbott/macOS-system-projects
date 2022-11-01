@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/llvmCore undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/llvmCore",
+    "repo": "https://github.com/apple-oss-distributions/llvmCore",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/llvmCore",
+    "startTime": "2022-09-03T18:41:33.056Z",
+    "endTime": "2022-09-03T18:41:35.917Z",
+    "childProcessPid": 53364,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--llvmCore--53364",
+    "executionErrors": []
+}
