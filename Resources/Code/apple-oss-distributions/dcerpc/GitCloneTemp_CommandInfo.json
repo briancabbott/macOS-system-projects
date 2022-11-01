@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/dcerpc undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/dcerpc",
+    "repo": "https://github.com/apple-oss-distributions/dcerpc",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/dcerpc",
+    "startTime": "2022-09-03T18:37:00.921Z",
+    "endTime": "2022-09-03T18:37:02.316Z",
+    "childProcessPid": 51981,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--dcerpc--51981",
+    "executionErrors": []
+}

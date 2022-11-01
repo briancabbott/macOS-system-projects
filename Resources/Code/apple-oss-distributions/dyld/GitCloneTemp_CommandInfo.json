@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/dyld undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/dyld",
+    "repo": "https://github.com/apple-oss-distributions/dyld",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/dyld",
+    "startTime": "2022-09-03T18:37:15.462Z",
+    "endTime": "2022-09-03T18:37:17.120Z",
+    "childProcessPid": 52093,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--dyld--52093",
+    "executionErrors": []
+}

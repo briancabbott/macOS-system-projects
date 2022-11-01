@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/diffstat undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/diffstat",
+    "repo": "https://github.com/apple-oss-distributions/diffstat",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/diffstat",
+    "startTime": "2022-09-03T18:37:03.301Z",
+    "endTime": "2022-09-03T18:37:04.190Z",
+    "childProcessPid": 51993,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--diffstat--51993",
+    "executionErrors": []
+}

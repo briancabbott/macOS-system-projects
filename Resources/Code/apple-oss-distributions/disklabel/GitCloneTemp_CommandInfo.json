@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/disklabel undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/disklabel",
+    "repo": "https://github.com/apple-oss-distributions/disklabel",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/disklabel",
+    "startTime": "2022-09-03T18:37:05.324Z",
+    "endTime": "2022-09-03T18:37:05.992Z",
+    "childProcessPid": 52007,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--disklabel--52007",
+    "executionErrors": []
+}

@@ -1,0 +1,6 @@
+[submodule "libiconv"]
+	path = libiconv
+	url = https://github.com/apple-oss-distributions/libiconv
+[submodule "WebKit"]
+	path = WebKit
+	url = https://github.com/apple-oss-distributions/WebKit

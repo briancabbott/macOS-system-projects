@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/emacs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/emacs",
+    "repo": "https://github.com/apple-oss-distributions/emacs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/emacs",
+    "startTime": "2022-09-03T18:37:18.987Z",
+    "endTime": "2022-09-03T18:37:23.991Z",
+    "childProcessPid": 52128,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--emacs--52128",
+    "executionErrors": []
+}

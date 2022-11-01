@@ -1,0 +1,50 @@
+{
+	"major_release": "OS X Server 3",
+	"release": "OS X Server 3.0.2",
+	"projects": [
+		{
+			"project": "ChatServer",
+			"tag": "ChatServer-409"
+		},
+		{
+			"project": "HTTPServer",
+			"tag": "HTTPServer-11"
+		},
+		{
+			"project": "PostgreSQL",
+			"tag": "PostgreSQL-140"
+		},
+		{
+			"project": "SpamAssassin",
+			"tag": "SpamAssassin-169"
+		},
+		{
+			"project": "amavisd",
+			"tag": "amavisd-140"
+		},
+		{
+			"project": "apache_mod_bonjour",
+			"tag": "apache_mod_bonjour-23"
+		},
+		{
+			"project": "apache_mod_bw",
+			"tag": "apache_mod_bw-205"
+		},
+		{
+			"project": "apache_mod_encoding2",
+			"tag": "apache_mod_encoding2-208"
+		},
+		{
+			"project": "clamav",
+			"tag": "clamav-158"
+		},
+		{
+			"project": "dovecot",
+			"tag": "dovecot-293"
+		},
+		{
+			"project": "freeradius",
+			"tag": "freeradius-42"
+		}
+	]
+}

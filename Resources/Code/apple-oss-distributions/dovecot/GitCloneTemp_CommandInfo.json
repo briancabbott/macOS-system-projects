@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/dovecot undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/dovecot",
+    "repo": "https://github.com/apple-oss-distributions/dovecot",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/dovecot",
+    "startTime": "2022-09-03T18:37:10.958Z",
+    "endTime": "2022-09-03T18:37:13.289Z",
+    "childProcessPid": 52054,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--dovecot--52054",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/expect undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/expect",
+    "repo": "https://github.com/apple-oss-distributions/expect",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/expect",
+    "startTime": "2022-09-03T18:37:26.286Z",
+    "endTime": "2022-09-03T18:37:27.226Z",
+    "childProcessPid": 52156,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--expect--52156",
+    "executionErrors": []
+}

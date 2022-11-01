@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/enscript undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/enscript",
+    "repo": "https://github.com/apple-oss-distributions/enscript",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/enscript",
+    "startTime": "2022-09-03T18:37:23.991Z",
+    "endTime": "2022-09-03T18:37:25.151Z",
+    "childProcessPid": 52140,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--enscript--52140",
+    "executionErrors": []
+}

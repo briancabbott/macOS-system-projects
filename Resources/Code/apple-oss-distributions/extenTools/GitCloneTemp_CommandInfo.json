@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/extenTools undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/extenTools",
+    "repo": "https://github.com/apple-oss-distributions/extenTools",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/extenTools",
+    "startTime": "2022-09-03T18:37:27.227Z",
+    "endTime": "2022-09-03T18:37:27.864Z",
+    "childProcessPid": 52161,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--extenTools--52161",
+    "executionErrors": []
+}

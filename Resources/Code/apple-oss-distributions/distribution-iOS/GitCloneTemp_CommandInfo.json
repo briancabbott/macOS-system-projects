@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/distribution-iOS undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/distribution-iOS",
+    "repo": "https://github.com/apple-oss-distributions/distribution-iOS",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/distribution-iOS",
+    "startTime": "2022-09-03T18:37:08.482Z",
+    "endTime": "2022-09-03T18:37:09.242Z",
+    "childProcessPid": 52029,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--distribution-iOS--52029",
+    "executionErrors": []
+}

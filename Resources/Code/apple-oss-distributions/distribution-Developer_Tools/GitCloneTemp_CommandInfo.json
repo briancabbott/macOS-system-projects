@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/distribution-Developer_Tools undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/distribution-Developer_Tools",
+    "repo": "https://github.com/apple-oss-distributions/distribution-Developer_Tools",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/distribution-Developer_Tools",
+    "startTime": "2022-09-03T18:37:07.125Z",
+    "endTime": "2022-09-03T18:37:07.893Z",
+    "childProcessPid": 52019,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--distribution-Developer_Tools--52019",
+    "executionErrors": []
+}

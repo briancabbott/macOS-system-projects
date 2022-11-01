@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/eap8021x undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/eap8021x",
+    "repo": "https://github.com/apple-oss-distributions/eap8021x",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/eap8021x",
+    "startTime": "2022-09-03T18:37:17.120Z",
+    "endTime": "2022-09-03T18:37:18.139Z",
+    "childProcessPid": 52118,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--eap8021x--52118",
+    "executionErrors": []
+}
