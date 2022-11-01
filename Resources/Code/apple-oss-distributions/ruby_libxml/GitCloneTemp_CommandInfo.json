@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/ruby_libxml undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ruby_libxml",
+    "repo": "https://github.com/apple-oss-distributions/ruby_libxml",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ruby_libxml",
+    "startTime": "2022-09-03T18:43:52.123Z",
+    "endTime": "2022-09-03T18:43:52.890Z",
+    "childProcessPid": 53863,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--ruby_libxml--53863",
+    "executionErrors": []
+}

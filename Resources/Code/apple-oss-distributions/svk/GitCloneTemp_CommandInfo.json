@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/svk undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/svk",
+    "repo": "https://github.com/apple-oss-distributions/svk",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/svk",
+    "startTime": "2022-09-03T18:44:48.064Z",
+    "endTime": "2022-09-03T18:44:49.289Z",
+    "childProcessPid": 54089,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--svk--54089",
+    "executionErrors": []
+}

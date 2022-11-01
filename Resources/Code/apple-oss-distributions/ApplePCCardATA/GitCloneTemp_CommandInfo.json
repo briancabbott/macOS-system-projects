@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/ApplePCCardATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ApplePCCardATA",
+    "repo": "https://github.com/apple-oss-distributions/ApplePCCardATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ApplePCCardATA",
+    "startTime": "2022-09-03T18:30:18.273Z",
+    "endTime": "2022-09-03T18:30:18.916Z",
+    "childProcessPid": 49176,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--ApplePCCardATA--49176",
+    "executionErrors": []
+}

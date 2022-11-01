@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleAC97Audio undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleAC97Audio",
+    "repo": "https://github.com/apple-oss-distributions/AppleAC97Audio",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleAC97Audio",
+    "startTime": "2022-09-03T18:29:44.776Z",
+    "endTime": "2022-09-03T18:29:45.515Z",
+    "childProcessPid": 48784,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleAC97Audio--48784",
+    "executionErrors": []
+}

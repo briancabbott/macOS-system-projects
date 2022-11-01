@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/Apple3Com3C90x undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Apple3Com3C90x",
+    "repo": "https://github.com/apple-oss-distributions/Apple3Com3C90x",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Apple3Com3C90x",
+    "startTime": "2022-09-03T18:29:44.043Z",
+    "endTime": "2022-09-03T18:29:44.776Z",
+    "childProcessPid": 48777,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--Apple3Com3C90x--48777",
+    "executionErrors": []
+}

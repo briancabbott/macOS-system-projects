@@ -1,0 +1,8 @@
+#build the Ethernet Mac Driver
+sudo xbs buildit -archive -mergeToSDKs -update PrevailingStar -project IONetworkingFamily -target InstallHeaders .
+
+sudo xbs buildit -archive -update PrevailingRome -project IONetworkingFamily -target IONetworkingFamily .
+
+#
+# Use Xcode build to build the kext.
+# sudo xcodebuild -sdk iphoneos.internal -arch arm64 -configuration Debug -target AppleEthernetAquantiaAqtion

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/vim undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/vim",
+    "repo": "https://github.com/apple-oss-distributions/vim",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/vim",
+    "startTime": "2022-09-03T18:45:24.814Z",
+    "endTime": "2022-09-03T18:45:36.966Z",
+    "childProcessPid": 54344,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--vim--54344",
+    "executionErrors": []
+}

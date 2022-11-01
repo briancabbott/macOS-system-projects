@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleGenericPCATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleGenericPCATA",
+    "repo": "https://github.com/apple-oss-distributions/AppleGenericPCATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleGenericPCATA",
+    "startTime": "2022-09-03T18:29:57.302Z",
+    "endTime": "2022-09-03T18:29:58.057Z",
+    "childProcessPid": 48921,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleGenericPCATA--48921",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/texi2html undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/texi2html",
+    "repo": "https://github.com/apple-oss-distributions/texi2html",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/texi2html",
+    "startTime": "2022-09-03T18:45:14.580Z",
+    "endTime": "2022-09-03T18:45:17.818Z",
+    "childProcessPid": 54232,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--texi2html--54232",
+    "executionErrors": []
+}

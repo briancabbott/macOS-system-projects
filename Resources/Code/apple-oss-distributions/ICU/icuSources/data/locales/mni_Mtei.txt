@@ -1,0 +1,43 @@
+﻿// © 2016 and later: Unicode, Inc. and others.
+// License & terms of use: http://www.unicode.org/copyright.html
+// Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+mni_Mtei{
+    %%Parent{"root"}
+    ExemplarCharacters{
+        "[꯬ ꯀ ꯁ ꯂ ꯃ ꯄ ꯅ ꯆ ꯇ ꯈ ꯉ ꯊ ꯋ ꯌ ꯍ ꯎ ꯏ ꯐ ꯑ ꯒ ꯓ ꯔ ꯕ ꯖ ꯗ ꯘ ꯙ ꯚ ꯣ ꯤ \uABE5 ꯦ ꯧ "
+        "\uABE8 ꯩ ꯪ ꯛ ꯜ ꯝ ꯞ ꯟ ꯠ ꯡ ꯢ \uABED]"
+    }
+    ExemplarCharactersNumbers{"[\\- ‑ , . % + 0꯰ 1꯱ 2꯲ 3꯳ 4꯴ 5꯵ 6꯶ 7꯷ 8꯸ 9꯹]"}
+    NumberElements{
+        default{"mtei"}
+    }
+    calendar{
+        gregorian{
+            DateTimePatterns{
+                "h.mm.ss a zzzz",
+                "h.mm.ss a z",
+                "h.mm.ss a",
+                "h.mm. a",
+                "EEEE, d MMMM, y",
+                "d MMMM, y",
+                "dd-MM-y",
+                "d-M-y",
+                "{1} {0}",
+                "{1} {0}",
+                "{1} {0}",
+                "{1} {0}",
+                "{1} {0}",
+            }
+            DateTimeSkeletons{
+                "ahmmsszzzz",
+                "ahmmssz",
+                "ahmmss",
+                "ahmm",
+                "yMMMMEEEEd",
+                "yMMMMd",
+                "yMMdd",
+                "yMd",
+            }
+        }
+    }
+}

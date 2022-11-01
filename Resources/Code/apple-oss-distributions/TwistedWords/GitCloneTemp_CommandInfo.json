@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/TwistedWords undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/TwistedWords",
+    "repo": "https://github.com/apple-oss-distributions/TwistedWords",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/TwistedWords",
+    "startTime": "2022-09-03T18:33:13.612Z",
+    "endTime": "2022-09-03T18:33:14.171Z",
+    "childProcessPid": 51212,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--TwistedWords--51212",
+    "executionErrors": []
+}

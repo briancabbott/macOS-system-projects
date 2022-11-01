@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleKeyLargo undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKeyLargo",
+    "repo": "https://github.com/apple-oss-distributions/AppleKeyLargo",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKeyLargo",
+    "startTime": "2022-09-03T18:30:07.825Z",
+    "endTime": "2022-09-03T18:30:08.649Z",
+    "childProcessPid": 49075,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleKeyLargo--49075",
+    "executionErrors": []
+}

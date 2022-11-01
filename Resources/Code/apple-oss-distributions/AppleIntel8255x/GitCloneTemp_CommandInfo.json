@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleIntel8255x undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleIntel8255x",
+    "repo": "https://github.com/apple-oss-distributions/AppleIntel8255x",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleIntel8255x",
+    "startTime": "2022-09-03T18:30:03.370Z",
+    "endTime": "2022-09-03T18:30:04.226Z",
+    "childProcessPid": 49020,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleIntel8255x--49020",
+    "executionErrors": []
+}

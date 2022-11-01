@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/X11apps undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/X11apps",
+    "repo": "https://github.com/apple-oss-distributions/X11apps",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/X11apps",
+    "startTime": "2022-09-03T18:34:13.109Z",
+    "endTime": "2022-09-03T18:34:17.037Z",
+    "childProcessPid": 51345,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--X11apps--51345",
+    "executionErrors": []
+}

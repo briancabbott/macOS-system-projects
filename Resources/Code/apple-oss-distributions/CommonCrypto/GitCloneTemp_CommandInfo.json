@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/CommonCrypto undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CommonCrypto",
+    "repo": "https://github.com/apple-oss-distributions/CommonCrypto",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CommonCrypto",
+    "startTime": "2022-09-03T18:30:52.819Z",
+    "endTime": "2022-09-03T18:30:54.027Z",
+    "childProcessPid": 49675,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--CommonCrypto--49675",
+    "executionErrors": []
+}

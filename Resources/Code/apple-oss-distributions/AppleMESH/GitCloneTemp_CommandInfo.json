@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleMESH undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMESH",
+    "repo": "https://github.com/apple-oss-distributions/AppleMESH",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMESH",
+    "startTime": "2022-09-03T18:30:10.626Z",
+    "endTime": "2022-09-03T18:30:11.368Z",
+    "childProcessPid": 49099,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleMESH--49099",
+    "executionErrors": []
+}

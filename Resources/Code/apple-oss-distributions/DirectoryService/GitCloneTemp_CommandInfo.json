@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/DirectoryService undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DirectoryService",
+    "repo": "https://github.com/apple-oss-distributions/DirectoryService",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DirectoryService",
+    "startTime": "2022-09-03T18:31:06.179Z",
+    "endTime": "2022-09-03T18:31:07.682Z",
+    "childProcessPid": 50062,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--DirectoryService--50062",
+    "executionErrors": []
+}

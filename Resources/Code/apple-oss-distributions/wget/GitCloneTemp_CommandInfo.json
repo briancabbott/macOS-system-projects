@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/wget undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/wget",
+    "repo": "https://github.com/apple-oss-distributions/wget",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/wget",
+    "startTime": "2022-09-03T18:45:38.618Z",
+    "endTime": "2022-09-03T18:45:39.247Z",
+    "childProcessPid": 54383,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--wget--54383",
+    "executionErrors": []
+}

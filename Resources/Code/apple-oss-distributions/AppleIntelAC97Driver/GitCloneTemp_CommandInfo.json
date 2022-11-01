@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleIntelAC97Driver undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleIntelAC97Driver",
+    "repo": "https://github.com/apple-oss-distributions/AppleIntelAC97Driver",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleIntelAC97Driver",
+    "startTime": "2022-09-03T18:30:04.226Z",
+    "endTime": "2022-09-03T18:30:04.985Z",
+    "childProcessPid": 49027,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleIntelAC97Driver--49027",
+    "executionErrors": []
+}

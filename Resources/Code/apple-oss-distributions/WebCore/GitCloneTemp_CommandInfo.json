@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/WebCore undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/WebCore",
+    "repo": "https://github.com/apple-oss-distributions/WebCore",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/WebCore",
+    "startTime": "2022-09-03T18:33:17.345Z",
+    "endTime": "2022-09-03T18:33:37.211Z",
+    "childProcessPid": 51243,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--WebCore--51243",
+    "executionErrors": []
+}

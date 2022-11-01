@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/DSNSLPlugins undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DSNSLPlugins",
+    "repo": "https://github.com/apple-oss-distributions/DSNSLPlugins",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DSNSLPlugins",
+    "startTime": "2022-09-03T18:31:03.293Z",
+    "endTime": "2022-09-03T18:31:04.318Z",
+    "childProcessPid": 49969,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--DSNSLPlugins--49969",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/DSLDAPPlugIn undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DSLDAPPlugIn",
+    "repo": "https://github.com/apple-oss-distributions/DSLDAPPlugIn",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DSLDAPPlugIn",
+    "startTime": "2022-09-03T18:31:00.880Z",
+    "endTime": "2022-09-03T18:31:01.673Z",
+    "childProcessPid": 49880,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--DSLDAPPlugIn--49880",
+    "executionErrors": []
+}

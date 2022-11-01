@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/security_certificates undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/security_certificates",
+    "repo": "https://github.com/apple-oss-distributions/security_certificates",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/security_certificates",
+    "startTime": "2022-09-03T18:44:00.164Z",
+    "endTime": "2022-09-03T18:44:26.237Z",
+    "childProcessPid": 53915,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--security_certificates--53915",
+    "executionErrors": []
+}

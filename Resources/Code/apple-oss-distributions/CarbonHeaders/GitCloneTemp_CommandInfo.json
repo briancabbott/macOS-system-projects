@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/CarbonHeaders undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CarbonHeaders",
+    "repo": "https://github.com/apple-oss-distributions/CarbonHeaders",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CarbonHeaders",
+    "startTime": "2022-09-03T18:30:46.321Z",
+    "endTime": "2022-09-03T18:30:47.052Z",
+    "childProcessPid": 49554,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--CarbonHeaders--49554",
+    "executionErrors": []
+}

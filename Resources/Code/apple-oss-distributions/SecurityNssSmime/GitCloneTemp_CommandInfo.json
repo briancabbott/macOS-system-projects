@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/SecurityNssSmime undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SecurityNssSmime",
+    "repo": "https://github.com/apple-oss-distributions/SecurityNssSmime",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SecurityNssSmime",
+    "startTime": "2022-09-03T18:32:57.716Z",
+    "endTime": "2022-09-03T18:32:58.320Z",
+    "childProcessPid": 51117,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--SecurityNssSmime--51117",
+    "executionErrors": []
+}

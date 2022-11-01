@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleI386PCI undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleI386PCI",
+    "repo": "https://github.com/apple-oss-distributions/AppleI386PCI",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleI386PCI",
+    "startTime": "2022-09-03T18:30:02.519Z",
+    "endTime": "2022-09-03T18:30:03.370Z",
+    "childProcessPid": 49013,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleI386PCI--49013",
+    "executionErrors": []
+}

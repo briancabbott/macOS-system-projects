@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/tcl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tcl",
+    "repo": "https://github.com/apple-oss-distributions/tcl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tcl",
+    "startTime": "2022-09-03T18:45:00.525Z",
+    "endTime": "2022-09-03T18:45:09.931Z",
+    "childProcessPid": 54136,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--tcl--54136",
+    "executionErrors": []
+}

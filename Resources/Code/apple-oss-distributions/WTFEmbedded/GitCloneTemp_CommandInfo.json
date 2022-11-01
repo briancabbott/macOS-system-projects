@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/WTFEmbedded undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/WTFEmbedded",
+    "repo": "https://github.com/apple-oss-distributions/WTFEmbedded",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/WTFEmbedded",
+    "startTime": "2022-09-03T18:33:16.600Z",
+    "endTime": "2022-09-03T18:33:17.344Z",
+    "childProcessPid": 51238,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--WTFEmbedded--51238",
+    "executionErrors": []
+}

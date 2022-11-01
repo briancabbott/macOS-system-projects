@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/uucp undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/uucp",
+    "repo": "https://github.com/apple-oss-distributions/uucp",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/uucp",
+    "startTime": "2022-09-03T18:45:23.365Z",
+    "endTime": "2022-09-03T18:45:24.071Z",
+    "childProcessPid": 54332,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--uucp--54332",
+    "executionErrors": []
+}

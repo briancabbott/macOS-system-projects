@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleBCM440XEthernet undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleBCM440XEthernet",
+    "repo": "https://github.com/apple-oss-distributions/AppleBCM440XEthernet",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleBCM440XEthernet",
+    "startTime": "2022-09-03T18:29:49.400Z",
+    "endTime": "2022-09-03T18:29:50.056Z",
+    "childProcessPid": 48855,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleBCM440XEthernet--48855",
+    "executionErrors": []
+}

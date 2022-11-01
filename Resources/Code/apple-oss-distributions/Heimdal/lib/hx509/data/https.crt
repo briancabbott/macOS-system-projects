@@ -1,0 +1,53 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 10 (0xa)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=hx509 Test Root CA, C=SE
+        Validity
+            Not Before: Sep  5 18:04:16 2019 GMT
+            Not After : Sep  2 18:04:16 2029 GMT
+        Subject: C=SE, CN=www.test.h5l.se
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:ba:ef:4c:6a:25:50:9d:1c:e8:14:2e:9f:1a:16:
+                    c2:5b:5b:92:9b:da:7c:31:65:71:58:79:7d:1e:f1:
+                    b8:b9:16:ab:a4:c8:41:17:6f:71:dc:e5:c0:05:7d:
+                    b8:91:e6:b0:30:29:f7:d3:35:e2:f4:5b:25:65:38:
+                    a1:ef:53:4d:64:bc:51:40:d2:06:dc:c4:55:b2:56:
+                    c1:1c:eb:4e:e7:c6:a1:54:8d:bf:6c:1b:69:1d:cc:
+                    a8:e3:f1:63:3a:4a:67:b8:c3:4a:81:63:e2:14:02:
+                    4a:12:fe:65:58:9d:ad:25:78:c3:52:56:ce:c7:04:
+                    5b:15:aa:06:35:6d:aa:43:89
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment
+            X509v3 Subject Key Identifier: 
+                2A:94:63:39:12:18:85:CF:A7:FF:C6:17:B0:75:0C:1E:DF:CE:24:27
+    Signature Algorithm: sha256WithRSAEncryption
+         b3:15:ca:08:db:b6:8a:3b:9c:cb:ce:a8:67:85:a6:5c:52:be:
+         3e:3e:1e:5f:55:99:3e:90:2b:95:51:9b:d4:65:57:91:f8:89:
+         39:49:ff:df:8e:ff:cc:bc:6a:95:d2:37:85:76:0f:c6:d2:fa:
+         28:75:15:9b:d9:a7:84:a3:fc:ac:5d:b0:f2:65:7a:17:67:08:
+         7c:c4:d5:fe:a1:20:1f:2b:db:38:96:df:97:11:3c:50:98:79:
+         ba:8f:d8:38:45:cf:d9:d6:95:5b:a7:64:b4:48:1c:5d:e7:ae:
+         0d:78:e1:ff:f4:e0:d0:b2:49:cb:5d:a5:a3:be:48:e2:0a:88:
+         67:ba
+-----BEGIN CERTIFICATE-----
+MIICADCCAWmgAwIBAgIBCjANBgkqhkiG9w0BAQsFADAqMRswGQYDVQQDDBJoeDUw
+OSBUZXN0IFJvb3QgQ0ExCzAJBgNVBAYTAlNFMB4XDTE5MDkwNTE4MDQxNloXDTI5
+MDkwMjE4MDQxNlowJzELMAkGA1UEBhMCU0UxGDAWBgNVBAMMD3d3dy50ZXN0Lmg1
+bC5zZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuu9MaiVQnRzoFC6fGhbC
+W1uSm9p8MWVxWHl9HvG4uRarpMhBF29x3OXABX24keawMCn30zXi9FslZTih71NN
+ZLxRQNIG3MRVslbBHOtO58ahVI2/bBtpHcyo4/FjOkpnuMNKgWPiFAJKEv5lWJ2t
+JXjDUlbOxwRbFaoGNW2qQ4kCAwEAAaM5MDcwCQYDVR0TBAIwADALBgNVHQ8EBAMC
+BeAwHQYDVR0OBBYEFCqUYzkSGIXPp//GF7B1DB7fziQnMA0GCSqGSIb3DQEBCwUA
+A4GBALMVygjbtoo7nMvOqGeFplxSvj4+Hl9VmT6QK5VRm9RlV5H4iTlJ/9+O/8y8
+apXSN4V2D8bS+ih1FZvZp4Sj/KxdsPJlehdnCHzE1f6hIB8r2ziW35cRPFCYebqP
+2DhFz9nWlVunZLRIHF3nrg144f/04NCySctdpaO+SOIKiGe6
+-----END CERTIFICATE-----

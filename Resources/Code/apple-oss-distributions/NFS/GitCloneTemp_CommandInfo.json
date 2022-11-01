@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/NFS undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/NFS",
+    "repo": "https://github.com/apple-oss-distributions/NFS",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/NFS",
+    "startTime": "2022-09-03T18:32:21.262Z",
+    "endTime": "2022-09-03T18:32:21.919Z",
+    "childProcessPid": 50576,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--NFS--50576",
+    "executionErrors": []
+}

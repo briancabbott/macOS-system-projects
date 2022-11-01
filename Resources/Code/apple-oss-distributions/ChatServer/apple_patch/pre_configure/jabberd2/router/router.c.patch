@@ -1,0 +1,109 @@
+--- /tmp/jabberd-2.2.17/router/router.c	2012-03-08 13:28:54.000000000 -0800
++++ ./jabberd2/router/router.c	2012-08-28 18:49:00.000000000 -0700
+@@ -575,6 +575,8 @@ static void _router_process_route(compon
+ 
+             if ((NAD_ENAME_L(nad, 1) == 7 && strncmp("message", NAD_ENAME(nad, 1), 7) == 0) &&		// has a "message" element 
+                 ((attr_route_from = nad_find_attr(nad, 0, -1, "from", NULL)) >= 0) &&
++                // ignore messages sent from mu-conference, if a filter is defined:
++                (strncmp(NAD_AVAL(nad, attr_route_from), comp->r->filter_muc_messages_from, strlen(comp->r->filter_muc_messages_from)) != 0) &&
+                 ((attr_route_to = nad_find_attr(nad, 0, -1, "to", NULL)) >= 0) &&
+                 ((strncmp(NAD_AVAL(nad, attr_route_to), "c2s", 3)) != 0) &&							// ignore messages to "c2s" or we'd have dups
+                 ((jid_route_from = jid_new(NAD_AVAL(nad, attr_route_from), NAD_AVAL_L(nad, attr_route_from))) != NULL) &&	// has valid JID source in route
+@@ -1219,3 +1221,97 @@ int message_log(nad_t nad, router_t r, c
+ 
+     return 0;
+ }
++
++/* Determine if message log needs to be rolled, and do so if necessary */
++int roll_message_log(router_t r)
++{
++    char logfile_compressed_path[255] = {0};    // path and filename + room for .xxxx.gz
++    char logfile_uncompressed_path[243] = {0};  // path and filename of uncompressed (previously active) log
++    char logfile_compressed_path_new[255] = {0};    // path and filename + room for .xxxx.gz
++    char logfile_uncompressed_path_new[255] = {0};  // path and filename + room for .xxxx.gz
++    struct stat64 filestat;
++    struct stat64 compressed_stat;
++    long curr_time = time(NULL);
++    int num_old_files;
++    pid_t pid;
++    int i;
++    FILE *message_file;
++
++    if (stat(r->message_logging_file, &filestat)) {
++        // Most likely the log hasn't been created yet.
++        log_debug(ZONE, "cannot stat message log: %s",  r->message_logging_file);
++        return 0;
++    }
++
++    // determine if its time to roll the logs
++    if (((r->message_logging_roll_days > 0) && (filestat.st_birthtime + (r->message_logging_roll_days*SECS_PER_DAY) <= curr_time)) ||
++            ((r->message_logging_roll_megs > 0) && (filestat.st_size > 0) &&
++            (r->message_logging_roll_megs <= ((long long)filestat.st_size/BYTES_PER_MEG))))
++    {
++        // roll the logs
++        for (num_old_files = 0; ; num_old_files++)
++        {
++            snprintf(logfile_compressed_path, sizeof(logfile_compressed_path), "%s.%d.gz",
++                    r->message_logging_file, num_old_files);
++            // check to see if compressed file exists
++            if (stat64(logfile_compressed_path, &compressed_stat))
++            {
++                //cannot find the file so exit the loop
++                break;
++            }
++        }
++        // make num_old_files an index to the oldest logfile. -1 value indicates that no compressed logfiles exist.
++        num_old_files--;
++
++        umask((mode_t) 0077);
++
++        // from oldest to newest, rename logs by increasing their suffix by 1
++        for (i = num_old_files; i >= 0; i--) {
++            snprintf(logfile_compressed_path, sizeof(logfile_compressed_path),
++                    "%s.%d.gz", r->message_logging_file, i);
++            snprintf(logfile_compressed_path_new, sizeof(logfile_compressed_path_new),
++                    "%s.%d.gz", r->message_logging_file, i+1);
++            if ((rename(logfile_compressed_path, logfile_compressed_path_new)) != 0)
++            {
++                log_write(r->log, LOG_ERR, "Unable to rename message log: %s  ... to: %s",
++                        logfile_compressed_path, logfile_compressed_path_new);
++                return 1;
++            }
++        }
++
++        // add a .0 suffix to the uncompressed file
++        snprintf(logfile_uncompressed_path, sizeof(logfile_uncompressed_path),
++                "%s", r->message_logging_file);
++        snprintf(logfile_uncompressed_path_new, sizeof(logfile_uncompressed_path_new),
++                "%s.0", r->message_logging_file);
++        if ((rename(logfile_uncompressed_path, logfile_uncompressed_path_new))  != 0) {
++            log_write(r->log, LOG_ERR, "Unable to rename message log: %s  ... to: %s : %s",
++                    logfile_uncompressed_path, logfile_uncompressed_path_new, strerror(errno));
++            return 1;
++        }
++
++        /*  gzip the uncompressed log file */
++        // fork a child to do the gzip
++        if ((pid = fork()) < 0) {
++            log_write(r->log, LOG_ERR, "fork() problem when attempting to roll and compress logs: %s", strerror(errno));
++        } else if (pid == 0) {       
++            // child
++            execl("/usr/bin/gzip", "gzip", "-q", logfile_uncompressed_path_new, (char *)NULL);
++            if (errno != 0)
++                log_write(r->log, LOG_ERR, "execl() error: %s", strerror(errno));
++        }
++
++        // initialize a new file
++        if ((message_file = fopen(logfile_uncompressed_path, "w+")) == NULL) {
++            log_write(r->log, LOG_ERR, "Unable to open message log for writing: %s: %s", logfile_uncompressed_path, strerror(errno));
++            return 1;
++        }
++
++        fprintf(message_file, "# This message log is created by the jabberd router.\n");
++        fprintf(message_file, "# See router.xml for logging options.\n");
++        fprintf(message_file, "# Format: (Date)<tab>(From JID)<tab>(To JID)<tab>(Message Body)<line end>\n");
++
++        fclose(message_file);
++    }
++    return 0;
++}

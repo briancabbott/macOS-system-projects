@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/SystemKEXT undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SystemKEXT",
+    "repo": "https://github.com/apple-oss-distributions/SystemKEXT",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SystemKEXT",
+    "startTime": "2022-09-03T18:33:08.413Z",
+    "endTime": "2022-09-03T18:33:08.936Z",
+    "childProcessPid": 51176,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--SystemKEXT--51176",
+    "executionErrors": []
+}

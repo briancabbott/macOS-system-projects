@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/Kerberos undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Kerberos",
+    "repo": "https://github.com/apple-oss-distributions/Kerberos",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Kerberos",
+    "startTime": "2022-09-03T18:31:56.422Z",
+    "endTime": "2022-09-03T18:31:59.516Z",
+    "childProcessPid": 50342,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--Kerberos--50342",
+    "executionErrors": []
+}

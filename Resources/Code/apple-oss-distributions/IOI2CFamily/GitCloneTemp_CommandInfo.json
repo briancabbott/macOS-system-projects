@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOI2CFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOI2CFamily",
+    "repo": "https://github.com/apple-oss-distributions/IOI2CFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOI2CFamily",
+    "startTime": "2022-09-03T18:31:38.302Z",
+    "endTime": "2022-09-03T18:31:38.844Z",
+    "childProcessPid": 50237,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOI2CFamily--50237",
+    "executionErrors": []
+}

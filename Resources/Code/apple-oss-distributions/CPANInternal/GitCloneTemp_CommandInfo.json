@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/CPANInternal undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CPANInternal",
+    "repo": "https://github.com/apple-oss-distributions/CPANInternal",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CPANInternal",
+    "startTime": "2022-09-03T18:30:44.119Z",
+    "endTime": "2022-09-03T18:30:46.320Z",
+    "childProcessPid": 49520,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--CPANInternal--49520",
+    "executionErrors": []
+}

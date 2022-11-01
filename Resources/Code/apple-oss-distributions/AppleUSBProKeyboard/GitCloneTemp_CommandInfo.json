@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleUSBProKeyboard undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleUSBProKeyboard",
+    "repo": "https://github.com/apple-oss-distributions/AppleUSBProKeyboard",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleUSBProKeyboard",
+    "startTime": "2022-09-03T18:30:29.967Z",
+    "endTime": "2022-09-03T18:30:30.688Z",
+    "childProcessPid": 49320,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleUSBProKeyboard--49320",
+    "executionErrors": []
+}

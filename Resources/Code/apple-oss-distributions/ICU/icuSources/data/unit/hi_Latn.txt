@@ -1,0 +1,123 @@
+﻿// © 2016 and later: Unicode, Inc. and others.
+// License & terms of use: http://www.unicode.org/copyright.html
+// Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+hi_Latn{
+    %%Parent{"en_IN"}
+    unitsNarrow{
+        concentr{
+            karat{
+                dnam{"karat"}
+                one{"{0}kt"}
+                other{"{0}kt"}
+            }
+        }
+        digital{
+            gigabyte{
+                dnam{"GByte"}
+            }
+            kilobyte{
+                dnam{"kByte"}
+            }
+            megabyte{
+                dnam{"MByte"}
+            }
+            petabyte{
+                dnam{"PByte"}
+            }
+            terabyte{
+                dnam{"TByte"}
+            }
+        }
+        duration{
+            month{
+                one{"{0}m"}
+                other{"{0}m"}
+            }
+        }
+        length{
+            meter{
+                dnam{"metre"}
+            }
+        }
+        pressure{
+            bar{
+                one{"{0}bar"}
+                other{"{0}bars"}
+            }
+            millimeter-ofhg{
+                dnam{"mmHg"}
+            }
+        }
+        speed{
+            kilometer-per-hour{
+                dnam{"km/h"}
+            }
+            mile-per-hour{
+                dnam{"mi/hr"}
+            }
+        }
+        volume{
+            fluid-ounce-imperial{
+                dnam{"Imp fl oz"}
+                one{"{0}fl oz Im"}
+                other{"{0}fl oz Im"}
+            }
+        }
+    }
+    unitsShort{
+        angle{
+            revolution{
+                one{"{0} rev"}
+                other{"{0} rev"}
+            }
+        }
+        concentr{
+            millimole-per-liter{
+                dnam{"millimol/litre"}
+            }
+        }
+        consumption{
+            mile-per-gallon{
+                dnam{"miles/gal US"}
+            }
+        }
+        duration{
+            minute{
+                dnam{"mins"}
+                one{"{0} min"}
+                other{"{0} mins"}
+            }
+            month{
+                per{"{0}/m"}
+            }
+        }
+        mass{
+            carat{
+                one{"{0} CD"}
+                other{"{0} CD"}
+            }
+        }
+        pressure{
+            bar{
+                one{"{0} bar"}
+                other{"{0} bars"}
+            }
+            millimeter-ofhg{
+                dnam{"mmHg"}
+                one{"{0} mmHg"}
+                other{"{0} mmHg"}
+            }
+        }
+        volume{
+            gallon{
+                one{"{0} gal US"}
+                other{"{0} gal US"}
+            }
+            quart{
+                dnam{"qts"}
+                one{"{0} qt"}
+                other{"{0} qt"}
+            }
+        }
+    }
+}

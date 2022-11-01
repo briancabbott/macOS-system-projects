@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/CyrusIMAP undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CyrusIMAP",
+    "repo": "https://github.com/apple-oss-distributions/CyrusIMAP",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CyrusIMAP",
+    "startTime": "2022-09-03T18:30:56.460Z",
+    "endTime": "2022-09-03T18:31:00.118Z",
+    "childProcessPid": 49775,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--CyrusIMAP--49775",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleKauaiATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKauaiATA",
+    "repo": "https://github.com/apple-oss-distributions/AppleKauaiATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKauaiATA",
+    "startTime": "2022-09-03T18:30:07.157Z",
+    "endTime": "2022-09-03T18:30:07.825Z",
+    "childProcessPid": 49070,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleKauaiATA--49070",
+    "executionErrors": []
+}

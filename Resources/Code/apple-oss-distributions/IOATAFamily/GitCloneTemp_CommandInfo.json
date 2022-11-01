@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOATAFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOATAFamily",
+    "repo": "https://github.com/apple-oss-distributions/IOATAFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOATAFamily",
+    "startTime": "2022-09-03T18:31:25.795Z",
+    "endTime": "2022-09-03T18:31:26.746Z",
+    "childProcessPid": 50151,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOATAFamily--50151",
+    "executionErrors": []
+}

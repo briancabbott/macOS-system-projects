@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleIntelPIIXATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleIntelPIIXATA",
+    "repo": "https://github.com/apple-oss-distributions/AppleIntelPIIXATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleIntelPIIXATA",
+    "startTime": "2022-09-03T18:30:04.986Z",
+    "endTime": "2022-09-03T18:30:05.814Z",
+    "childProcessPid": 49032,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleIntelPIIXATA--49032",
+    "executionErrors": []
+}

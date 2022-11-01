@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/ICU undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ICU",
+    "repo": "https://github.com/apple-oss-distributions/ICU",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ICU",
+    "startTime": "2022-09-03T18:31:17.561Z",
+    "endTime": "2022-09-03T18:31:23.578Z",
+    "childProcessPid": 50121,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--ICU--50121",
+    "executionErrors": []
+}

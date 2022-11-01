@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleUSBCDCDriver undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleUSBCDCDriver",
+    "repo": "https://github.com/apple-oss-distributions/AppleUSBCDCDriver",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleUSBCDCDriver",
+    "startTime": "2022-09-03T18:30:27.938Z",
+    "endTime": "2022-09-03T18:30:28.860Z",
+    "childProcessPid": 49308,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleUSBCDCDriver--49308",
+    "executionErrors": []
+}

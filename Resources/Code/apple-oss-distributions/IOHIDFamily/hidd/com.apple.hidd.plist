@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.hidd</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+	<key>UserName</key>
+	<string>_hidd</string>
+	<key>Group</key>
+	<string>_hidd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.hidpreferenceshelper</key>
+		<true/>
+	</dict>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>_LimitLoadFromVariant</key>
+	<string>IsDarwinOS</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/hidd</string>
+	</array>
+</dict>
+</plist>

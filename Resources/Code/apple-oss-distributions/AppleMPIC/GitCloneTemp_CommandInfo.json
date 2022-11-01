@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleMPIC undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMPIC",
+    "repo": "https://github.com/apple-oss-distributions/AppleMPIC",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMPIC",
+    "startTime": "2022-09-03T18:30:11.368Z",
+    "endTime": "2022-09-03T18:30:12.053Z",
+    "childProcessPid": 49104,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleMPIC--49104",
+    "executionErrors": []
+}

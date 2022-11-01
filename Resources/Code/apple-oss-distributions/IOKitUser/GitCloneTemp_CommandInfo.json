@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOKitUser undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOKitUser",
+    "repo": "https://github.com/apple-oss-distributions/IOKitUser",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOKitUser",
+    "startTime": "2022-09-03T18:31:39.451Z",
+    "endTime": "2022-09-03T18:31:40.335Z",
+    "childProcessPid": 50249,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOKitUser--50249",
+    "executionErrors": []
+}

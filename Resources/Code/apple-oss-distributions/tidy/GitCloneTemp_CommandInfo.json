@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/tidy undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tidy",
+    "repo": "https://github.com/apple-oss-distributions/tidy",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tidy",
+    "startTime": "2022-09-03T18:45:20.508Z",
+    "endTime": "2022-09-03T18:45:21.338Z",
+    "childProcessPid": 54309,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--tidy--54309",
+    "executionErrors": []
+}

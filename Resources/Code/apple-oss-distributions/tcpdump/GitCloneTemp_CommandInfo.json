@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/tcpdump undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tcpdump",
+    "repo": "https://github.com/apple-oss-distributions/tcpdump",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tcpdump",
+    "startTime": "2022-09-03T18:45:10.847Z",
+    "endTime": "2022-09-03T18:45:13.098Z",
+    "childProcessPid": 54197,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--tcpdump--54197",
+    "executionErrors": []
+}

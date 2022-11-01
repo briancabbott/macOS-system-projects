@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOPCIFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOPCIFamily",
+    "repo": "https://github.com/apple-oss-distributions/IOPCIFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOPCIFamily",
+    "startTime": "2022-09-03T18:31:41.666Z",
+    "endTime": "2022-09-03T18:31:42.394Z",
+    "childProcessPid": 50266,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOPCIFamily--50266",
+    "executionErrors": []
+}

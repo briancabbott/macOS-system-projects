@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>OpenSourceProject</key>
+		<string>ccid</string>
+		<key>OpenSourceVersion</key>
+		<string>1.4.34</string>
+		<key>OpenSourceWebsiteURL</key>
+		<string>https://ccid.apdu.fr</string>
+		<key>OpenSourceURL</key>
+		<string>https://ccid.apdu.fr/files/ccid-1.4.34.tar.bz2</string>
+		<key>OpenSourceImportDate</key>
+		<string>2021-04-20</string>
+		<key>OpenSourceModifications</key>
+		<array>
+			<string>destDirFix.patch - makefile.in, customized destination directory</string>
+			<string>ForceWithoutPcsc.patch - Makefile.am, Makefile.in, define PROVIDED_BY_PCSC</string>
+			<string>ccid-info-plist.patch - Info.plist.src, ifdLogLevel 0x0001</string>
+			<string>osxConfigure.patch - configure, if [[ (&quot;$*&quot; =~ &quot;--no-configure&quot;) ]]; then exit 0 fi</string>
+		</array>
+		<key>OpenSourceLicense</key>
+		<string>LGPL</string>
+		<key>OpenSourceLicenseFile</key>
+		<string>SmartcardCCID.txt</string>
+	</dict>
+	<dict>
+		<key>OpenSourceProject</key>
+		<string>libusb</string>
+		<key>OpenSourceVersion</key>
+		<string>1.0.24</string>
+		<key>OpenSourceWebsiteURL</key>
+		<string>https://libusb.info</string>
+		<key>OpenSourceURL</key>
+		<string>https://github.com/libusb/libusb/releases</string>
+		<key>OpenSourceImportDate</key>
+		<string>2021-04-20</string>
+		<key>OpenSourceModifications</key>
+		<array>
+			<string>darwin_no_seize.patch - darwin.c, replace USBDeviceOpenSeize by USBDeviceOpen</string>
+		</array>
+		<key>OpenSourceLicense</key>
+		<string>LGPL</string>
+		<key>OpenSourceLicenseFile</key>
+		<string>SmartcardCCID.txt</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleMacRiscPCI undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMacRiscPCI",
+    "repo": "https://github.com/apple-oss-distributions/AppleMacRiscPCI",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMacRiscPCI",
+    "startTime": "2022-09-03T18:30:14.460Z",
+    "endTime": "2022-09-03T18:30:15.166Z",
+    "childProcessPid": 49146,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleMacRiscPCI--49146",
+    "executionErrors": []
+}

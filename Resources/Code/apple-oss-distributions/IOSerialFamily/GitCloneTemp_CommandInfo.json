@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOSerialFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOSerialFamily",
+    "repo": "https://github.com/apple-oss-distributions/IOSerialFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOSerialFamily",
+    "startTime": "2022-09-03T18:31:43.770Z",
+    "endTime": "2022-09-03T18:31:44.343Z",
+    "childProcessPid": 50283,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOSerialFamily--50283",
+    "executionErrors": []
+}

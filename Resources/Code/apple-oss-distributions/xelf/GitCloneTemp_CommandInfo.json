@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/xelf undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/xelf",
+    "repo": "https://github.com/apple-oss-distributions/xelf",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/xelf",
+    "startTime": "2022-09-03T18:45:43.730Z",
+    "endTime": "2022-09-03T18:45:44.374Z",
+    "childProcessPid": 54405,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--xelf--54405",
+    "executionErrors": []
+}

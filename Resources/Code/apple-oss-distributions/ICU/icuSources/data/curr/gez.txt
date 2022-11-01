@@ -1,0 +1,43 @@
+﻿// © 2016 and later: Unicode, Inc. and others.
+// License & terms of use: http://www.unicode.org/copyright.html
+// Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+gez{
+    Currencies{
+        BRL{
+            "R$",
+            "የብራዚል ሪል",
+        }
+        CNY{
+            "CN¥",
+            "የቻይና ዩአን ረንሚንቢ",
+        }
+        ETB{
+            "ETB",
+            "የኢትዮጵያ ብር",
+        }
+        EUR{
+            "€",
+            "አውሮ",
+        }
+        GBP{
+            "£",
+            "የእንግሊዝ ፓውንድ ስተርሊንግ",
+        }
+        INR{
+            "₹",
+            "የሕንድ ሩፒ",
+        }
+        JPY{
+            "JP¥",
+            "የጃፓን የን",
+        }
+        RUB{
+            "RUB",
+            "የራሻ ሩብል",
+        }
+        USD{
+            "US$",
+            "የአሜሪካን ዶላር",
+        }
+    }
+}

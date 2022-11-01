@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/FastCGI undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/FastCGI",
+    "repo": "https://github.com/apple-oss-distributions/FastCGI",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/FastCGI",
+    "startTime": "2022-09-03T18:31:09.254Z",
+    "endTime": "2022-09-03T18:31:10.342Z",
+    "childProcessPid": 50080,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--FastCGI--50080",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleRTL8139Ethernet undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleRTL8139Ethernet",
+    "repo": "https://github.com/apple-oss-distributions/AppleRTL8139Ethernet",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleRTL8139Ethernet",
+    "startTime": "2022-09-03T18:30:23.580Z",
+    "endTime": "2022-09-03T18:30:24.326Z",
+    "childProcessPid": 49235,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleRTL8139Ethernet--49235",
+    "executionErrors": []
+}

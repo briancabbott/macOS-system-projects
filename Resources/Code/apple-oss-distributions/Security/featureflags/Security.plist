@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SecKeychainStaticPersistentRefs</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>SecErrorNestedErrorCapping</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>EnableSecureObjectSync</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>SecItemRateLimiting</key>
+	<dict>
+		<key>Enabled</key>
+		<false/>
+	</dict>
+	<key>LegacyAPICounts</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>SecCodeOCSPDefault</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>SOSMonitorMode</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>KeychainKeyDiversification</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>TrustSettingsUseXPC</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>WarnTooManyPeers</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>OctagonEscrowMove</key>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+	</dict>
+	<key>OctagonEscrowMoveUnthrottled</key>
+	<dict>
+		<key>Enabled</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

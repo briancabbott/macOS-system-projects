@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleVIAATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleVIAATA",
+    "repo": "https://github.com/apple-oss-distributions/AppleVIAATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleVIAATA",
+    "startTime": "2022-09-03T18:30:31.336Z",
+    "endTime": "2022-09-03T18:30:32.010Z",
+    "childProcessPid": 49350,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleVIAATA--49350",
+    "executionErrors": []
+}

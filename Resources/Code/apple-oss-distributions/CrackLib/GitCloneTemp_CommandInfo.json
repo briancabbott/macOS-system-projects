@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/CrackLib undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CrackLib",
+    "repo": "https://github.com/apple-oss-distributions/CrackLib",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CrackLib",
+    "startTime": "2022-09-03T18:30:54.782Z",
+    "endTime": "2022-09-03T18:30:55.724Z",
+    "childProcessPid": 49725,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--CrackLib--49725",
+    "executionErrors": []
+}

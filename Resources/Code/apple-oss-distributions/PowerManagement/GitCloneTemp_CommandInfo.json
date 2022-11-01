@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/PowerManagement undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/PowerManagement",
+    "repo": "https://github.com/apple-oss-distributions/PowerManagement",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/PowerManagement",
+    "startTime": "2022-09-03T18:32:44.513Z",
+    "endTime": "2022-09-03T18:32:45.502Z",
+    "childProcessPid": 50997,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--PowerManagement--50997",
+    "executionErrors": []
+}

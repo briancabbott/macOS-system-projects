@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOAudioFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOAudioFamily",
+    "repo": "https://github.com/apple-oss-distributions/IOAudioFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOAudioFamily",
+    "startTime": "2022-09-03T18:31:27.546Z",
+    "endTime": "2022-09-03T18:31:28.623Z",
+    "childProcessPid": 50164,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOAudioFamily--50164",
+    "executionErrors": []
+}

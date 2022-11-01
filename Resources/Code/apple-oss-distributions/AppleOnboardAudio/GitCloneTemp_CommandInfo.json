@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleOnboardAudio undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleOnboardAudio",
+    "repo": "https://github.com/apple-oss-distributions/AppleOnboardAudio",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleOnboardAudio",
+    "startTime": "2022-09-03T18:30:15.750Z",
+    "endTime": "2022-09-03T18:30:16.919Z",
+    "childProcessPid": 49158,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleOnboardAudio--49158",
+    "executionErrors": []
+}

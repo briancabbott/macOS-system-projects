@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/ApplePS2Trackpad undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ApplePS2Trackpad",
+    "repo": "https://github.com/apple-oss-distributions/ApplePS2Trackpad",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ApplePS2Trackpad",
+    "startTime": "2022-09-03T18:30:21.265Z",
+    "endTime": "2022-09-03T18:30:21.914Z",
+    "childProcessPid": 49200,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--ApplePS2Trackpad--49200",
+    "executionErrors": []
+}

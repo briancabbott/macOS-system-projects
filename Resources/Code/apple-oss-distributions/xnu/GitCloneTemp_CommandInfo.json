@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/xnu undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/xnu",
+    "repo": "https://github.com/apple-oss-distributions/xnu",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/xnu",
+    "startTime": "2022-09-03T18:45:45.055Z",
+    "endTime": "2022-09-03T18:45:57.051Z",
+    "childProcessPid": 54417,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--xnu--54417",
+    "executionErrors": []
+}

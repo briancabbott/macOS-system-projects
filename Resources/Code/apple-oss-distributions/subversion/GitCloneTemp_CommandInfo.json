@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/subversion undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/subversion",
+    "repo": "https://github.com/apple-oss-distributions/subversion",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/subversion",
+    "startTime": "2022-09-03T18:44:39.130Z",
+    "endTime": "2022-09-03T18:44:46.133Z",
+    "childProcessPid": 54049,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--subversion--54049",
+    "executionErrors": []
+}

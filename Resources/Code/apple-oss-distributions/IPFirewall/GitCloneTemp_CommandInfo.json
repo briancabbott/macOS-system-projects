@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IPFirewall undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IPFirewall",
+    "repo": "https://github.com/apple-oss-distributions/IPFirewall",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IPFirewall",
+    "startTime": "2022-09-03T18:31:47.133Z",
+    "endTime": "2022-09-03T18:31:47.697Z",
+    "childProcessPid": 50309,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IPFirewall--50309",
+    "executionErrors": []
+}

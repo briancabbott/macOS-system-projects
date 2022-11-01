@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/SmartcardCCID undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SmartcardCCID",
+    "repo": "https://github.com/apple-oss-distributions/SmartcardCCID",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SmartcardCCID",
+    "startTime": "2022-09-03T18:33:00.652Z",
+    "endTime": "2022-09-03T18:33:02.756Z",
+    "childProcessPid": 51147,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--SmartcardCCID--51147",
+    "executionErrors": []
+}

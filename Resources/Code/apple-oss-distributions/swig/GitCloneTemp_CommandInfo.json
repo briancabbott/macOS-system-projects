@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/swig undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/swig",
+    "repo": "https://github.com/apple-oss-distributions/swig",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/swig",
+    "startTime": "2022-09-03T18:44:49.291Z",
+    "endTime": "2022-09-03T18:44:53.226Z",
+    "childProcessPid": 54096,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--swig--54096",
+    "executionErrors": []
+}

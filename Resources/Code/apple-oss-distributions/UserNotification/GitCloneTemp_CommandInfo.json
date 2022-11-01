@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/UserNotification undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/UserNotification",
+    "repo": "https://github.com/apple-oss-distributions/UserNotification",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/UserNotification",
+    "startTime": "2022-09-03T18:33:14.869Z",
+    "endTime": "2022-09-03T18:33:15.417Z",
+    "childProcessPid": 51224,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--UserNotification--51224",
+    "executionErrors": []
+}

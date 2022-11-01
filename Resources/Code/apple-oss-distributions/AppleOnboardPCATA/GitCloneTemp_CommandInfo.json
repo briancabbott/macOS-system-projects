@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleOnboardPCATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleOnboardPCATA",
+    "repo": "https://github.com/apple-oss-distributions/AppleOnboardPCATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleOnboardPCATA",
+    "startTime": "2022-09-03T18:30:16.919Z",
+    "endTime": "2022-09-03T18:30:17.631Z",
+    "childProcessPid": 49166,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleOnboardPCATA--49166",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleMacRISC4PE undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMacRISC4PE",
+    "repo": "https://github.com/apple-oss-distributions/AppleMacRISC4PE",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMacRISC4PE",
+    "startTime": "2022-09-03T18:30:13.484Z",
+    "endTime": "2022-09-03T18:30:14.460Z",
+    "childProcessPid": 49121,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleMacRISC4PE--49121",
+    "executionErrors": []
+}

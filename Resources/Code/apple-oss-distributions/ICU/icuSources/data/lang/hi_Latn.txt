@@ -1,0 +1,14 @@
+﻿// © 2016 and later: Unicode, Inc. and others.
+// License & terms of use: http://www.unicode.org/copyright.html
+// Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+hi_Latn{
+    %%Parent{"en_IN"}
+    Scripts{
+        Arab{"Arabi"}
+    }
+    codePatterns{
+        language{"Bhasha: {0}"}
+        script{"Lipi: {0}"}
+        territory{"Kshetra: {0}"}
+    }
+}

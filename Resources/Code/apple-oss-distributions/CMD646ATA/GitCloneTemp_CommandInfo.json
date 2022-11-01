@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/CMD646ATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CMD646ATA",
+    "repo": "https://github.com/apple-oss-distributions/CMD646ATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CMD646ATA",
+    "startTime": "2022-09-03T18:30:40.066Z",
+    "endTime": "2022-09-03T18:30:40.760Z",
+    "childProcessPid": 49470,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--CMD646ATA--49470",
+    "executionErrors": []
+}

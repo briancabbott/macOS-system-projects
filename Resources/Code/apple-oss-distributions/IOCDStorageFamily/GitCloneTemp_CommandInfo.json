@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOCDStorageFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOCDStorageFamily",
+    "repo": "https://github.com/apple-oss-distributions/IOCDStorageFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOCDStorageFamily",
+    "startTime": "2022-09-03T18:31:29.746Z",
+    "endTime": "2022-09-03T18:31:30.902Z",
+    "childProcessPid": 50176,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOCDStorageFamily--50176",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/OpenSSL098 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/OpenSSL098",
+    "repo": "https://github.com/apple-oss-distributions/OpenSSL098",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/OpenSSL098",
+    "startTime": "2022-09-03T18:32:31.510Z",
+    "endTime": "2022-09-03T18:32:33.657Z",
+    "childProcessPid": 50716,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--OpenSSL098--50716",
+    "executionErrors": []
+}

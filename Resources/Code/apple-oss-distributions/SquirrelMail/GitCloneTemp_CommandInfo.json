@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/SquirrelMail undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SquirrelMail",
+    "repo": "https://github.com/apple-oss-distributions/SquirrelMail",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SquirrelMail",
+    "startTime": "2022-09-03T18:33:05.900Z",
+    "endTime": "2022-09-03T18:33:07.782Z",
+    "childProcessPid": 51163,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--SquirrelMail--51163",
+    "executionErrors": []
+}

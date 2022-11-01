@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/DiskArbitration undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DiskArbitration",
+    "repo": "https://github.com/apple-oss-distributions/DiskArbitration",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DiskArbitration",
+    "startTime": "2022-09-03T18:31:07.682Z",
+    "endTime": "2022-09-03T18:31:08.653Z",
+    "childProcessPid": 50068,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--DiskArbitration--50068",
+    "executionErrors": []
+}

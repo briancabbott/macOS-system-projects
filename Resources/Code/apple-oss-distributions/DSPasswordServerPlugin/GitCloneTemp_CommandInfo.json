@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/DSPasswordServerPlugin undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DSPasswordServerPlugin",
+    "repo": "https://github.com/apple-oss-distributions/DSPasswordServerPlugin",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/DSPasswordServerPlugin",
+    "startTime": "2022-09-03T18:31:04.318Z",
+    "endTime": "2022-09-03T18:31:05.260Z",
+    "childProcessPid": 50012,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--DSPasswordServerPlugin--50012",
+    "executionErrors": []
+}

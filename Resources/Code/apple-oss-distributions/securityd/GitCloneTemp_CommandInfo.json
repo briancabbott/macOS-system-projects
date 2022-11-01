@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/securityd undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/securityd",
+    "repo": "https://github.com/apple-oss-distributions/securityd",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/securityd",
+    "startTime": "2022-09-03T18:44:31.744Z",
+    "endTime": "2022-09-03T18:44:32.894Z",
+    "childProcessPid": 53989,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--securityd--53989",
+    "executionErrors": []
+}

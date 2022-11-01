@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/SULongDoubleCompat undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SULongDoubleCompat",
+    "repo": "https://github.com/apple-oss-distributions/SULongDoubleCompat",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/SULongDoubleCompat",
+    "startTime": "2022-09-03T18:32:51.980Z",
+    "endTime": "2022-09-03T18:32:52.614Z",
+    "childProcessPid": 51089,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--SULongDoubleCompat--51089",
+    "executionErrors": []
+}

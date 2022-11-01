@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/KerberosLibraries undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/KerberosLibraries",
+    "repo": "https://github.com/apple-oss-distributions/KerberosLibraries",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/KerberosLibraries",
+    "startTime": "2022-09-03T18:32:00.113Z",
+    "endTime": "2022-09-03T18:32:02.302Z",
+    "childProcessPid": 50357,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--KerberosLibraries--50357",
+    "executionErrors": []
+}

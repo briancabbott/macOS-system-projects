@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/sendmail undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/sendmail",
+    "repo": "https://github.com/apple-oss-distributions/sendmail",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/sendmail",
+    "startTime": "2022-09-03T18:44:32.895Z",
+    "endTime": "2022-09-03T18:44:34.604Z",
+    "childProcessPid": 53994,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--sendmail--53994",
+    "executionErrors": []
+}

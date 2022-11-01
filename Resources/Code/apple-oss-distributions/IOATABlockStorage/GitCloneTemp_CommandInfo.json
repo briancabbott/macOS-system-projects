@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOATABlockStorage undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOATABlockStorage",
+    "repo": "https://github.com/apple-oss-distributions/IOATABlockStorage",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOATABlockStorage",
+    "startTime": "2022-09-03T18:31:24.936Z",
+    "endTime": "2022-09-03T18:31:25.795Z",
+    "childProcessPid": 50144,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOATABlockStorage--50144",
+    "executionErrors": []
+}

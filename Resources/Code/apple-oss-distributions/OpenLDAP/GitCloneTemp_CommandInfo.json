@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/OpenLDAP undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/OpenLDAP",
+    "repo": "https://github.com/apple-oss-distributions/OpenLDAP",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/OpenLDAP",
+    "startTime": "2022-09-03T18:32:24.260Z",
+    "endTime": "2022-09-03T18:32:25.708Z",
+    "childProcessPid": 50605,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--OpenLDAP--50605",
+    "executionErrors": []
+}

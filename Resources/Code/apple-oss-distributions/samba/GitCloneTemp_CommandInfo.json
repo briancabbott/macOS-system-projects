@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/samba undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/samba",
+    "repo": "https://github.com/apple-oss-distributions/samba",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/samba",
+    "startTime": "2022-09-03T18:43:52.891Z",
+    "endTime": "2022-09-03T18:43:57.126Z",
+    "childProcessPid": 53868,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--samba--53868",
+    "executionErrors": []
+}

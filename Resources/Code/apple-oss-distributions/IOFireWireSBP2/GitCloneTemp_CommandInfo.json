@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOFireWireSBP2 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOFireWireSBP2",
+    "repo": "https://github.com/apple-oss-distributions/IOFireWireSBP2",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOFireWireSBP2",
+    "startTime": "2022-09-03T18:31:35.399Z",
+    "endTime": "2022-09-03T18:31:35.954Z",
+    "childProcessPid": 50214,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOFireWireSBP2--50214",
+    "executionErrors": []
+}

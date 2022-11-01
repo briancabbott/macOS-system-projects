@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleDP83816Ethernet undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleDP83816Ethernet",
+    "repo": "https://github.com/apple-oss-distributions/AppleDP83816Ethernet",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleDP83816Ethernet",
+    "startTime": "2022-09-03T18:29:52.930Z",
+    "endTime": "2022-09-03T18:29:53.599Z",
+    "childProcessPid": 48882,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleDP83816Ethernet--48882",
+    "executionErrors": []
+}

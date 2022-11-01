@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/security_privportserver undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/security_privportserver",
+    "repo": "https://github.com/apple-oss-distributions/security_privportserver",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/security_privportserver",
+    "startTime": "2022-09-03T18:44:29.861Z",
+    "endTime": "2022-09-03T18:44:30.770Z",
+    "childProcessPid": 53976,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--security_privportserver--53976",
+    "executionErrors": []
+}

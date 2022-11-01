@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleKeyswitch undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKeyswitch",
+    "repo": "https://github.com/apple-oss-distributions/AppleKeyswitch",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKeyswitch",
+    "startTime": "2022-09-03T18:30:08.649Z",
+    "endTime": "2022-09-03T18:30:09.303Z",
+    "childProcessPid": 49080,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleKeyswitch--49080",
+    "executionErrors": []
+}

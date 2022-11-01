@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOFWDVComponents undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOFWDVComponents",
+    "repo": "https://github.com/apple-oss-distributions/IOFWDVComponents",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOFWDVComponents",
+    "startTime": "2022-09-03T18:31:32.071Z",
+    "endTime": "2022-09-03T18:31:33.003Z",
+    "childProcessPid": 50188,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOFWDVComponents--50188",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IODVDStorageFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IODVDStorageFamily",
+    "repo": "https://github.com/apple-oss-distributions/IODVDStorageFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IODVDStorageFamily",
+    "startTime": "2022-09-03T18:31:30.903Z",
+    "endTime": "2022-09-03T18:31:32.070Z",
+    "childProcessPid": 50183,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IODVDStorageFamily--50183",
+    "executionErrors": []
+}

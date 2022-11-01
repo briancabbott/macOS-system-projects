@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/RubyOnRails undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/RubyOnRails",
+    "repo": "https://github.com/apple-oss-distributions/RubyOnRails",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/RubyOnRails",
+    "startTime": "2022-09-03T18:32:49.073Z",
+    "endTime": "2022-09-03T18:32:50.616Z",
+    "childProcessPid": 51072,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--RubyOnRails--51072",
+    "executionErrors": []
+}

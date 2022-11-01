@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleAPIC undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleAPIC",
+    "repo": "https://github.com/apple-oss-distributions/AppleAPIC",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleAPIC",
+    "startTime": "2022-09-03T18:29:48.743Z",
+    "endTime": "2022-09-03T18:29:49.400Z",
+    "childProcessPid": 48842,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleAPIC--48842",
+    "executionErrors": []
+}

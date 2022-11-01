@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/Tokend undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Tokend",
+    "repo": "https://github.com/apple-oss-distributions/Tokend",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Tokend",
+    "startTime": "2022-09-03T18:33:11.483Z",
+    "endTime": "2022-09-03T18:33:12.303Z",
+    "childProcessPid": 51200,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--Tokend--51200",
+    "executionErrors": []
+}

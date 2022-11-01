@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleSMBIOS undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleSMBIOS",
+    "repo": "https://github.com/apple-oss-distributions/AppleSMBIOS",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleSMBIOS",
+    "startTime": "2022-09-03T18:30:25.090Z",
+    "endTime": "2022-09-03T18:30:25.761Z",
+    "childProcessPid": 49267,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleSMBIOS--49267",
+    "executionErrors": []
+}

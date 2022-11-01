@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/CPAN undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CPAN",
+    "repo": "https://github.com/apple-oss-distributions/CPAN",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/CPAN",
+    "startTime": "2022-09-03T18:30:40.761Z",
+    "endTime": "2022-09-03T18:30:44.119Z",
+    "childProcessPid": 49493,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--CPAN--49493",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/JavaScriptGlue undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/JavaScriptGlue",
+    "repo": "https://github.com/apple-oss-distributions/JavaScriptGlue",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/JavaScriptGlue",
+    "startTime": "2022-09-03T18:31:55.760Z",
+    "endTime": "2022-09-03T18:31:56.421Z",
+    "childProcessPid": 50335,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--JavaScriptGlue--50335",
+    "executionErrors": []
+}

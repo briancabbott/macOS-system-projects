@@ -1,0 +1,27 @@
+--- jabberd-2.2.17/tools/db-setup.sqlite	2012-02-12 13:38:25.000000000 -0800
++++ jabberd/tools/db-setup.sqlite	2013-06-19 22:24:37.000000000 -0700
+@@ -52,6 +52,11 @@
+ 
+ CREATE INDEX i_rosteri_owner ON "roster-items"("collection-owner");
+ 
++---
++--- Apple index to speed up jabber_autobuddy operations (still necessary in jabberd 2.2, with i_rosteri_owner added?)
++---
++CREATE INDEX "roster-items-owner-jid-index" on "roster-items" ("collection-owner", "jid");
++
+ --
+ -- Roster groups
+ -- Used by: mod_roster
+@@ -240,3 +245,12 @@
+     "last-login" INTEGER DEFAULT '0',
+     "last-logout" INTEGER DEFAULT '0',
+     "xml" TEXT );
++
++--
++-- Apple: OD group GUIDs to enable autobuddy feature for
++-- Used by: mod_autobuddy
++--
++CREATE TABLE "autobuddy-guids" (
++    "guid" text NOT NULL,
++    "object-sequence" INTEGER PRIMARY KEY,
++

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleCore99PE undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleCore99PE",
+    "repo": "https://github.com/apple-oss-distributions/AppleCore99PE",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleCore99PE",
+    "startTime": "2022-09-03T18:29:51.521Z",
+    "endTime": "2022-09-03T18:29:52.263Z",
+    "childProcessPid": 48872,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleCore99PE--48872",
+    "executionErrors": []
+}

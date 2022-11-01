@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleKiwiRoot undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKiwiRoot",
+    "repo": "https://github.com/apple-oss-distributions/AppleKiwiRoot",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleKiwiRoot",
+    "startTime": "2022-09-03T18:30:09.972Z",
+    "endTime": "2022-09-03T18:30:10.625Z",
+    "childProcessPid": 49092,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleKiwiRoot--49092",
+    "executionErrors": []
+}

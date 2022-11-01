@@ -1,0 +1,23 @@
+﻿// © 2016 and later: Unicode, Inc. and others.
+// License & terms of use: http://www.unicode.org/copyright.html
+// Generated using tools/cldr/cldr-to-icu/build-icu-data.xml
+en_CN{
+    Currencies{
+        CNY{
+            "¥",
+            "Chinese Yuan",
+        }
+        JPY{
+            "JP¥",
+            "Japanese Yen",
+        }
+        KRW{
+            "￦",
+            "South Korean Won",
+        }
+        USD{
+            "US$",
+            "US Dollar",
+        }
+    }
+}

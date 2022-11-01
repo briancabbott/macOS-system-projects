@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/JavaScriptCore undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/JavaScriptCore",
+    "repo": "https://github.com/apple-oss-distributions/JavaScriptCore",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/JavaScriptCore",
+    "startTime": "2022-09-03T18:31:52.201Z",
+    "endTime": "2022-09-03T18:31:55.760Z",
+    "childProcessPid": 50324,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--JavaScriptCore--50324",
+    "executionErrors": []
+}

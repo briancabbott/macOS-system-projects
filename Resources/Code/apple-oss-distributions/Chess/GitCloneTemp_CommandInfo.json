@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/Chess undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Chess",
+    "repo": "https://github.com/apple-oss-distributions/Chess",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/Chess",
+    "startTime": "2022-09-03T18:30:51.316Z",
+    "endTime": "2022-09-03T18:30:52.819Z",
+    "childProcessPid": 49652,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--Chess--49652",
+    "executionErrors": []
+}

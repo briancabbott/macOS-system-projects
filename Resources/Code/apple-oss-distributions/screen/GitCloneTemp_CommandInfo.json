@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/screen undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/screen",
+    "repo": "https://github.com/apple-oss-distributions/screen",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/screen",
+    "startTime": "2022-09-03T18:43:57.126Z",
+    "endTime": "2022-09-03T18:43:59.044Z",
+    "childProcessPid": 53881,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--screen--53881",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/X11libs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/X11libs",
+    "repo": "https://github.com/apple-oss-distributions/X11libs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/X11libs",
+    "startTime": "2022-09-03T18:34:19.476Z",
+    "endTime": "2022-09-03T18:34:33.783Z",
+    "childProcessPid": 51364,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--X11libs--51364",
+    "executionErrors": []
+}

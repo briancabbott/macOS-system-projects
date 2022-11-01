@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleVIA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleVIA",
+    "repo": "https://github.com/apple-oss-distributions/AppleVIA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleVIA",
+    "startTime": "2022-09-03T18:30:30.688Z",
+    "endTime": "2022-09-03T18:30:31.336Z",
+    "childProcessPid": 49345,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleVIA--49345",
+    "executionErrors": []
+}

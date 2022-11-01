@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleSym8xx undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleSym8xx",
+    "repo": "https://github.com/apple-oss-distributions/AppleSym8xx",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleSym8xx",
+    "startTime": "2022-09-03T18:30:25.762Z",
+    "endTime": "2022-09-03T18:30:26.506Z",
+    "childProcessPid": 49272,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleSym8xx--49272",
+    "executionErrors": []
+}

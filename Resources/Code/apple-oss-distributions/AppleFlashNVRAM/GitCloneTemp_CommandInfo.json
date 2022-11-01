@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleFlashNVRAM undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleFlashNVRAM",
+    "repo": "https://github.com/apple-oss-distributions/AppleFlashNVRAM",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleFlashNVRAM",
+    "startTime": "2022-09-03T18:29:55.010Z",
+    "endTime": "2022-09-03T18:29:55.678Z",
+    "childProcessPid": 48901,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleFlashNVRAM--48901",
+    "executionErrors": []
+}

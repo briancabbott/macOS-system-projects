@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/NKEMgr undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/NKEMgr",
+    "repo": "https://github.com/apple-oss-distributions/NKEMgr",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/NKEMgr",
+    "startTime": "2022-09-03T18:32:21.920Z",
+    "endTime": "2022-09-03T18:32:22.442Z",
+    "childProcessPid": 50581,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--NKEMgr--50581",
+    "executionErrors": []
+}

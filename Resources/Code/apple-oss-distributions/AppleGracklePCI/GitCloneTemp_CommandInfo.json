@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleGracklePCI undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleGracklePCI",
+    "repo": "https://github.com/apple-oss-distributions/AppleGracklePCI",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleGracklePCI",
+    "startTime": "2022-09-03T18:29:58.057Z",
+    "endTime": "2022-09-03T18:29:58.633Z",
+    "childProcessPid": 48926,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleGracklePCI--48926",
+    "executionErrors": []
+}

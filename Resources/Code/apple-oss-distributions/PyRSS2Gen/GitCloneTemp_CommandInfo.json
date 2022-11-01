@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/PyRSS2Gen undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/PyRSS2Gen",
+    "repo": "https://github.com/apple-oss-distributions/PyRSS2Gen",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/PyRSS2Gen",
+    "startTime": "2022-09-03T18:32:45.502Z",
+    "endTime": "2022-09-03T18:32:45.989Z",
+    "childProcessPid": 51016,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--PyRSS2Gen--51016",
+    "executionErrors": []
+}

@@ -1,0 +1,101 @@
+--- /tmp/jabberd-2.2.17/configure	2012-08-26 04:59:56.000000000 -0700
++++ ./jabberd2/configure	2012-08-28 18:48:59.000000000 -0700
+@@ -570,7 +570,7 @@ MAKEFLAGS=
+ # Identity of this package.
+ PACKAGE_NAME='jabberd'
+ PACKAGE_TARNAME='jabberd'
+-PACKAGE_VERSION='2.2.17'
++PACKAGE_VERSION='2.2.17-409'
+ PACKAGE_STRING='jabberd 2.2.17'
+ PACKAGE_BUGREPORT='jabberd2@lists.xiaoka.com'
+ PACKAGE_URL=''
+@@ -651,6 +651,8 @@ STORAGE_DB_TRUE
+ DB_LIBS
+ STORAGE_SQLITE_FALSE
+ STORAGE_SQLITE_TRUE
++STORAGE_APPLE_FALSE
++STORAGE_APPLE_TRUE
+ SQLITE_LIBS
+ STORAGE_PGSQL_FALSE
+ STORAGE_PGSQL_TRUE
+@@ -807,6 +809,7 @@ with_zlib
+ enable_mysql
+ enable_pgsql
+ enable_sqlite
++enable_apple
+ enable_db
+ with_oracle_home
+ enable_oracle
+@@ -1471,6 +1474,7 @@ Optional Features:
+   --enable-mysql=DIR      enable MySQL auth/reg/storage support (no)
+   --enable-pgsql=DIR      enable PostgreSQL auth/reg/storage support (no)
+   --enable-sqlite         enable SQLite3 auth/reg/storage support (no)
++  --enable-apple          enable Apple OD auth, SQLite3 storage support (no)
+   --enable-db             enable Berkeley DB auth/reg/storage support (no)
+   --enable-oracle         enable Oracle auth/reg/storage support (no)
+   --enable-ldap           enable OpenLDAP auth/reg support (no)
+@@ -2987,7 +2991,7 @@ fi
+ 
+ # Define the identity of the package.
+  PACKAGE='jabberd'
+- VERSION='2.2.17'
++ VERSION="$PACKAGE_VERSION"
+ 
+ 
+ cat >>confdefs.h <<_ACEOF
+@@ -11762,7 +11766,7 @@ fi
+ # check for optimisation level
+ { $as_echo "$as_me:${as_lineno-$LINENO}: checking CFLAGS optimization level" >&5
+ $as_echo_n "checking CFLAGS optimization level... " >&6; }
+-if echo $CFLAGS | grep '.*-O[3s].*' >/dev/null 2>&1; then
++if echo $CFLAGS | grep '.*-O[3].*' >/dev/null 2>&1; then
+     as_fn_error $? "maximum allowed optimization level is -O2" "$LINENO" 5
+ fi
+ { $as_echo "$as_me:${as_lineno-$LINENO}: result: fine" >&5
+@@ -16498,6 +16502,35 @@ else
+   STORAGE_SQLITE_FALSE=
+ fi
+ 
++# Apple OD auth
++# Check whether --enable-apple-X was given.
++
++if test "${enable_apple+set}" = set; then
++  enableval=$enable_apple; enable_apple=$enableval have_apple=no
++else
++  enable_apple=no         have_apple=no
++fi
++
++if test "x-$enable_apple" = "x-yes" ; then
++  # stub...
++  have_apple=yes
++  APPLE_OD_LIBS="-lxmppodauth"
++
++cat >>confdefs.h <<\_ACEOF
++#define STORAGE_APPLE 1
++_ACEOF
++
++
++fi
++
++
++if test "x-$have_apple" = "x-yes"; then
++  STORAGE_APPLE_TRUE=
++  STORAGE_APPLE_FALSE='#'
++else
++  STORAGE_APPLE_TRUE='#'
++  STORAGE_APPLE_FALSE=
++fi
+ 
+ # Berkeley DB
+ _save_libs="$LIBS"
+@@ -18131,6 +18164,10 @@ if test -z "${STORAGE_SQLITE_TRUE}" && t
+   as_fn_error $? "conditional \"STORAGE_SQLITE\" was never defined.
+ Usually this means the macro was only invoked conditionally." "$LINENO" 5
+ fi
++if test -z "${STORAGE_APPLE_TRUE}" && test -z "${STORAGE_APPLE_FALSE}"; then
++  as_fn_error "conditional \"STORAGE_APPLE\" was never defined.
++Usually this means the macro was only invoked conditionally." "$LINENO" 5
++fi
+ if test -z "${STORAGE_DB_TRUE}" && test -z "${STORAGE_DB_FALSE}"; then
+   as_fn_error $? "conditional \"STORAGE_DB\" was never defined.
+ Usually this means the macro was only invoked conditionally." "$LINENO" 5

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/MITKerberosShim undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/MITKerberosShim",
+    "repo": "https://github.com/apple-oss-distributions/MITKerberosShim",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/MITKerberosShim",
+    "startTime": "2022-09-03T18:32:11.673Z",
+    "endTime": "2022-09-03T18:32:12.289Z",
+    "childProcessPid": 50481,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--MITKerberosShim--50481",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/OpenDirectory undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/OpenDirectory",
+    "repo": "https://github.com/apple-oss-distributions/OpenDirectory",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/OpenDirectory",
+    "startTime": "2022-09-03T18:32:23.653Z",
+    "endTime": "2022-09-03T18:32:24.260Z",
+    "childProcessPid": 50598,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--OpenDirectory--50598",
+    "executionErrors": []
+}

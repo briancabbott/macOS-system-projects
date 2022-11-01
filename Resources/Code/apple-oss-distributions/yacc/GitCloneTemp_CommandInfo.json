@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/yacc undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/yacc",
+    "repo": "https://github.com/apple-oss-distributions/yacc",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/yacc",
+    "startTime": "2022-09-03T18:45:57.052Z",
+    "endTime": "2022-09-03T18:45:57.709Z",
+    "childProcessPid": 54439,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--yacc--54439",
+    "executionErrors": []
+}

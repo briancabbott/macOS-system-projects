@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleI2S undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleI2S",
+    "repo": "https://github.com/apple-oss-distributions/AppleI2S",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleI2S",
+    "startTime": "2022-09-03T18:30:00.839Z",
+    "endTime": "2022-09-03T18:30:01.519Z",
+    "childProcessPid": 49003,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleI2S--49003",
+    "executionErrors": []
+}

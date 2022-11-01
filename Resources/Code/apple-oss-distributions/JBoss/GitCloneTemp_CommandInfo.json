@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/JBoss undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/JBoss",
+    "repo": "https://github.com/apple-oss-distributions/JBoss",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/JBoss",
+    "startTime": "2022-09-03T18:31:47.697Z",
+    "endTime": "2022-09-03T18:31:52.200Z",
+    "childProcessPid": 50315,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--JBoss--50315",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/HeathrowATA undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/HeathrowATA",
+    "repo": "https://github.com/apple-oss-distributions/HeathrowATA",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/HeathrowATA",
+    "startTime": "2022-09-03T18:31:14.730Z",
+    "endTime": "2022-09-03T18:31:15.430Z",
+    "childProcessPid": 50106,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--HeathrowATA--50106",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/IOHIDFamily undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOHIDFamily",
+    "repo": "https://github.com/apple-oss-distributions/IOHIDFamily",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/IOHIDFamily",
+    "startTime": "2022-09-03T18:31:37.358Z",
+    "endTime": "2022-09-03T18:31:38.302Z",
+    "childProcessPid": 50232,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--IOHIDFamily--50232",
+    "executionErrors": []
+}

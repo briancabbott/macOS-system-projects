@@ -1,0 +1,5 @@
+if [ "${Target}" = "AppleADBDisplay" ]; then
+	Targets='AppleADBDisplay'
+else
+	Targets='AppleADBDisplay'
+fi

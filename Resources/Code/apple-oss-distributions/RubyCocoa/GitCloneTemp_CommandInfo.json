@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/RubyCocoa undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/RubyCocoa",
+    "repo": "https://github.com/apple-oss-distributions/RubyCocoa",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/RubyCocoa",
+    "startTime": "2022-09-03T18:32:45.990Z",
+    "endTime": "2022-09-03T18:32:47.352Z",
+    "childProcessPid": 51039,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--RubyCocoa--51039",
+    "executionErrors": []
+}

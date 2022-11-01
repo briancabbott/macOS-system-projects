@@ -1,0 +1,19 @@
+--- libusb/os/darwin_usb.c
++++ libusb/os/darwin_usb.c
+@@ -831,7 +831,7 @@
+   /* According to Apple's documentation the device must be open for DeviceRequest but we may not be able to open some
+    * devices and Apple's USB Prober doesn't bother to open the device before issuing a descriptor request.  Still,
+    * to follow the spec as closely as possible, try opening the device */
+-  is_open = ((*device)->USBDeviceOpenSeize(device) == kIOReturnSuccess);
++  is_open = ((*device)->USBDeviceOpen(device) == kIOReturnSuccess);
+ 
+   do {
+     /**** retrieve device descriptor ****/
+@@ -1202,7 +1202,7 @@
+ 
+   if (0 == dpriv->open_count) {
+     /* try to open the device */
+-    kresult = (*(dpriv->device))->USBDeviceOpenSeize (dpriv->device);
++    kresult = (*(dpriv->device))->USBDeviceOpen (dpriv->device);
+     if (kresult != kIOReturnSuccess) {
+       usbi_warn (HANDLE_CTX (dev_handle), "USBDeviceOpen: %s", darwin_error_str(kresult));

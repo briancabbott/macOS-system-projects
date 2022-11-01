@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/AppleMediaBay undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMediaBay",
+    "repo": "https://github.com/apple-oss-distributions/AppleMediaBay",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/AppleMediaBay",
+    "startTime": "2022-09-03T18:30:15.166Z",
+    "endTime": "2022-09-03T18:30:15.750Z",
+    "childProcessPid": 49153,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--AppleMediaBay--49153",
+    "executionErrors": []
+}

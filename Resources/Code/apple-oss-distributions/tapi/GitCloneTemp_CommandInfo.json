@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/tapi undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tapi",
+    "repo": "https://github.com/apple-oss-distributions/tapi",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/tapi",
+    "startTime": "2022-09-03T18:44:57.751Z",
+    "endTime": "2022-09-03T18:45:00.523Z",
+    "childProcessPid": 54127,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--tapi--54127",
+    "executionErrors": []
+}
