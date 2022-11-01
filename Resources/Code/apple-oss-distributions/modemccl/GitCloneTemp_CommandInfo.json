@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/modemccl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/modemccl",
+    "repo": "https://github.com/apple-oss-distributions/modemccl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/modemccl",
+    "startTime": "2022-09-03T18:41:52.208Z",
+    "endTime": "2022-09-03T18:41:52.809Z",
+    "childProcessPid": 53453,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--modemccl--53453",
+    "executionErrors": []
+}

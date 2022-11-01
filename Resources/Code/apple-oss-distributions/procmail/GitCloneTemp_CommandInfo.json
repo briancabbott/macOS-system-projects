@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/procmail undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/procmail",
+    "repo": "https://github.com/apple-oss-distributions/procmail",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/procmail",
+    "startTime": "2022-09-03T18:43:14.689Z",
+    "endTime": "2022-09-03T18:43:15.584Z",
+    "childProcessPid": 53730,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--procmail--53730",
+    "executionErrors": []
+}

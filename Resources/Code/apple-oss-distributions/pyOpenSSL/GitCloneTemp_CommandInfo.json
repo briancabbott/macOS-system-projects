@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/pyOpenSSL undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pyOpenSSL",
+    "repo": "https://github.com/apple-oss-distributions/pyOpenSSL",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pyOpenSSL",
+    "startTime": "2022-09-03T18:43:16.360Z",
+    "endTime": "2022-09-03T18:43:17.080Z",
+    "childProcessPid": 53747,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--pyOpenSSL--53747",
+    "executionErrors": []
+}

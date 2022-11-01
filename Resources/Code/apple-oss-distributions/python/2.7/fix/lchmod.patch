@@ -1,0 +1,64 @@
+diff --git a/configure b/configure
+index 61ddbc1..8478a29 100755
+--- a/configure
++++ b/configure
+@@ -10657,7 +10657,7 @@ for ac_func in alarm setitimer getitimer chown \
+  gai_strerror getgroups getlogin getloadavg getpeername getpgid getpid \
+  getentropy \
+  getpriority getresuid getresgid getpwent getspnam getspent getsid getwd \
+- initgroups kill killpg lchown lstat mkfifo mknod mktime mmap \
++ initgroups kill killpg lchmod lchown lstat mkfifo mknod mktime mmap \
+  mremap nice pathconf pause plock poll pthread_init \
+  putenv readlink realpath \
+  select sem_open sem_timedwait sem_getvalue sem_unlink setegid seteuid \
+@@ -10680,23 +10680,6 @@ fi
+ done
+ 
+ 
+-# Force lchmod off for Linux. Linux disallows changing the mode of symbolic
+-# links. Some libc implementations have a stub lchmod implementation that always
+-# returns an error.
+-if test "$MACHDEP" != linux; then
+-  for ac_func in lchmod
+-do :
+-  ac_fn_c_check_func "$LINENO" "lchmod" "ac_cv_func_lchmod"
+-if test "x$ac_cv_func_lchmod" = xyes; then :
+-  cat >>confdefs.h <<_ACEOF
+-#define HAVE_LCHMOD 1
+-_ACEOF
+-
+-fi
+-done
+-
+-fi
+-
+ # For some functions, having a definition is not sufficient, since
+ # we want to take their address.
+ { $as_echo "$as_me:${as_lineno-$LINENO}: checking for chroot" >&5
+diff --git a/configure.ac b/configure.ac
+index efe6922..df6f9e4 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -3128,7 +3128,7 @@ AC_CHECK_FUNCS(alarm setitimer getitimer chown \
+  gai_strerror getgroups getlogin getloadavg getpeername getpgid getpid \
+  getentropy \
+  getpriority getresuid getresgid getpwent getspnam getspent getsid getwd \
+- initgroups kill killpg lchown lstat mkfifo mknod mktime mmap \
++ initgroups kill killpg lchmod lchown lstat mkfifo mknod mktime mmap \
+  mremap nice pathconf pause plock poll pthread_init \
+  putenv readlink realpath \
+  select sem_open sem_timedwait sem_getvalue sem_unlink setegid seteuid \
+@@ -3140,13 +3140,6 @@ AC_CHECK_FUNCS(alarm setitimer getitimer chown \
+  sysconf tcgetpgrp tcsetpgrp tempnam timegm times tmpfile tmpnam tmpnam_r \
+  truncate uname unsetenv utimes waitpid wait3 wait4 wcscoll _getpty)
+ 
+-# Force lchmod off for Linux. Linux disallows changing the mode of symbolic
+-# links. Some libc implementations have a stub lchmod implementation that always
+-# returns an error.
+-if test "$MACHDEP" != linux; then
+-  AC_CHECK_FUNCS(lchmod)
+-fi
+-
+ # For some functions, having a definition is not sufficient, since
+ # we want to take their address.
+ AC_MSG_CHECKING(for chroot)

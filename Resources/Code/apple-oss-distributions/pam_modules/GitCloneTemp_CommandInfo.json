@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/pam_modules undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pam_modules",
+    "repo": "https://github.com/apple-oss-distributions/pam_modules",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pam_modules",
+    "startTime": "2022-09-03T18:42:19.592Z",
+    "endTime": "2022-09-03T18:42:20.252Z",
+    "childProcessPid": 53581,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--pam_modules--53581",
+    "executionErrors": []
+}

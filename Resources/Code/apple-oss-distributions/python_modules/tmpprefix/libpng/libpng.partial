@@ -1,0 +1,18 @@
+<dict>
+        <key>OpenSourceProject</key>
+        <string>libpng</string>
+        <key>OpenSourceVersion</key>
+        <string>1.6.36</string>
+        <key>OpenSourceWebsiteURL</key>
+        <string>http://www.libpng.org/pub/png/libpng.html</string>
+        <key>OpenSourceURL</key>
+        <string>https://download.sourceforge.net/libpng/libpng-1.6.36.tar.gz</string>
+        <key>OpenSourceImportDate</key>
+        <string>2019-04-05</string>
+        <key>OpenSourceLicense</key>
+        <string>libpng</string>
+        <key>OpenSourceLicenseFile</key>
+        <string>python_modules.txt</string>
+        <key>OpenSourceMDSHA256</key>
+        <string>ca13c548bde5fb6ff7117cc0bdab38808acb699c0eccb613f0e4697826e1fd7d</string>
+</dict>

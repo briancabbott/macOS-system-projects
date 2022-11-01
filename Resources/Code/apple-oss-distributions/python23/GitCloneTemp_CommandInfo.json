@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/python23 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/python23",
+    "repo": "https://github.com/apple-oss-distributions/python23",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/python23",
+    "startTime": "2022-09-03T18:43:30.633Z",
+    "endTime": "2022-09-03T18:43:31.738Z",
+    "childProcessPid": 53786,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--python23--53786",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/pdisk undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pdisk",
+    "repo": "https://github.com/apple-oss-distributions/pdisk",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pdisk",
+    "startTime": "2022-09-03T18:42:24.842Z",
+    "endTime": "2022-09-03T18:42:25.436Z",
+    "childProcessPid": 53618,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--pdisk--53618",
+    "executionErrors": []
+}

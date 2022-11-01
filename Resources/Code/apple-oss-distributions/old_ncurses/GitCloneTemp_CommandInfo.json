@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/old_ncurses undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/old_ncurses",
+    "repo": "https://github.com/apple-oss-distributions/old_ncurses",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/old_ncurses",
+    "startTime": "2022-09-03T18:42:15.458Z",
+    "endTime": "2022-09-03T18:42:16.572Z",
+    "childProcessPid": 53562,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--old_ncurses--53562",
+    "executionErrors": []
+}

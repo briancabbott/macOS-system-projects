@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/python_dateutil undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/python_dateutil",
+    "repo": "https://github.com/apple-oss-distributions/python_dateutil",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/python_dateutil",
+    "startTime": "2022-09-03T18:43:31.739Z",
+    "endTime": "2022-09-03T18:43:32.410Z",
+    "childProcessPid": 53791,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--python_dateutil--53791",
+    "executionErrors": []
+}

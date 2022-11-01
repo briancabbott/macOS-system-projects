@@ -1,0 +1,18 @@
+<dict>
+        <key>OpenSourceProject</key>
+        <string>freetype</string>
+        <key>OpenSourceVersion</key>
+        <string>2.10.0</string>
+        <key>OpenSourceWebsiteURL</key>
+        <string>http://freetype.sourceforge.net/index2.html</string>
+        <key>OpenSourceURL</key>
+        <string>https://download.savannah.gnu.org/releases/freetype/freetype-2.10.0.tar.bz2</string>
+        <key>OpenSourceImportDate</key>
+        <string>2019-04-05</string>
+        <key>OpenSourceLicense</key>
+        <string>freetype</string>
+        <key>OpenSourceLicenseFile</key>
+        <string>python_modules.txt</string>
+        <key>OpenSourceSHA256</key>
+        <string>fccc62928c65192fff6c98847233b28eb7ce05f12d2fea3f6cc90e8b4e5fbe06</string>
+</dict>

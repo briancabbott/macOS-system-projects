@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/nasm undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/nasm",
+    "repo": "https://github.com/apple-oss-distributions/nasm",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/nasm",
+    "startTime": "2022-09-03T18:41:54.631Z",
+    "endTime": "2022-09-03T18:41:55.395Z",
+    "childProcessPid": 53473,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--nasm--53473",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/objc4 undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/objc4",
+    "repo": "https://github.com/apple-oss-distributions/objc4",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/objc4",
+    "startTime": "2022-09-03T18:42:14.348Z",
+    "endTime": "2022-09-03T18:42:15.457Z",
+    "childProcessPid": 53554,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--objc4--53554",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/postfix undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/postfix",
+    "repo": "https://github.com/apple-oss-distributions/postfix",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/postfix",
+    "startTime": "2022-09-03T18:42:59.923Z",
+    "endTime": "2022-09-03T18:43:12.266Z",
+    "childProcessPid": 53687,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--postfix--53687",
+    "executionErrors": []
+}

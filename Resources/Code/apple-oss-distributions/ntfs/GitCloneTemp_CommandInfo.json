@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/ntfs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ntfs",
+    "repo": "https://github.com/apple-oss-distributions/ntfs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ntfs",
+    "startTime": "2022-09-03T18:42:08.536Z",
+    "endTime": "2022-09-03T18:42:09.768Z",
+    "childProcessPid": 53536,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--ntfs--53536",
+    "executionErrors": []
+}

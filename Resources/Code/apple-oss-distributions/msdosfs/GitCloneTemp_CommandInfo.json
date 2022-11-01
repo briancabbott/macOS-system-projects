@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/msdosfs undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/msdosfs",
+    "repo": "https://github.com/apple-oss-distributions/msdosfs",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/msdosfs",
+    "startTime": "2022-09-03T18:41:52.809Z",
+    "endTime": "2022-09-03T18:41:53.552Z",
+    "childProcessPid": 53458,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--msdosfs--53458",
+    "executionErrors": []
+}

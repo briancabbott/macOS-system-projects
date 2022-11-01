@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../../../../../../../../Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreFoundation.framework">
+   </FileRef>
+   <FileRef
+      location = "group:Makefile">
+   </FileRef>
+   <FileRef
+      location = "group:notifyd.tproj">
+   </FileRef>
+   <FileRef
+      location = "group:notifyutil.tproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/openmpi undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/openmpi",
+    "repo": "https://github.com/apple-oss-distributions/openmpi",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/openmpi",
+    "startTime": "2022-09-03T18:42:16.573Z",
+    "endTime": "2022-09-03T18:42:18.828Z",
+    "childProcessPid": 53569,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--openmpi--53569",
+    "executionErrors": []
+}

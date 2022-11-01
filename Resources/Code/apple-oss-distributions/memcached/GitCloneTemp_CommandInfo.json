@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/memcached undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/memcached",
+    "repo": "https://github.com/apple-oss-distributions/memcached",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/memcached",
+    "startTime": "2022-09-03T18:41:50.956Z",
+    "endTime": "2022-09-03T18:41:51.579Z",
+    "childProcessPid": 53443,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--memcached--53443",
+    "executionErrors": []
+}

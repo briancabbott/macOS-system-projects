@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/pyobjc undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pyobjc",
+    "repo": "https://github.com/apple-oss-distributions/pyobjc",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/pyobjc",
+    "startTime": "2022-09-03T18:43:17.081Z",
+    "endTime": "2022-09-03T18:43:21.553Z",
+    "childProcessPid": 53753,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--pyobjc--53753",
+    "executionErrors": []
+}

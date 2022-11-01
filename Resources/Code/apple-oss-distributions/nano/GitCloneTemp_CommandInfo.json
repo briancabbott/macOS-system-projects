@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/nano undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/nano",
+    "repo": "https://github.com/apple-oss-distributions/nano",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/nano",
+    "startTime": "2022-09-03T18:41:53.552Z",
+    "endTime": "2022-09-03T18:41:54.631Z",
+    "childProcessPid": 53465,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--nano--53465",
+    "executionErrors": []
+}

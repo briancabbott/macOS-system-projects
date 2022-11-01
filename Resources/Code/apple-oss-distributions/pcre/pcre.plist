@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OpenSourceProject</key>
+	<string>pcre</string>
+	<key>OpenSourceVersion</key>
+	<string>8.44</string>
+	<key>OpenSourceWebsiteURL</key>
+	<string>http://pcre.org/</string>
+	<key>OpenSourceURL</key>
+	<string>https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.bz2</string>
+	<key>OpenSourceSHA1</key>
+	<string>8179b083053fce9b4a766513fa1f14807aabee42</string>
+	<key>OpenSourceImportDate</key>
+	<string>2020-07-02</string>
+	<key>OpenSourceLicense</key>
+	<string>BSD</string>
+	<key>OpenSourceLicenseFile</key>
+	<string>pcre.txt</string>
+	<key>OpenSourceModifications</key>
+	<array>
+		<string>configure: remove -flat_namespace 31948198</string>
+	</array>
+</dict>
+</plist>

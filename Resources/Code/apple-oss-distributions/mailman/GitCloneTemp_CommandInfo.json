@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/mailman undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/mailman",
+    "repo": "https://github.com/apple-oss-distributions/mailman",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/mailman",
+    "startTime": "2022-09-03T18:41:47.438Z",
+    "endTime": "2022-09-03T18:41:49.423Z",
+    "childProcessPid": 53424,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--mailman--53424",
+    "executionErrors": []
+}

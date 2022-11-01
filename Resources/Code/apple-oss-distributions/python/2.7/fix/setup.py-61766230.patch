@@ -1,0 +1,28 @@
+diff --git a/Lib/distutils/unixccompiler.py b/Lib/distutils/unixccompiler.py
+index c20ed28..95561ba 100644
+--- a/Lib/distutils/unixccompiler.py
++++ b/Lib/distutils/unixccompiler.py
+@@ -297,8 +297,8 @@ class UnixCCompiler(CCompiler):
+             static = os.path.join(dir, static_f)
+             xcode_stub = os.path.join(dir, xcode_stub_f)
+ 
+-            if sys.platform == 'darwin' and (
+-                dir.startswith('/System/') or (
++            if sys.platform == 'darwin' and ((
++                dir.startswith('/System/') and not dir.startswith('/System/Volumes/Data/SWE/')) or (
+                 dir.startswith('/usr/') and not dir.startswith('/usr/local/'))):
+ 
+                 shared = os.path.join(sysroot, dir[1:], shared_f)
+diff --git a/setup.py b/setup.py
+index 554ada9..aa9bcc8 100644
+--- a/setup.py
++++ b/setup.py
+@@ -63,7 +63,7 @@ def is_macosx_sdk_path(path):
+     Returns True if 'path' can be located in an OSX SDK
+     """
+     return ( path.startswith('/usr/')
+-                or path.startswith('/System/')
++                or path.startswith('/System/') and not path.startswith('/System/Volumes/Data/SWE/')
+                 or path.startswith('/Library/') and not path.startswith('/Library/Caches/') )
+ 
+ def find_file(filename, std_dirs, paths):

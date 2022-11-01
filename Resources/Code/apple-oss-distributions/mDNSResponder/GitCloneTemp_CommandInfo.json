@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/mDNSResponder undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/mDNSResponder",
+    "repo": "https://github.com/apple-oss-distributions/mDNSResponder",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/mDNSResponder",
+    "startTime": "2022-09-03T18:41:45.235Z",
+    "endTime": "2022-09-03T18:41:46.821Z",
+    "childProcessPid": 53412,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--mDNSResponder--53412",
+    "executionErrors": []
+}

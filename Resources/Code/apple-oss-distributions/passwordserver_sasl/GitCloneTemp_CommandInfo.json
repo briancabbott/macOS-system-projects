@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/apple-oss-distributions/passwordserver_sasl undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/passwordserver_sasl",
+    "repo": "https://github.com/apple-oss-distributions/passwordserver_sasl",
+    "targetPath": "undefined\\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/passwordserver_sasl",
+    "startTime": "2022-09-03T18:42:20.253Z",
+    "endTime": "2022-09-03T18:42:21.289Z",
+    "childProcessPid": 53588,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--apple-oss-distributions--passwordserver_sasl--53588",
+    "executionErrors": []
+}
