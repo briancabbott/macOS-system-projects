@@ -1,0 +1,24 @@
+.DS_Store
+.swift-version
+
+*.orig
+*.app
+
+/.build
+/Samples/.build
+/.SourceKitten
+/Packages
+.xcode
+*.app
+/*.xcodeproj
+Samples/swift-cluster-membership-samples.xcodeproj
+.xcode
+.idea
+Samples/swift-cluster-membership-samples.xcodeproj
+
+# rendered docs output dirs
+/reference/
+/api/
+.swiftpm/
+Package.resolved
+

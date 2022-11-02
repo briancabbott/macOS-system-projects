@@ -1,0 +1,7 @@
+.*.sw[nop]
+.DS_Store
+xcuserdata
+*.xcscmblueprint
+.build/
+Output/
+Tests/Functional/.lit_test_times.txt
