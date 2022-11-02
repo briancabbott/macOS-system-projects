@@ -1,0 +1,28 @@
+mapping {
+    module_name: "TSFCAS"
+    proto_file_path: "CASProtocol/cas_object.proto"
+    proto_file_path: "CASProtocol/data_id.proto"
+}
+mapping {
+    module_name: "TSFCASFileTree"
+    proto_file_path: "CASFileTreeProtocol/file_tree.proto"
+}
+mapping {
+    module_name: "llbuild2"
+    proto_file_path: "EngineProtocol/action_execution.proto"
+    proto_file_path: "EngineProtocol/any_serializable.proto"
+}
+mapping {
+    module_name: "LLBBuildSystem"
+    proto_file_path: "BuildSystem/Evaluation/artifact_owner.proto"
+    proto_file_path: "BuildSystem/Evaluation/artifact_value.proto"
+    proto_file_path: "BuildSystem/Evaluation/artifact.proto"
+    proto_file_path: "BuildSystem/Evaluation/configuration.proto"
+    proto_file_path: "BuildSystem/Evaluation/configured_target.proto"
+    proto_file_path: "BuildSystem/Evaluation/evaluated_target.proto"
+    proto_file_path: "BuildSystem/Evaluation/rule_evaluation.proto"
+    proto_file_path: "BuildSystem/Evaluation/provider_map.proto"
+    proto_file_path: "BuildSystem/Evaluation/label.proto"
+    proto_file_path: "BuildSystem/Execution/action_execution.proto"
+    proto_file_path: "BuildSystem/Execution/action.proto"
+}

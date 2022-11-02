@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+import sys
+import subprocess
+
+def write_file_if_changed(path, data):
+    try:
+        with open(path) as f:
+            old_data = f.read()
+    except:
+        old_data = None
+    if old_data == data:
+        return
+
+    # Write the contents.
+    with open(path, "w") as f:
+        f.write(data)
+
+def main():
+    args = sys.argv
+    if len(sys.argv) != 3:
+        print("Usage: <compiler-path> <file-path>")
+        raise SystemExit(1)
+
+    file_path = args[2]
+    compiler = args[1]
+    data = subprocess.check_output(
+        [compiler, "-version"], universal_newlines=True).strip()
+
+    write_file_if_changed(file_path, data)
+
+if __name__ == '__main__':
+    main()
+

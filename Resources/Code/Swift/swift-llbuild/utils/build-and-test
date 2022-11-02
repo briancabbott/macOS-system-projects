@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+if [ "$#" -ne 1 ]; then
+    echo "$0: error: usage: $0 <target-platform>"
+    exit 1
+fi
+
+TARGET=$1
+SRCROOT="${PWD}"
+BUILDROOT=".build/.ci/${TARGET}"
+
+mkdir -p "${BUILDROOT}"
+cd "${BUILDROOT}"
+cmake -G Ninja -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ "${SRCROOT}"
+ninja test
+
+# run Swift package tests if `swift` is available
+if [ -x "$(command -v swift)" ]; then
+  swift test
+elif
+  echo 'Skipping Swift package tests because `swift` couldn\'t be found.'
+fi
