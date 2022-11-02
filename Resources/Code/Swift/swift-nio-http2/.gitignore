@@ -1,0 +1,11 @@
+.DS_Store
+.build
+/Packages
+/*.xcodeproj
+Package.pins
+Package.resolved
+*.pem
+DerivedData
+.swiftpm
+Tests/hpack-test-case
+cachegrind.out.*

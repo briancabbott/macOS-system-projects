@@ -1,0 +1,276 @@
+[
+  {
+    "repository": "Git",
+    "url": "https://github.com/Alamofire/Alamofire.git",
+    "path": "Alamofire",
+    "branch": "master",
+    "maintainer": "cnoon@alamofire.org",
+    "incremental": {
+      "3.0": {
+        "commits": [
+          "8525217ec37eb2c0974448b063fa4fc2798d6d76",
+          "f8e719ec80776e79bc33ba54db4a6d2493429d54",
+          "74f6473326a501b1eb9cb8502e64ccb4b06372c6",
+          "2fd499759121956a2d05ed1fca172ff9015cb9eb",
+          "c9c9d091b308a57ff9a744be4f2537ac9c5b4c0b",
+          "d64afca3e569f68e1810945cc91713bf61a3da7e",
+          "00ad5eed1fa12ad5bab531b2dd6ff4255ea64e3c",
+          "7f8fe9c7c69a958c279827f173e3b43a90f0c552",
+          "b03b43cc381ec02eb9855085427186ef89055eef"
+        ]
+      }
+    },
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeWorkspaceScheme",
+        "workspace": "Alamofire.xcworkspace",
+        "scheme": "Alamofire macOS",
+        "destination": "generic/platform=macOS",
+        "configuration": "Debug"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/AsyncNinja/AsyncNinja.git",
+    "path": "AsyncNinja",
+    "branch": "master",
+    "incremental": {
+      "3.1": {
+        "commits": [
+          "91fc483dcfe83f7238beb8f4d8ad692e79d5e1c1",
+          "52b27c451e5a1836fcad6dc649c0c478b84afb14",
+          "714164ddb2cd9806539d33dcab81baa4eabffb5c",
+          "d5328a92858d79809412d79e979b2401e7e53bd3",
+          "f0937974fb671d80cbe1c1d758de7412cdb1ea38",
+          "a889e24cb0b55facc9bc3d26044992ddf0970ca3",
+          "038574a9eb7315dbd2f7900c85ba6e68becce63f",
+          "38a27baf3523e4906d01f617ad4fbac387ac0769",
+          "3bc7267a092cff8448d84cedc635c49391a433e3",
+          "3b1b3b01a727d4950a37f2a7bad0cc079478a0f3",
+          "8f661f2eee1519054b97b0ca031d917cbc361748"
+        ]
+      }
+    },
+    "maintainer": "antonvmironov@gmail.com",
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeProjectScheme",
+        "project": "AsyncNinja.xcodeproj",
+        "scheme": "AsyncNinja",
+        "destination": "generic/platform=macOS",
+        "configuration": "Debug"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/lyft/Kronos.git",
+    "path": "Kronos",
+    "branch": "master",
+    "maintainer": "Reflejo@gmail.com",
+    "incremental": {
+      "3.0": {
+        "commits": [
+          "6575f91858ff62d40f1467277e6a80ac5a62a439",
+          "684eb9dd972cfa2ae84b8a091b8bae5cb34875ce",
+          "d12f364166b995a65f217e79b64796eadb7f982a",
+          "3d357f1ddb81382b40f6b1f8288106e29cf5c244",
+          "4afd00daa15039279c55f2f436ebf1ac7a4fa61d",
+          "56bb7200af13151184a319a4826e64764adacdf2"
+        ]
+      }
+    },
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeProjectTarget",
+        "project": "Kronos.xcodeproj",
+        "target": "Kronos",
+        "destination": "generic/platform=macOS",
+        "configuration": "Release"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/ReactiveX/RxSwift.git",
+    "path": "RxSwift",
+    "branch": "master",
+    "maintainer": "krunoslav.zaher@gmail.com",
+    "incremental": {
+      "3.0": {
+        "commits": [
+          "bc4c482fe7dbf3f01781f772be24decc1e4735f3",
+          "ed28a05b4f5f01d83f1ed332d1c827d85896f903",
+          "0b407dc6e72fba0f32a12ac0dc84973cd8e66e78",
+          "37516651d99f30ac2c6d635772f93db3fb4c001b",
+          "9dfe2122c4c44ac4e45171a9c56b544859bca4d9",
+          "c3657fd33f89b80c2e9de286586d348219cb96ab",
+          "c081252717925b547eee4c800601e852b73bb49b",
+          "e5c8ac27a9ac81a226eb87aaa878ea11e4fb65d2",
+          "07db3696000390c7bd95ba833fdf3c664a46d8ed"
+        ]
+      }
+    },
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildSwiftPackage",
+        "configuration": "debug"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/vapor/vapor.git",
+    "path": "vapor",
+    "branch": "master",
+    "maintainer": "tanner@vapor.codes",
+    "incremental": {
+      "3.0": {
+        "commits": [
+          "f90823a21db9abe1fd9bd9a933e14837eb703a78",
+          "c2dfaf94ae816c2e49251b41b522cc10673bed9f",
+          "4007f3c7178ba084235c15257a409177f7780e34",
+          "7041f78cf104b6916e533a857315582a22e9e422",
+          "2ed1a2dc1a19b55e17e395f4e54e2f19462ca871",
+          "63bd4e86828eff740502bd55e8d57cd35e231df2",
+          "a87e631adb935a5b05def89ea1044d9b481ae7b0",
+          "ba119bffe506ae024dac38b23bdb35f5585631a8",
+          "5454facd0fbd19fd3794c5f6ecf73c6883bce8cc",
+          "54a6eae72c7a278804a54670d195e80f1f285fba",
+          "257a01d2ee9f2d1f01fc0094ea947506063eeece",
+          "faebd7f6520fdcb5fb40989d19e037e12117a3f0",
+          "1c141acf8eaf9165df84221daf8da33d9605e621",
+          "7c3664be4ee387b2519e4243319d43e57b593353",
+          "57ee4894651535fb8eacbea6b54abaa7f6a50b0a",
+          "9b0701479b39996b56ada92565cded106c73b57b",
+          "4bb31e9e44836028a428932da7ee628ec5996098",
+          "e48d49c50bdb94f5cbb3ee5253b3d10185c949fd",
+          "9f6124e8a6c842df473df9ee3dad84159872dfe6",
+          "ee65a9b46aa7168776d193dccf45c2b5aaa6455d"
+        ]
+      }
+    },
+    "platforms": [
+      "Linux",
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildSwiftPackage",
+        "configuration": "debug"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/audiokit/AudioKit",
+    "path": "AudioKit",
+    "branch": "master",
+    "maintainer": "aure@aure.com",
+    "incremental": {
+      "3.0": {
+        "limit": { "configuration": "Debug" },
+        "commits": [
+          "dc22df79c871b5a0e66856b5b6b2b48d16096730",
+          "b4637bab8e2fd0586eaf80e27366847d2ef5b832",
+          "d68372887ddb879fe99f30ac7babe4f528da0702",
+          "bcebfe14c4b299569dd6dca0dcf26e72e9ccaf4a",
+          "af4603cfb9cfa1bfb8fea59fbc4788b8762c0b1e",
+          "69d122e601cafc96826ef1cacc8df10cde8fc1d2"
+        ]
+      }
+    },
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeProjectScheme",
+        "project": "AudioKit/macOS/AudioKit for macOS.xcodeproj",
+        "scheme": "AudioKit-macOS",
+        "destination": "platform=macOS",
+        "configuration": "Debug"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/Quick/Quick.git",
+    "path": "Quick",
+    "branch": "master",
+    "maintainer": "modocache@gmail.com",
+    "incremental": {
+      "3.0": {
+        "commits": [
+          "f9624aea5f5bac7a6b28fcb9226f38524de6e262",
+          "53a8676be259ecaba554e2723af42a9479e7bb1d",
+          "c0143484556d83d17254f392b6b18c49f887ce06",
+          "01c2ccea01ebe49438ecd1ed1f546953c692d041",
+          "c1a74901bee7c0f41967ffe11f5362a2955eb0bc",
+          "cd89737d3d5306124e91c357b66cde274a3269b4",
+          "3ce08c3b83caf88f79bdb9392e291f800830afb4",
+          "5c0d10516d473e041f73b957c4137d5a536390cb",
+          "fddfaa399877fb83596df9380d8fb531aa40d7ae",
+          "101f9441e47381cbe05dec50d1712e170d945d23",
+          "4bfde847a382fef9e9b5809441da9b75ac29e32f"
+        ]
+      }
+    },
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildSwiftPackage",
+        "configuration": "debug"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/malcommac/SwiftDate",
+    "path": "SwiftDate",
+    "branch": "master",
+    "maintainer": "me@danielemargutti.com",
+    "incremental": {
+      "3.0": {
+        "commits": [
+          "5ad817a5ae0cdf9e71cf599ad96becc1572545b7",
+          "f1f16721f34f36798279012213d25942e60593ee",
+          "63315c500cf451fe40ad49a18e77ec63112c2cdd",
+          "03935e9f4c7813e5ebb9b1ae3887ef9ca19a9833",
+          "aba23f2ed024516ee615e89fe0e6d9cab993dbc4",
+          "30e5198c6f3d8846cb52725cbf390b85fb2bbabf",
+          "edcbfd20e0c727d90743168af82029425799e46b",
+          "96a2346501bb597bbcb1b4156ba3a34a49a5194f",
+          "b8a6ace0b4a419d377886615ece14a3f259323fc"
+        ]
+      }
+    },
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeProjectScheme",
+        "project": "SwiftDate/SwiftDate.xcodeproj",
+        "scheme": "SwiftDate_macOS",
+        "destination": "generic/platform=macOS",
+        "configuration": "Debug"
+      }
+    ]
+  }
+]

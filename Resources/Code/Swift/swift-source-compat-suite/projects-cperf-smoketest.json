@@ -1,0 +1,100 @@
+[
+  {
+    "repository": "Git",
+    "url": "https://github.com/Alamofire/Alamofire.git",
+    "path": "Alamofire",
+    "branch": "master",
+    "maintainer": "cnoon@alamofire.org",
+    "compatibility": [
+      {
+        "version": "5.1",
+        "commit": "576437d07f1c7f6db5a848fb3ee6bacc6bcdba24"
+      }
+    ],
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeWorkspaceScheme",
+        "workspace": "Alamofire.xcworkspace",
+        "scheme": "Alamofire macOS",
+        "destination": "generic/platform=macOS",
+        "configuration": "Release"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/onevcat/Kingfisher.git",
+    "path": "Kingfisher",
+    "branch": "master",
+    "maintainer": "onev@onevcat.com",
+    "compatibility": [
+      {
+        "version": "5.1",
+        "commit": "23ef6c73ee3bc12ee3940136aea54bd44a02e93e"
+      }
+    ],
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeWorkspaceScheme",
+        "workspace": "Kingfisher.xcworkspace",
+        "scheme": "Kingfisher",
+        "destination": "generic/platform=iOS",
+        "configuration": "Release"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/ReactiveCocoa/ReactiveCocoa.git",
+    "path": "ReactiveCocoa",
+    "branch": "master",
+    "compatibility": [
+      {
+        "version": "5.1",
+        "commit": "78e2c70921dfe2f291d302cb61d00c9ff1c9bced"
+      }
+    ],
+    "platforms": [
+      "Darwin"
+    ],
+    "maintainer": "anders@andersha.com",
+    "actions": [
+      {
+        "action": "BuildXcodeWorkspaceScheme",
+        "workspace": "ReactiveCocoa.xcworkspace",
+        "scheme": "ReactiveCocoa-iOS",
+        "destination": "generic/platform=iOS",
+        "configuration": "Release"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
+    "url": "https://github.com/realm/SwiftLint.git",
+    "path": "SwiftLint",
+    "branch": "master",
+    "compatibility": [
+      {
+        "version": "5.1",
+        "commit": "ac8abbb3a72874eb1dedd6305ab9560e9d096eb4"
+      }
+    ],
+    "maintainer": "jp@jpsim.com",
+    "platforms": [
+      "Darwin",
+      "Linux"
+    ],
+    "actions": [
+      {
+        "action": "BuildSwiftPackage",
+        "configuration": "release"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+.DS_Store
+/.build
+/Packages
+.swiftpm
+/*.xcodeproj
+xcuserdata/
+DerivedData/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+SampleApp/.build
+FishyTransport/.build
+.idea/

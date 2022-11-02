@@ -1,0 +1,9 @@
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+/*.xcconfig
+/DerivedData
+/Package.resolved
+/.swiftpm
+/Package-config.json

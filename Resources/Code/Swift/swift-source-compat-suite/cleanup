@@ -1,0 +1,93 @@
+#!/usr/bin/env python3
+# ===--- cleanup ----------------------------------------------------------===
+#
+#  This source file is part of the Swift.org open source project
+#
+#  Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
+#  Licensed under Apache License v2.0 with Runtime Library Exception
+#
+#  See https://swift.org/LICENSE.txt for license information
+#  See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+#
+# ===----------------------------------------------------------------------===
+
+"""A cleanup script to be executed as a Jenkins post-build step."""
+
+import sys
+import os
+import argparse
+import platform
+import glob
+
+import common
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('swift_branch')
+    parser.add_argument('--skip-ci-steps',
+                        action='store_true')
+    parser.add_argument('--cleanup-cache',
+                        action='store_true')
+    return parser.parse_args()
+
+
+def main():
+    common.debug_print('** CLEANUP **')
+    os.chdir(os.path.dirname(__file__))
+
+    args = parse_args()
+    common.set_swift_branch(args.swift_branch)
+
+    paths = [
+        'build',
+        'swift',
+        'llvm-project',
+        'swift-llvm-bindings',
+        'llvm',
+        'clang',
+        'compiler-rt',
+        'cmark',
+        'ninja',
+        'llbuild',
+        'swiftpm',
+        'swift-corelibs-foundation',
+        'swift-corelibs-libdispatch',
+        'swift-corelibs-xctest',
+        'swift-stress-tester',
+        'swift-syntax',
+        'swift-driver',
+        'swift-argument-parser',
+        'yams',
+        'swift-tools-support-core',
+        'swift-crypto',
+        'swift-atomics',
+        'swift-collections',
+        'swift-numerics',
+        'swift-system',
+        'swift-experimental-string-processing',
+        'swift-syntax',
+    ]
+
+    if args.cleanup_cache:
+        paths.append('project_cache')
+
+    with open('/dev/null', 'w') as devnull:
+        common.debug_print('Deleting build and source directories...')
+        for path in paths:
+            common.check_execute([
+                'rm', '-rf', common.private_workspace(path)
+            ], stdout=devnull, stderr=devnull)
+
+        common.debug_print('Deleting log files...')
+        for log in glob.glob('*.log'):
+            common.check_execute(['rm', log], stdout=devnull, stderr=devnull)
+
+    if not args.skip_ci_steps:
+        if platform.system() == 'Darwin':
+            pass
+
+    return 0
+
+if __name__ == '__main__':
+    sys.exit(main())

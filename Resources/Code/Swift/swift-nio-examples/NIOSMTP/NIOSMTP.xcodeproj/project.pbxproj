@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0615A38C22CD143800E230C4 /* NIOSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 0615A38B22CD143800E230C4 /* NIOSSL */; };
+		0663DECD22CCDA7000B605ED /* NIOExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 0663DECC22CCDA7000B605ED /* NIOExtras */; };
+		0663DED022CCDA8200B605ED /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = 0663DECF22CCDA8200B605ED /* NIOTransportServices */; };
+		0675A13A22CCDFC200EE90B9 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 0675A13922CCDFC200EE90B9 /* NIOFoundationCompat */; };
+		0675A13C22CCDFC200EE90B9 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = 0675A13B22CCDFC200EE90B9 /* NIOTLS */; };
+		0675A13E22CCDFC200EE90B9 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 0675A13D22CCDFC200EE90B9 /* NIO */; };
+		8F882F7E2150078600943C68 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F882F7D2150078600943C68 /* Configuration.swift */; };
+		8FBA255821270ADB0034D800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA255721270ADB0034D800 /* AppDelegate.swift */; };
+		8FBA255A21270ADB0034D800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA255921270ADB0034D800 /* ViewController.swift */; };
+		8FBA255D21270ADB0034D800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA255B21270ADB0034D800 /* Main.storyboard */; };
+		8FBA255F21270ADC0034D800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA255E21270ADC0034D800 /* Assets.xcassets */; };
+		8FBA256221270ADC0034D800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA256021270ADC0034D800 /* LaunchScreen.storyboard */; };
+		8FBA257821270EEA0034D800 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA257721270EEA0034D800 /* DataModel.swift */; };
+		8FBA257C212720680034D800 /* SendEmailHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA257B212720680034D800 /* SendEmailHandler.swift */; };
+		8FBA25802127269E0034D800 /* SMTPResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA257F2127269E0034D800 /* SMTPResponseDecoder.swift */; };
+		8FBA258221274C490034D800 /* SMTPRequestEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA258121274C490034D800 /* SMTPRequestEncoder.swift */; };
+		8FBA25842127584C0034D800 /* PrintEverythingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA25832127584C0034D800 /* PrintEverythingHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F882F7D2150078600943C68 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		8FBA255421270ADB0034D800 /* NIOSMTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIOSMTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FBA255721270ADB0034D800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FBA255921270ADB0034D800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FBA255C21270ADB0034D800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FBA255E21270ADC0034D800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FBA256121270ADC0034D800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FBA256321270ADC0034D800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBA257721270EEA0034D800 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		8FBA257B212720680034D800 /* SendEmailHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailHandler.swift; sourceTree = "<group>"; };
+		8FBA257F2127269E0034D800 /* SMTPResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTPResponseDecoder.swift; sourceTree = "<group>"; };
+		8FBA258121274C490034D800 /* SMTPRequestEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTPRequestEncoder.swift; sourceTree = "<group>"; };
+		8FBA25832127584C0034D800 /* PrintEverythingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintEverythingHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FBA255121270ADB0034D800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0663DECD22CCDA7000B605ED /* NIOExtras in Frameworks */,
+				0675A13A22CCDFC200EE90B9 /* NIOFoundationCompat in Frameworks */,
+				0615A38C22CD143800E230C4 /* NIOSSL in Frameworks */,
+				0663DED022CCDA8200B605ED /* NIOTransportServices in Frameworks */,
+				0675A13C22CCDFC200EE90B9 /* NIOTLS in Frameworks */,
+				0675A13E22CCDFC200EE90B9 /* NIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FBA254B21270ADB0034D800 = {
+			isa = PBXGroup;
+			children = (
+				8FBA255621270ADB0034D800 /* NIOSMTP */,
+				8FBA255521270ADB0034D800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FBA255521270ADB0034D800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FBA255421270ADB0034D800 /* NIOSMTP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FBA255621270ADB0034D800 /* NIOSMTP */ = {
+			isa = PBXGroup;
+			children = (
+				8F882F7D2150078600943C68 /* Configuration.swift */,
+				8FBA257721270EEA0034D800 /* DataModel.swift */,
+				8FBA257B212720680034D800 /* SendEmailHandler.swift */,
+				8FBA258121274C490034D800 /* SMTPRequestEncoder.swift */,
+				8FBA257F2127269E0034D800 /* SMTPResponseDecoder.swift */,
+				8FBA255921270ADB0034D800 /* ViewController.swift */,
+				8FBA255B21270ADB0034D800 /* Main.storyboard */,
+				8FBA2588212759280034D800 /* boring stuff */,
+			);
+			path = NIOSMTP;
+			sourceTree = "<group>";
+		};
+		8FBA2588212759280034D800 /* boring stuff */ = {
+			isa = PBXGroup;
+			children = (
+				8FBA255721270ADB0034D800 /* AppDelegate.swift */,
+				8FBA256021270ADC0034D800 /* LaunchScreen.storyboard */,
+				8FBA256321270ADC0034D800 /* Info.plist */,
+				8FBA255E21270ADC0034D800 /* Assets.xcassets */,
+				8FBA25832127584C0034D800 /* PrintEverythingHandler.swift */,
+			);
+			name = "boring stuff";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FBA255321270ADB0034D800 /* NIOSMTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FBA257121270ADD0034D800 /* Build configuration list for PBXNativeTarget "NIOSMTP" */;
+			buildPhases = (
+				8FBA255021270ADB0034D800 /* Sources */,
+				8FBA255121270ADB0034D800 /* Frameworks */,
+				8FBA255221270ADB0034D800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NIOSMTP;
+			packageProductDependencies = (
+				0663DECC22CCDA7000B605ED /* NIOExtras */,
+				0663DECF22CCDA8200B605ED /* NIOTransportServices */,
+				0675A13922CCDFC200EE90B9 /* NIOFoundationCompat */,
+				0675A13B22CCDFC200EE90B9 /* NIOTLS */,
+				0675A13D22CCDFC200EE90B9 /* NIO */,
+				0615A38B22CD143800E230C4 /* NIOSSL */,
+			);
+			productName = NIOSMTP;
+			productReference = 8FBA255421270ADB0034D800 /* NIOSMTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FBA254C21270ADB0034D800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = NIOSMTP;
+				TargetAttributes = {
+					8FBA255321270ADB0034D800 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 8FBA254F21270ADB0034D800 /* Build configuration list for PBXProject "NIOSMTP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FBA254B21270ADB0034D800;
+			packageReferences = (
+				0663DECB22CCDA7000B605ED /* XCRemoteSwiftPackageReference "swift-nio-extras" */,
+				0663DECE22CCDA8200B605ED /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */,
+				0675A13822CCDFC200EE90B9 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				0615A38A22CD143800E230C4 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */,
+			);
+			productRefGroup = 8FBA255521270ADB0034D800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FBA255321270ADB0034D800 /* NIOSMTP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FBA255221270ADB0034D800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBA256221270ADC0034D800 /* LaunchScreen.storyboard in Resources */,
+				8FBA255F21270ADC0034D800 /* Assets.xcassets in Resources */,
+				8FBA255D21270ADB0034D800 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FBA255021270ADB0034D800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBA258221274C490034D800 /* SMTPRequestEncoder.swift in Sources */,
+				8FBA255A21270ADB0034D800 /* ViewController.swift in Sources */,
+				8F882F7E2150078600943C68 /* Configuration.swift in Sources */,
+				8FBA257C212720680034D800 /* SendEmailHandler.swift in Sources */,
+				8FBA255821270ADB0034D800 /* AppDelegate.swift in Sources */,
+				8FBA25802127269E0034D800 /* SMTPResponseDecoder.swift in Sources */,
+				8FBA257821270EEA0034D800 /* DataModel.swift in Sources */,
+				8FBA25842127584C0034D800 /* PrintEverythingHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8FBA255B21270ADB0034D800 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBA255C21270ADB0034D800 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FBA256021270ADC0034D800 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBA256121270ADC0034D800 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FBA256F21270ADD0034D800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FBA257021270ADD0034D800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FBA257221270ADD0034D800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NIOSMTP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftnio.examples.NIOSMTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FBA257321270ADD0034D800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NIOSMTP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.swiftnio.examples.NIOSMTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FBA254F21270ADB0034D800 /* Build configuration list for PBXProject "NIOSMTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FBA256F21270ADD0034D800 /* Debug */,
+				8FBA257021270ADD0034D800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FBA257121270ADD0034D800 /* Build configuration list for PBXNativeTarget "NIOSMTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FBA257221270ADD0034D800 /* Debug */,
+				8FBA257321270ADD0034D800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0615A38A22CD143800E230C4 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-ssl";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		0663DECB22CCDA7000B605ED /* XCRemoteSwiftPackageReference "swift-nio-extras" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-extras";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		0663DECE22CCDA8200B605ED /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-transport-services";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		0675A13822CCDFC200EE90B9 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0615A38B22CD143800E230C4 /* NIOSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0615A38A22CD143800E230C4 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */;
+			productName = NIOSSL;
+		};
+		0663DECC22CCDA7000B605ED /* NIOExtras */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0663DECB22CCDA7000B605ED /* XCRemoteSwiftPackageReference "swift-nio-extras" */;
+			productName = NIOExtras;
+		};
+		0663DECF22CCDA8200B605ED /* NIOTransportServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0663DECE22CCDA8200B605ED /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			productName = NIOTransportServices;
+		};
+		0675A13922CCDFC200EE90B9 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0675A13822CCDFC200EE90B9 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
+		0675A13B22CCDFC200EE90B9 /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0675A13822CCDFC200EE90B9 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		0675A13D22CCDFC200EE90B9 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0675A13822CCDFC200EE90B9 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8FBA254C21270ADB0034D800 /* Project object */;
+}

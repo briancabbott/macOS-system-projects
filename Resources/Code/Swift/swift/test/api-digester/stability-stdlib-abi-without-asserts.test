@@ -1,0 +1,124 @@
+// RUN: %empty-directory(%t.tmp)
+// mkdir %t.tmp/module-cache && mkdir %t.tmp/dummy.sdk
+// RUN: %api-digester -diagnose-sdk -module Swift -o %t.tmp/changes.txt -module-cache-path %t.tmp/module-cache -sdk %t.tmp/dummy.sdk -abi -avoid-location -v
+// RUN: %clang -E -P -x c %S/stability-stdlib-abi-without-asserts.test -o - | sed '/^\s*$/d' | sort > %t.tmp/stability-stdlib-abi.swift.expected
+// RUN: %clang -E -P -x c %t.tmp/changes.txt -o - | sed -E -e '/^\s*$/d' -e 's/ in _[0-9A-F]{32}/ in #UNSTABLE ID#/g' | sort > %t.tmp/changes.txt.tmp
+// RUN: diff -u %t.tmp/stability-stdlib-abi.swift.expected %t.tmp/changes.txt.tmp
+
+// *** DO NOT DISABLE OR XFAIL THIS TEST. *** (See comment below.)
+
+// Welcome, Build Wrangler!
+//
+// This file lists APIs that have recently changed in a way that potentially
+// indicates an ABI- or source-breaking problem.
+//
+// A failure in this test indicates that there is a potential breaking change in
+// the Standard Library. If you observe a failure outside of a PR test, please
+// reach out to the Standard Library team directly to make sure this gets
+// resolved quickly! If your own PR fails in this test, you probably have an
+// ABI- or source-breaking change in your commits. Please go and fix it.
+//
+// Please DO NOT DISABLE THIS TEST. In addition to ignoring the current set of
+// ABI breaks, XFAILing this test also silences any future ABI breaks that may
+// land on this branch, which simply generates extra work for the next person
+// that picks up the mess.
+//
+// Instead of disabling this test, you'll need to extend the list of expected
+// changes at the bottom. (You'll also need to do this if your own PR triggers
+// false positives, or if you have special permission to break things.) You can
+// find a diff of what needs to be added in the output of the failed test run.
+// The order of lines doesn't matter, and you can also include comments to refer
+// to any bugs you filed.
+//
+// Thank you for your help ensuring the stdlib remains compatible with its past!
+//                                            -- Your friendly stdlib engineers
+
+// REQUIRES: swift_stdlib_no_asserts
+
+// *** DO NOT DISABLE OR XFAIL THIS TEST. *** (See comment above.)
+
+// https://github.com/apple/swift/issues/55803
+// We currently only have a baseline for Intel CPUs on macOS.
+// REQUIRES: OS=macosx && CPU=x86_64
+
+// The digester can incorrectly register a generic signature change when
+// declarations are shuffled. rdar://problem/46618883
+// UNSUPPORTED: swift_evolve
+
+// *** DO NOT DISABLE OR XFAIL THIS TEST. *** (See comment above.)
+
+Func _prespecialize() is a new API without @available attribute
+Func _stdlib_isOSVersionAtLeastOrVariantVersionAtLeast(_:_:_:_:_:_:) is a new API without @available attribute
+
+Func Collection.removingSubranges(_:) has been removed
+Func Collection.subranges(of:) has been removed
+Func Collection.subranges(where:) has been removed
+Func MutableCollection.moveSubranges(_:to:) has been removed
+Func MutableCollection.removeSubranges(_:) has been removed
+Func RangeReplaceableCollection.removeSubranges(_:) has been removed
+Struct AnyHashable has added a conformance to an existing protocol _HasCustomAnyHashableRepresentation
+Class AnyKeyPath has added a conformance to an existing protocol CustomDebugStringConvertible
+Class KeyPath has added a conformance to an existing protocol CustomDebugStringConvertible
+Class PartialKeyPath has added a conformance to an existing protocol CustomDebugStringConvertible
+Class ReferenceWritableKeyPath has added a conformance to an existing protocol CustomDebugStringConvertible
+Class WritableKeyPath has added a conformance to an existing protocol CustomDebugStringConvertible
+Struct DiscontiguousSlice has been removed
+Struct RangeSet has been removed
+Subscript Collection.subscript(_:) has been removed
+Subscript MutableCollection.subscript(_:) has been removed
+Protocol CodingKey has added inherited protocol Sendable
+Protocol CodingKey has generic signature change from <Self : Swift.CustomDebugStringConvertible, Self : Swift.CustomStringConvertible> to <Self : Swift.CustomDebugStringConvertible, Self : Swift.CustomStringConvertible, Self : Swift.Sendable>
+Protocol Error has added inherited protocol Sendable
+Protocol Error has generic signature change from to <Self : Swift.Sendable>
+Constructor _SmallString.init(taggedCocoa:) has mangled name changing from 'Swift._SmallString.init(taggedCocoa: Swift.AnyObject) -> Swift._SmallString' to 'Swift._SmallString.init(taggedCocoa: Swift.AnyObject) -> Swift.Optional<Swift._SmallString>'
+Constructor _SmallString.init(taggedCocoa:) has return type change from Swift._SmallString to Swift._SmallString?
+Enum Never has added a conformance to an existing protocol Identifiable
+
+// These haven't actually been removed; they are simply marked unavailable.
+// This seems to be a false positive in the ABI checker. This is not an ABI
+// break because the symbols are still present, and is not a source break
+// because FixedWidthInteger still has these operations.
+Func SignedInteger.&+(_:_:) has been removed
+Func SignedInteger.&-(_:_:) has been removed
+
+// The GenericSignatureBuilder would produce redundant same-type requirements in the minimized signature; these are now gone.
+
+Protocol Collection has generic signature change from <Self : Swift.Sequence, Self.Element == Self.SubSequence.Element, Self.Index : Swift.Comparable, Self.Index == Self.Indices.Element, Self.Indices : Swift.Collection, Self.Indices == Self.Indices.SubSequence, Self.SubSequence : Swift.Collection, Self.SubSequence == Self.SubSequence.SubSequence, Self.Indices.Element == Self.Indices.Index, Self.Indices.Index == Self.SubSequence.Index, Self.SubSequence.Index == Self.Indices.Indices.Element, Self.Indices.Indices.Element == Self.Indices.Indices.Index, Self.Indices.Indices.Index == Self.SubSequence.Indices.Element, Self.SubSequence.Indices.Element == Self.SubSequence.Indices.Index, Self.SubSequence.Indices.Index == Self.SubSequence.Indices.Indices.Element, Self.SubSequence.Indices.Indices.Element == Self.SubSequence.Indices.Indices.Index> to <Self : Swift.Sequence, Self.Element == Self.SubSequence.Element, Self.Index : Swift.Comparable, Self.Index == Self.Indices.Element, Self.Indices : Swift.Collection, Self.Indices == Self.Indices.SubSequence, Self.SubSequence : Swift.Collection, Self.SubSequence == Self.SubSequence.SubSequence, Self.Indices.Element == Self.Indices.Index, Self.Indices.Index == Self.SubSequence.Index>
+
+Protocol StringProtocol has generic signature change from <Self : Swift.BidirectionalCollection, Self : Swift.Comparable, Self : Swift.ExpressibleByStringInterpolation, Self : Swift.Hashable, Self : Swift.LosslessStringConvertible, Self : Swift.TextOutputStream, Self : Swift.TextOutputStreamable, Self.Element == Swift.Character, Self.Index == Swift.String.Index, Self.StringInterpolation == Swift.DefaultStringInterpolation, Self.SubSequence : Swift.StringProtocol, Self.UTF16View : Swift.BidirectionalCollection, Self.UTF8View : Swift.Collection, Self.UnicodeScalarView : Swift.BidirectionalCollection, Self.UTF16View.Element == Swift.UInt16, Self.UTF16View.Index == Swift.String.Index, Self.UTF8View.Element == Swift.UInt8, Self.UTF8View.Index == Swift.String.Index, Self.UnicodeScalarView.Element == Swift.Unicode.Scalar, Self.UnicodeScalarView.Index == Swift.String.Index, Self.SubSequence.UTF16View.Index == Swift.String.Index, Self.SubSequence.UTF8View.Index == Swift.String.Index, Self.SubSequence.UnicodeScalarView.Index == Swift.String.Index> to <Self : Swift.BidirectionalCollection, Self : Swift.Comparable, Self : Swift.ExpressibleByStringInterpolation, Self : Swift.Hashable, Self : Swift.LosslessStringConvertible, Self : Swift.TextOutputStream, Self : Swift.TextOutputStreamable, Self.Element == Swift.Character, Self.Index == Swift.String.Index, Self.StringInterpolation == Swift.DefaultStringInterpolation, Self.SubSequence : Swift.StringProtocol, Self.UTF16View : Swift.BidirectionalCollection, Self.UTF8View : Swift.Collection, Self.UnicodeScalarView : Swift.BidirectionalCollection, Self.UTF16View.Element == Swift.UInt16, Self.UTF16View.Index == Swift.String.Index, Self.UTF8View.Element == Swift.UInt8, Self.UTF8View.Index == Swift.String.Index, Self.UnicodeScalarView.Element == Swift.Unicode.Scalar, Self.UnicodeScalarView.Index == Swift.String.Index>
+
+Protocol SIMDScalar has generic signature change from <Self == Self.SIMD16Storage.Scalar, Self.SIMD16Storage : Swift.SIMDStorage, Self.SIMD2Storage : Swift.SIMDStorage, Self.SIMD32Storage : Swift.SIMDStorage, Self.SIMD4Storage : Swift.SIMDStorage, Self.SIMD64Storage : Swift.SIMDStorage, Self.SIMD8Storage : Swift.SIMDStorage, Self.SIMDMaskScalar : Swift.FixedWidthInteger, Self.SIMDMaskScalar : Swift.SIMDScalar, Self.SIMDMaskScalar : Swift.SignedInteger, Self.SIMD16Storage.Scalar == Self.SIMD2Storage.Scalar, Self.SIMD2Storage.Scalar == Self.SIMD32Storage.Scalar, Self.SIMD32Storage.Scalar == Self.SIMD4Storage.Scalar, Self.SIMD4Storage.Scalar == Self.SIMD64Storage.Scalar, Self.SIMD64Storage.Scalar == Self.SIMD8Storage.Scalar> to <Self == Self.SIMD16Storage.Scalar, Self.SIMD16Storage : Swift.SIMDStorage, Self.SIMD2Storage : Swift.SIMDStorage, Self.SIMD32Storage : Swift.SIMDStorage, Self.SIMD4Storage : Swift.SIMDStorage, Self.SIMD64Storage : Swift.SIMDStorage, Self.SIMD8Storage : Swift.SIMDStorage, Self.SIMDMaskScalar : Swift.FixedWidthInteger, Self.SIMDMaskScalar : Swift.SIMDScalar, Self.SIMDMaskScalar : Swift.SignedInteger, Self.SIMDMaskScalar == Self.SIMDMaskScalar.SIMDMaskScalar, Self.SIMD16Storage.Scalar == Self.SIMD2Storage.Scalar, Self.SIMD2Storage.Scalar == Self.SIMD32Storage.Scalar, Self.SIMD32Storage.Scalar == Self.SIMD4Storage.Scalar, Self.SIMD4Storage.Scalar == Self.SIMD64Storage.Scalar, Self.SIMD64Storage.Scalar == Self.SIMD8Storage.Scalar>
+
+// These haven't actually been removed; they were replaced with @_alwaysEmitIntoClient
+// alternatives. The old silgen-name entry point was preserved under an alternative
+// source-level name. This causes a false positive with the ABI checker.
+// The symbols are still present at the ABI level. The symbols are also still present
+// at the source level. The association between them is simply no longer straightforward.
+Func UnsafeBufferPointer.withMemoryRebound(to:_:) has been removed
+Func UnsafeMutableBufferPointer.withMemoryRebound(to:_:) has been removed
+Func UnsafeMutablePointer.withMemoryRebound(to:capacity:_:) has been removed
+Func UnsafePointer.withMemoryRebound(to:capacity:_:) has been removed
+Func UnsafeMutableRawBufferPointer.storeBytes(of:toByteOffset:as:) has been removed
+Func UnsafeMutableRawPointer.storeBytes(of:toByteOffset:as:) has been removed
+Func UnsafeMutableBufferPointer.assign(repeating:) has been removed
+Func UnsafeMutableBufferPointer.update(repeating:) is a new API without @available attribute
+Func UnsafeMutablePointer.assign(from:count:) has been removed
+Func UnsafeMutablePointer.update(from:count:) is a new API without @available attribute
+Func UnsafeMutablePointer.assign(repeating:count:) has been removed
+Func UnsafeMutablePointer.update(repeating:count:) is a new API without @available attribute
+Func UnsafeMutablePointer.moveAssign(from:count:) has been removed
+Func UnsafeMutablePointer.moveUpdate(from:count:) is a new API without @available attribute
+
+// These haven't actually been removed; they were renamed at the source level while
+// retaining their old mangled name. The source break was accepted as part of se-0370.
+Func UnsafeMutableBufferPointer.initialize(from:) has mangled name changing from 'Swift.UnsafeMutableBufferPointer.initialize<A where A == A1.Element, A1: Swift.Sequence>(from: A1) -> (A1.Iterator, Swift.Int)' to 'Swift.UnsafeMutableBufferPointer.initialize<A where A == A1.Element, A1: Swift.Sequence>(from: A1) -> (unwritten: A1.Iterator, index: Swift.Int)'
+Func UnsafeMutableBufferPointer.initialize(from:) has return type change from (τ_1_0.Iterator, Swift.Int) to (unwritten: τ_1_0.Iterator, index: Swift.Int)
+
+// These haven't actually been removed; they are simply marked unavailable.
+// This seems to be a false positive in the ABI checker. This is not an ABI
+// break because the symbols are still present.
+Var _StringGuts._isContiguousUTF16 has been removed
+Var _StringGuts.startUTF16 has been removed
+Func _persistCString(_:) has been removed
+
+// *** DO NOT DISABLE OR XFAIL THIS TEST. *** (See comment above.)

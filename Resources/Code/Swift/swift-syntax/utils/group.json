@@ -1,0 +1,61 @@
+{
+  "RawSyntax": [
+    "RawSyntax.swift",
+    "RawSyntaxLayoutView.swift",
+    "RawSyntaxNodeProtocol.swift",
+    "RawSyntaxNodes.swift",
+    "RawSyntaxTokenView.swift",
+    "RawSyntaxValidation.swift",
+  ],
+  "Syntax": [
+    "SyntaxChildren.swift",
+    "SyntaxData.swift",
+    "SyntaxEnum.swift",
+    "SyntaxKind.swift",
+    "SyntaxTraits.swift",
+    "SourcePresence.swift",
+    "TokenKind.swift",
+    "SyntaxTreeViewMode.swift",
+    "Trivia.swift",
+    "Tokens.swift",
+  ],
+  "Syntax nodes": [
+    "Syntax.swift",
+    "SyntaxBaseNodes.swift",
+    "SyntaxCollections.swift",
+    "SyntaxDeclNodes.swift",
+    "SyntaxExprNodes.swift",
+    "SyntaxNodes.swift",
+    "SyntaxOtherNodes.swift",
+    "SyntaxPatternNodes.swift",
+    "SyntaxStmtNodes.swift",
+    "SyntaxTypeNodes.swift",
+  ],
+  "Utils": [
+    "SyntaxAnyVisitor.swift",
+    "SyntaxBuilders.swift",
+    "SyntaxClassifier.swift",
+    "SyntaxClassification.swift",
+    "SyntaxFactory.swift",
+    "SyntaxRewriter.swift",
+    "SyntaxTransform.swift",
+    "SyntaxText.swift",
+    "SyntaxVisitor.swift",
+    "Misc.swift",
+  ],
+  "Position": [
+    "AbsolutePosition.swift",
+    "SourceLength.swift",
+    "SourceLocation.swift",
+    "Utils.swift",
+  ],
+  "Parse": [
+    "IncrementalParseTransition.swift"
+  ],
+  "Internal": [
+    "SyntaxArena.swift",
+    "SyntaxVerifier.swift",
+    "BumpPtrAllocator.swift",
+    "PlatformMutex.swift",
+  ]
+}

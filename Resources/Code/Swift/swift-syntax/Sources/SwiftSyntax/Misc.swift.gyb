@@ -1,0 +1,70 @@
+%{
+  # -*- mode: Swift -*-
+  from gyb_syntax_support import *
+  from gyb_syntax_support.Traits import TRAITS
+  NODE_MAP = create_node_map()
+  # Ignore the following admonition it applies to the resulting .swift file only
+}%
+//// Automatically Generated From Misc.swift.gyb.
+//// Do Not Edit Directly!
+//===---------- Misc.swift - Miscelaneous SwiftSyntax definitions ---------===//
+//
+// This source file is part of the Swift.org open source project
+//
+// Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
+// Licensed under Apache License v2.0 with Runtime Library Exception
+//
+// See https://swift.org/LICENSE.txt for license information
+// See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+//
+//===----------------------------------------------------------------------===//
+
+extension Syntax {
+  /// Syntax nodes always conform to SyntaxProtocol. This API is just added
+  /// for consistency.
+  /// Note that this will incur an existential conversion.
+  @available(*, deprecated, message: "Expression always evaluates to true")
+  public func isProtocol(_: SyntaxProtocol.Protocol) -> Bool {
+    return true
+  }
+
+  /// Return the non-type erased version of this syntax node.
+  /// Note that this will incur an existential conversion.
+  public func asProtocol(_: SyntaxProtocol.Protocol) -> SyntaxProtocol {
+    switch self.as(SyntaxEnum.self) {
+    case .token(let node):
+      return node
+    case .unknown(let node):
+      return node
+% for node in NON_BASE_SYNTAX_NODES:
+    case .${node.swift_syntax_kind}(let node):
+      return node
+% end
+    }
+  }
+
+  public func childNameForDiagnostics(_ index: SyntaxChildrenIndex) -> String? {
+    switch self.as(SyntaxEnum.self) {
+    case .token(let node):
+      return node.childNameForDiagnostics(index)
+    case .unknown(let node):
+      return node.childNameForDiagnostics(index)
+% for node in NON_BASE_SYNTAX_NODES:
+    case .${node.swift_syntax_kind}(let node):
+      return node.childNameForDiagnostics(index)
+% end
+    }
+  }
+}
+
+extension SyntaxKind {
+  var syntaxNodeType: SyntaxProtocol.Type {
+    switch self {
+    case .token: return TokenSyntax.self
+    case .unknown: return UnknownSyntax.self
+% for node in NON_BASE_SYNTAX_NODES:
+    case .${node.swift_syntax_kind}: return ${node.name}.self
+% end
+    }
+  }
+}

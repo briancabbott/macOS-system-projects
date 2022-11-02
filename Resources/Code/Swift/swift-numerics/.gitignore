@@ -1,0 +1,7 @@
+.DS_Store
+/*XCTestManifests.swift
+/.build
+/Packages
+/*.xcodeproj
+/.swiftpm
+.*.sw?
