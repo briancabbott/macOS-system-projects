@@ -1,0 +1,9 @@
+child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: Cloning into 'undefined\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/TwistedWords'...
+child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: POST git-upload-pack (191 bytes)
+child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: POST git-upload-pack (268 bytes)
+child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: remote: Enumerating objects: 6, done.        
+remote: Counting objects:  16% (1/6)        remote: Counting objects:  33% (2/6)        remote: Counting objects:  50% (3/6)        remote: Counting objects:  66% (4/6)        remote: Counting objects:  83% (5/6)        remote: Counting objects: 100% (6/6)        remote: Counting objects: 100% (6/6), done.        
+remote: Compressing objects:  16% (1/6)        remote: Compressing objects:  33% (2/6)        remote: Compressing objects:  50% (3/6)        remote: Compressing objects:  66% (4/6)        remote: Compressing objects:  83% (5/6)        remote: Compressing objects: 100% (6/6)        remote: Compressing objects: 100% (6/6), done.        
+child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: Receiving objects:  16% (1/6)Receiving objects:  33% (2/6)child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0        
+child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: Receiving objects:  83% (5/6)child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):stderr:data: Receiving objects: 100% (6/6), 165.65 KiB | 3.94 MiB/s, done.
+child_process(51212)::clone(https://github.com/apple-oss-distributions/TwistedWords):close()

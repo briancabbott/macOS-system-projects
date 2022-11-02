@@ -1,0 +1,7 @@
+child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):stderr:data: Cloning into 'undefined\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/ruby_dnssd'...
+child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):stderr:data: POST git-upload-pack (191 bytes)
+child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):stderr:data: POST git-upload-pack (268 bytes)
+child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):stderr:data: remote: Compressing objects:  85% (6/7)        remote: Compressing objects: 100% (7/7)        remote: Compressing objects: 100% (7/7), done.        
+child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):stderr:data: Receiving objects:  12% (1/8)child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):stderr:data: Receiving objects:  62% (5/8)child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):stderr:data: remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0        
+Receiving objects:  75% (6/8)Receiving objects:  87% (7/8)Receiving objects: 100% (8/8)Receiving objects: 100% (8/8), 28.90 KiB | 3.61 MiB/s, done.
+child_process(53858)::clone(https://github.com/apple-oss-distributions/ruby_dnssd):close()

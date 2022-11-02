@@ -1,0 +1,9 @@
+child_process(51569)::clone(https://github.com/apple-oss-distributions/apache_mod_rendezvous_apple):stderr:data: Cloning into 'undefined\appl--09-03-2022--poUGxAwGvC76bxVjSmhjGL/apache_mod_rendezvous_apple'...
+child_process(51569)::clone(https://github.com/apple-oss-distributions/apache_mod_rendezvous_apple):stderr:data: POST git-upload-pack (191 bytes)
+child_process(51569)::clone(https://github.com/apple-oss-distributions/apache_mod_rendezvous_apple):stderr:data: POST git-upload-pack (268 bytes)
+child_process(51569)::clone(https://github.com/apple-oss-distributions/apache_mod_rendezvous_apple):stderr:data: remote: Enumerating objects: 5, done.        
+remote: Counting objects:  20% (1/5)        remote: Counting objects:  40% (2/5)        remote: Counting objects:  60% (3/5)        remote: Counting objects:  80% (4/5)        remote: Counting objects: 100% (5/5)        remote: Counting objects: 100% (5/5), done.        
+remote: Compressing objects:  20% (1/5)        remote: Compressing objects:  40% (2/5)        remote: Compressing objects:  60% (3/5)        remote: Compressing objects:  80% (4/5)        remote: Compressing objects: 100% (5/5)        child_process(51569)::clone(https://github.com/apple-oss-distributions/apache_mod_rendezvous_apple):stderr:data: remote: Compressing objects: 100% (5/5), done.        
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0        
+child_process(51569)::clone(https://github.com/apple-oss-distributions/apache_mod_rendezvous_apple):stderr:data: Receiving objects:  20% (1/5)Receiving objects:  40% (2/5)Receiving objects:  60% (3/5)Receiving objects:  80% (4/5)Receiving objects: 100% (5/5)Receiving objects: 100% (5/5), 14.96 KiB | 14.96 MiB/s, done.
+child_process(51569)::clone(https://github.com/apple-oss-distributions/apache_mod_rendezvous_apple):close()
