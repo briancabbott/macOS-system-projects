@@ -1,0 +1,16 @@
+matrix:
+  include:
+    - os: linux
+      language: generic
+      dist: focal
+      sudo: required
+    - os: osx
+      language: objective-c
+      osx_image: xcode11.7
+script:
+  - swift test
+before_install:
+  - chmod ugo+x ./scripts/run-tests.sh
+  - . ./scripts/run-tests.sh
+notifications:
+  email: false

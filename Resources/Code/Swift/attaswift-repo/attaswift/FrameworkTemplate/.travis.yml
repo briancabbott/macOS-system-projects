@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode8.1
+script:
+- xcrun xcodebuild -project FrameworkTemplate.xcodeproj -scheme FrameworkTemplate-macOS test
+- xcrun xcodebuild -project FrameworkTemplate.xcodeproj -scheme FrameworkTemplate-iOS
+- xcrun xcodebuild -project FrameworkTemplate.xcodeproj -scheme FrameworkTemplate-watchOS
+- xcrun xcodebuild -project FrameworkTemplate.xcodeproj -scheme FrameworkTemplate-tvOS
+- swift test
+after_success: bash <(curl -s https://codecov.io/bash)

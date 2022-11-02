@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/Deque undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/Deque",
+    "repo": "https://github.com/attaswift/Deque",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/Deque",
+    "startTime": "2022-10-05T03:52:55.684Z",
+    "endTime": "2022-10-05T03:52:56.385Z",
+    "childProcessPid": 24592,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--Deque--24592",
+    "executionErrors": []
+}

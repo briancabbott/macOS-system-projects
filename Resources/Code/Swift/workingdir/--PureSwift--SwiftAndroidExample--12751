@@ -1,0 +1,6 @@
+child_process(12751)::clone(https://github.com/PureSwift/SwiftAndroidExample):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftAndroidExample'...
+child_process(12751)::clone(https://github.com/PureSwift/SwiftAndroidExample):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12751)::clone(https://github.com/PureSwift/SwiftAndroidExample):stderr:data: POST git-upload-pack (218 bytes)
+child_process(12751)::clone(https://github.com/PureSwift/SwiftAndroidExample):stderr:data: remote: Enumerating objects: 4, done.        
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 4        
+child_process(12751)::clone(https://github.com/PureSwift/SwiftAndroidExample):stderr:data: Receiving objects:  25% (1/4)Receiving objects:  50% (2/4)

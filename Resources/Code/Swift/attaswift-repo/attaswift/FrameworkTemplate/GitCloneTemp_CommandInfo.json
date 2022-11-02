@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/FrameworkTemplate undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/FrameworkTemplate",
+    "repo": "https://github.com/attaswift/FrameworkTemplate",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/FrameworkTemplate",
+    "startTime": "2022-10-05T03:52:56.385Z",
+    "endTime": "2022-10-05T03:52:57.015Z",
+    "childProcessPid": 24603,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--FrameworkTemplate--24603",
+    "executionErrors": []
+}

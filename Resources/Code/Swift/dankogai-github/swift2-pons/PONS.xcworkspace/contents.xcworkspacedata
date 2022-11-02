@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:osx/OSX.playground">
+   </FileRef>
+   <FileRef
+      location = "group:ios/iOS.playground">
+   </FileRef>
+   <FileRef
+      location = "group:tvos/tvOS.playground">
+   </FileRef>
+   <FileRef
+      location = "group:osx/Framework-OSX.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ios/Framework-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:tvos/Framework-tvOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:osx/test.xcodeproj">
+   </FileRef>
+</Workspace>

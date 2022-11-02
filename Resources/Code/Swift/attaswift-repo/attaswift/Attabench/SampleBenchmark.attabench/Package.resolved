@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Benchmarking",
+        "repositoryURL": "https://github.com/attaswift/Benchmarking",
+        "state": {
+          "branch": "master",
+          "revision": "5fb2680a1a3d6197f5dbba29d9d57c2c1c56799e",
+          "version": null
+        }
+      },
+      {
+        "package": "OptionParser",
+        "repositoryURL": "https://github.com/attaswift/OptionParser",
+        "state": {
+          "branch": null,
+          "revision": "049f1e2b9d4550c25d99c54e17a045149e723afb",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/SipHash undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/SipHash",
+    "repo": "https://github.com/attaswift/SipHash",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/SipHash",
+    "startTime": "2022-10-05T03:52:59.627Z",
+    "endTime": "2022-10-05T03:53:00.472Z",
+    "childProcessPid": 24632,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--SipHash--24632",
+    "executionErrors": []
+}

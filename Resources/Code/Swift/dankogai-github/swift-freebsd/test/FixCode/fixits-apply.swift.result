@@ -1,0 +1,57 @@
+// RUN: not %swift -parse -target %target-triple %s -emit-fixits-path %t.remap
+// RUN: c-arcmt-test %t.remap | arcmt-test -verify-transformed-files %s.result
+
+class Base {}
+class Derived : Base {}
+
+var b : Base
+b as! Derived
+b as! Derived
+
+b 
+
+var opti : Int?
+// Don't add bang.
+var i : Int = opti
+// But remove unecessary bang.
+var i2 : Int = i
+
+struct MyMask : OptionSetType {
+  init(_ rawValue: UInt) {}
+  init(rawValue: UInt) {}
+  init(nilLiteral: ()) {}
+
+  var rawValue: UInt { return 0 }
+
+  static var allZeros: MyMask { return MyMask(0) }
+  static var Bingo: MyMask { return MyMask(1) }
+}
+
+func supported() -> MyMask {
+  return MyMask.Bingo
+}
+
+func foo() -> Int {
+  do {
+  } catch let err {
+    goo(err)
+  }
+}
+
+func goo(e : ErrorType) {}
+
+struct Test1 : OptionSetType {
+  init(rawValue: Int) {}
+  var rawValue: Int { return 0 }
+}
+
+print("", terminator: "")
+Swift.print("", terminator: "")
+print("", terminator: "\n")
+print("", false, appendNewline: false)
+print("", false)
+
+func ftest1() {
+  // Don't replace the variable name with '_'
+  let myvar = 0
+}

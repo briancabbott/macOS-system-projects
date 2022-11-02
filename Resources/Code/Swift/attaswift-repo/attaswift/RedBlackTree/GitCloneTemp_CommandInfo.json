@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/RedBlackTree undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/RedBlackTree",
+    "repo": "https://github.com/attaswift/RedBlackTree",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/RedBlackTree",
+    "startTime": "2022-10-05T03:52:58.767Z",
+    "endTime": "2022-10-05T03:52:59.626Z",
+    "childProcessPid": 24623,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--RedBlackTree--24623",
+    "executionErrors": []
+}

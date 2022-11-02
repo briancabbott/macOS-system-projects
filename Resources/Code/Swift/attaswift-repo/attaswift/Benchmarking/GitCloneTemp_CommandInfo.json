@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/Benchmarking undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/Benchmarking",
+    "repo": "https://github.com/attaswift/Benchmarking",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/Benchmarking",
+    "startTime": "2022-10-05T03:52:53.720Z",
+    "endTime": "2022-10-05T03:52:54.333Z",
+    "childProcessPid": 24574,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--Benchmarking--24574",
+    "executionErrors": []
+}

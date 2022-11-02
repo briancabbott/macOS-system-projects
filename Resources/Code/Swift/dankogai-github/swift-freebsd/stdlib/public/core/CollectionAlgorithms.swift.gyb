@@ -1,0 +1,303 @@
+//===--- CollectionAlgorithms.swift.gyb -----------------------------------===//
+//
+// This source file is part of the Swift.org open source project
+//
+// Copyright (c) 2014 - 2015 Apple Inc. and the Swift project authors
+// Licensed under Apache License v2.0 with Runtime Library Exception
+//
+// See http://swift.org/LICENSE.txt for license information
+// See http://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+//
+//===----------------------------------------------------------------------===//
+
+%{
+
+# We know we will eventually get a SequenceType.Element type.  Define
+# a shorthand that we can use today.
+GElement = "Generator.Element"
+
+}%
+
+//===----------------------------------------------------------------------===//
+// last
+//===----------------------------------------------------------------------===//
+
+extension CollectionType where Index : BidirectionalIndexType {
+  public var last: Generator.Element? {
+    return isEmpty ? nil : self[endIndex.predecessor()]
+  }
+}
+
+//===----------------------------------------------------------------------===//
+// indexOf()
+//===----------------------------------------------------------------------===//
+
+extension CollectionType where ${GElement} : Equatable {
+  /// Returns the first index where `value` appears in `self` or `nil` if
+  /// `value` is not found.
+  ///
+  /// - Complexity: O(`self.count`).
+  @warn_unused_result
+  public func indexOf(element: ${GElement}) -> Index? {
+    if let result = _customIndexOfEquatableElement(element) {
+      return result
+    }
+
+    for i in self.indices {
+      if self[i] == element {
+        return i
+      }
+    }
+    return nil
+  }
+}
+
+extension CollectionType {
+  /// Returns the first index where `predicate` returns `true` for the
+  /// corresponding value, or `nil` if such value is not found.
+  ///
+  /// - Complexity: O(`self.count`).
+  @warn_unused_result
+  public func indexOf(
+    @noescape predicate: (${GElement}) throws -> Bool
+  ) rethrows -> Index? {
+    for i in self.indices {
+      if try predicate(self[i]) {
+        return i
+      }
+    }
+    return nil
+  }
+}
+
+//===----------------------------------------------------------------------===//
+// indices
+//===----------------------------------------------------------------------===//
+
+extension CollectionType {
+  /// Return the range of valid index values.
+  ///
+  /// The result's `endIndex` is the same as that of `self`.  Because
+  /// `Range` is half-open, iterating the values of the result produces
+  /// all valid subscript arguments for `self`, omitting its `endIndex`.
+  public var indices: Range<Index> {
+    return Range(start: startIndex, end: endIndex)
+  }
+}
+
+//===----------------------------------------------------------------------===//
+// MutableCollectionType
+//===----------------------------------------------------------------------===//
+
+//===----------------------------------------------------------------------===//
+// partition()
+//===----------------------------------------------------------------------===//
+
+%{
+
+partitionDocComment = """\
+  /// Re-order the given `range` of elements in `self` and return
+  /// a pivot index *p*.
+  ///
+  /// - Postcondition: For all *i* in `range.startIndex..<`\ *p*, and *j*
+  ///   in *p*\ `..<range.endIndex`, `less(self[`\ *i*\ `],
+  ///   self[`\ *j*\ `]) && !less(self[`\ *j*\ `], self[`\ *p*\ `])`.
+  ///   Only returns `range.endIndex` when `self` is empty."""
+
+orderingRequirementForPredicate = """\
+  /// - Requires: `isOrderedBefore` is a
+  ///   [strict weak ordering](http://en.wikipedia.org/wiki/Strict_weak_order#Strict_weak_orderings)
+  ///   over the elements in `self`."""
+
+orderingRequirementForComparable = """\
+  /// - Requires: The less-than operator (`func <`) defined in
+  ///   the `Comparable` conformance is a
+  ///   [strict weak ordering](http://en.wikipedia.org/wiki/Strict_weak_order#Strict_weak_orderings)
+  ///   over the elements in `self`."""
+
+}%
+
+% # Generate two versions: with explicit predicates and with
+% # a Comparable requirement.
+% for preds in [ True, False ]:
+
+%   if preds:
+extension MutableCollectionType where Index : RandomAccessIndexType {
+
+${partitionDocComment}
+  ///
+${orderingRequirementForPredicate}
+  public mutating func partition(
+    range: Range<Index>,
+    isOrderedBefore: (${GElement}, ${GElement}) -> Bool
+  ) -> Index {
+    var isOrderedBefore = isOrderedBefore
+
+%   else:
+
+extension MutableCollectionType
+  where Index : RandomAccessIndexType, ${GElement} : Comparable {
+
+${partitionDocComment}
+  ///
+${orderingRequirementForComparable}
+  public mutating func partition(range: Range<Index>) -> Index {
+
+%   end
+
+    let maybeResult = _withUnsafeMutableBufferPointerIfSupported {
+      (baseAddress, count) -> Index in
+      var bufferPointer =
+        UnsafeMutableBufferPointer(start: baseAddress, count: count)
+      let startOffset = startIndex.distanceTo(range.startIndex)
+      let unsafeBufferStartIndex =
+        bufferPointer.startIndex + numericCast(startOffset)
+
+      let endOffset = startIndex.distanceTo(range.endIndex)
+      let unsafeBufferEndIndex =
+        bufferPointer.startIndex + numericCast(endOffset)
+
+      let unsafeBufferPivot = bufferPointer.partition(
+        unsafeBufferStartIndex..<unsafeBufferEndIndex
+%   if preds:
+        , isOrderedBefore: isOrderedBefore
+%   end
+        )
+      return startIndex.advancedBy(
+        numericCast(unsafeBufferPivot - bufferPointer.startIndex))
+    }
+    if let result = maybeResult {
+      return result
+    }
+
+%   if preds:
+    return _partition(&self, range, &isOrderedBefore)
+%   else:
+    return _partition(&self, range)
+%   end
+  }
+}
+
+% end
+
+//===----------------------------------------------------------------------===//
+// sort()
+//===----------------------------------------------------------------------===//
+
+%{
+
+sortDocCommentForPredicate = """\
+  /// Return an `Array` containing the sorted elements of `source`
+  /// according to `isOrderedBefore`."""
+
+sortDocCommentForComparable = """\
+  /// Return an `Array` containing the sorted elements of `source`."""
+
+sortInPlaceDocCommentForPredicate = """\
+  /// Sort `self` in-place according to `isOrderedBefore`."""
+
+sortInPlaceDocCommentForComparable = """\
+  /// Sort `self` in-place."""
+
+sortIsUnstableForPredicate = """\
+  /// The sorting algorithm is not stable (can change the relative order of
+  /// elements for which `isOrderedBefore` does not establish an order)."""
+
+sortIsUnstableForComparable = """\
+  /// The sorting algorithm is not stable (can change the relative order of
+  /// elements that compare equal)."""
+
+}%
+
+% for Self in [ 'SequenceType', 'MutableCollectionType' ]:
+
+extension ${Self} where Self.Generator.Element : Comparable {
+${sortDocCommentForComparable}
+  ///
+${sortIsUnstableForComparable}
+  ///
+${orderingRequirementForComparable}
+  @warn_unused_result(${'mutable_variant="sortInPlace"' if Self == 'MutableCollectionType' else ''})
+  public func sort() -> [Generator.Element] {
+    var result = ContiguousArray(self)
+    result.sortInPlace()
+    return Array(result)
+  }
+}
+
+extension ${Self} {
+${sortDocCommentForPredicate}
+  ///
+${sortIsUnstableForPredicate}
+  ///
+${orderingRequirementForPredicate}
+  @warn_unused_result(${'mutable_variant="sortInPlace"' if Self == 'MutableCollectionType' else ''})
+  public func sort(
+    @noescape isOrderedBefore: (Generator.Element, Generator.Element) -> Bool
+  ) -> [Generator.Element] {
+    typealias EscapingBinaryPredicate =
+       (Generator.Element, Generator.Element) -> Bool
+    let escapableIsOrderedBefore =
+      unsafeBitCast(isOrderedBefore, EscapingBinaryPredicate.self)
+
+    var result = ContiguousArray(self)
+    result.sortInPlace(escapableIsOrderedBefore)
+    return Array(result)
+  }
+}
+
+% end
+
+extension MutableCollectionType
+  where
+  Self.Index : RandomAccessIndexType,
+  Self.Generator.Element : Comparable {
+
+${sortInPlaceDocCommentForComparable}
+  ///
+${sortIsUnstableForComparable}
+  ///
+${orderingRequirementForComparable}
+  public mutating func sortInPlace() {
+    let didSortUnsafeBuffer: Void? =
+      _withUnsafeMutableBufferPointerIfSupported {
+      (baseAddress, count) -> Void in
+      var bufferPointer =
+        UnsafeMutableBufferPointer(start: baseAddress, count: count)
+      bufferPointer.sortInPlace()
+      return ()
+    }
+    if didSortUnsafeBuffer == nil {
+      _introSort(&self, self.indices)
+    }
+  }
+}
+
+extension MutableCollectionType where Self.Index : RandomAccessIndexType {
+${sortInPlaceDocCommentForPredicate}
+  ///
+${sortIsUnstableForPredicate}
+  ///
+${orderingRequirementForPredicate}
+  public mutating func sortInPlace(
+    @noescape isOrderedBefore: (Generator.Element, Generator.Element) -> Bool
+  ) {
+    typealias EscapingBinaryPredicate =
+      (Generator.Element, Generator.Element) -> Bool
+    let escapableIsOrderedBefore =
+      unsafeBitCast(isOrderedBefore, EscapingBinaryPredicate.self)
+
+    let didSortUnsafeBuffer: Void? =
+      _withUnsafeMutableBufferPointerIfSupported {
+      (baseAddress, count) -> Void in
+      var bufferPointer =
+        UnsafeMutableBufferPointer(start: baseAddress, count: count)
+      bufferPointer.sortInPlace(escapableIsOrderedBefore)
+      return ()
+    }
+    if didSortUnsafeBuffer == nil {
+      _introSort(&self, self.indices, escapableIsOrderedBefore)
+    }
+  }
+}
+

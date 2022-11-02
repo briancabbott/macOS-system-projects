@@ -1,0 +1,68 @@
+//===- DiagnosticsClangImporter.def - Diagnostics Text ----------*- C++ -*-===//
+//
+// This source file is part of the Swift.org open source project
+//
+// Copyright (c) 2014 - 2015 Apple Inc. and the Swift project authors
+// Licensed under Apache License v2.0 with Runtime Library Exception
+//
+// See http://swift.org/LICENSE.txt for license information
+// See http://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+//
+//===----------------------------------------------------------------------===//
+//
+//  This file defines diagnostics for the Clang importer.
+//  Each diagnostic is described using one of three kinds (error, warning, or 
+//  note) along with a unique identifier, category, options, and text, and is
+//  followed by a signature describing the diagnostic argument kinds.
+//
+//===----------------------------------------------------------------------===//
+
+#if !(defined(DIAG) || (defined(ERROR) && defined(WARNING) && defined(NOTE)))
+#  error Must define either DIAG or the set {ERROR,WARNING,NOTE}
+#endif
+
+#ifndef ERROR
+#  define ERROR(ID,Category,Options,Text,Signature)   \
+  DIAG(ERROR,ID,Category,Options,Text,Signature)
+#endif
+
+#ifndef WARNING
+#  define WARNING(ID,Category,Options,Text,Signature) \
+  DIAG(WARNING,ID,Category,Options,Text,Signature)
+#endif
+
+#ifndef NOTE
+#  define NOTE(ID,Category,Options,Text,Signature) \
+  DIAG(NOTE,ID,Category,Options,Text,Signature)
+#endif
+
+WARNING(warning_from_clang,none,none,
+  "%0", (StringRef))
+ERROR(error_from_clang,none,none,
+  "%0", (StringRef))
+NOTE(note_from_clang,none,none,
+  "%0", (StringRef))
+
+ERROR(clang_cannot_build_module,none,Fatal,
+  "could not build Objective-C module '%0'", (StringRef))
+
+ERROR(bridging_header_missing,none,Fatal,
+  "bridging header '%0' does not exist", (StringRef))
+ERROR(bridging_header_error,none,Fatal,
+  "failed to import bridging header '%0'", (StringRef))
+WARNING(could_not_rewrite_bridging_header,none,none,
+  "failed to serialize bridging header; "
+  "target may not be debuggable outside of its original project", ())
+
+WARNING(invalid_swift_name_method,none,none,
+  "too %select{few|many}0 parameters in swift_name attribute (expected %1; "
+  "got %2)", (bool, unsigned, unsigned))
+
+#ifndef DIAG_NO_UNDEF
+# if defined(DIAG)
+#  undef DIAG
+# endif
+# undef NOTE
+# undef WARNING
+# undef ERROR
+#endif

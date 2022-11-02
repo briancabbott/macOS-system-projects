@@ -1,0 +1,48 @@
+// RUN: %target-swift-frontend -gnone -emit-ir %s | FileCheck %s
+
+// REQUIRES: CPU=x86_64
+
+// CHECK: [[OPAQUE:%swift.opaque]] = type opaque
+// CHECK: [[TYPE:%swift.type]] = type
+
+sil_stage canonical
+
+sil @generic_tuple : $@convention(thin) <T> (@in T) -> () {
+bb0(%x : $*T):
+  %y = alloc_stack $T
+  copy_addr %x to [initialization] %y#1 : $*T
+  destroy_addr %y#1 : $*T
+  dealloc_stack %y#0 : $*@local_storage T
+  destroy_addr %x : $*T
+  %0 = tuple ()
+  return %0 : $()
+}
+// CHECK:    define void @generic_tuple([[OPAQUE]]* noalias nocapture, [[TYPE]]* %T) {{.*}} {
+//  Type metadata.
+// CHECK: alloca
+//   The fixed-size buffer.
+// CHECK:      [[YBUF:%.*]] = alloca [[BUFFER:.*]], align 8
+// CHECK-NEXT: store %swift.type
+//   Allocate it.
+// CHECK-NEXT: [[T0:%.*]] = bitcast [[TYPE]]* %T to i8***
+// CHECK-NEXT: [[T1:%.*]] = getelementptr inbounds i8**, i8*** [[T0]], i64 -1
+// CHECK-NEXT: [[VWTABLE:%.*]] = load i8**, i8*** [[T1]], align 8
+// CHECK-NEXT: [[T3:%.*]] = getelementptr inbounds i8*, i8** [[VWTABLE]], i32 5
+// CHECK-NEXT: [[T4:%.*]] = load i8*, i8** [[T3]], align 8
+// CHECK-NEXT: [[BUFFER_COPY_FN:%.*]] = bitcast i8* [[T4]] to [[OPAQUE]]* ([[BUFFER]]*, [[OPAQUE]]*, [[TYPE]]*)*
+//   Copy 'x' into 'y'.
+// CHECK-NEXT: [[Y:%.*]] = call [[OPAQUE]]* [[BUFFER_COPY_FN]]([[BUFFER]]* [[YBUF]], [[OPAQUE]]* [[X:%.*]], [[TYPE]]* %T)
+//   Destroy 'y'.
+// CHECK-NEXT: [[T3:%.*]] = getelementptr inbounds i8*, i8** [[VWTABLE]], i32 4
+// CHECK-NEXT: [[T4:%.*]] = load i8*, i8** [[T3]], align 8
+// CHECK-NEXT: [[DESTROY_FN:%.*]] = bitcast i8* [[T4]] to void ([[OPAQUE]]*, [[TYPE]]*)*
+// CHECK-NEXT: call void [[DESTROY_FN]]([[OPAQUE]]* [[Y]], [[TYPE]]* %T)
+//   Deallocate 'y'.
+// CHECK-NEXT: [[T3:%.*]] = getelementptr inbounds i8*, i8** [[VWTABLE]], i32 3
+// CHECK-NEXT: [[T4:%.*]] = load i8*, i8** [[T3]], align 8
+// CHECK-NEXT: [[DEALLOC_FN:%.*]] = bitcast i8* [[T4]] to void ([[BUFFER]]*, [[TYPE]]*)*
+// CHECK-NEXT: call void [[DEALLOC_FN]]([[BUFFER]]* [[YBUF]], [[TYPE]]* %T)
+//   Destroy 'x'.
+// CHECK-NEXT: call void [[DESTROY_FN]]([[OPAQUE]]* [[X]], [[TYPE]]* %T)
+//   Return.
+// CHECK-NEXT: ret void

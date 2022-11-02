@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/BigInt undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/BigInt",
+    "repo": "https://github.com/attaswift/BigInt",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/BigInt",
+    "startTime": "2022-10-05T03:52:54.334Z",
+    "endTime": "2022-10-05T03:52:55.684Z",
+    "childProcessPid": 24581,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--BigInt--24581",
+    "executionErrors": []
+}

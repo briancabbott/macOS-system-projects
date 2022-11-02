@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/GlueKit undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/GlueKit",
+    "repo": "https://github.com/attaswift/GlueKit",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/GlueKit",
+    "startTime": "2022-10-05T03:52:57.015Z",
+    "endTime": "2022-10-05T03:52:58.143Z",
+    "childProcessPid": 24611,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--GlueKit--24611",
+    "executionErrors": []
+}

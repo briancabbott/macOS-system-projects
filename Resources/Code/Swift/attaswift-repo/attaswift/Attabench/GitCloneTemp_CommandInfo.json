@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/Attabench undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/Attabench",
+    "repo": "https://github.com/attaswift/Attabench",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/Attabench",
+    "startTime": "2022-10-05T03:52:49.892Z",
+    "endTime": "2022-10-05T03:52:52.486Z",
+    "childProcessPid": 24558,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--Attabench--24558",
+    "executionErrors": []
+}

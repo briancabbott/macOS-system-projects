@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Benchmarking",
+        "repositoryURL": "https://github.com/attaswift/Benchmarking",
+        "state": {
+          "branch": "master",
+          "revision": "5fb2680a1a3d6197f5dbba29d9d57c2c1c56799e",
+          "version": null
+        }
+      },
+      {
+        "package": "BTree",
+        "repositoryURL": "https://github.com/attaswift/BTree",
+        "state": {
+          "branch": null,
+          "revision": "83435371ef3c6d98107f5b562a5870a3dfca6243",
+          "version": "4.1.0"
+        }
+      },
+      {
+        "package": "OptionParser",
+        "repositoryURL": "https://github.com/attaswift/OptionParser",
+        "state": {
+          "branch": null,
+          "revision": "049f1e2b9d4550c25d99c54e17a045149e723afb",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

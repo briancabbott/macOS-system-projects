@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/OptionParser undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/OptionParser",
+    "repo": "https://github.com/attaswift/OptionParser",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/OptionParser",
+    "startTime": "2022-10-05T03:52:58.143Z",
+    "endTime": "2022-10-05T03:52:58.767Z",
+    "childProcessPid": 24616,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--OptionParser--24616",
+    "executionErrors": []
+}

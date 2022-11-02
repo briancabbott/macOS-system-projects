@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>classNames</key>
+	<dict>
+		<key>SignalPerformanceTests</key>
+		<dict>
+			<key>testChainedSendPerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.52115</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-10-19 23:39:50</string>
+				</dict>
+			</dict>
+			<key>testConcurrentSendPerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>1.4352</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-10-19 23:39:50</string>
+				</dict>
+			</dict>
+			<key>testSendPerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.65624</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-10-19 23:39:50</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>SignalSendTests</key>
+		<dict>
+			<key>testChainedSendPerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.27853</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:29:28</string>
+				</dict>
+			</dict>
+			<key>testConcurrentSendPerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>2.2684</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:29:28</string>
+				</dict>
+			</dict>
+			<key>test_send_toClosure()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.61261</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:29:28</string>
+				</dict>
+			</dict>
+			<key>test_send_toSink()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.5974</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:29:28</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>SignalSubscriptionTests</key>
+		<dict>
+			<key>test_subscribe_Closures()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.3053</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:43:05</string>
+				</dict>
+			</dict>
+			<key>test_subscribe_EmptySink()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.20632</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:43:05</string>
+				</dict>
+			</dict>
+			<key>test_subscribe_HardwiredMethodSink()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.21459</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:43:05</string>
+				</dict>
+			</dict>
+			<key>test_subscribe_LocalMethodSink()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.32126</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:29:28</string>
+				</dict>
+			</dict>
+			<key>test_subscribe_MethodSink()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.31883</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:43:05</string>
+				</dict>
+			</dict>
+			<key>test_subscribe_PartiallyAppliedMethodSink()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.36757</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:43:05</string>
+				</dict>
+			</dict>
+			<key>test_subscribe_RefCountingSink()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.22047</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:43:05</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>SignalUnsubscriptionTests</key>
+		<dict>
+			<key>test_unsubscribe_emptySinks()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.18989</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>2016-11-01 15:29:28</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

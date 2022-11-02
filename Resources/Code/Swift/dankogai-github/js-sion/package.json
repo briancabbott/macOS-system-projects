@@ -1,0 +1,36 @@
+{
+  "name": "js-sion",
+  "version": "1.2.0",
+  "description": "SION deserializer/serializer for ECMAScript",
+  "main": "sion.js",
+  "type": "module",
+  "types": "sion.d.ts",
+  "files": [
+    "sion.js",
+    "sion.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dankogai/js-sion.git"
+  },
+  "scripts": {
+    "test": "make clean && make test"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "@types/node": "^14.0.26",
+    "mocha": "^8.0.1",
+    "chai": "^4.2.0"
+  },
+  "keywords": [
+    "SION",
+    "JSON",
+    "Serialization"
+  ],
+  "author": "Dan Kogai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dankogai/js-sion/issues"
+  },
+  "homepage": "https://github.com/dankogai/js-sion#readme"
+}

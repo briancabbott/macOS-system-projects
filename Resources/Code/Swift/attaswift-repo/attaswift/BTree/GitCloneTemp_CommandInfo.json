@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/BTree undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/BTree",
+    "repo": "https://github.com/attaswift/BTree",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/BTree",
+    "startTime": "2022-10-05T03:52:52.486Z",
+    "endTime": "2022-10-05T03:52:53.720Z",
+    "childProcessPid": 24567,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--BTree--24567",
+    "executionErrors": []
+}

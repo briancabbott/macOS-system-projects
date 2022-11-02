@@ -1,0 +1,6 @@
+child_process(12502)::clone(https://github.com/PureSwift/COpenSSL):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/COpenSSL'...
+child_process(12502)::clone(https://github.com/PureSwift/COpenSSL):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12502)::clone(https://github.com/PureSwift/COpenSSL):stderr:data: POST git-upload-pack (318 bytes)
+child_process(12502)::clone(https://github.com/PureSwift/COpenSSL):stderr:data: remote: Enumerating objects: 9, done.        
+child_process(12502)::clone(https://github.com/PureSwift/COpenSSL):stderr:data: remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9        
+child_process(12502)::clone(https://github.com/PureSwift/COpenSSL):stderr:data: Receiving objects:  11% (1/9)Receiving objects:  22% (2/9)child_process(12502)::clone(https://github.com/PureSwift/COpenSSL):stderr:data: Resolving deltas:   0% (0/2)Resolving deltas:  50% (1/2)Resolving deltas: 100% (2/2)

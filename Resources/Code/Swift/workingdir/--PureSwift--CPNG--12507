@@ -1,0 +1,7 @@
+child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CPNG'...
+child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: POST git-upload-pack (318 bytes)
+child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: remote: Enumerating objects: 13, done.        
+child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 13        
+child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: Receiving objects:   7% (1/13)Receiving objects:  15% (2/13)child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: Receiving objects: 100% (13/13)Receiving objects: 100% (13/13), done.
+child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: Resolving deltas:   0% (0/3)Resolving deltas:  33% (1/3)child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: Resolving deltas:  66% (2/3)Resolving deltas: 100% (3/3)child_process(12507)::clone(https://github.com/PureSwift/CPNG):stderr:data: Resolving deltas: 100% (3/3), done.

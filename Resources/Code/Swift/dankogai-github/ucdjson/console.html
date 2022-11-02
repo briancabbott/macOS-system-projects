@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>module loader</title>
+</head>
+<body>
+  Open the console and have fun with UCD.
+  <script type="module">
+    import {UCD} from "./ucd.js";
+    window.UCD = new UCD('https://api.dan.co.jp/ucd/latest');
+  </script>
+</body>
+</html>

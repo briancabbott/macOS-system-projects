@@ -1,0 +1,6 @@
+child_process(12310)::clone(https://github.com/PureSwift/AndroidSwiftUI):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/AndroidSwiftUI'...
+child_process(12310)::clone(https://github.com/PureSwift/AndroidSwiftUI):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12310)::clone(https://github.com/PureSwift/AndroidSwiftUI):stderr:data: POST git-upload-pack (218 bytes)
+child_process(12310)::clone(https://github.com/PureSwift/AndroidSwiftUI):stderr:data: remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0        
+child_process(12310)::clone(https://github.com/PureSwift/AndroidSwiftUI):stderr:data: Receiving objects:  20% (1/5)child_process(12310)::clone(https://github.com/PureSwift/AndroidSwiftUI):stderr:data: Receiving objects:  40% (2/5)Receiving objects:  60% (3/5)Receiving objects:  80% (4/5)Receiving objects: 100% (5/5)Receiving objects: 100% (5/5), done.
+child_process(12310)::clone(https://github.com/PureSwift/AndroidSwiftUI):close()

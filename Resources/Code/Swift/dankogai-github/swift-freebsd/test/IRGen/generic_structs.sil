@@ -1,0 +1,191 @@
+// RUN: %target-swift-frontend %s -emit-ir | FileCheck %s
+
+// REQUIRES: CPU=x86_64
+
+import Builtin
+
+// -- Generic structs with dynamic layout contain the vwtable pattern as part
+//    of the metadata pattern, and no independent vwtable symbol
+// CHECK-NOT: @_TWVV15generic_structs13SingleDynamic
+// CHECK: [[SINGLEDYNAMIC_NAME:@.*]] = private unnamed_addr constant [34 x i8] c"V15generic_structs13SingleDynamic\00"
+// CHECK: [[SINGLEDYNAMIC_FIELDS:@.*]] = private unnamed_addr constant [3 x i8] c"x\00\00"
+// CHECK: @_TMnV15generic_structs13SingleDynamic = constant { {{.*}} i32 } {
+// --       1 = struct
+// CHECK:   i64 1,
+// --       name
+// CHECK:   i8* getelementptr inbounds ([34 x i8], [34 x i8]* [[SINGLEDYNAMIC_NAME]], i64 0, i64 0),
+// --       field count
+// CHECK:   i32 1,
+// --       field offset vector offset
+// CHECK:   i32 3,
+// --       field names
+// CHECK:   i8* getelementptr inbounds ([3 x i8], [3 x i8]* [[SINGLEDYNAMIC_FIELDS]], i64 0, i64 0),
+// --       generic metadata pattern
+// CHECK:   @_TMPV15generic_structs13SingleDynamic
+// --       generic parameter vector offset
+// CHECK:   i32 4,
+// --       generic parameter count, primary counts; generic parameter witness counts
+// CHECK:   i32 1, i32 1, i32 0
+// CHECK: }
+// CHECK: @_TMPV15generic_structs13SingleDynamic = global {{[{].*\* [}]}} {
+// -- template header
+// CHECK:   %swift.type* (%swift.type_pattern*, i8**)* @create_generic_metadata_SingleDynamic,
+// CHECK:   i32 240, i16 1, i16 8, [{{[0-9]+}} x i8*] zeroinitializer,
+// -- placeholder for vwtable pointer
+// CHECK:   i8* null,
+// -- address point
+// CHECK:   i64 1, {{.*}}* @_TMnV15generic_structs13SingleDynamic, %swift.type* null,
+// -- field offset vector; generic parameter vector
+// CHECK:   i64 0, %swift.type* null,
+// -- tail-allocated vwtable pattern
+// CHECK:   i8* bitcast (void ([24 x i8]*, %swift.type*)* @_TwXXV15generic_structs13SingleDynamic to i8*),
+// -- ...
+// -- placeholder for size, flags, stride
+// CHECK:   i8* null, i8* null, i8* null
+// -- extra inhabitants
+// CHECK:   i8* null,
+// CHECK:   i8* bitcast (void (%swift.opaque*, i32, %swift.type*)* @_TwxsV15generic_structs13SingleDynamic to i8*),
+// CHECK:   i8* bitcast (i32 (%swift.opaque*, %swift.type*)* @_TwxgV15generic_structs13SingleDynamic to i8*) }
+// CHECK-NOT: @_TWVV15generic_structs13SingleDynamic
+
+// -- Nominal type descriptor for generic struct with protocol requirements
+// CHECK: [[DYNAMICWITHREQUIREMENTS_NAME:@.*]] = private unnamed_addr constant [44 x i8] c"V15generic_structs23DynamicWithRequirements\00"
+// CHECK: [[DYNAMICWITHREQUIREMENTS_FIELDS:@.*]] = private unnamed_addr constant [5 x i8] c"x\00y\00\00"
+// CHECK: @_TMnV15generic_structs23DynamicWithRequirements = constant { {{.*}} i32 } {
+// --       1 = struct
+// CHECK:   i64 1,
+// --       name
+// CHECK:   i8* getelementptr inbounds ([44 x i8], [44 x i8]* [[DYNAMICWITHREQUIREMENTS_NAME]], i64 0, i64 0),
+// --       field count
+// CHECK:   i32 2,
+// --       field offset vector offset
+// CHECK:   i32 3,
+// --       field names
+// CHECK:   i8* getelementptr inbounds ([5 x i8], [5 x i8]* [[DYNAMICWITHREQUIREMENTS_FIELDS]], i64 0, i64 0),
+// --       generic metadata pattern
+// CHECK:   @_TMPV15generic_structs23DynamicWithRequirements
+// --       generic parameter vector offset
+// CHECK:   i32 5,
+// --       generic parameter count; primary count; generic parameter witness counts
+// CHECK:   i32 3, i32 2, i32 1, i32 1, i32 0
+// CHECK: }
+
+// CHECK: @_TMPV15generic_structs23DynamicWithRequirements = global { {{.*}}* } {
+// -- field offset vector; generic parameter vector
+// CHECK:   i64 0, i64 0, %swift.type* null, %swift.type* null, %swift.type* null, i8** null, i8** null,
+// CHECK: }
+
+// -- Fixed-layout struct metadata contains fixed field offsets
+// CHECK: @_TMfV15generic_structs6Intish = internal constant { {{.*}} i64 } {
+// CHECK:   i64 0
+// CHECK: }
+// CHECK: @_TMfV15generic_structs7Chareth = internal constant { {{.*}} i64 } {
+// CHECK:   i64 0
+// CHECK: }
+// CHECK: @_TMfV15generic_structs8Stringly = internal constant { {{.*}} i64, i64, i64 } {
+// CHECK:   i64 0, i64 8, i64 16
+// CHECK: }
+
+struct SingleDynamic<T> {
+  var x : T
+}
+
+protocol Req1 { typealias Assoc1 }
+protocol Req2 {}
+
+struct DynamicWithRequirements<T: Req1, U: Req2> {
+  var x : T
+  var y : U
+}
+
+struct Intish { var value : Builtin.Int64 }
+struct Chareth { var value : Builtin.Int21 }
+struct Byteful { var value : Builtin.Int8 }
+struct Stringly {
+  var owner : Builtin.NativeObject
+  var base : Builtin.RawPointer
+  var size : Builtin.Int64
+}
+
+// CHECK-LABEL: define { i64, i21 } @concrete_instances(i64, i21) {{.*}} {
+// CHECK: entry:
+// CHECK:   %2 = insertvalue { i64, i21 } undef, i64 %0, 0
+// CHECK:   %3 = insertvalue { i64, i21 } %2, i21 %1, 1
+// CHECK:   ret { i64, i21 } %3
+// CHECK: }
+sil @concrete_instances : $(SingleDynamic<Intish>, SingleDynamic<Chareth>) -> (Intish, Chareth) {
+entry(%0 : $SingleDynamic<Intish>, %1 : $SingleDynamic<Chareth>):
+  %a = struct_extract %0 : $SingleDynamic<Intish>, #SingleDynamic.x
+  %b = struct_extract %1 : $SingleDynamic<Chareth>, #SingleDynamic.x
+  %c = tuple (%a : $Intish, %b : $Chareth)
+  return %c : $(Intish, Chareth)
+}
+
+struct ComplexDynamic<U, V> {
+  var a, a2 : Byteful
+  var b : U
+  var c : SingleDynamic<V>
+  var d : Chareth
+}
+
+// CHECK-LABEL: define void @explode_complex_dynamic
+sil @explode_complex_dynamic : $<A, B> (@in ComplexDynamic<A, B>, @inout Byteful, @inout A, @inout B, @inout Chareth) -> () {
+entry(%0 : $*ComplexDynamic<A, B>, %1 : $*Byteful, %2 : $*A, %3 : $*B, %4 : $*Chareth):
+  %a = struct_element_addr %0 : $*ComplexDynamic<A, B>, #ComplexDynamic.a2
+
+  // CHECK: [[METADATA:%.*]] = bitcast %swift.type* {{%.*}} to i64*
+  // CHECK: [[FIELD_OFFSET_VECTOR:%.*]] = getelementptr inbounds i64, i64* [[METADATA]], i32 3
+  // CHECK: [[FIELD_OFFSET_ADDR:%.*]] = getelementptr inbounds i64, i64* [[FIELD_OFFSET_VECTOR]], i32 2
+  // CHECK: [[FIELD_OFFSET:%.*]] = load i64, i64* [[FIELD_OFFSET_ADDR]], align 8
+  // CHECK: [[BYTES:%.*]] = bitcast %V15generic_structs14ComplexDynamic* %0 to i8*
+  // CHECK: [[BYTE_OFFSET:%.*]] = getelementptr inbounds i8, i8* [[BYTES]], i64 [[FIELD_OFFSET]]
+  // CHECK: bitcast i8* [[BYTE_OFFSET]] to %swift.opaque*
+  %b = struct_element_addr %0 : $*ComplexDynamic<A, B>, #ComplexDynamic.b
+
+  // CHECK: [[METADATA:%.*]] = bitcast %swift.type* {{%.*}} to i64*
+  // CHECK: [[FIELD_OFFSET_VECTOR:%.*]] = getelementptr inbounds i64, i64* [[METADATA]], i32 3
+  // CHECK: [[FIELD_OFFSET_ADDR:%.*]] = getelementptr inbounds i64, i64* [[FIELD_OFFSET_VECTOR]], i32 3
+  // CHECK: [[FIELD_OFFSET:%.*]] = load i64, i64* [[FIELD_OFFSET_ADDR]], align 8
+  // CHECK: [[BYTES:%.*]] = bitcast %V15generic_structs14ComplexDynamic* %0 to i8*
+  // CHECK: [[BYTE_OFFSET:%.*]] = getelementptr inbounds i8, i8* [[BYTES]], i64 [[FIELD_OFFSET]]
+  // CHECK: bitcast i8* [[BYTE_OFFSET]] to %V15generic_structs13SingleDynamic
+  %5 = struct_element_addr %0 : $*ComplexDynamic<A, B>, #ComplexDynamic.c
+  %c = struct_element_addr %5 : $*SingleDynamic<B>, #SingleDynamic.x
+
+  // CHECK: [[METADATA:%.*]] = bitcast %swift.type* {{%.*}} to i64*
+  // CHECK: [[FIELD_OFFSET_VECTOR:%.*]] = getelementptr inbounds i64, i64* [[METADATA]], i32 3
+  // CHECK: [[FIELD_OFFSET_ADDR:%.*]] = getelementptr inbounds i64, i64* [[FIELD_OFFSET_VECTOR]], i32 4
+  // CHECK: [[FIELD_OFFSET:%.*]] = load i64, i64* [[FIELD_OFFSET_ADDR]], align 8
+  // CHECK: [[BYTES:%.*]] = bitcast %V15generic_structs14ComplexDynamic* %0 to i8*
+  // CHECK: [[BYTE_OFFSET:%.*]] = getelementptr inbounds i8, i8* [[BYTES]], i64 [[FIELD_OFFSET]]
+  // CHECK: bitcast i8* [[BYTE_OFFSET]] to %V15generic_structs7Chareth
+  %d = struct_element_addr %0 : $*ComplexDynamic<A, B>, #ComplexDynamic.d
+  copy_addr %a to %1 : $*Byteful
+  copy_addr %b to %2 : $*A
+  copy_addr %c to %3 : $*B
+  copy_addr %d to %4 : $*Chareth
+  %v = tuple ()
+  return %v : $()
+}
+
+// CHECK: define linkonce_odr hidden void @_TwXXV15generic_structs13SingleDynamic([24 x i8]* %buffer, %swift.type* %Self) {{.*}} {
+// CHECK:   [[T0:%.*]] = load i8*, i8** %1, align 8
+// CHECK:   %T = bitcast i8* [[T0]] to %swift.type*
+// CHECK:   [[METADATA:%.*]] = call %swift.type* @swift_allocateGenericValueMetadata(%swift.type_pattern* %0, i8** %1)
+// CHECK:   [[SELF_ARRAY:%.*]] = bitcast %swift.type* [[METADATA]] to i8**
+//   Fill type argument.
+// CHECK:   [[T0:%.*]] = bitcast %swift.type* %T to i8*
+// CHECK:   [[T1:%.*]] = getelementptr inbounds i8*, i8** [[SELF_ARRAY]], i32 4
+// CHECK:   store i8* [[T0]], i8** [[T1]], align 8
+//   Fill vwtable reference.
+// CHECK:   [[VWTABLE_ADDR:%.*]] = getelementptr inbounds i8*, i8** [[SELF_ARRAY]], i32 6
+// CHECK:   [[VWTABLE_VAL:%.*]] = bitcast i8** [[VWTABLE_ADDR]] to i8*
+// CHECK:   [[VWTABLE_SLOT_ADDR:%.*]] = getelementptr inbounds i8*, i8** [[SELF_ARRAY]], i32 -1
+// CHECK:   store i8* [[VWTABLE_VAL]], i8** [[VWTABLE_SLOT_ADDR]], align 8
+//   Lay out fields.
+// CHECK:   [[T0:%.*]] = bitcast %swift.type* [[METADATA]] to i64*
+// CHECK:   [[T1:%.*]] = getelementptr inbounds i64, i64* [[T0]], i32 3
+// CHECK:   [[T2:%.*]] = getelementptr inbounds i8**, i8*** [[TYPES:%.*]], i32 0
+// CHECK:   call void @swift_initStructMetadata_UniversalStrategy(i64 1, i8*** [[TYPES]], i64* [[T1]], i8** [[VWTABLE_ADDR]])
+// CHECK:   ret %swift.type* [[METADATA]]
+// CHECK: }

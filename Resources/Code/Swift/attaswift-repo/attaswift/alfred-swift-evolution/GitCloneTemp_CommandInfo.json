@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/attaswift/alfred-swift-evolution undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/alfred-swift-evolution",
+    "repo": "https://github.com/attaswift/alfred-swift-evolution",
+    "targetPath": "undefined\\atta--10-04-2022--596EAcxHsZpfFyhiWgduCC/alfred-swift-evolution",
+    "startTime": "2022-10-05T03:53:00.472Z",
+    "endTime": "2022-10-05T03:53:01.778Z",
+    "childProcessPid": 24641,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/attaswift-repo/workingdir/--attaswift--alfred-swift-evolution--24641",
+    "executionErrors": []
+}

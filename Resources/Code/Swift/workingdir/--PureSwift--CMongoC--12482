@@ -1,0 +1,6 @@
+child_process(12482)::clone(https://github.com/PureSwift/CMongoC):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CMongoC'...
+child_process(12482)::clone(https://github.com/PureSwift/CMongoC):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12482)::clone(https://github.com/PureSwift/CMongoC):stderr:data: POST git-upload-pack (268 bytes)
+child_process(12482)::clone(https://github.com/PureSwift/CMongoC):stderr:data: remote: Enumerating objects: 8, done.        
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 8        
+child_process(12482)::clone(https://github.com/PureSwift/CMongoC):stderr:data: Receiving objects:  12% (1/8)child_process(12482)::clone(https://github.com/PureSwift/CMongoC):stderr:data: Receiving objects:  25% (2/8)Receiving objects:  37% (3/8)Receiving objects:  50% (4/8)Receiving objects:  62% (5/8)Receiving objects:  75% (6/8)child_process(12482)::clone(https://github.com/PureSwift/CMongoC):close()

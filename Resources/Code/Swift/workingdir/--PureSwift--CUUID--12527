@@ -1,0 +1,7 @@
+child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CUUID'...
+child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: POST git-upload-pack (318 bytes)
+child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: remote: Enumerating objects: 11, done.        
+child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: remote: Total 11 (delta 0), reused 0 (delta 0), pack-reused 11        
+child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: Receiving objects:   9% (1/11)Receiving objects:  18% (2/11)child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: Receiving objects:  72% (8/11)Receiving objects:  81% (9/11)Receiving objects:  90% (10/11)Receiving objects: 100% (11/11)Receiving objects: 100% (11/11), done.
+child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: Resolving deltas:   0% (0/2)Resolving deltas:  50% (1/2)Resolving deltas: 100% (2/2)child_process(12527)::clone(https://github.com/PureSwift/CUUID):stderr:data: Resolving deltas: 100% (2/2), done.
+child_process(12527)::clone(https://github.com/PureSwift/CUUID):close()

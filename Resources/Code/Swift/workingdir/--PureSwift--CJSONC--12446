@@ -1,0 +1,6 @@
+child_process(12446)::clone(https://github.com/PureSwift/CJSONC):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CJSONC'...
+child_process(12446)::clone(https://github.com/PureSwift/CJSONC):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12446)::clone(https://github.com/PureSwift/CJSONC):stderr:data: POST git-upload-pack (268 bytes)
+child_process(12446)::clone(https://github.com/PureSwift/CJSONC):stderr:data: remote: Enumerating objects: 10, done.        
+remote: Total 10 (delta 0), reused 0 (delta 0), pack-reused 10        
+child_process(12446)::clone(https://github.com/PureSwift/CJSONC):stderr:data: Receiving objects:  10% (1/10)Receiving objects:  20% (2/10)child_process(12446)::clone(https://github.com/PureSwift/CJSONC):stderr:data: Receiving objects:  30% (3/10)Receiving objects:  40% (4/10)Receiving objects:  50% (5/10)Receiving objects:  60% (6/10)Receiving objects:  70% (7/10)Receiving objects:  80% (8/10)Receiving objects:  90% (9/10)Receiving objects: 100% (10/10)Receiving objects: 100% (10/10), done.

@@ -1,0 +1,6 @@
+child_process(12329)::clone(https://github.com/PureSwift/B64):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/B64'...
+child_process(12329)::clone(https://github.com/PureSwift/B64):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12329)::clone(https://github.com/PureSwift/B64):stderr:data: POST git-upload-pack (218 bytes)
+child_process(12329)::clone(https://github.com/PureSwift/B64):stderr:data: remote: Enumerating objects: 9, done.        
+child_process(12329)::clone(https://github.com/PureSwift/B64):stderr:data: remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9        
+child_process(12329)::clone(https://github.com/PureSwift/B64):stderr:data: Receiving objects:  11% (1/9)Receiving objects:  22% (2/9)child_process(12329)::clone(https://github.com/PureSwift/B64):stderr:data: Resolving deltas:   0% (0/1)Resolving deltas: 100% (1/1)Resolving deltas: 100% (1/1), done.

@@ -1,0 +1,36 @@
+add_swift_library(swiftSIL
+  AbstractionPattern.cpp
+  Bridging.cpp
+  Dominance.cpp
+  DynamicCasts.cpp
+  PrettyStackTrace.cpp
+  SIL.cpp
+  SILArgument.cpp
+  SILBasicBlock.cpp
+  SILBuilder.cpp
+  SILCoverageMap.cpp
+  SILFunction.cpp
+  SILFunctionType.cpp
+  SILGlobalVariable.cpp
+  SILInstruction.cpp
+  SILInstructions.cpp
+  SILLocation.cpp
+  SILModule.cpp
+  SILPrinter.cpp
+  SILSuccessor.cpp
+  SILVTable.cpp
+  SILWitnessTable.cpp
+  TypeLowering.cpp
+  Verifier.cpp
+  SILType.cpp
+  SILValue.cpp
+  SILDeclRef.cpp
+  LoopInfo.cpp
+  Projection.cpp
+  MemLocation.cpp
+  Mangle.cpp
+  Linker.cpp
+  LINK_LIBRARIES
+    swiftSerialization
+    swiftSema)
+

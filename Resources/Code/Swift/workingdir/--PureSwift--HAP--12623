@@ -1,0 +1,6 @@
+child_process(12623)::clone(https://github.com/PureSwift/HAP):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/HAP'...
+child_process(12623)::clone(https://github.com/PureSwift/HAP):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12623)::clone(https://github.com/PureSwift/HAP):stderr:data: POST git-upload-pack (218 bytes)
+child_process(12623)::clone(https://github.com/PureSwift/HAP):stderr:data: remote: Enumerating objects: 5, done.        
+child_process(12623)::clone(https://github.com/PureSwift/HAP):stderr:data: Receiving objects:  20% (1/5)child_process(12623)::clone(https://github.com/PureSwift/HAP):stderr:data: remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 5        
+child_process(12623)::clone(https://github.com/PureSwift/HAP):close()

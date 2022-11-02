@@ -1,0 +1,255 @@
+//===--- TypeRefinementContext.cpp - Swift Refinement Context ---*- C++ -*-===//
+//
+// This source file is part of the Swift.org open source project
+//
+// Copyright (c) 2014 - 2015 Apple Inc. and the Swift project authors
+// Licensed under Apache License v2.0 with Runtime Library Exception
+//
+// See http://swift.org/LICENSE.txt for license information
+// See http://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+//
+//===----------------------------------------------------------------------===//
+//
+// This file implements the TypeRefinementContext class.
+//
+//===----------------------------------------------------------------------===//
+
+#include "swift/AST/ASTContext.h"
+#include "swift/AST/Decl.h"
+#include "swift/AST/Module.h"
+#include "swift/AST/Stmt.h"
+#include "swift/AST/Expr.h"
+#include "swift/AST/TypeRefinementContext.h"
+#include "swift/Basic/SourceManager.h"
+
+using namespace swift;
+
+TypeRefinementContext::TypeRefinementContext(ASTContext &Ctx, IntroNode Node,
+                                             TypeRefinementContext *Parent,
+                                             SourceRange SrcRange,
+                                             const VersionRange &Versions)
+    : Node(Node), SrcRange(SrcRange), PotentialVersions(Versions) {
+  if (Parent) {
+    assert(SrcRange.isValid());
+    Parent->addChild(this);
+  }
+  Ctx.addDestructorCleanup(Children);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createRoot(SourceFile *SF,
+                                  const VersionRange &Versions) {
+  assert(SF);
+
+  ASTContext &Ctx = SF->getASTContext();
+  return new (Ctx)
+      TypeRefinementContext(Ctx, SF,
+                            /*Parent=*/nullptr, SourceRange(), Versions);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createForDecl(ASTContext &Ctx, Decl *D,
+                                     TypeRefinementContext *Parent,
+                                     const VersionRange &Versions,
+                                     SourceRange SrcRange) {
+  assert(D);
+  assert(Parent);
+  return new (Ctx)
+      TypeRefinementContext(Ctx, D, Parent, SrcRange, Versions);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createForIfStmtThen(ASTContext &Ctx, IfStmt *S,
+                                           TypeRefinementContext *Parent,
+                                           const VersionRange &Versions) {
+  assert(S);
+  assert(Parent);
+  return new (Ctx)
+      TypeRefinementContext(Ctx, IntroNode(S, /*IsThen=*/true), Parent,
+                            S->getThenStmt()->getSourceRange(), Versions);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createForIfStmtElse(ASTContext &Ctx, IfStmt *S,
+                                           TypeRefinementContext *Parent,
+                                           const VersionRange &Versions) {
+  assert(S);
+  assert(Parent);
+  return new (Ctx)
+      TypeRefinementContext(Ctx, IntroNode(S, /*IsThen=*/false), Parent,
+                            S->getElseStmt()->getSourceRange(), Versions);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createForConditionFollowingQuery(ASTContext &Ctx,
+                                 PoundAvailableInfo *PAI,
+                                 const StmtConditionElement &LastElement,
+                                 TypeRefinementContext *Parent,
+                                 const VersionRange &Versions) {
+  assert(PAI);
+  assert(Parent);
+  SourceRange Range(PAI->getEndLoc(), LastElement.getEndLoc());
+  return new (Ctx) TypeRefinementContext(Ctx, PAI, Parent, Range,
+                                         Versions);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createForGuardStmtFallthrough(ASTContext &Ctx,
+                                  GuardStmt *RS,
+                                  BraceStmt *ContainingBraceStmt,
+                                  TypeRefinementContext *Parent,
+                                  const VersionRange &Versions) {
+  assert(RS);
+  assert(ContainingBraceStmt);
+  assert(Parent);
+  SourceRange Range(RS->getEndLoc(), ContainingBraceStmt->getEndLoc());
+  return new (Ctx) TypeRefinementContext(Ctx,
+                                         IntroNode(RS, /*IsFallthrough=*/true),
+                                         Parent, Range, Versions);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createForGuardStmtElse(ASTContext &Ctx, GuardStmt *RS,
+                                              TypeRefinementContext *Parent,
+                                              const VersionRange &Versions) {
+  assert(RS);
+  assert(Parent);
+  return new (Ctx)
+      TypeRefinementContext(Ctx, IntroNode(RS, /*IsFallthrough=*/false), Parent,
+                            RS->getBody()->getSourceRange(), Versions);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::createForWhileStmtBody(ASTContext &Ctx, WhileStmt *S,
+                                              TypeRefinementContext *Parent,
+                                              const VersionRange &Versions) {
+  assert(S);
+  assert(Parent);
+  return new (Ctx) TypeRefinementContext(
+      Ctx, S, Parent, S->getBody()->getSourceRange(), Versions);
+}
+
+// Only allow allocation of TypeRefinementContext using the allocator in
+// ASTContext.
+void *TypeRefinementContext::operator new(size_t Bytes, ASTContext &C,
+                                          unsigned Alignment) {
+  return C.Allocate(Bytes, Alignment);
+}
+
+TypeRefinementContext *
+TypeRefinementContext::findMostRefinedSubContext(SourceLoc Loc,
+                                                 SourceManager &SM) {
+  assert(Loc.isValid());
+  
+  if (SrcRange.isValid() && !SM.rangeContainsTokenLoc(SrcRange, Loc))
+    return nullptr;
+
+  // For the moment, we perform a linear search here, but we can and should
+  // do something more efficient.
+  for (TypeRefinementContext *Child : Children) {
+    if (auto *Found = Child->findMostRefinedSubContext(Loc, SM)) {
+      return Found;
+    }
+  }
+
+  // Loc is in this context's range but not in any child's, so this context
+  // must be the inner-most context.
+  return this;
+}
+
+void TypeRefinementContext::dump(SourceManager &SrcMgr) const {
+  dump(llvm::errs(), SrcMgr);
+}
+
+void TypeRefinementContext::dump(raw_ostream &OS, SourceManager &SrcMgr) const {
+  print(OS, SrcMgr, 0);
+  OS << '\n';
+}
+
+SourceLoc TypeRefinementContext::getIntroductionLoc() const {
+  switch (getReason()) {
+  case Reason::Decl:
+    return Node.getAsDecl()->getLoc();
+
+  case Reason::IfStmtThenBranch:
+  case Reason::IfStmtElseBranch:
+    return Node.getAsIfStmt()->getIfLoc();
+
+  case Reason::ConditionFollowingAvailabilityQuery:
+    return Node.getAsPoundAvailableInfo()->getStartLoc();
+
+  case Reason::GuardStmtFallthrough:
+  case Reason::GuardStmtElseBranch:
+    return Node.getAsGuardStmt()->getGuardLoc();
+
+
+  case Reason::WhileStmtBody:
+    return Node.getAsWhileStmt()->getStartLoc();
+
+  case Reason::Root:
+    return SourceLoc();
+  }
+}
+
+void TypeRefinementContext::print(raw_ostream &OS, SourceManager &SrcMgr,
+                                  unsigned Indent) const {
+  OS.indent(Indent);
+  OS << "(" << getReasonName(getReason());
+
+  OS << " versions=" << PotentialVersions.getAsString();
+
+  if (getReason() == Reason::Decl) {
+    Decl *D = Node.getAsDecl();
+    OS << " decl=";
+    if (auto VD = dyn_cast<ValueDecl>(D)) {
+      OS << VD->getFullName();
+    } else if (auto *ED = dyn_cast<ExtensionDecl>(D)) {
+      OS << "extension." << ED->getExtendedType().getString();
+    }
+  }
+
+  auto R = getSourceRange();
+  if (R.isValid()) {
+    OS << " src_range=";
+    R.print(OS, SrcMgr, /*PrintText=*/false);
+  }
+
+  for (TypeRefinementContext *Child : Children) {
+    OS << '\n';
+    Child->print(OS, SrcMgr, Indent + 2);
+  }
+  OS.indent(Indent);
+  OS << ")";
+}
+
+TypeRefinementContext::Reason TypeRefinementContext::getReason() const {
+  return Node.getReason();
+}
+
+StringRef TypeRefinementContext::getReasonName(Reason R) {
+  switch (R) {
+  case Reason::Root:
+    return "root";
+
+  case Reason::Decl:
+    return "decl";
+
+  case Reason::IfStmtThenBranch:
+    return "if_then";
+
+  case Reason::IfStmtElseBranch:
+    return "if_else";
+
+  case Reason::ConditionFollowingAvailabilityQuery:
+    return "condition_following_availability";
+
+  case Reason::GuardStmtFallthrough:
+    return "guard_fallthrough";
+
+  case Reason::GuardStmtElseBranch:
+    return "guard_else";
+
+  case Reason::WhileStmtBody:
+    return "while_body";
+  }
+}

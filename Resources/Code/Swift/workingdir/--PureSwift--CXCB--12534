@@ -1,0 +1,8 @@
+child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: Cloning into 'undefined\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CXCB'...
+child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: POST git-upload-pack (191 bytes)
+child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: POST git-upload-pack (268 bytes)
+child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: remote: Enumerating objects: 11, done.        
+remote: Total 11 (delta 0), reused 0 (delta 0), pack-reused 11        
+child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: Receiving objects:   9% (1/11)Receiving objects:  18% (2/11)Receiving objects:  27% (3/11)Receiving objects:  36% (4/11)child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: Receiving objects:  45% (5/11)Receiving objects:  54% (6/11)Receiving objects:  63% (7/11)Receiving objects:  72% (8/11)Receiving objects:  81% (9/11)Receiving objects:  90% (10/11)Receiving objects: 100% (11/11)Receiving objects: 100% (11/11), done.
+child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: Resolving deltas:   0% (0/1)child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: Resolving deltas: 100% (1/1)child_process(12534)::clone(https://github.com/PureSwift/CXCB):stderr:data: Resolving deltas: 100% (1/1), done.
+child_process(12534)::clone(https://github.com/PureSwift/CXCB):close()

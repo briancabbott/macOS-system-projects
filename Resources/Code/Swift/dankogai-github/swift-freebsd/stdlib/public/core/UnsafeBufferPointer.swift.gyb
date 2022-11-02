@@ -1,0 +1,113 @@
+//===--- UnsafeBufferPointer.swift.gyb ------------------------*- swift -*-===//
+//
+// This source file is part of the Swift.org open source project
+//
+// Copyright (c) 2014 - 2015 Apple Inc. and the Swift project authors
+// Licensed under Apache License v2.0 with Runtime Library Exception
+//
+// See http://swift.org/LICENSE.txt for license information
+// See http://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+//
+//===----------------------------------------------------------------------===//
+
+/// A generator for the elements in the buffer referenced by
+/// `UnsafeBufferPointer` or `UnsafeMutableBufferPointer`.
+public struct UnsafeBufferPointerGenerator<Element>
+  : GeneratorType, SequenceType {
+
+  @available(*, unavailable, renamed="Element")
+  public typealias T = Element
+
+  /// Advance to the next element and return it, or `nil` if no next
+  /// element exists.
+  public mutating func next() -> Element? {
+    return position == end ? nil : (position++).memory
+  }
+
+  var position, end: UnsafePointer<Element>
+}
+
+%for Mutable in ('Mutable', ''):
+/// A non-owning pointer to buffer of ${Mutable.lower()} `Element`s stored
+/// contiguously in memory, presenting a `Collection` interface to the
+/// underlying elements.
+///
+/// The pointer should be aligned to `alignof(Element.self)`.
+public struct Unsafe${Mutable}BufferPointer<Element>
+  : ${Mutable}CollectionType {
+
+  @available(*, unavailable, renamed="Element")
+  public typealias T = Element
+
+  /// Always zero, which is the index of the first element in a
+  /// non-empty buffer.
+  public var startIndex: Int {
+    return 0
+  }
+
+  /// The "past the end" position; always identical to `count`.
+  ///
+  /// `endIndex` is not a valid argument to `subscript`, and is always
+  /// reachable from `startIndex` by zero or more applications of
+  /// `successor()`.
+  public var endIndex: Int {
+    return _end - _position
+  }
+
+  /// Access the `i`th element in the buffer.
+  public subscript(i: Int) -> Element {
+    get {
+      _debugPrecondition(i >= 0)
+      _debugPrecondition(i < endIndex)
+      return _position[i]
+    }
+%if Mutable:
+    nonmutating set {
+      _debugPrecondition(i >= 0)
+      _debugPrecondition(i < endIndex)
+      _position[i] = newValue
+    }
+%end
+  }
+
+  /// Construct an Unsafe${Mutable}Pointer over the `count` contiguous
+  /// `Element` instances beginning at `start`.
+  public init(start: Unsafe${Mutable}Pointer<Element>, count: Int) {
+    _precondition(
+      count >= 0, "Unsafe${Mutable}BufferPointer with negative count")
+    _position = start
+    _end = start + count
+  }
+
+  /// Return a *generator* over the elements of this *sequence*.
+  ///
+  /// - Complexity: O(1).
+  public func generate() -> UnsafeBufferPointerGenerator<Element> {
+    return UnsafeBufferPointerGenerator(position: _position, end: _end)
+  }
+
+  /// A pointer to the first element of the buffer.
+  public var baseAddress: Unsafe${Mutable}Pointer<Element> {
+    return _position
+  }
+
+  /// The number of elements in the buffer.
+  public var count: Int {
+    return _end - _position
+  }
+
+  var _position, _end: Unsafe${Mutable}Pointer<Element>
+}
+
+extension Unsafe${Mutable}BufferPointer : CustomDebugStringConvertible {
+  /// A textual representation of `self`, suitable for debugging.
+  public var debugDescription: String {
+    return "Unsafe${Mutable}BufferPointer"
+    + "(start: \(_position), length: \(_end - _position))"
+  }
+}
+%end
+
+// ${'Local Variables'}:
+// eval: (read-only-mode 1)
+// End:

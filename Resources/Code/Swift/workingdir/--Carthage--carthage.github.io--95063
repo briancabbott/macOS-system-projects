@@ -1,0 +1,8 @@
+child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: Cloning into 'undefined\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/carthage.github.io'...
+child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: POST git-upload-pack (191 bytes)
+child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: POST git-upload-pack (218 bytes)
+child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: remote: Enumerating objects: 10, done.        
+remote: Total 10 (delta 0), reused 0 (delta 0), pack-reused 10        
+child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: Receiving objects:  10% (1/10)child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: Receiving objects:  60% (6/10)Receiving objects:  70% (7/10)child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: Receiving objects:  80% (8/10)Receiving objects:  90% (9/10)Receiving objects: 100% (10/10)Receiving objects: 100% (10/10), done.
+child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: Resolving deltas:   0% (0/1)Resolving deltas: 100% (1/1)child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):stderr:data: Resolving deltas: 100% (1/1), done.
+child_process(95063)::clone(https://github.com/Carthage/carthage.github.io):close()
