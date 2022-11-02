@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/OpenCombine/OpenCombine undefined\\OC--10-04-2022--nQKDU4u5qjztxb59gFXViV/OpenCombine",
+    "repo": "https://github.com/OpenCombine/OpenCombine",
+    "targetPath": "undefined\\OC--10-04-2022--nQKDU4u5qjztxb59gFXViV/OpenCombine",
+    "startTime": "2022-10-04T18:54:13.826Z",
+    "endTime": "2022-10-04T18:54:15.337Z",
+    "childProcessPid": 24826,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--OpenCombine--OpenCombine--24826",
+    "executionErrors": []
+}

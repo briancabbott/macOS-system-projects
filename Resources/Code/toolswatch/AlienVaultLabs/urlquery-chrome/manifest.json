@@ -1,0 +1,11 @@
+{
+	"name": "UrlQuery",
+	"description": "Send an url to UrlQuery",
+	"version": "0.1",
+	"permissions": ["<all_urls>", "contextMenus", "tabs"],
+	"background": {
+		"scripts": ["urlquery.js"]
+	},
+	"options_page": "options.html",
+	"manifest_version": 2
+}

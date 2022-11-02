@@ -1,0 +1,57 @@
+name: Ubuntu 
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  ubuntu_test:
+    name: Execute tests on Ubuntu
+    strategy:
+      fail-fast: false
+      matrix:
+        swift_version: ["5.0", "5.1", "5.2", "5.3", "5.4", "5.5"]
+    runs-on: ubuntu-latest
+    container: swift:${{ matrix.swift_version }}-bionic
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generating LinuxMain.swift
+        if: >-
+          ${{ matrix.swift_version == '5.0' ||
+              matrix.swift_version == '5.1' ||
+              matrix.swift_version == '5.2' ||
+              matrix.swift_version == '5.3' }}
+        run: |
+          apt update -y
+          apt upgrade -y
+          apt install -y python3.8
+          python3.8 utils/discover_tests.py
+      - name: Building and running tests in debug mode with coverage
+        run: |
+          swift test \
+            -c debug \
+            -Xswiftc -warnings-as-errors \
+            --enable-code-coverage \
+            --build-path .build-test-debug
+          llvm-cov show \
+            -instr-profile=.build-test-debug/debug/codecov/default.profdata \
+            .build-test-debug/debug/OpenCombinePackageTests.xctest \
+            > coverage.txt
+      - name: Building and running tests in debug mode with TSan
+        if: ${{ matrix.swift_version != '5.0' }} # There are false positives there
+        run: |
+          swift test \
+            -c debug \
+            --sanitize thread \
+            --build-path .build-test-debug-sanitize-thread
+      - name: Building and running tests in release mode
+        run: |
+          swift test \
+            -c release \
+            -Xswiftc -warnings-as-errors \
+            --build-path .build-test-release
+      - uses: codecov/codecov-action@v2
+        with:
+          verbose: true

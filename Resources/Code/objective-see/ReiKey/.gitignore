@@ -1,0 +1,8 @@
+.DS_Store
+Carthage/*
+DerivedData/*
+ReiKey.xcworkspace/xcuserdata/*
+loginItem/loginItem.xcodeproj/xcuserdata/*
+mainApp/mainApp.xcodeproj/xcuserdata/*
+installer/installer.xcodeproj/xcuserdata/*
+

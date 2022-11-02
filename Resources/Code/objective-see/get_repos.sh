@@ -1,0 +1,27 @@
+git clone https://github.com/objective-see/FileMonitor
+git clone https://github.com/objective-see/ProcessMonitor
+git clone https://github.com/objective-see/BlockBlock
+git clone https://github.com/objective-see/DNSMonitor
+git clone https://github.com/objective-see/LuLu
+git clone https://github.com/objective-see/Netiquette
+git clone https://github.com/objective-see/objective-see
+git clone https://github.com/objective-see/OverSight
+git clone https://github.com/objective-see/WhatsYourSign
+git clone https://github.com/objective-see/Mach-O
+git clone https://github.com/objective-see/AuRevoir
+git clone https://github.com/objective-see/KnockKnock
+git clone https://github.com/objective-see/fromAppStore
+git clone https://github.com/objective-see/sniffMK
+git clone https://github.com/objective-see/ProcInfoExample
+git clone https://github.com/objective-see/DoNotDisturb
+git clone https://github.com/objective-see/ProcInfo
+git clone https://github.com/objective-see/ReiKey
+git clone https://github.com/objective-see/KextViewr
+git clone https://github.com/objective-see/LockDown
+git clone https://github.com/objective-see/RansomWhere
+git clone https://github.com/objective-see/DylibHijackScanner
+git clone https://github.com/objective-see/TaskExplorer
+git clone https://github.com/objective-see/Ostiarius
+git clone https://github.com/objective-see/blackhat-arsenal-tools
+git clone https://github.com/toolswatch/blackhat-arsenal-tools blackhat-arsenal-tools-tw
+git clone https://github.com/objective-see/products

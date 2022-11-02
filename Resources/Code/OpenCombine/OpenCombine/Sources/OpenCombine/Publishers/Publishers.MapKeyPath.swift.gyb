@@ -1,0 +1,227 @@
+${template_header}
+//
+//  Publishers.MapKeyPath.swift.gyb
+//  
+//
+//  Created by Sergej Jaskiewicz on 03/10/2019.
+//
+
+%{
+from gyb_opencombine_support import (
+    suffix_variadic,
+    list_with_suffix_variadic
+)
+
+import random
+
+RNG = random.Random(0)
+
+instantiations = [(1, '', ''),
+                  (2, 'two', 'second '),
+                  (3, 'three', 'third ')]
+
+def key_path_var(index, arity):
+    return suffix_variadic('keyPath', index, arity)
+
+def make_publisher_name(arity):
+    return suffix_variadic('MapKeyPath', arity, arity)
+
+def make_output_types(arity):
+    return list_with_suffix_variadic('Output', arity)
+}%
+extension Publisher {
+% for arity, cardinal, _ in instantiations:
+%     result_types = list_with_suffix_variadic('Result', arity)
+%     cs_result_types = ', '.join(result_types)
+%
+%     method_args = \
+%         ['_ {}: KeyPath<Output, {}>'.format(key_path_var(i, arity), result_types[i]) \
+%          for i in range(arity)]
+%     method_args_joined = ',\n        '.join(method_args)
+%
+%     init_args = ['{}: {}'.format(key_path_var(i, arity), key_path_var(i, arity)) \
+%                  for i in range(arity)]
+%     init_args_joined = ',\n            '.join(init_args)
+%
+%     publisher_name = make_publisher_name(arity)
+%
+%     doc_cardinal = 'a key path' if arity == 1 else cardinal + ' key paths'
+%
+%     doc_comment_suffix = 'value of the key path' \
+%         if arity == 1 else 'values of {} key paths as a tuple'.format(cardinal)
+%
+%     doc_output_values = 'the value of this `Int`' \
+%         if arity == 1 else 'these {} values (as an `({})` tuple)' \
+%             .format(cardinal, ', '.join(['Int'] * arity))
+%
+%     example_dice_roll_properties = ['die'] \
+%         if arity == 1 else ['die{}'.format(i + 1) for i in range(arity)]
+%     enumerated_example_dice_roll_properties = '`die` member' \
+%         if arity == 1 else ('`die1` and `die2`' if arity == 2 else \
+%             ''.join(['`{}`, '.format(s) for s in example_dice_roll_properties[:-1]]) + \
+%                 'and `{}`'.format(example_dice_roll_properties[-1])) + ' members'
+%
+%     dice_roll_init = ',\n    ///                                 ' \
+%         .join([s + ': Int.random(in: 1...6)' for s in example_dice_roll_properties])
+    /// Publishes the ${doc_comment_suffix}.
+    ///
+    /// In the following example, the `map(${'_:' * arity})` operator uses the Swift
+    /// key path syntax to access the ${enumerated_example_dice_roll_properties}
+    /// of the `DiceRoll` structure published by the `Just` publisher.
+    ///
+    /// The downstream sink subscriber receives only
+    /// ${doc_output_values},
+    /// not the entire `DiceRoll`.
+    ///
+    ///     struct DiceRoll {
+%     for prop in example_dice_roll_properties:
+    ///         let ${prop}: Int
+%     end
+    ///     }
+    ///
+    ///     cancellable = Just(DiceRoll(${dice_roll_init}))
+    ///         .map(${', '.join(['\.' + s for s in example_dice_roll_properties])})
+%     if arity == 1:
+    ///         .sink {
+    ///             print ("Rolled: \($0)")
+    ///         }
+%     else:
+%         closure_args = ['values.{}'.format(i) for i in range(arity)]
+    ///         .sink { values in
+    ///             print("""
+    ///             Rolled: ${', '.join(['\\({})'.format(s) for s in closure_args])} \
+    ///             (total \(${' + '.join(closure_args)}))
+    ///             """)
+    ///         }
+%     end
+%     random_numbers = [RNG.randint(1, 6) for _ in range(arity)]
+%     random_numbers_printed = ', '.join([str(i) for i in random_numbers]) + \
+%         (' (or some other random value)' if arity == 1 \
+%             else ' (total: {})" (or other random values)'.format(sum(random_numbers)))
+    ///     // Prints "Rolled: ${random_numbers_printed}.
+    ///
+    /// - Parameters:
+%     for i in range(arity):
+%         ordinal = 'another ' if i == 1 and arity < 3 else 'a ' + instantiations[i][2]
+    ///    - ${key_path_var(i, arity)}: The key path of ${ordinal}property on `Output`.
+%     end
+    /// - Returns: A publisher that publishes the ${doc_comment_suffix}.
+    public func map<${cs_result_types}>(
+        ${method_args_joined}
+    ) -> Publishers.${publisher_name}<Self, ${cs_result_types}> {
+        return .init(
+            upstream: self,
+            ${init_args_joined}
+        )
+    }
+% end
+}
+
+extension Publishers {
+% for arity, cardinal, ordinal in instantiations:
+%
+%     doc_comment_suffix = 'value of a key path' \
+%         if arity == 1 else 'values of {} key paths as a tuple'.format(cardinal)
+%
+%     output_types = make_output_types(arity)
+%     cs_output_types = ', '.join(output_types)
+%
+%     publisher_name = make_publisher_name(arity)
+
+    /// A publisher that publishes the ${doc_comment_suffix}.
+    public struct ${publisher_name}<Upstream: Publisher, ${cs_output_types}>: Publisher {
+
+%     if arity != 1:
+        public typealias Output = (${cs_output_types})
+
+%     end
+        public typealias Failure = Upstream.Failure
+
+        /// The publisher from which this publisher receives elements.
+        public let upstream: Upstream
+
+%     for i in range(arity):
+%         ordinal = instantiations[i][2]
+        /// The key path of a ${ordinal}property to publish.
+        public let ${key_path_var(i, arity)}: KeyPath<Upstream.Output, ${output_types[i]}>
+
+%     end
+        public func receive<Downstream: Subscriber>(subscriber: Downstream)
+            where Output == Downstream.Input, Failure == Downstream.Failure
+        {
+            upstream.subscribe(Inner(downstream: subscriber, parent: self))
+        }
+    }
+% end
+}
+% for arity, _, _ in instantiations:
+%     output_types = make_output_types(arity)
+%     cs_output_types = ', '.join(output_types)
+%
+%     publisher_name = make_publisher_name(arity)
+
+extension Publishers.${publisher_name} {
+
+    private struct Inner<Downstream: Subscriber>
+        : Subscriber,
+          CustomStringConvertible,
+          CustomReflectable,
+          CustomPlaygroundDisplayConvertible
+        where Downstream.Input == Output, Downstream.Failure == Upstream.Failure
+    {
+        typealias Input = Upstream.Output
+
+        typealias Failure = Upstream.Failure
+
+        private let downstream: Downstream
+
+%     for i in range(arity):
+        private let ${key_path_var(i, arity)}: KeyPath<Input, ${output_types[i]}>
+
+%     end
+        let combineIdentifier = CombineIdentifier()
+
+        fileprivate init(
+            downstream: Downstream,
+            parent: Publishers.${publisher_name}<Upstream, ${cs_output_types}>
+        ) {
+            self.downstream = downstream
+%     for i in range(arity):
+            self.${key_path_var(i, arity)} = parent.${key_path_var(i, arity)}
+%     end
+        }
+
+        func receive(subscription: Subscription) {
+            downstream.receive(subscription: subscription)
+        }
+
+        func receive(_ input: Input) -> Subscribers.Demand {
+%     output_components = \
+%         ['input[keyPath: {}]'.format(key_path_var(i, arity)) for i in range(arity)]
+%     output_components_joined = ',\n                '.join(output_components)
+            let output = (
+                ${output_components_joined}
+            )
+            return downstream.receive(output)
+        }
+
+        func receive(completion: Subscribers.Completion<Failure>) {
+            downstream.receive(completion: completion)
+        }
+
+%     inner_description = 'ValueForKey' + ('' if arity == 1 else 's')
+        var description: String { return "${inner_description}" }
+
+        var customMirror: Mirror {
+            let children: [Mirror.Child] = [
+%     for i in range(arity):
+                ("${key_path_var(i, arity)}", ${key_path_var(i, arity)}),
+%     end
+            ]
+            return Mirror(self, children: children)
+        }
+
+        var playgroundDescription: Any { return description }
+    }
+}
+% end

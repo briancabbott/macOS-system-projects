@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/OpenCombine/combine-interfaces undefined\\OC--10-04-2022--nQKDU4u5qjztxb59gFXViV/combine-interfaces",
+    "repo": "https://github.com/OpenCombine/combine-interfaces",
+    "targetPath": "undefined\\OC--10-04-2022--nQKDU4u5qjztxb59gFXViV/combine-interfaces",
+    "startTime": "2022-10-04T18:54:16.123Z",
+    "endTime": "2022-10-04T18:54:17.025Z",
+    "childProcessPid": 24862,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--OpenCombine--combine-interfaces--24862",
+    "executionErrors": []
+}

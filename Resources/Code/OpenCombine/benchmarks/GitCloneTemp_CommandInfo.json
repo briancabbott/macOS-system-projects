@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/OpenCombine/benchmarks undefined\\OC--10-04-2022--nQKDU4u5qjztxb59gFXViV/benchmarks",
+    "repo": "https://github.com/OpenCombine/benchmarks",
+    "targetPath": "undefined\\OC--10-04-2022--nQKDU4u5qjztxb59gFXViV/benchmarks",
+    "startTime": "2022-10-04T18:54:15.338Z",
+    "endTime": "2022-10-04T18:54:16.122Z",
+    "childProcessPid": 24845,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/workingdir/--OpenCombine--benchmarks--24845",
+    "executionErrors": []
+}
