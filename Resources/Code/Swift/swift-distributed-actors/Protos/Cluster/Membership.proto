@@ -1,0 +1,71 @@
+//===----------------------------------------------------------------------===//
+//
+// This source file is part of the Swift Distributed Actors open source project
+//
+// Copyright (c) 2019 Apple Inc. and the Swift Distributed Actors project authors
+// Licensed under Apache License v2.0
+//
+// See LICENSE.txt for license information
+// See CONTRIBUTORS.md for the list of Swift Distributed Actors project authors
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+//===----------------------------------------------------------------------===//
+
+
+syntax = "proto3";
+
+option optimize_for = SPEED;
+option swift_prefix = "_Proto";
+
+import "ActorID.proto";
+import "Clocks/VersionVector.proto";
+
+message ClusterMembership {
+    repeated ClusterMember members = 1;
+    UniqueNode leaderNode = 2;
+}
+
+message ClusterMember {
+    UniqueNode node = 1;
+    ClusterMemberStatus status = 2;
+    ClusterMemberReachability reachability = 3;
+    uint32 upNumber = 4;
+}
+
+enum ClusterMemberReachability {
+    CLUSTER_MEMBER_REACHABILITY_UNSPECIFIED = 0;
+    CLUSTER_MEMBER_REACHABILITY_REACHABLE = 1;
+    CLUSTER_MEMBER_REACHABILITY_UNREACHABLE = 2;
+}
+
+enum ClusterMemberStatus {
+    CLUSTER_MEMBER_STATUS_UNSPECIFIED = 0;
+    CLUSTER_MEMBER_STATUS_JOINING = 1;
+    CLUSTER_MEMBER_STATUS_UP = 2;
+    CLUSTER_MEMBER_STATUS_DOWN = 3;
+    CLUSTER_MEMBER_STATUS_LEAVING = 4;
+    CLUSTER_MEMBER_STATUS_REMOVED = 5;
+}
+
+// ==== Membership Gossip ----------------------------------------------------------------------------------------------
+
+message ClusterMembershipGossip {
+    // Membership contains full UniqueNode renderings, and the owner and seen table refer to them by UniqueNode.ID
+    // this saves us space (by avoiding to render the unique node explicitly many times for each member/seen-entry).
+    ClusterMembership membership = 1;
+
+    // The following fields will use compressed UniqueNode encoding and ONLY serialize them as their uniqueNodeID.
+    // During deserialization the fields can be resolved against the membership to obtain full UniqueNode values if necessary.
+    uint64 ownerUniqueNodeID = 2;
+    ClusterMembershipSeenTable seenTable = 3;
+}
+
+message ClusterMembershipSeenTable {
+    repeated ClusterMembershipSeenTableRow rows = 1;
+}
+
+message ClusterMembershipSeenTableRow {
+    uint64 uniqueNodeID = 1;
+    VersionVector version = 2;
+}

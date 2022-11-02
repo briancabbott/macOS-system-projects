@@ -1,0 +1,5 @@
+
+add_subdirectory(RegexBuilder)
+add_subdirectory(_RegexParser)
+add_subdirectory(_StringProcessing)
+add_subdirectory(VariadicsGenerator)

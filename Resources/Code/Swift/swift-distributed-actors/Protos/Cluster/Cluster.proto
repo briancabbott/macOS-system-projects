@@ -1,0 +1,42 @@
+//===----------------------------------------------------------------------===//
+//
+// This source file is part of the Swift Distributed Actors open source project
+//
+// Copyright (c) 2019 Apple Inc. and the Swift Distributed Actors project authors
+// Licensed under Apache License v2.0
+//
+// See LICENSE.txt for license information
+// See CONTRIBUTORS.md for the list of Swift Distributed Actors project authors
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+//===----------------------------------------------------------------------===//
+
+
+syntax = "proto3";
+
+option optimize_for = SPEED;
+option swift_prefix = "_Proto";
+
+import "ActorID.proto";
+import "Cluster/ClusterEvents.proto";
+
+message ClusterShellMessage {
+    oneof message {
+        // Not all messages are serializable, on purpose, as they are not intended to cross over the network
+        ClusterEvent clusterEvent = 1;
+        ClusterInbound inbound = 2;
+    }
+}
+
+message ClusterInbound {
+    // Not all messages are serializable, on purpose, as they are not intended to cross over the network
+    oneof message {
+        ClusterRestInPeace restInPeace = 1;
+    }
+}
+
+message ClusterRestInPeace {
+    UniqueNode targetNode = 1;
+    UniqueNode fromNode = 2;
+}

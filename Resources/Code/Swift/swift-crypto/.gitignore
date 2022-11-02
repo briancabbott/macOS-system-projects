@@ -1,0 +1,17 @@
+.DS_Store
+/.build
+/out
+/Packages
+/*.xcodeproj
+Package.pins
+*.pem
+/docs/1.*
+/docs/2.*
+Package.resolved
+.podspecs
+DerivedData
+.swiftpm
+**/gyb.pyc
+
+.*.sw[nop]
+

@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+
+  runtime-setup:
+    image: swift-distributed-actors:20.04-57
+    build:
+      args:
+        base_image: "swiftlang/swift:nightly-5.7-focal"
+
+  unit-tests:
+    image: swift-distributed-actors:20.04-57
+
+  unit-tests-until-failure:
+    image: swift-distributed-actors:20.04-57
+
+  integration-tests:
+    image: swift-distributed-actors:20.04-57
+    command: /bin/bash -cl "swift package --disable-sandbox multi-node test"
+
+  test:
+    image: swift-distributed-actors:20.04-57
+    # TODO: workaround until Regex is enabled on Linux toolchains: https://github.com/apple/swift/pull/59623
+    command: /bin/bash -cl "swift test -Xswiftc -Xfrontend -Xswiftc -enable-experimental-string-processing"
+
+  bench:
+    image: swift-distributed-actors:20.04-57
+
+  shell:
+    image: swift-distributed-actors:20.04-57

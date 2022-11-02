@@ -1,0 +1,96 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "description": "Specification of the DocC benchmark.json file.",
+        "version": "0.2.0",
+        "title": "Assets"
+    },
+    "paths": { },
+    "components": {
+        "schemas": {
+            "Benchmark": {
+                "type": "object",
+                "required": [
+                    "doccArguments",
+                    "platformName",
+                    "metrics",
+                    "timestamp"
+                ],
+                "properties": {
+                    "doccArguments": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "platformName": {
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Metric"
+                        }
+                    },
+                    "timestamp": {
+                        "type": "number"
+                    }
+                }
+            },
+            "Metric": {
+                "type": "object",
+                "required": [
+                    "displayName",
+                    "result",
+                    "id"
+                ],
+                "properties": {
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Value"
+                        }
+                    },
+                    "id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Value": {
+                "type": "object",
+                "required": [
+                    "type",
+                    "value",
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "duration",
+                            "bytesInMemory",
+                            "bytesOnDisk",
+                            "checksum"
+                        ]
+                    },
+                    "value": {
+                        "oneOf": [
+                            {
+                                "type": "number"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "requestBodies": {},
+        "securitySchemes": {},
+        "links": {},
+        "callbacks": {}
+    }
+}
