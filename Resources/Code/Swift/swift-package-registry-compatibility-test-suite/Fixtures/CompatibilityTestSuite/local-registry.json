@@ -1,0 +1,112 @@
+{
+    "createPackageRelease": {
+        "packageReleases": [
+            {
+                "version": "1.0.0",
+                "sourceArchivePath": "../SourceArchives/swift-nio@1.14.2.zip",
+                "metadataPath": "Metadata/test-package@1.0.0.json"
+            },
+            {
+                "version": "2.0.0",
+                "sourceArchivePath": "../SourceArchives/SwiftyUserDefaults@5.3.0.zip",
+                "metadataPath": "Metadata/test-package@2.0.0.json"
+            }
+        ],
+        "maxProcessingTimeInSeconds": 10
+    },
+    "listPackageReleases": {
+        "packages": [
+            {
+                "package": { "scope": "apple", "name": "swift-nio" },
+                "numberOfReleases": 3,
+                "versions": [ "1.14.2", "2.29.0", "2.30.0" ],
+                "unavailableVersions": [ "2.29.0" ],
+                "linkRelations": [ "latest-version", "canonical" ]
+            }
+        ],
+        "unknownPackages": [
+            { "scope": "unknown", "name": "unknown" }
+        ],
+        "packageURLProvided": true,
+        "problemProvided": true,
+        "paginationSupported": false
+    },
+    "fetchPackageReleaseInfo": {
+        "packageReleases": [
+            {
+                "packageRelease": {
+                    "package": { "scope": "apple", "name": "swift-nio" },
+                    "version": "2.30.0"
+                },
+                "resources": [
+                    {
+                        "name": "source-archive",
+                        "type": "application/zip",
+                        "checksum": "cd5d6f66f60b88326174bcfcfe76f070edec66e38e50c15b6403eb6a8d2eccbc"
+                    }
+                ],
+                "keyValues": {
+                    "repositoryURL": "https://github.com/apple/swift-nio",
+                    "commitHash": "d79e333"
+                },
+                "linkRelations": [ "latest-version", "predecessor-version" ]
+            }
+        ],
+        "unknownPackageReleases": [
+            {
+                "package": { "scope": "unknown", "name": "unknown" },
+                "version": "1.0.0"
+            }
+        ]
+    },
+    "fetchPackageReleaseManifest": {
+        "packageReleases": [
+            {
+                "packageRelease": {
+                    "package": { "scope": "sunshinejr", "name": "SwiftyUserDefaults" },
+                    "version": "5.3.0"
+                },
+                "swiftVersions": [ "4.2" ],
+                "noSwiftVersions": [ "5.0" ]
+            }
+        ],
+        "unknownPackageReleases": [
+            {
+                "package": { "scope": "unknown", "name": "unknown" },
+                "version": "1.0.0"
+            }
+        ],
+        "contentLengthHeaderIsSet": true,
+        "contentDispositionHeaderIsSet": true
+    },
+    "downloadSourceArchive": {
+        "sourceArchives": [
+            {
+                "packageRelease": {
+                    "package": { "scope": "apple", "name": "swift-nio" },
+                    "version": "2.30.0",
+                },
+                "hasDuplicateLinks": false
+            }
+        ],
+        "unknownSourceArchives": [
+            {
+                "package": { "scope": "unknown", "name": "unknown" },
+                "version": "1.0.0"
+            }
+        ],
+        "contentDispositionHeaderIsSet": true,
+        "digestHeaderIsSet": true
+    },
+    "lookupPackageIdentifiers": {
+        "urls": [
+            {
+                "url": "https://github.com/apple/swift-nio",
+                "packageIdentifiers": [ "apple.swift-nio" ]
+            }
+        ],
+        "unknownURLs": [
+            "https://github.com/unknown/unknown"
+        ]
+    }
+}

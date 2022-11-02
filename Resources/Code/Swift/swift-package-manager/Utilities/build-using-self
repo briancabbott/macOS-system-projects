@@ -1,0 +1,34 @@
+#!/bin/bash
+##===----------------------------------------------------------------------===##
+##
+## This source file is part of the Swift open source project
+##
+## Copyright (c) 2014-2022 Apple Inc. and the Swift project authors
+## Licensed under Apache License v2.0 with Runtime Library Exception
+##
+## See http://swift.org/LICENSE.txt for license information
+## See http://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+##
+##===----------------------------------------------------------------------===##
+
+set -eu
+
+__dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "${__dir}/.."
+echo "Current directory is ${PWD}"
+
+CONFIGURATION=debug
+export SWIFTCI_IS_SELF_HOSTED=1
+
+set -x
+
+# Perform package update in order to get the latest commits for the dependencies.
+swift package update
+swift build -c $CONFIGURATION
+swift test -c $CONFIGURATION --parallel
+
+# Run the integration tests with just built SwiftPM.
+export SWIFTPM_BIN_DIR=$(swift build -c $CONFIGURATION --show-bin-path)
+cd IntegrationTests
+$SWIFTPM_BIN_DIR/swift-test --parallel

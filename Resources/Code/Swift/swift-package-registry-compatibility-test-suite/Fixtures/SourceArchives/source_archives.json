@@ -1,0 +1,50 @@
+[
+    {
+        "scope": "apple",
+        "name": "swift-service-discovery",
+        "version": "1.0.0",
+        "repositoryURL": "https://github.com/apple/swift-service-discovery",
+        "commitHash": "fcf0363",
+        "checksum": "bc2a72b0345e06fc58071456640f7f622ef2751310e993c95c1f68345428615a"
+    },
+    {
+        "scope": "apple",
+        "name": "swift-nio",
+        "version": "1.14.2",
+        "repositoryURL": "https://github.com/apple/swift-nio",
+        "commitHash": "8da5c5a",
+        "checksum": "02bc0388134a4b0bbc1145f56a50c6e3d0ce8f4b456661bb156861db394e732b"
+    },
+    {
+        "scope": "apple",
+        "name": "swift-nio",
+        "version": "2.29.0",
+        "repositoryURL": "https://github.com/apple/swift-nio",
+        "commitHash": "d161bf6",
+        "checksum": "24805ad6e2313cec79d92a8c805f6398aa7d46ea0c1aef03c76ce023a1fd5daf"
+    },
+    {
+        "scope": "apple",
+        "name": "swift-nio",
+        "version": "2.30.0",
+        "repositoryURL": "https://github.com/apple/swift-nio",
+        "commitHash": "d79e333",
+        "checksum": "cd5d6f66f60b88326174bcfcfe76f070edec66e38e50c15b6403eb6a8d2eccbc"
+    },
+    {
+        "scope": "sunshinejr",
+        "name": "SwiftyUserDefaults",
+        "version": "4.0.0-beta.2",
+        "repositoryURL": "https://github.com/sunshinejr/SwiftyUserDefaults",
+        "commitHash": "9b8aa75",
+        "checksum": "7073446337b21ee9995b4fcf4f12b404989758175311fae123ce3cd91439d0a8"
+    },
+    {
+        "scope": "sunshinejr",
+        "name": "SwiftyUserDefaults",
+        "version": "5.3.0",
+        "repositoryURL": "https://github.com/sunshinejr/SwiftyUserDefaults",
+        "commitHash": "f66bcd0",
+        "checksum": "ac43eaab1b2485070417265258155023c5e5865c9c1a7ade4ca869dd4a959110"
+    }
+]

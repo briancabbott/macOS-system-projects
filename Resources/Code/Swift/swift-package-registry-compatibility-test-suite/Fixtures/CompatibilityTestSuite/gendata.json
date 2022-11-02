@@ -1,0 +1,54 @@
+{
+    "resourceBaseDirectory": ".",
+    "packages": [
+        {
+            "releases": [
+                {
+                    "sourceArchivePath": "../SourceArchives/swift-nio@1.14.2.zip",
+                    "metadataPath": "Metadata/Templates/swift-nio@1.14.2.json"
+                },
+                {
+                    "sourceArchivePath": "../SourceArchives/swift-nio@2.29.0.zip",
+                    "metadataPath": "Metadata/Templates/swift-nio@2.29.0.json"
+                },
+                {
+                    "sourceArchivePath": "../SourceArchives/swift-nio@2.30.0.zip",
+                    "metadataPath": "Metadata/Templates/swift-nio@2.30.0.json"
+                }
+            ]
+        },
+        {
+            "releases": [
+                {
+                    "sourceArchivePath": "../SourceArchives/SwiftyUserDefaults@5.3.0.zip",
+                    "metadataPath": "Metadata/Templates/SwiftyUserDefaults@5.3.0.json",
+                    "versionManifests": [ "4.2" ]
+                }
+            ]
+        }
+    ],
+    "createPackageRelease": {
+        "maxProcessingTimeInSeconds": 10
+    },
+    "listPackageReleases": {
+        "linkHeaderIsSet": true,
+        "packageURLProvided": true,
+        "problemProvided": true,
+        "paginationSupported": false
+    },
+    "fetchPackageReleaseInfo": {
+        "linkHeaderIsSet": true
+    },
+    "fetchPackageReleaseManifest": {
+        "contentLengthHeaderIsSet": true,
+        "contentDispositionHeaderIsSet": true
+    },
+    "downloadSourceArchive": {
+        "contentDispositionHeaderIsSet": true,
+        "digestHeaderIsSet": true,
+        "linkHeaderHasDuplicateRelations": false
+    },
+    "lookupPackageIdentifiers": {
+        "repositoryURLMetadataKey": "repositoryURL"
+    }
+}

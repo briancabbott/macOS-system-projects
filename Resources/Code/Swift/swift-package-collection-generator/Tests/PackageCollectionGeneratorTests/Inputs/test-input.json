@@ -1,0 +1,23 @@
+{
+  "name": "Test Package Collection",
+  "overview": "A test package collection",
+  "keywords": ["swift packages"],
+  "packages": [
+    {
+      "url": "https://package-collection-tests.com/repos/foobar.git",
+      "summary": "Package Foobar",
+      "keywords": ["test package"],
+      "versions": ["0.2.0", "0.1.0"],
+      "excludedVersions": ["v0.1.0"],
+      "excludedProducts": ["Foo"],
+      "excludedTargets": ["Bar"],
+      "readmeURL": "https://package-collection-tests.com/repos/foobar/README"
+    },
+    {
+      "url": "https://package-collection-tests.com/repos/foobaz.git"
+    }
+  ],
+  "author": {
+    "name": "Jane Doe"
+  }
+}
