@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/AndroidUIKit undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/AndroidUIKit",
+    "repo": "https://github.com/PureSwift/AndroidUIKit",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/AndroidUIKit",
+    "startTime": "2022-10-04T21:33:56.287Z",
+    "endTime": "2022-10-04T21:33:57.212Z",
+    "childProcessPid": 12317,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--AndroidUIKit--12317",
+    "executionErrors": []
+}

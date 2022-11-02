@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Silica undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Silica",
+    "repo": "https://github.com/PureSwift/Silica",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Silica",
+    "startTime": "2022-10-04T21:34:48.397Z",
+    "endTime": "2022-10-04T21:34:49.238Z",
+    "childProcessPid": 12741,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Silica--12741",
+    "executionErrors": []
+}

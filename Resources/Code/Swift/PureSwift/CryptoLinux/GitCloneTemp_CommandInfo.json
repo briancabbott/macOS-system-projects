@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CryptoLinux undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CryptoLinux",
+    "repo": "https://github.com/PureSwift/CryptoLinux",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CryptoLinux",
+    "startTime": "2022-10-04T21:34:29.317Z",
+    "endTime": "2022-10-04T21:34:30.100Z",
+    "childProcessPid": 12591,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CryptoLinux--12591",
+    "executionErrors": []
+}

@@ -1,0 +1,8 @@
+author: "Robbert Brandsma & Joannis Orlandos"
+module: BSON
+readme: README.md
+github_url: https://github.com/OpenKitten/BSON
+xcodebuild_arguments:
+  - "-scheme"
+  - "BSON"
+dash_url: http://openkitten.github.io/BSON/BSON.xml

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/swift-cmark undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-cmark",
+    "repo": "https://github.com/PureSwift/swift-cmark",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-cmark",
+    "startTime": "2022-10-04T21:35:51.020Z",
+    "endTime": "2022-10-04T21:35:53.009Z",
+    "childProcessPid": 13014,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--swift-cmark--13014",
+    "executionErrors": []
+}

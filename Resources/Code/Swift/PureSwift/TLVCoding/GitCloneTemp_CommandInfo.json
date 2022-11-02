@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/TLVCoding undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/TLVCoding",
+    "repo": "https://github.com/PureSwift/TLVCoding",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/TLVCoding",
+    "startTime": "2022-10-04T21:35:02.933Z",
+    "endTime": "2022-10-04T21:35:03.772Z",
+    "childProcessPid": 12814,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--TLVCoding--12814",
+    "executionErrors": []
+}

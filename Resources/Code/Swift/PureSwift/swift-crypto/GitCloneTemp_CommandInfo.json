@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/swift-crypto undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-crypto",
+    "repo": "https://github.com/PureSwift/swift-crypto",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-crypto",
+    "startTime": "2022-10-04T21:35:54.416Z",
+    "endTime": "2022-10-04T21:35:56.857Z",
+    "childProcessPid": 13038,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--swift-crypto--13038",
+    "executionErrors": []
+}

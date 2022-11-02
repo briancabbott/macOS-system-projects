@@ -1,0 +1,5 @@
+module CLCMS [system] {
+    header "shim.h"
+    link "lcms2"
+    export *
+}

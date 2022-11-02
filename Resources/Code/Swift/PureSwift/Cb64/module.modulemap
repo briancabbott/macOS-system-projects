@@ -1,0 +1,6 @@
+module Cb64 [system] {
+    header "/usr/include/b64/cdecode.h"
+    header "/usr/include/b64/cencode.h"
+    link "b64"
+    export *
+}

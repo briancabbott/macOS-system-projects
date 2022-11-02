@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Cacao undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Cacao",
+    "repo": "https://github.com/PureSwift/Cacao",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Cacao",
+    "startTime": "2022-10-04T21:34:22.265Z",
+    "endTime": "2022-10-04T21:34:23.514Z",
+    "childProcessPid": 12541,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Cacao--12541",
+    "executionErrors": []
+}

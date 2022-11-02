@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/async-http-client undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/async-http-client",
+    "repo": "https://github.com/PureSwift/async-http-client",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/async-http-client",
+    "startTime": "2022-10-04T21:35:08.766Z",
+    "endTime": "2022-10-04T21:35:10.059Z",
+    "childProcessPid": 12854,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--async-http-client--12854",
+    "executionErrors": []
+}

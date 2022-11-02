@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/BinaryJSON undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/BinaryJSON",
+    "repo": "https://github.com/PureSwift/BinaryJSON",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/BinaryJSON",
+    "startTime": "2022-10-04T21:33:59.837Z",
+    "endTime": "2022-10-04T21:34:00.605Z",
+    "childProcessPid": 12339,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--BinaryJSON--12339",
+    "executionErrors": []
+}

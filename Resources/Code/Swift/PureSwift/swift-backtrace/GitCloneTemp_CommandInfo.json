@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/swift-backtrace undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-backtrace",
+    "repo": "https://github.com/PureSwift/swift-backtrace",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-backtrace",
+    "startTime": "2022-10-04T21:35:49.169Z",
+    "endTime": "2022-10-04T21:35:50.093Z",
+    "childProcessPid": 13003,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--swift-backtrace--13003",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Android undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Android",
+    "repo": "https://github.com/PureSwift/Android",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Android",
+    "startTime": "2022-10-04T21:33:53.629Z",
+    "endTime": "2022-10-04T21:33:54.765Z",
+    "childProcessPid": 12295,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Android--12295",
+    "executionErrors": []
+}

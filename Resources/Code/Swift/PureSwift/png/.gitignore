@@ -1,0 +1,14 @@
+.DS_Store
+/.build
+/.build-historical
+/.entrapta
+/documentation
+Package.resolved
+/*.xcodeproj
+.swiftpm
+/benchmarks/*.png.png
+/benchmarks/compression/out/*.png
+/benchmarks/compression/baseline/main
+/benchmarks/decompression/out/*.png
+/benchmarks/decompression/baseline/main
+/utils/__pycache__/

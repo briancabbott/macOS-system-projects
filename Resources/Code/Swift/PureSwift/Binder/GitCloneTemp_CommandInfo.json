@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Binder undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Binder",
+    "repo": "https://github.com/PureSwift/Binder",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Binder",
+    "startTime": "2022-10-04T21:34:00.606Z",
+    "endTime": "2022-10-04T21:34:01.272Z",
+    "childProcessPid": 12344,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Binder--12344",
+    "executionErrors": []
+}

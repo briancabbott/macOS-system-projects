@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/LlamaKit undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/LlamaKit",
+    "repo": "https://github.com/Carthage/LlamaKit",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/LlamaKit",
+    "startTime": "2022-10-04T16:27:21.922Z",
+    "endTime": "2022-10-04T16:27:22.688Z",
+    "childProcessPid": 95035,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--LlamaKit--95035",
+    "executionErrors": []
+}

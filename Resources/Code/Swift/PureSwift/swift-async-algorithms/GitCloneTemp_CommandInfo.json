@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/swift-async-algorithms undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-async-algorithms",
+    "repo": "https://github.com/PureSwift/swift-async-algorithms",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-async-algorithms",
+    "startTime": "2022-10-04T21:35:47.132Z",
+    "endTime": "2022-10-04T21:35:48.203Z",
+    "childProcessPid": 12991,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--swift-async-algorithms--12991",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/PrettyColors undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/PrettyColors",
+    "repo": "https://github.com/Carthage/PrettyColors",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/PrettyColors",
+    "startTime": "2022-10-04T16:27:22.688Z",
+    "endTime": "2022-10-04T16:27:23.398Z",
+    "childProcessPid": 95040,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--PrettyColors--95040",
+    "executionErrors": []
+}

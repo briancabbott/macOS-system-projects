@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/ogdl-swift undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/ogdl-swift",
+    "repo": "https://github.com/Carthage/ogdl-swift",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/ogdl-swift",
+    "startTime": "2022-10-04T16:31:13.469Z",
+    "endTime": "2022-10-04T16:31:14.455Z",
+    "childProcessPid": 95544,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--ogdl-swift--95544",
+    "executionErrors": []
+}

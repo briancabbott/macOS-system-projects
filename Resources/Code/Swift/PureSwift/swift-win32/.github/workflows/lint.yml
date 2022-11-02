@@ -1,0 +1,27 @@
+name: lint
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**/*.swift'
+
+jobs:
+  lint:
+    runs-on: windows-latest
+
+    steps:
+    - uses: compnerd/gha-setup-swift@main
+      with:
+        branch: swift-5.6-release
+        tag: 5.6-RELEASE
+    - name: Install swift-format
+      run: |
+        Install-Binary -Url "https://github.com/compnerd/swift-build/releases/download/swift-format-5.6-RELEASE/swift-format.msi" -Name "swift-format.msi" -ArgumentList ("-q")
+
+    - uses: actions/checkout@v2
+
+    - uses: compnerd/swift-format-linter-action@main
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CDBus undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CDBus",
+    "repo": "https://github.com/PureSwift/CDBus",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CDBus",
+    "startTime": "2022-10-04T21:34:10.532Z",
+    "endTime": "2022-10-04T21:34:11.215Z",
+    "childProcessPid": 12427,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CDBus--12427",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/SwiftStyleGuide undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftStyleGuide",
+    "repo": "https://github.com/PureSwift/SwiftStyleGuide",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftStyleGuide",
+    "startTime": "2022-10-04T21:34:58.935Z",
+    "endTime": "2022-10-04T21:34:59.974Z",
+    "childProcessPid": 12790,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--SwiftStyleGuide--12790",
+    "executionErrors": []
+}

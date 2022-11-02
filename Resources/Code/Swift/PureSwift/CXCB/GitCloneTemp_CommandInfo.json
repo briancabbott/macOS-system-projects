@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CXCB undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CXCB",
+    "repo": "https://github.com/PureSwift/CXCB",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CXCB",
+    "startTime": "2022-10-04T21:34:21.647Z",
+    "endTime": "2022-10-04T21:34:22.265Z",
+    "childProcessPid": 12534,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CXCB--12534",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/ReactiveCocoa undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/ReactiveCocoa",
+    "repo": "https://github.com/Carthage/ReactiveCocoa",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/ReactiveCocoa",
+    "startTime": "2022-10-04T16:27:23.398Z",
+    "endTime": "2022-10-04T16:27:25.226Z",
+    "childProcessPid": 95047,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--ReactiveCocoa--95047",
+    "executionErrors": []
+}

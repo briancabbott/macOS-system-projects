@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Predicate undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Predicate",
+    "repo": "https://github.com/PureSwift/Predicate",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Predicate",
+    "startTime": "2022-10-04T21:34:45.910Z",
+    "endTime": "2022-10-04T21:34:46.763Z",
+    "childProcessPid": 12721,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Predicate--12721",
+    "executionErrors": []
+}

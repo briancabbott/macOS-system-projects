@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CJSONC undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CJSONC",
+    "repo": "https://github.com/PureSwift/CJSONC",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CJSONC",
+    "startTime": "2022-10-04T21:34:12.686Z",
+    "endTime": "2022-10-04T21:34:13.291Z",
+    "childProcessPid": 12446,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CJSONC--12446",
+    "executionErrors": []
+}

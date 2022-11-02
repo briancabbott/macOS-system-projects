@@ -1,0 +1,23 @@
+language: generic
+sudo: required
+dist: trusty
+env:
+- SWIFT_VERSION=swift-2.2-SNAPSHOT-2015-12-22-a
+install:
+- SWIFT_DIR=tests
+- sudo apt-get update
+- sudo apt-get install clang uuid-dev git-core automake autoconf libtool gcc
+- git clone git://github.com/mongodb/libbson.git
+- cd libbson/
+- ./autogen.sh
+- make
+- sudo make install
+- cd ../
+- sudo cp -lf /usr/local/lib/libbson* /usr/lib
+- sudo sed -i 's/<bson.h>/"bson.h"/g' /usr/local/include/libbson-1.0/bcon.h
+- mkdir $SWIFT_DIR
+- curl https://swift.org/builds/ubuntu1404/$SWIFT_VERSION/$SWIFT_VERSION-ubuntu14.04.tar.gz -s | tar xz -C $SWIFT_DIR &> /dev/null
+script:
+- export PATH=$(pwd)/tests/$SWIFT_VERSION-ubuntu14.04/usr/bin:"${PATH}"
+- swift build -c release
+- .build/release/UnitTests

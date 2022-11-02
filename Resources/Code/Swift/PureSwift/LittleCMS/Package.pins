@@ -1,0 +1,12 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "CLCMS",
+      "reason": null,
+      "repositoryURL": "https://github.com/PureSwift/CLCMS.git",
+      "version": "1.0.0"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/OpenCombine undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/OpenCombine",
+    "repo": "https://github.com/PureSwift/OpenCombine",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/OpenCombine",
+    "startTime": "2022-10-04T21:34:43.703Z",
+    "endTime": "2022-10-04T21:34:45.028Z",
+    "childProcessPid": 12708,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--OpenCombine--12708",
+    "executionErrors": []
+}

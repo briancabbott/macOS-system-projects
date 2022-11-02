@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4C637293461D1B69DB09DA534567D12FC0535B70",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4C637293461D1B69DB09DA534567D12FC0535B70" : 0,
+    "87265B577AE833524FE1E76D25168C637B0C8BC9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D9458908-BBF2-4F21-A8BD-146633BF4FBC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4C637293461D1B69DB09DA534567D12FC0535B70" : "JSONC\/",
+    "87265B577AE833524FE1E76D25168C637B0C8BC9" : "MySQLSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JSONC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Xcode\/JSONC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PureSwift\/JSONC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C637293461D1B69DB09DA534567D12FC0535B70"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/colemancda\/MySQLSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "87265B577AE833524FE1E76D25168C637B0C8BC9"
+    }
+  ]
+}

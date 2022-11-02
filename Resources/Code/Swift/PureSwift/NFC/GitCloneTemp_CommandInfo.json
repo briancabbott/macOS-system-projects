@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/NFC undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/NFC",
+    "repo": "https://github.com/PureSwift/NFC",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/NFC",
+    "startTime": "2022-10-04T21:34:42.157Z",
+    "endTime": "2022-10-04T21:34:42.768Z",
+    "childProcessPid": 12688,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--NFC--12688",
+    "executionErrors": []
+}

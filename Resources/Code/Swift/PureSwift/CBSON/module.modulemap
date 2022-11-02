@@ -1,0 +1,6 @@
+module CBSON [system] {
+    header "/usr/local/include/libbson-1.0/bson.h"
+    exclude header "/usr/local/include/libbson-1.0/bcon.h"
+    link "bson-1.0"
+    export *
+}

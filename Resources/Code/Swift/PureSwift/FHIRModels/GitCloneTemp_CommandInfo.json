@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/FHIRModels undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/FHIRModels",
+    "repo": "https://github.com/PureSwift/FHIRModels",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/FHIRModels",
+    "startTime": "2022-10-04T21:34:30.957Z",
+    "endTime": "2022-10-04T21:34:32.574Z",
+    "childProcessPid": 12601,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--FHIRModels--12601",
+    "executionErrors": []
+}

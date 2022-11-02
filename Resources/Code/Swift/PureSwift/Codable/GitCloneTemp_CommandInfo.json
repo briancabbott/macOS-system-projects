@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Codable undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Codable",
+    "repo": "https://github.com/PureSwift/Codable",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Codable",
+    "startTime": "2022-10-04T21:34:26.991Z",
+    "endTime": "2022-10-04T21:34:27.779Z",
+    "childProcessPid": 12574,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Codable--12574",
+    "executionErrors": []
+}

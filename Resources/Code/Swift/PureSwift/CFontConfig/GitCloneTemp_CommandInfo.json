@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CFontConfig undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CFontConfig",
+    "repo": "https://github.com/PureSwift/CFontConfig",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CFontConfig",
+    "startTime": "2022-10-04T21:34:11.215Z",
+    "endTime": "2022-10-04T21:34:11.919Z",
+    "childProcessPid": 12432,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CFontConfig--12432",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/COpenSSL undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/COpenSSL",
+    "repo": "https://github.com/PureSwift/COpenSSL",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/COpenSSL",
+    "startTime": "2022-10-04T21:34:17.946Z",
+    "endTime": "2022-10-04T21:34:18.568Z",
+    "childProcessPid": 12502,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--COpenSSL--12502",
+    "executionErrors": []
+}

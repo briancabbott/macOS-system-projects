@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/MongoDB undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/MongoDB",
+    "repo": "https://github.com/PureSwift/MongoDB",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/MongoDB",
+    "startTime": "2022-10-04T21:34:40.480Z",
+    "endTime": "2022-10-04T21:34:41.273Z",
+    "childProcessPid": 12676,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--MongoDB--12676",
+    "executionErrors": []
+}

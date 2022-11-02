@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/SwiftWebUI undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftWebUI",
+    "repo": "https://github.com/PureSwift/SwiftWebUI",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftWebUI",
+    "startTime": "2022-10-04T21:35:00.680Z",
+    "endTime": "2022-10-04T21:35:02.140Z",
+    "childProcessPid": 12800,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--SwiftWebUI--12800",
+    "executionErrors": []
+}

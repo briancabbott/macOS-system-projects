@@ -1,0 +1,5 @@
+module CPNG [system] {
+    header "shim.h"
+    link "png"
+    export *
+}

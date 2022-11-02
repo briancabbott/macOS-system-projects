@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Cairo undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Cairo",
+    "repo": "https://github.com/PureSwift/Cairo",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Cairo",
+    "startTime": "2022-10-04T21:34:23.515Z",
+    "endTime": "2022-10-04T21:34:25.587Z",
+    "childProcessPid": 12552,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Cairo--12552",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/homebrew-core undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/homebrew-core",
+    "repo": "https://github.com/Carthage/homebrew-core",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/homebrew-core",
+    "startTime": "2022-10-04T16:27:26.810Z",
+    "endTime": "2022-10-04T16:31:13.468Z",
+    "childProcessPid": 95069,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--homebrew-core--95069",
+    "executionErrors": []
+}

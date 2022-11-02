@@ -1,0 +1,12 @@
+.DS_Store
+/.build
+/.docs.old
+/docs
+/Packages
+/*.xcodeproj
+Package.pins
+Package.resolved
+Gtk.tgz
+*-*.swift
+*-*.swift.out
+.swiftpm

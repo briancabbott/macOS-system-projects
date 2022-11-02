@@ -1,0 +1,5 @@
+*.xcuserstate
+Packages/*
+.build
+DBus.xcodeproj/*
+*.pins

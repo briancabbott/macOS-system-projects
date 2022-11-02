@@ -1,0 +1,176 @@
+name: Build and Test
+
+# NOTE: If making changes to most of the steps, please also look to update
+# regular_conformance.yml also.
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        swift: ["5.7.0", "5.6.3", "5.5.3", "5.4.3", "5.3.3", "5.2.5", "5.1.5", "5.0.3"]
+        # protobuf_git can reference a commit, tag, or branch
+        # commit: "commits/6935eae45c99926a000ecbef0be20dfd3d159e71"
+        # tag: "ref/tags/v3.11.4"
+        # branch: "ref/heads/main"
+        protobuf_git: ["ref/heads/main"]
+        include:
+          - swift: 5.7.0
+            ubuntu: focal
+            generate_linux_main: false
+          - swift: 5.6.3
+            ubuntu: focal
+            generate_linux_main: false
+          - swift: 5.5.3
+            ubuntu: focal
+            generate_linux_main: false
+          - swift: 5.4.3
+            ubuntu: focal
+            generate_linux_main: false
+          - swift: 5.3.3
+            ubuntu: focal
+            generate_linux_main: true
+          - swift: 5.2.5
+            ubuntu: focal
+            generate_linux_main: true
+          - swift: 5.1.5
+            ubuntu: bionic
+            generate_linux_main: true
+          - swift: 5.0.3
+            ubuntu: bionic
+            generate_linux_main: true
+    container:
+      image: swift:${{ matrix.swift }}-${{ matrix.ubuntu }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        path: main
+    - name: Update and install dependencies
+      # dependencies from https://github.com/protocolbuffers/protobuf/blob/main/src/README.md
+      # this step is run before get-sha because we need curl and jq for get-sha
+      # NOTE: zlib1g-dev is added to fix the Swift 5.0.x builds, when those builds aren't needed
+      # that dep likely can be removed.
+      run: |
+        set -eu
+        apt-get update
+        apt-get install -y curl make g++ cmake jq
+        [ \"${{ matrix.swift }}\" != \"5.0.3\" ] || apt-get install -y zlib1g-dev
+    - name: Install newer git for bionic
+      # bionic's git doesn't do modules via the REST api, update the git version.
+      if: matrix.ubuntu == 'bionic'
+      run: |
+        set -eu
+        apt-get install -y software-properties-common
+        add-apt-repository ppa:git-core/ppa
+        apt-get update
+        apt-get install -y git
+    - name: Get Protobuf Commit SHA
+      id: get-sha
+      run: |
+        set -eu
+        url="https://api.github.com/repos/protocolbuffers/protobuf/git/${{ matrix.protobuf_git }}"
+        case ${{ matrix.protobuf_git }} in
+        ref/*)
+          echo ::set-output name=sha::$( curl -s -u "u:${{ github.token }}" "${url}" | jq -r .object.sha )
+          ;;
+        commits/*)
+          echo ::set-output name=sha::$( curl -s -u "u:${{ github.token }}" "${url}" | jq -r .sha )
+          ;;
+        esac
+    - name: Generate LinuxMain.swift
+      if: ${{ matrix.generate_linux_main }}
+      working-directory: main
+      run: make generate-linux-main
+    - name: Build
+      working-directory: main
+      run: make build
+    - name: Test runtime
+      working-directory: main
+      run: make test-runtime
+    - name: Cache protobuf
+      id: cache-protobuf
+      uses: actions/cache@v2
+      with:
+        path: protobuf
+        # NOTE: for refs that can float like 'main' the cache might be out of date!
+        key: ${{ runner.os }}-${{ matrix.swift}}-protobuf-${{ steps.get-sha.outputs.sha }}
+    - name: Checkout protobuf repo
+      if: steps.cache-protobuf.outputs.cache-hit != 'true'
+      uses: actions/checkout@v2
+      with:
+        repository: protocolbuffers/protobuf
+        ref: ${{ steps.get-sha.outputs.sha }}
+        submodules: true
+        path: protobuf
+    - name: Build protobuf
+      if: steps.cache-protobuf.outputs.cache-hit != 'true'
+      working-directory: protobuf
+      run: |
+        cmake \
+          -DCMAKE_BUILD_TYPE=Release \
+          -Dprotobuf_BUILD_TESTS=OFF \
+          -Dprotobuf_INSTALL=OFF \
+          -Dprotobuf_BUILD_CONFORMANCE=ON \
+          .
+        NUM_CPUS=$(getconf _NPROCESSORS_ONLN)
+        make -j "${NUM_CPUS}" protoc conformance_test_runner
+    - name: Test plugin
+      working-directory: main
+      run: make test-plugin PROTOC=../protobuf/protoc
+    - name: Test conformance
+      working-directory: main
+      run: make test-conformance CONFORMANCE_TEST_RUNNER=../protobuf/conformance_test_runner
+
+  sanitizer_testing:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        sanitizer: ["address", "thread"]
+        swiftpm_config: ["debug", "release"]
+    container:
+      # Test on the latest Swift release. https://hub.docker.com/_/swift says
+      # swift:latest is still bionic, so explicitly use swift:focal.
+      image: swift:focal
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test
+      run: |
+        set -eu
+        # Trim out the generate files that are just compile tests, they take a while to compile and
+        # are covered in core instead.
+        rm Tests/SwiftProtobufTests/generated_swift_names*
+        # On linux, the tests seem to always see leaks that don't show up on macOS. Disable the
+        # leak detection and just assume it is a Linux Swift issue. This still gets validation
+        # for other memory errors. Maybe https://bugs.swift.org/browse/SR-6848.
+        if [ "${{ matrix.sanitizer }}" = "address" ] ; then
+          export ASAN_OPTIONS=detect_leaks=0
+        fi
+        # 'release' doesn't support @testable, force it on.
+        if [ "${{ matrix.swiftpm_config }}" = "release" ] ; then
+          EXTRAS="-Xswiftc -enable-testing"
+        fi
+        swift test -c ${{ matrix.swiftpm_config }} --sanitize=${{ matrix.sanitizer }} ${EXTRAS:-}
+
+  fuzzing_regressions:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        swiftpm_config: ["debug", "release"]
+    container:
+      # Test on the latest Swift release. https://hub.docker.com/_/swift says
+      # swift:latest is still bionic, so explicitly use swift:focal.
+      image: swift:focal
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: FuzzTesting/do_build.sh --${{ matrix.swiftpm_config }}-only --run-regressions

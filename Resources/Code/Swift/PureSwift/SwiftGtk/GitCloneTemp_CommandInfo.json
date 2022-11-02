@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/SwiftGtk undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftGtk",
+    "repo": "https://github.com/PureSwift/SwiftGtk",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftGtk",
+    "startTime": "2022-10-04T21:34:52.669Z",
+    "endTime": "2022-10-04T21:34:58.934Z",
+    "childProcessPid": 12770,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--SwiftGtk--12770",
+    "executionErrors": []
+}

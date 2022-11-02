@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/swift-algorithms undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-algorithms",
+    "repo": "https://github.com/PureSwift/swift-algorithms",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-algorithms",
+    "startTime": "2022-10-04T21:35:44.811Z",
+    "endTime": "2022-10-04T21:35:45.843Z",
+    "childProcessPid": 12978,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--swift-algorithms--12978",
+    "executionErrors": []
+}

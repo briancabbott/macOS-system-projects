@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/workflows undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/workflows",
+    "repo": "https://github.com/Carthage/workflows",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/workflows",
+    "startTime": "2022-10-04T16:31:14.456Z",
+    "endTime": "2022-10-04T16:31:15.311Z",
+    "childProcessPid": 95553,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--workflows--95553",
+    "executionErrors": []
+}

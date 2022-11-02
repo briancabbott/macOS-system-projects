@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/SwiftWinRT undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftWinRT",
+    "repo": "https://github.com/PureSwift/SwiftWinRT",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SwiftWinRT",
+    "startTime": "2022-10-04T21:35:02.141Z",
+    "endTime": "2022-10-04T21:35:02.932Z",
+    "childProcessPid": 12807,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--SwiftWinRT--12807",
+    "executionErrors": []
+}

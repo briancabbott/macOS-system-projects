@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/XMLCoder undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/XMLCoder",
+    "repo": "https://github.com/PureSwift/XMLCoder",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/XMLCoder",
+    "startTime": "2022-10-04T21:35:06.093Z",
+    "endTime": "2022-10-04T21:35:07.237Z",
+    "childProcessPid": 12840,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--XMLCoder--12840",
+    "executionErrors": []
+}

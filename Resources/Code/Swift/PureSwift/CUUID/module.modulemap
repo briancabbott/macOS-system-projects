@@ -1,0 +1,5 @@
+module CUUID [system] {
+    header "/usr/include/uuid/uuid.h"
+    link "uuid"
+    export *
+}

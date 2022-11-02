@@ -1,0 +1,5 @@
+module CXCB [system] {
+    header "/usr/include/xcb/xcb.h"
+    link "xcb"
+    export *
+}

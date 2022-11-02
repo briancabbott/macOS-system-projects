@@ -1,0 +1,1545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBBF2E491D499E42004142AE /* java_util.h in Headers */ = {isa = PBXBuildFile; fileRef = BBBF2E471D499E42004142AE /* java_util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBC140721D4999C30035A039 /* java_lang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC140711D4999C30035A039 /* java_lang.framework */; };
+		CED755A51F2E7BC8007C97C7 /* AbstractCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754741F2E7BC8007C97C7 /* AbstractCollection.swift */; };
+		CED755A61F2E7BC8007C97C7 /* AbstractExecutorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754751F2E7BC8007C97C7 /* AbstractExecutorService.swift */; };
+		CED755A71F2E7BC8007C97C7 /* AbstractList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754761F2E7BC8007C97C7 /* AbstractList.swift */; };
+		CED755A81F2E7BC8007C97C7 /* AbstractMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754771F2E7BC8007C97C7 /* AbstractMap.swift */; };
+		CED755A91F2E7BC8007C97C7 /* AbstractOwnableSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754781F2E7BC8007C97C7 /* AbstractOwnableSynchronizer.swift */; };
+		CED755AA1F2E7BC8007C97C7 /* AbstractPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754791F2E7BC8007C97C7 /* AbstractPreferences.swift */; };
+		CED755AB1F2E7BC8007C97C7 /* AbstractQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7547A1F2E7BC8007C97C7 /* AbstractQueue.swift */; };
+		CED755AC1F2E7BC8007C97C7 /* AbstractQueuedLongSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7547B1F2E7BC8007C97C7 /* AbstractQueuedLongSynchronizer.swift */; };
+		CED755AD1F2E7BC8007C97C7 /* AbstractQueuedSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7547C1F2E7BC8007C97C7 /* AbstractQueuedSynchronizer.swift */; };
+		CED755AE1F2E7BC8007C97C7 /* AbstractSequentialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7547D1F2E7BC8007C97C7 /* AbstractSequentialList.swift */; };
+		CED755AF1F2E7BC8007C97C7 /* AbstractSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7547E1F2E7BC8007C97C7 /* AbstractSet.swift */; };
+		CED755B01F2E7BC8007C97C7 /* Adler32.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7547F1F2E7BC8007C97C7 /* Adler32.swift */; };
+		CED755B11F2E7BC8007C97C7 /* ArrayBlockingQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754801F2E7BC8007C97C7 /* ArrayBlockingQueue.swift */; };
+		CED755B21F2E7BC8007C97C7 /* ArrayDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754811F2E7BC8007C97C7 /* ArrayDeque.swift */; };
+		CED755B31F2E7BC8007C97C7 /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754821F2E7BC8007C97C7 /* ArrayList.swift */; };
+		CED755B41F2E7BC8007C97C7 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754831F2E7BC8007C97C7 /* Arrays.swift */; };
+		CED755B51F2E7BC8007C97C7 /* AtomicBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754841F2E7BC8007C97C7 /* AtomicBoolean.swift */; };
+		CED755B61F2E7BC8007C97C7 /* AtomicInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754851F2E7BC8007C97C7 /* AtomicInteger.swift */; };
+		CED755B71F2E7BC8007C97C7 /* AtomicIntegerArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754861F2E7BC8007C97C7 /* AtomicIntegerArray.swift */; };
+		CED755B81F2E7BC8007C97C7 /* AtomicIntegerFieldUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754871F2E7BC8007C97C7 /* AtomicIntegerFieldUpdater.swift */; };
+		CED755B91F2E7BC8007C97C7 /* AtomicLong.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754881F2E7BC8007C97C7 /* AtomicLong.swift */; };
+		CED755BA1F2E7BC8007C97C7 /* AtomicLongArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754891F2E7BC8007C97C7 /* AtomicLongArray.swift */; };
+		CED755BB1F2E7BC8007C97C7 /* AtomicLongFieldUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7548A1F2E7BC8007C97C7 /* AtomicLongFieldUpdater.swift */; };
+		CED755BC1F2E7BC8007C97C7 /* AtomicMarkableReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7548B1F2E7BC8007C97C7 /* AtomicMarkableReference.swift */; };
+		CED755BD1F2E7BC8007C97C7 /* AtomicReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7548C1F2E7BC8007C97C7 /* AtomicReference.swift */; };
+		CED755BE1F2E7BC8007C97C7 /* AtomicReferenceArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7548D1F2E7BC8007C97C7 /* AtomicReferenceArray.swift */; };
+		CED755BF1F2E7BC8007C97C7 /* AtomicReferenceFieldUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7548E1F2E7BC8007C97C7 /* AtomicReferenceFieldUpdater.swift */; };
+		CED755C01F2E7BC8007C97C7 /* AtomicStampedReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7548F1F2E7BC8007C97C7 /* AtomicStampedReference.swift */; };
+		CED755C11F2E7BC8007C97C7 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754901F2E7BC8007C97C7 /* Attributes.swift */; };
+		CED755C21F2E7BC8007C97C7 /* BackingStoreException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754911F2E7BC8007C97C7 /* BackingStoreException.swift */; };
+		CED755C31F2E7BC8007C97C7 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754921F2E7BC8007C97C7 /* Base64.swift */; };
+		CED755C41F2E7BC8007C97C7 /* BaseStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754931F2E7BC8007C97C7 /* BaseStream.swift */; };
+		CED755C51F2E7BC8007C97C7 /* BiConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754941F2E7BC8007C97C7 /* BiConsumer.swift */; };
+		CED755C61F2E7BC8007C97C7 /* BiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754951F2E7BC8007C97C7 /* BiFunction.swift */; };
+		CED755C71F2E7BC8007C97C7 /* BinaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754961F2E7BC8007C97C7 /* BinaryOperator.swift */; };
+		CED755C81F2E7BC8007C97C7 /* BiPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754971F2E7BC8007C97C7 /* BiPredicate.swift */; };
+		CED755C91F2E7BC8007C97C7 /* BitSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754981F2E7BC8007C97C7 /* BitSet.swift */; };
+		CED755CA1F2E7BC8007C97C7 /* BlockingDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754991F2E7BC8007C97C7 /* BlockingDeque.swift */; };
+		CED755CB1F2E7BC8007C97C7 /* BlockingQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7549A1F2E7BC8007C97C7 /* BlockingQueue.swift */; };
+		CED755CC1F2E7BC8007C97C7 /* BooleanSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7549B1F2E7BC8007C97C7 /* BooleanSupplier.swift */; };
+		CED755CD1F2E7BC8007C97C7 /* BrokenBarrierException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7549C1F2E7BC8007C97C7 /* BrokenBarrierException.swift */; };
+		CED755CE1F2E7BC8007C97C7 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7549D1F2E7BC8007C97C7 /* Calendar.swift */; };
+		CED755CF1F2E7BC8007C97C7 /* CalendarDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7549E1F2E7BC8007C97C7 /* CalendarDataProvider.swift */; };
+		CED755D01F2E7BC8007C97C7 /* CalendarNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7549F1F2E7BC8007C97C7 /* CalendarNameProvider.swift */; };
+		CED755D11F2E7BC8007C97C7 /* Callable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A01F2E7BC8007C97C7 /* Callable.swift */; };
+		CED755D21F2E7BC8007C97C7 /* CancellationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A11F2E7BC8007C97C7 /* CancellationException.swift */; };
+		CED755D31F2E7BC8007C97C7 /* CheckedInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A21F2E7BC8007C97C7 /* CheckedInputStream.swift */; };
+		CED755D41F2E7BC8007C97C7 /* CheckedOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A31F2E7BC8007C97C7 /* CheckedOutputStream.swift */; };
+		CED755D51F2E7BC8007C97C7 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A41F2E7BC8007C97C7 /* Checksum.swift */; };
+		CED755D61F2E7BC8007C97C7 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A51F2E7BC8007C97C7 /* Collection.swift */; };
+		CED755D71F2E7BC8007C97C7 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A61F2E7BC8007C97C7 /* Collections.swift */; };
+		CED755D81F2E7BC8007C97C7 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A71F2E7BC8007C97C7 /* Collector.swift */; };
+		CED755D91F2E7BC8007C97C7 /* Collectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754A81F2E7BC8007C97C7 /* Collectors.swift */; };
+		CED755DB1F2E7BC8007C97C7 /* CompletionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754AA1F2E7BC8007C97C7 /* CompletionException.swift */; };
+		CED755DC1F2E7BC8007C97C7 /* CompletionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754AB1F2E7BC8007C97C7 /* CompletionService.swift */; };
+		CED755DD1F2E7BC8007C97C7 /* CompletionStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754AC1F2E7BC8007C97C7 /* CompletionStage.swift */; };
+		CED755DE1F2E7BC8007C97C7 /* ConcurrentHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754AD1F2E7BC8007C97C7 /* ConcurrentHashMap.swift */; };
+		CED755DF1F2E7BC8007C97C7 /* ConcurrentLinkedDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754AE1F2E7BC8007C97C7 /* ConcurrentLinkedDeque.swift */; };
+		CED755E01F2E7BC8007C97C7 /* ConcurrentLinkedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754AF1F2E7BC8007C97C7 /* ConcurrentLinkedQueue.swift */; };
+		CED755E11F2E7BC8007C97C7 /* ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B01F2E7BC8007C97C7 /* ConcurrentMap.swift */; };
+		CED755E21F2E7BC8007C97C7 /* ConcurrentModificationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B11F2E7BC8007C97C7 /* ConcurrentModificationException.swift */; };
+		CED755E31F2E7BC8007C97C7 /* ConcurrentNavigableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B21F2E7BC8007C97C7 /* ConcurrentNavigableMap.swift */; };
+		CED755E41F2E7BC8007C97C7 /* ConcurrentSkipListMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B31F2E7BC8007C97C7 /* ConcurrentSkipListMap.swift */; };
+		CED755E51F2E7BC8007C97C7 /* ConcurrentSkipListSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B41F2E7BC8007C97C7 /* ConcurrentSkipListSet.swift */; };
+		CED755E61F2E7BC8007C97C7 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B51F2E7BC8007C97C7 /* Condition.swift */; };
+		CED755E71F2E7BC8007C97C7 /* ConsoleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B61F2E7BC8007C97C7 /* ConsoleHandler.swift */; };
+		CED755E81F2E7BC8007C97C7 /* Consumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B71F2E7BC8007C97C7 /* Consumer.swift */; };
+		CED755E91F2E7BC8007C97C7 /* CopyOnWriteArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B81F2E7BC8007C97C7 /* CopyOnWriteArrayList.swift */; };
+		CED755EA1F2E7BC8007C97C7 /* CopyOnWriteArraySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754B91F2E7BC8007C97C7 /* CopyOnWriteArraySet.swift */; };
+		CED755EB1F2E7BC8007C97C7 /* CountDownLatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754BA1F2E7BC8007C97C7 /* CountDownLatch.swift */; };
+		CED755EC1F2E7BC8007C97C7 /* CountedCompleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754BB1F2E7BC8007C97C7 /* CountedCompleter.swift */; };
+		CED755ED1F2E7BC8007C97C7 /* CRC32.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754BC1F2E7BC8007C97C7 /* CRC32.swift */; };
+		CED755EE1F2E7BC8007C97C7 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754BD1F2E7BC8007C97C7 /* Currency.swift */; };
+		CED755EF1F2E7BC8007C97C7 /* CurrencyNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754BE1F2E7BC8007C97C7 /* CurrencyNameProvider.swift */; };
+		CED755F01F2E7BC8007C97C7 /* CyclicBarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754BF1F2E7BC8007C97C7 /* CyclicBarrier.swift */; };
+		CED755F11F2E7BC8007C97C7 /* DataFormatException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C01F2E7BC8007C97C7 /* DataFormatException.swift */; };
+		CED755F21F2E7BC8007C97C7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C11F2E7BC8007C97C7 /* Date.swift */; };
+		CED755F31F2E7BC8007C97C7 /* Deflater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C21F2E7BC8007C97C7 /* Deflater.swift */; };
+		CED755F41F2E7BC8007C97C7 /* DeflaterInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C31F2E7BC8007C97C7 /* DeflaterInputStream.swift */; };
+		CED755F51F2E7BC8007C97C7 /* DeflaterOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C41F2E7BC8007C97C7 /* DeflaterOutputStream.swift */; };
+		CED755F61F2E7BC8007C97C7 /* Delayed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C51F2E7BC8007C97C7 /* Delayed.swift */; };
+		CED755F71F2E7BC8007C97C7 /* DelayQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C61F2E7BC8007C97C7 /* DelayQueue.swift */; };
+		CED755F81F2E7BC8007C97C7 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C71F2E7BC8007C97C7 /* Deque.swift */; };
+		CED755F91F2E7BC8007C97C7 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C81F2E7BC8007C97C7 /* Dictionary.swift */; };
+		CED755FA1F2E7BC8007C97C7 /* DoubleAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754C91F2E7BC8007C97C7 /* DoubleAccumulator.swift */; };
+		CED755FB1F2E7BC8007C97C7 /* DoubleAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754CA1F2E7BC8007C97C7 /* DoubleAdder.swift */; };
+		CED755FC1F2E7BC8007C97C7 /* DoubleBinaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754CB1F2E7BC8007C97C7 /* DoubleBinaryOperator.swift */; };
+		CED755FD1F2E7BC8007C97C7 /* DoubleConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754CC1F2E7BC8007C97C7 /* DoubleConsumer.swift */; };
+		CED755FE1F2E7BC8007C97C7 /* DoubleFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754CD1F2E7BC8007C97C7 /* DoubleFunction.swift */; };
+		CED755FF1F2E7BC8007C97C7 /* DoublePredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754CE1F2E7BC8007C97C7 /* DoublePredicate.swift */; };
+		CED756001F2E7BC8007C97C7 /* DoubleStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754CF1F2E7BC8007C97C7 /* DoubleStream.swift */; };
+		CED756011F2E7BC8007C97C7 /* DoubleSummaryStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D01F2E7BC8007C97C7 /* DoubleSummaryStatistics.swift */; };
+		CED756021F2E7BC8007C97C7 /* DoubleSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D11F2E7BC8007C97C7 /* DoubleSupplier.swift */; };
+		CED756031F2E7BC8007C97C7 /* DoubleToIntFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D21F2E7BC8007C97C7 /* DoubleToIntFunction.swift */; };
+		CED756041F2E7BC8007C97C7 /* DoubleToLongFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D31F2E7BC8007C97C7 /* DoubleToLongFunction.swift */; };
+		CED756051F2E7BC8007C97C7 /* DoubleUnaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D41F2E7BC8007C97C7 /* DoubleUnaryOperator.swift */; };
+		CED756061F2E7BC8007C97C7 /* DuplicateFormatFlagsException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D51F2E7BC8007C97C7 /* DuplicateFormatFlagsException.swift */; };
+		CED756071F2E7BC8007C97C7 /* EmptyStackException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D61F2E7BC8007C97C7 /* EmptyStackException.swift */; };
+		CED756081F2E7BC8007C97C7 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D71F2E7BC8007C97C7 /* Enumeration.swift */; };
+		CED756091F2E7BC8007C97C7 /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D81F2E7BC8007C97C7 /* EnumMap.swift */; };
+		CED7560A1F2E7BC8007C97C7 /* EnumSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754D91F2E7BC8007C97C7 /* EnumSet.swift */; };
+		CED7560B1F2E7BC8007C97C7 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754DA1F2E7BC8007C97C7 /* ErrorManager.swift */; };
+		CED7560C1F2E7BC8007C97C7 /* EventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754DB1F2E7BC8007C97C7 /* EventListener.swift */; };
+		CED7560D1F2E7BC8007C97C7 /* EventListenerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754DC1F2E7BC8007C97C7 /* EventListenerProxy.swift */; };
+		CED7560E1F2E7BC8007C97C7 /* EventObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754DD1F2E7BC8007C97C7 /* EventObject.swift */; };
+		CED7560F1F2E7BC8007C97C7 /* Exchanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754DE1F2E7BC8007C97C7 /* Exchanger.swift */; };
+		CED756101F2E7BC8007C97C7 /* ExecutionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754DF1F2E7BC8007C97C7 /* ExecutionException.swift */; };
+		CED756111F2E7BC8007C97C7 /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E01F2E7BC8007C97C7 /* Executor.swift */; };
+		CED756121F2E7BC8007C97C7 /* ExecutorCompletionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E11F2E7BC8007C97C7 /* ExecutorCompletionService.swift */; };
+		CED756131F2E7BC8007C97C7 /* Executors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E21F2E7BC8007C97C7 /* Executors.swift */; };
+		CED756141F2E7BC8007C97C7 /* ExecutorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E31F2E7BC8007C97C7 /* ExecutorService.swift */; };
+		CED756151F2E7BC8007C97C7 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E41F2E7BC8007C97C7 /* FileHandler.swift */; };
+		CED756161F2E7BC8007C97C7 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E51F2E7BC8007C97C7 /* Filter.swift */; };
+		CED756171F2E7BC8007C97C7 /* ForkJoinPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E61F2E7BC8007C97C7 /* ForkJoinPool.swift */; };
+		CED756181F2E7BC8007C97C7 /* ForkJoinTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E71F2E7BC8007C97C7 /* ForkJoinTask.swift */; };
+		CED756191F2E7BC8007C97C7 /* ForkJoinWorkerThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E81F2E7BC8007C97C7 /* ForkJoinWorkerThread.swift */; };
+		CED7561A1F2E7BC8007C97C7 /* FormatFlagsConversionMismatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754E91F2E7BC8007C97C7 /* FormatFlagsConversionMismatchException.swift */; };
+		CED7561B1F2E7BC8007C97C7 /* Formattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754EA1F2E7BC8007C97C7 /* Formattable.swift */; };
+		CED7561C1F2E7BC8007C97C7 /* FormattableFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754EB1F2E7BC8007C97C7 /* FormattableFlags.swift */; };
+		CED7561D1F2E7BC8007C97C7 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754EC1F2E7BC8007C97C7 /* Formatter.swift */; };
+		CED7561E1F2E7BC8007C97C7 /* FormatterClosedException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754ED1F2E7BC8007C97C7 /* FormatterClosedException.swift */; };
+		CED7561F1F2E7BC8007C97C7 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754EE1F2E7BC8007C97C7 /* Function.swift */; };
+		CED756201F2E7BC8007C97C7 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754EF1F2E7BC8007C97C7 /* Future.swift */; };
+		CED756211F2E7BC8007C97C7 /* FutureTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F01F2E7BC8007C97C7 /* FutureTask.swift */; };
+		CED756221F2E7BC8007C97C7 /* GregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F11F2E7BC8007C97C7 /* GregorianCalendar.swift */; };
+		CED756231F2E7BC8007C97C7 /* GZIPInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F21F2E7BC8007C97C7 /* GZIPInputStream.swift */; };
+		CED756241F2E7BC8007C97C7 /* GZIPOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F31F2E7BC8007C97C7 /* GZIPOutputStream.swift */; };
+		CED756251F2E7BC8007C97C7 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F41F2E7BC8007C97C7 /* Handler.swift */; };
+		CED756271F2E7BC8007C97C7 /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F61F2E7BC8007C97C7 /* HashSet.swift */; };
+		CED756281F2E7BC8007C97C7 /* Hashtable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F71F2E7BC8007C97C7 /* Hashtable.swift */; };
+		CED756291F2E7BC8007C97C7 /* IdentityHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F81F2E7BC8007C97C7 /* IdentityHashMap.swift */; };
+		CED7562A1F2E7BC8007C97C7 /* IllegalFormatCodePointException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754F91F2E7BC8007C97C7 /* IllegalFormatCodePointException.swift */; };
+		CED7562B1F2E7BC8007C97C7 /* IllegalFormatConversionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754FA1F2E7BC8007C97C7 /* IllegalFormatConversionException.swift */; };
+		CED7562C1F2E7BC8007C97C7 /* IllegalFormatException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754FB1F2E7BC8007C97C7 /* IllegalFormatException.swift */; };
+		CED7562D1F2E7BC8007C97C7 /* IllegalFormatFlagsException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754FC1F2E7BC8007C97C7 /* IllegalFormatFlagsException.swift */; };
+		CED7562E1F2E7BC8007C97C7 /* IllegalFormatPrecisionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754FD1F2E7BC8007C97C7 /* IllegalFormatPrecisionException.swift */; };
+		CED7562F1F2E7BC8007C97C7 /* IllegalFormatWidthException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754FE1F2E7BC8007C97C7 /* IllegalFormatWidthException.swift */; };
+		CED756301F2E7BC8007C97C7 /* IllformedLocaleException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED754FF1F2E7BC8007C97C7 /* IllformedLocaleException.swift */; };
+		CED756311F2E7BC8007C97C7 /* Inflater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755001F2E7BC8007C97C7 /* Inflater.swift */; };
+		CED756321F2E7BC8007C97C7 /* InflaterInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755011F2E7BC8007C97C7 /* InflaterInputStream.swift */; };
+		CED756331F2E7BC8007C97C7 /* InflaterOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755021F2E7BC8007C97C7 /* InflaterOutputStream.swift */; };
+		CED756341F2E7BC8007C97C7 /* InputMismatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755031F2E7BC8007C97C7 /* InputMismatchException.swift */; };
+		CED756351F2E7BC8007C97C7 /* IntBinaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755041F2E7BC8007C97C7 /* IntBinaryOperator.swift */; };
+		CED756361F2E7BC8007C97C7 /* IntConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755051F2E7BC8007C97C7 /* IntConsumer.swift */; };
+		CED756371F2E7BC8007C97C7 /* IntFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755061F2E7BC8007C97C7 /* IntFunction.swift */; };
+		CED756381F2E7BC8007C97C7 /* IntPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755071F2E7BC8007C97C7 /* IntPredicate.swift */; };
+		CED756391F2E7BC8007C97C7 /* IntStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755081F2E7BC8007C97C7 /* IntStream.swift */; };
+		CED7563A1F2E7BC8007C97C7 /* IntSummaryStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755091F2E7BC8007C97C7 /* IntSummaryStatistics.swift */; };
+		CED7563B1F2E7BC8007C97C7 /* IntSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7550A1F2E7BC8007C97C7 /* IntSupplier.swift */; };
+		CED7563C1F2E7BC8007C97C7 /* IntToDoubleFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7550B1F2E7BC8007C97C7 /* IntToDoubleFunction.swift */; };
+		CED7563D1F2E7BC8007C97C7 /* IntToLongFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7550C1F2E7BC8007C97C7 /* IntToLongFunction.swift */; };
+		CED7563E1F2E7BC8007C97C7 /* IntUnaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7550D1F2E7BC8007C97C7 /* IntUnaryOperator.swift */; };
+		CED7563F1F2E7BC8007C97C7 /* InvalidPreferencesFormatException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7550E1F2E7BC8007C97C7 /* InvalidPreferencesFormatException.swift */; };
+		CED756401F2E7BC8007C97C7 /* InvalidPropertiesFormatException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7550F1F2E7BC8007C97C7 /* InvalidPropertiesFormatException.swift */; };
+		CED756411F2E7BC8007C97C7 /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755101F2E7BC8007C97C7 /* Iterator.swift */; };
+		CED756421F2E7BC8007C97C7 /* JarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755111F2E7BC8007C97C7 /* JarEntry.swift */; };
+		CED756431F2E7BC8007C97C7 /* JarException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755121F2E7BC8007C97C7 /* JarException.swift */; };
+		CED756441F2E7BC8007C97C7 /* JarFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755131F2E7BC8007C97C7 /* JarFile.swift */; };
+		CED756451F2E7BC8007C97C7 /* JarInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755141F2E7BC8007C97C7 /* JarInputStream.swift */; };
+		CED756461F2E7BC8007C97C7 /* JarOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755151F2E7BC8007C97C7 /* JarOutputStream.swift */; };
+		CED756471F2E7BC8007C97C7 /* JavaComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755161F2E7BC8007C97C7 /* JavaComparator.swift */; };
+		CED756481F2E7BC8007C97C7 /* JavaLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755171F2E7BC8007C97C7 /* JavaLocale.swift */; };
+		CED7564A1F2E7BC8007C97C7 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755191F2E7BC8007C97C7 /* Level.swift */; };
+		CED7564B1F2E7BC8007C97C7 /* LinkedBlockingDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7551A1F2E7BC8007C97C7 /* LinkedBlockingDeque.swift */; };
+		CED7564C1F2E7BC8007C97C7 /* LinkedBlockingQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7551B1F2E7BC8007C97C7 /* LinkedBlockingQueue.swift */; };
+		CED7564D1F2E7BC8007C97C7 /* LinkedHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7551C1F2E7BC8007C97C7 /* LinkedHashMap.swift */; };
+		CED7564E1F2E7BC8007C97C7 /* LinkedHashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7551D1F2E7BC8007C97C7 /* LinkedHashSet.swift */; };
+		CED7564F1F2E7BC8007C97C7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7551E1F2E7BC8007C97C7 /* LinkedList.swift */; };
+		CED756501F2E7BC8007C97C7 /* LinkedTransferQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7551F1F2E7BC8007C97C7 /* LinkedTransferQueue.swift */; };
+		CED756511F2E7BC8007C97C7 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755201F2E7BC8007C97C7 /* List.swift */; };
+		CED756521F2E7BC8007C97C7 /* ListIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755211F2E7BC8007C97C7 /* ListIterator.swift */; };
+		CED756531F2E7BC8007C97C7 /* ListResourceBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755221F2E7BC8007C97C7 /* ListResourceBundle.swift */; };
+		CED756541F2E7BC8007C97C7 /* LocaleNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755231F2E7BC8007C97C7 /* LocaleNameProvider.swift */; };
+		CED756551F2E7BC8007C97C7 /* LocaleServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755241F2E7BC8007C97C7 /* LocaleServiceProvider.swift */; };
+		CED756561F2E7BC8007C97C7 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755251F2E7BC8007C97C7 /* Lock.swift */; };
+		CED756571F2E7BC8007C97C7 /* LockSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755261F2E7BC8007C97C7 /* LockSupport.swift */; };
+		CED756581F2E7BC8007C97C7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755271F2E7BC8007C97C7 /* Logger.swift */; };
+		CED756591F2E7BC8007C97C7 /* logging_Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755281F2E7BC8007C97C7 /* logging_Formatter.swift */; };
+		CED7565A1F2E7BC8007C97C7 /* LoggingMXBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755291F2E7BC8007C97C7 /* LoggingMXBean.swift */; };
+		CED7565B1F2E7BC8007C97C7 /* LoggingPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7552A1F2E7BC8007C97C7 /* LoggingPermission.swift */; };
+		CED7565C1F2E7BC8007C97C7 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7552B1F2E7BC8007C97C7 /* LogManager.swift */; };
+		CED7565D1F2E7BC8007C97C7 /* LogRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7552C1F2E7BC8007C97C7 /* LogRecord.swift */; };
+		CED7565E1F2E7BC8007C97C7 /* LongAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7552D1F2E7BC8007C97C7 /* LongAccumulator.swift */; };
+		CED7565F1F2E7BC8007C97C7 /* LongAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7552E1F2E7BC8007C97C7 /* LongAdder.swift */; };
+		CED756601F2E7BC8007C97C7 /* LongBinaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7552F1F2E7BC8007C97C7 /* LongBinaryOperator.swift */; };
+		CED756611F2E7BC8007C97C7 /* LongConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755301F2E7BC8007C97C7 /* LongConsumer.swift */; };
+		CED756621F2E7BC8007C97C7 /* LongFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755311F2E7BC8007C97C7 /* LongFunction.swift */; };
+		CED756631F2E7BC8007C97C7 /* LongPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755321F2E7BC8007C97C7 /* LongPredicate.swift */; };
+		CED756641F2E7BC8007C97C7 /* LongStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755331F2E7BC8007C97C7 /* LongStream.swift */; };
+		CED756651F2E7BC8007C97C7 /* LongSummaryStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755341F2E7BC8007C97C7 /* LongSummaryStatistics.swift */; };
+		CED756661F2E7BC8007C97C7 /* LongSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755351F2E7BC8007C97C7 /* LongSupplier.swift */; };
+		CED756671F2E7BC8007C97C7 /* LongToDoubleFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755361F2E7BC8007C97C7 /* LongToDoubleFunction.swift */; };
+		CED756681F2E7BC8007C97C7 /* LongToIntFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755371F2E7BC8007C97C7 /* LongToIntFunction.swift */; };
+		CED756691F2E7BC8007C97C7 /* LongUnaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755381F2E7BC8007C97C7 /* LongUnaryOperator.swift */; };
+		CED7566A1F2E7BC8007C97C7 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755391F2E7BC8007C97C7 /* Manifest.swift */; };
+		CED7566C1F2E7BC8007C97C7 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7553B1F2E7BC8007C97C7 /* Matcher.swift */; };
+		CED7566D1F2E7BC8007C97C7 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7553C1F2E7BC8007C97C7 /* MatchResult.swift */; };
+		CED7566E1F2E7BC8007C97C7 /* MemoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7553D1F2E7BC8007C97C7 /* MemoryHandler.swift */; };
+		CED7566F1F2E7BC8007C97C7 /* MissingFormatArgumentException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7553E1F2E7BC8007C97C7 /* MissingFormatArgumentException.swift */; };
+		CED756701F2E7BC8007C97C7 /* MissingFormatWidthException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7553F1F2E7BC8007C97C7 /* MissingFormatWidthException.swift */; };
+		CED756711F2E7BC8007C97C7 /* MissingResourceException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755401F2E7BC8007C97C7 /* MissingResourceException.swift */; };
+		CED756721F2E7BC8007C97C7 /* NavigableMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755411F2E7BC8007C97C7 /* NavigableMap.swift */; };
+		CED756731F2E7BC8007C97C7 /* NavigableSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755421F2E7BC8007C97C7 /* NavigableSet.swift */; };
+		CED756741F2E7BC8007C97C7 /* NodeChangeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755431F2E7BC8007C97C7 /* NodeChangeEvent.swift */; };
+		CED756751F2E7BC8007C97C7 /* NodeChangeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755441F2E7BC8007C97C7 /* NodeChangeListener.swift */; };
+		CED756761F2E7BC8007C97C7 /* NoSuchElementException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755451F2E7BC8007C97C7 /* NoSuchElementException.swift */; };
+		CED756771F2E7BC8007C97C7 /* ObjDoubleConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755461F2E7BC8007C97C7 /* ObjDoubleConsumer.swift */; };
+		CED756781F2E7BC8007C97C7 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755471F2E7BC8007C97C7 /* Objects.swift */; };
+		CED756791F2E7BC8007C97C7 /* ObjIntConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755481F2E7BC8007C97C7 /* ObjIntConsumer.swift */; };
+		CED7567A1F2E7BC8007C97C7 /* ObjLongConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755491F2E7BC8007C97C7 /* ObjLongConsumer.swift */; };
+		CED7567B1F2E7BC8007C97C7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7554A1F2E7BC8007C97C7 /* Observable.swift */; };
+		CED7567C1F2E7BC8007C97C7 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7554B1F2E7BC8007C97C7 /* Observer.swift */; };
+		CED7567D1F2E7BC8007C97C7 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7554C1F2E7BC8007C97C7 /* Optional.swift */; };
+		CED7567E1F2E7BC8007C97C7 /* OptionalDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7554D1F2E7BC8007C97C7 /* OptionalDouble.swift */; };
+		CED7567F1F2E7BC8007C97C7 /* OptionalInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7554E1F2E7BC8007C97C7 /* OptionalInt.swift */; };
+		CED756801F2E7BC8007C97C7 /* OptionalLong.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7554F1F2E7BC8007C97C7 /* OptionalLong.swift */; };
+		CED756811F2E7BC8007C97C7 /* Pack200.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755501F2E7BC8007C97C7 /* Pack200.swift */; };
+		CED756821F2E7BC8007C97C7 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755511F2E7BC8007C97C7 /* Pattern.swift */; };
+		CED756831F2E7BC8007C97C7 /* PatternSyntaxException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755521F2E7BC8007C97C7 /* PatternSyntaxException.swift */; };
+		CED756841F2E7BC8007C97C7 /* Phaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755531F2E7BC8007C97C7 /* Phaser.swift */; };
+		CED756851F2E7BC8007C97C7 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755541F2E7BC8007C97C7 /* Predicate.swift */; };
+		CED756861F2E7BC8007C97C7 /* PreferenceChangeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755551F2E7BC8007C97C7 /* PreferenceChangeEvent.swift */; };
+		CED756871F2E7BC8007C97C7 /* PreferenceChangeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755561F2E7BC8007C97C7 /* PreferenceChangeListener.swift */; };
+		CED756881F2E7BC8007C97C7 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755571F2E7BC8007C97C7 /* Preferences.swift */; };
+		CED756891F2E7BC8007C97C7 /* PreferencesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755581F2E7BC8007C97C7 /* PreferencesFactory.swift */; };
+		CED7568A1F2E7BC8007C97C7 /* PrimitiveIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755591F2E7BC8007C97C7 /* PrimitiveIterator.swift */; };
+		CED7568B1F2E7BC8007C97C7 /* PriorityBlockingQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7555A1F2E7BC8007C97C7 /* PriorityBlockingQueue.swift */; };
+		CED7568C1F2E7BC8007C97C7 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7555B1F2E7BC8007C97C7 /* PriorityQueue.swift */; };
+		CED7568D1F2E7BC8007C97C7 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7555C1F2E7BC8007C97C7 /* Properties.swift */; };
+		CED7568E1F2E7BC8007C97C7 /* PropertyPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7555D1F2E7BC8007C97C7 /* PropertyPermission.swift */; };
+		CED7568F1F2E7BC8007C97C7 /* PropertyResourceBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7555E1F2E7BC8007C97C7 /* PropertyResourceBundle.swift */; };
+		CED756901F2E7BC8007C97C7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7555F1F2E7BC8007C97C7 /* Queue.swift */; };
+		CED756911F2E7BC8007C97C7 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755601F2E7BC8007C97C7 /* Random.swift */; };
+		CED756921F2E7BC8007C97C7 /* RandomAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755611F2E7BC8007C97C7 /* RandomAccess.swift */; };
+		CED756931F2E7BC8007C97C7 /* ReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755621F2E7BC8007C97C7 /* ReadWriteLock.swift */; };
+		CED756941F2E7BC8007C97C7 /* RecursiveAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755631F2E7BC8007C97C7 /* RecursiveAction.swift */; };
+		CED756951F2E7BC8007C97C7 /* RecursiveTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755641F2E7BC8007C97C7 /* RecursiveTask.swift */; };
+		CED756961F2E7BC8007C97C7 /* ReentrantLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755651F2E7BC8007C97C7 /* ReentrantLock.swift */; };
+		CED756971F2E7BC8007C97C7 /* ReentrantReadWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755661F2E7BC8007C97C7 /* ReentrantReadWriteLock.swift */; };
+		CED756981F2E7BC8007C97C7 /* RejectedExecutionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755671F2E7BC8007C97C7 /* RejectedExecutionException.swift */; };
+		CED756991F2E7BC8007C97C7 /* RejectedExecutionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755681F2E7BC8007C97C7 /* RejectedExecutionHandler.swift */; };
+		CED7569A1F2E7BC8007C97C7 /* ResourceBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755691F2E7BC8007C97C7 /* ResourceBundle.swift */; };
+		CED7569B1F2E7BC8007C97C7 /* ResourceBundleControlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7556A1F2E7BC8007C97C7 /* ResourceBundleControlProvider.swift */; };
+		CED7569C1F2E7BC8007C97C7 /* RunnableFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7556B1F2E7BC8007C97C7 /* RunnableFuture.swift */; };
+		CED7569D1F2E7BC8007C97C7 /* RunnableScheduledFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7556C1F2E7BC8007C97C7 /* RunnableScheduledFuture.swift */; };
+		CED7569E1F2E7BC8007C97C7 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7556D1F2E7BC8007C97C7 /* Scanner.swift */; };
+		CED7569F1F2E7BC8007C97C7 /* ScheduledExecutorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7556E1F2E7BC8007C97C7 /* ScheduledExecutorService.swift */; };
+		CED756A01F2E7BC8007C97C7 /* ScheduledFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7556F1F2E7BC8007C97C7 /* ScheduledFuture.swift */; };
+		CED756A11F2E7BC8007C97C7 /* ScheduledThreadPoolExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755701F2E7BC8007C97C7 /* ScheduledThreadPoolExecutor.swift */; };
+		CED756A21F2E7BC8007C97C7 /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755711F2E7BC8007C97C7 /* Semaphore.swift */; };
+		CED756A31F2E7BC8007C97C7 /* ServiceConfigurationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755721F2E7BC8007C97C7 /* ServiceConfigurationError.swift */; };
+		CED756A41F2E7BC8007C97C7 /* ServiceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755731F2E7BC8007C97C7 /* ServiceLoader.swift */; };
+		CED756A51F2E7BC8007C97C7 /* SimpleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755741F2E7BC8007C97C7 /* SimpleFormatter.swift */; };
+		CED756A61F2E7BC8007C97C7 /* SimpleTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755751F2E7BC8007C97C7 /* SimpleTimeZone.swift */; };
+		CED756A71F2E7BC8007C97C7 /* SocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755761F2E7BC8007C97C7 /* SocketHandler.swift */; };
+		CED756A81F2E7BC8007C97C7 /* SortedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755771F2E7BC8007C97C7 /* SortedMap.swift */; };
+		CED756A91F2E7BC8007C97C7 /* SortedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755781F2E7BC8007C97C7 /* SortedSet.swift */; };
+		CED756AA1F2E7BC8007C97C7 /* Spliterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755791F2E7BC8007C97C7 /* Spliterator.swift */; };
+		CED756AB1F2E7BC8007C97C7 /* Spliterators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7557A1F2E7BC8007C97C7 /* Spliterators.swift */; };
+		CED756AC1F2E7BC8007C97C7 /* SplittableRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7557B1F2E7BC8007C97C7 /* SplittableRandom.swift */; };
+		CED756AD1F2E7BC8007C97C7 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7557C1F2E7BC8007C97C7 /* Stack.swift */; };
+		CED756AE1F2E7BC8007C97C7 /* StampedLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7557D1F2E7BC8007C97C7 /* StampedLock.swift */; };
+		CED756AF1F2E7BC8007C97C7 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7557E1F2E7BC8007C97C7 /* Stream.swift */; };
+		CED756B01F2E7BC8007C97C7 /* StreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7557F1F2E7BC8007C97C7 /* StreamHandler.swift */; };
+		CED756B11F2E7BC8007C97C7 /* StreamSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755801F2E7BC8007C97C7 /* StreamSupport.swift */; };
+		CED756B21F2E7BC8007C97C7 /* StringJoiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755811F2E7BC8007C97C7 /* StringJoiner.swift */; };
+		CED756B31F2E7BC8007C97C7 /* StringTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755821F2E7BC8007C97C7 /* StringTokenizer.swift */; };
+		CED756B41F2E7BC8007C97C7 /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755831F2E7BC8007C97C7 /* Supplier.swift */; };
+		CED756B51F2E7BC8007C97C7 /* SynchronousQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755841F2E7BC8007C97C7 /* SynchronousQueue.swift */; };
+		CED756B61F2E7BC8007C97C7 /* ThreadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755851F2E7BC8007C97C7 /* ThreadFactory.swift */; };
+		CED756B71F2E7BC8007C97C7 /* ThreadLocalRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755861F2E7BC8007C97C7 /* ThreadLocalRandom.swift */; };
+		CED756B81F2E7BC8007C97C7 /* ThreadPoolExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755871F2E7BC8007C97C7 /* ThreadPoolExecutor.swift */; };
+		CED756B91F2E7BC8007C97C7 /* TimeoutException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755881F2E7BC8007C97C7 /* TimeoutException.swift */; };
+		CED756BA1F2E7BC8007C97C7 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755891F2E7BC8007C97C7 /* Timer.swift */; };
+		CED756BB1F2E7BC8007C97C7 /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7558A1F2E7BC8007C97C7 /* TimerTask.swift */; };
+		CED756BC1F2E7BC8007C97C7 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7558B1F2E7BC8007C97C7 /* TimeUnit.swift */; };
+		CED756BD1F2E7BC8007C97C7 /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7558C1F2E7BC8007C97C7 /* TimeZone.swift */; };
+		CED756BE1F2E7BC8007C97C7 /* TimeZoneNameProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7558D1F2E7BC8007C97C7 /* TimeZoneNameProvider.swift */; };
+		CED756BF1F2E7BC8007C97C7 /* ToDoubleBiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7558E1F2E7BC8007C97C7 /* ToDoubleBiFunction.swift */; };
+		CED756C01F2E7BC8007C97C7 /* ToDoubleFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7558F1F2E7BC8007C97C7 /* ToDoubleFunction.swift */; };
+		CED756C11F2E7BC8007C97C7 /* ToIntBiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755901F2E7BC8007C97C7 /* ToIntBiFunction.swift */; };
+		CED756C21F2E7BC8007C97C7 /* ToIntFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755911F2E7BC8007C97C7 /* ToIntFunction.swift */; };
+		CED756C31F2E7BC8007C97C7 /* ToLongBiFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755921F2E7BC8007C97C7 /* ToLongBiFunction.swift */; };
+		CED756C41F2E7BC8007C97C7 /* ToLongFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755931F2E7BC8007C97C7 /* ToLongFunction.swift */; };
+		CED756C51F2E7BC8007C97C7 /* TooManyListenersException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755941F2E7BC8007C97C7 /* TooManyListenersException.swift */; };
+		CED756C61F2E7BC8007C97C7 /* TransferQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755951F2E7BC8007C97C7 /* TransferQueue.swift */; };
+		CED756C71F2E7BC8007C97C7 /* TreeMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755961F2E7BC8007C97C7 /* TreeMap.swift */; };
+		CED756C81F2E7BC8007C97C7 /* TreeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755971F2E7BC8007C97C7 /* TreeSet.swift */; };
+		CED756C91F2E7BC8007C97C7 /* UnaryOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755981F2E7BC8007C97C7 /* UnaryOperator.swift */; };
+		CED756CA1F2E7BC8007C97C7 /* UnknownFormatConversionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755991F2E7BC8007C97C7 /* UnknownFormatConversionException.swift */; };
+		CED756CB1F2E7BC8007C97C7 /* UnknownFormatFlagsException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7559A1F2E7BC8007C97C7 /* UnknownFormatFlagsException.swift */; };
+		CED756CC1F2E7BC8007C97C7 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7559B1F2E7BC8007C97C7 /* UUID.swift */; };
+		CED756CD1F2E7BC8007C97C7 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7559C1F2E7BC8007C97C7 /* Vector.swift */; };
+		CED756CE1F2E7BC8007C97C7 /* WeakHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7559D1F2E7BC8007C97C7 /* WeakHashMap.swift */; };
+		CED756CF1F2E7BC8007C97C7 /* XMLFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7559E1F2E7BC8007C97C7 /* XMLFormatter.swift */; };
+		CED756D01F2E7BC8007C97C7 /* ZipEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7559F1F2E7BC8007C97C7 /* ZipEntry.swift */; };
+		CED756D11F2E7BC8007C97C7 /* ZipError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755A01F2E7BC8007C97C7 /* ZipError.swift */; };
+		CED756D21F2E7BC8007C97C7 /* ZipException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755A11F2E7BC8007C97C7 /* ZipException.swift */; };
+		CED756D31F2E7BC8007C97C7 /* ZipFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755A21F2E7BC8007C97C7 /* ZipFile.swift */; };
+		CED756D41F2E7BC8007C97C7 /* ZipInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755A31F2E7BC8007C97C7 /* ZipInputStream.swift */; };
+		CED756D51F2E7BC8007C97C7 /* ZipOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED755A41F2E7BC8007C97C7 /* ZipOutputStream.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB19B4331D6633B4002F5586 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BBBF2E461D499E42004142AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBBF2E471D499E42004142AE /* java_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util.h; sourceTree = "<group>"; };
+		BBC140541D49992D0035A039 /* java_util.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = java_util.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC1406C1D4999860035A039 /* build.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build.log; sourceTree = "<group>"; };
+		BBC1406D1D4999860035A039 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		BBC140711D4999C30035A039 /* java_lang.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = java_lang.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftJava-bhwyspxgviouaubrunixdmmpgggl/Build/Products/Debug/java_lang.framework"; sourceTree = "<group>"; };
+		CED754741F2E7BC8007C97C7 /* AbstractCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractCollection.swift; path = Sources/AbstractCollection.swift; sourceTree = "<group>"; };
+		CED754751F2E7BC8007C97C7 /* AbstractExecutorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractExecutorService.swift; path = Sources/AbstractExecutorService.swift; sourceTree = "<group>"; };
+		CED754761F2E7BC8007C97C7 /* AbstractList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractList.swift; path = Sources/AbstractList.swift; sourceTree = "<group>"; };
+		CED754771F2E7BC8007C97C7 /* AbstractMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractMap.swift; path = Sources/AbstractMap.swift; sourceTree = "<group>"; };
+		CED754781F2E7BC8007C97C7 /* AbstractOwnableSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractOwnableSynchronizer.swift; path = Sources/AbstractOwnableSynchronizer.swift; sourceTree = "<group>"; };
+		CED754791F2E7BC8007C97C7 /* AbstractPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractPreferences.swift; path = Sources/AbstractPreferences.swift; sourceTree = "<group>"; };
+		CED7547A1F2E7BC8007C97C7 /* AbstractQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractQueue.swift; path = Sources/AbstractQueue.swift; sourceTree = "<group>"; };
+		CED7547B1F2E7BC8007C97C7 /* AbstractQueuedLongSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractQueuedLongSynchronizer.swift; path = Sources/AbstractQueuedLongSynchronizer.swift; sourceTree = "<group>"; };
+		CED7547C1F2E7BC8007C97C7 /* AbstractQueuedSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractQueuedSynchronizer.swift; path = Sources/AbstractQueuedSynchronizer.swift; sourceTree = "<group>"; };
+		CED7547D1F2E7BC8007C97C7 /* AbstractSequentialList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractSequentialList.swift; path = Sources/AbstractSequentialList.swift; sourceTree = "<group>"; };
+		CED7547E1F2E7BC8007C97C7 /* AbstractSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbstractSet.swift; path = Sources/AbstractSet.swift; sourceTree = "<group>"; };
+		CED7547F1F2E7BC8007C97C7 /* Adler32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Adler32.swift; path = Sources/Adler32.swift; sourceTree = "<group>"; };
+		CED754801F2E7BC8007C97C7 /* ArrayBlockingQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayBlockingQueue.swift; path = Sources/ArrayBlockingQueue.swift; sourceTree = "<group>"; };
+		CED754811F2E7BC8007C97C7 /* ArrayDeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayDeque.swift; path = Sources/ArrayDeque.swift; sourceTree = "<group>"; };
+		CED754821F2E7BC8007C97C7 /* ArrayList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayList.swift; path = Sources/ArrayList.swift; sourceTree = "<group>"; };
+		CED754831F2E7BC8007C97C7 /* Arrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Arrays.swift; path = Sources/Arrays.swift; sourceTree = "<group>"; };
+		CED754841F2E7BC8007C97C7 /* AtomicBoolean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicBoolean.swift; path = Sources/AtomicBoolean.swift; sourceTree = "<group>"; };
+		CED754851F2E7BC8007C97C7 /* AtomicInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicInteger.swift; path = Sources/AtomicInteger.swift; sourceTree = "<group>"; };
+		CED754861F2E7BC8007C97C7 /* AtomicIntegerArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicIntegerArray.swift; path = Sources/AtomicIntegerArray.swift; sourceTree = "<group>"; };
+		CED754871F2E7BC8007C97C7 /* AtomicIntegerFieldUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicIntegerFieldUpdater.swift; path = Sources/AtomicIntegerFieldUpdater.swift; sourceTree = "<group>"; };
+		CED754881F2E7BC8007C97C7 /* AtomicLong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicLong.swift; path = Sources/AtomicLong.swift; sourceTree = "<group>"; };
+		CED754891F2E7BC8007C97C7 /* AtomicLongArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicLongArray.swift; path = Sources/AtomicLongArray.swift; sourceTree = "<group>"; };
+		CED7548A1F2E7BC8007C97C7 /* AtomicLongFieldUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicLongFieldUpdater.swift; path = Sources/AtomicLongFieldUpdater.swift; sourceTree = "<group>"; };
+		CED7548B1F2E7BC8007C97C7 /* AtomicMarkableReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicMarkableReference.swift; path = Sources/AtomicMarkableReference.swift; sourceTree = "<group>"; };
+		CED7548C1F2E7BC8007C97C7 /* AtomicReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicReference.swift; path = Sources/AtomicReference.swift; sourceTree = "<group>"; };
+		CED7548D1F2E7BC8007C97C7 /* AtomicReferenceArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicReferenceArray.swift; path = Sources/AtomicReferenceArray.swift; sourceTree = "<group>"; };
+		CED7548E1F2E7BC8007C97C7 /* AtomicReferenceFieldUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicReferenceFieldUpdater.swift; path = Sources/AtomicReferenceFieldUpdater.swift; sourceTree = "<group>"; };
+		CED7548F1F2E7BC8007C97C7 /* AtomicStampedReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtomicStampedReference.swift; path = Sources/AtomicStampedReference.swift; sourceTree = "<group>"; };
+		CED754901F2E7BC8007C97C7 /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = Sources/Attributes.swift; sourceTree = "<group>"; };
+		CED754911F2E7BC8007C97C7 /* BackingStoreException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackingStoreException.swift; path = Sources/BackingStoreException.swift; sourceTree = "<group>"; };
+		CED754921F2E7BC8007C97C7 /* Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = Sources/Base64.swift; sourceTree = "<group>"; };
+		CED754931F2E7BC8007C97C7 /* BaseStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseStream.swift; path = Sources/BaseStream.swift; sourceTree = "<group>"; };
+		CED754941F2E7BC8007C97C7 /* BiConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiConsumer.swift; path = Sources/BiConsumer.swift; sourceTree = "<group>"; };
+		CED754951F2E7BC8007C97C7 /* BiFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiFunction.swift; path = Sources/BiFunction.swift; sourceTree = "<group>"; };
+		CED754961F2E7BC8007C97C7 /* BinaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinaryOperator.swift; path = Sources/BinaryOperator.swift; sourceTree = "<group>"; };
+		CED754971F2E7BC8007C97C7 /* BiPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiPredicate.swift; path = Sources/BiPredicate.swift; sourceTree = "<group>"; };
+		CED754981F2E7BC8007C97C7 /* BitSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BitSet.swift; path = Sources/BitSet.swift; sourceTree = "<group>"; };
+		CED754991F2E7BC8007C97C7 /* BlockingDeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlockingDeque.swift; path = Sources/BlockingDeque.swift; sourceTree = "<group>"; };
+		CED7549A1F2E7BC8007C97C7 /* BlockingQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlockingQueue.swift; path = Sources/BlockingQueue.swift; sourceTree = "<group>"; };
+		CED7549B1F2E7BC8007C97C7 /* BooleanSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BooleanSupplier.swift; path = Sources/BooleanSupplier.swift; sourceTree = "<group>"; };
+		CED7549C1F2E7BC8007C97C7 /* BrokenBarrierException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrokenBarrierException.swift; path = Sources/BrokenBarrierException.swift; sourceTree = "<group>"; };
+		CED7549D1F2E7BC8007C97C7 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Calendar.swift; path = Sources/Calendar.swift; sourceTree = "<group>"; };
+		CED7549E1F2E7BC8007C97C7 /* CalendarDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarDataProvider.swift; path = Sources/CalendarDataProvider.swift; sourceTree = "<group>"; };
+		CED7549F1F2E7BC8007C97C7 /* CalendarNameProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarNameProvider.swift; path = Sources/CalendarNameProvider.swift; sourceTree = "<group>"; };
+		CED754A01F2E7BC8007C97C7 /* Callable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Callable.swift; path = Sources/Callable.swift; sourceTree = "<group>"; };
+		CED754A11F2E7BC8007C97C7 /* CancellationException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CancellationException.swift; path = Sources/CancellationException.swift; sourceTree = "<group>"; };
+		CED754A21F2E7BC8007C97C7 /* CheckedInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckedInputStream.swift; path = Sources/CheckedInputStream.swift; sourceTree = "<group>"; };
+		CED754A31F2E7BC8007C97C7 /* CheckedOutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckedOutputStream.swift; path = Sources/CheckedOutputStream.swift; sourceTree = "<group>"; };
+		CED754A41F2E7BC8007C97C7 /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/Checksum.swift; sourceTree = "<group>"; };
+		CED754A51F2E7BC8007C97C7 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = Sources/Collection.swift; sourceTree = "<group>"; };
+		CED754A61F2E7BC8007C97C7 /* Collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = Sources/Collections.swift; sourceTree = "<group>"; };
+		CED754A71F2E7BC8007C97C7 /* Collector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collector.swift; path = Sources/Collector.swift; sourceTree = "<group>"; };
+		CED754A81F2E7BC8007C97C7 /* Collectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Collectors.swift; path = Sources/Collectors.swift; sourceTree = "<group>"; };
+		CED754AA1F2E7BC8007C97C7 /* CompletionException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompletionException.swift; path = Sources/CompletionException.swift; sourceTree = "<group>"; };
+		CED754AB1F2E7BC8007C97C7 /* CompletionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompletionService.swift; path = Sources/CompletionService.swift; sourceTree = "<group>"; };
+		CED754AC1F2E7BC8007C97C7 /* CompletionStage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompletionStage.swift; path = Sources/CompletionStage.swift; sourceTree = "<group>"; };
+		CED754AD1F2E7BC8007C97C7 /* ConcurrentHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentHashMap.swift; path = Sources/ConcurrentHashMap.swift; sourceTree = "<group>"; };
+		CED754AE1F2E7BC8007C97C7 /* ConcurrentLinkedDeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentLinkedDeque.swift; path = Sources/ConcurrentLinkedDeque.swift; sourceTree = "<group>"; };
+		CED754AF1F2E7BC8007C97C7 /* ConcurrentLinkedQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentLinkedQueue.swift; path = Sources/ConcurrentLinkedQueue.swift; sourceTree = "<group>"; };
+		CED754B01F2E7BC8007C97C7 /* ConcurrentMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentMap.swift; path = Sources/ConcurrentMap.swift; sourceTree = "<group>"; };
+		CED754B11F2E7BC8007C97C7 /* ConcurrentModificationException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentModificationException.swift; path = Sources/ConcurrentModificationException.swift; sourceTree = "<group>"; };
+		CED754B21F2E7BC8007C97C7 /* ConcurrentNavigableMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentNavigableMap.swift; path = Sources/ConcurrentNavigableMap.swift; sourceTree = "<group>"; };
+		CED754B31F2E7BC8007C97C7 /* ConcurrentSkipListMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentSkipListMap.swift; path = Sources/ConcurrentSkipListMap.swift; sourceTree = "<group>"; };
+		CED754B41F2E7BC8007C97C7 /* ConcurrentSkipListSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentSkipListSet.swift; path = Sources/ConcurrentSkipListSet.swift; sourceTree = "<group>"; };
+		CED754B51F2E7BC8007C97C7 /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Sources/Condition.swift; sourceTree = "<group>"; };
+		CED754B61F2E7BC8007C97C7 /* ConsoleHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsoleHandler.swift; path = Sources/ConsoleHandler.swift; sourceTree = "<group>"; };
+		CED754B71F2E7BC8007C97C7 /* Consumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Consumer.swift; path = Sources/Consumer.swift; sourceTree = "<group>"; };
+		CED754B81F2E7BC8007C97C7 /* CopyOnWriteArrayList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CopyOnWriteArrayList.swift; path = Sources/CopyOnWriteArrayList.swift; sourceTree = "<group>"; };
+		CED754B91F2E7BC8007C97C7 /* CopyOnWriteArraySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CopyOnWriteArraySet.swift; path = Sources/CopyOnWriteArraySet.swift; sourceTree = "<group>"; };
+		CED754BA1F2E7BC8007C97C7 /* CountDownLatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountDownLatch.swift; path = Sources/CountDownLatch.swift; sourceTree = "<group>"; };
+		CED754BB1F2E7BC8007C97C7 /* CountedCompleter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountedCompleter.swift; path = Sources/CountedCompleter.swift; sourceTree = "<group>"; };
+		CED754BC1F2E7BC8007C97C7 /* CRC32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRC32.swift; path = Sources/CRC32.swift; sourceTree = "<group>"; };
+		CED754BD1F2E7BC8007C97C7 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Currency.swift; path = Sources/Currency.swift; sourceTree = "<group>"; };
+		CED754BE1F2E7BC8007C97C7 /* CurrencyNameProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyNameProvider.swift; path = Sources/CurrencyNameProvider.swift; sourceTree = "<group>"; };
+		CED754BF1F2E7BC8007C97C7 /* CyclicBarrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CyclicBarrier.swift; path = Sources/CyclicBarrier.swift; sourceTree = "<group>"; };
+		CED754C01F2E7BC8007C97C7 /* DataFormatException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataFormatException.swift; path = Sources/DataFormatException.swift; sourceTree = "<group>"; };
+		CED754C11F2E7BC8007C97C7 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Date.swift; sourceTree = "<group>"; };
+		CED754C21F2E7BC8007C97C7 /* Deflater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deflater.swift; path = Sources/Deflater.swift; sourceTree = "<group>"; };
+		CED754C31F2E7BC8007C97C7 /* DeflaterInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeflaterInputStream.swift; path = Sources/DeflaterInputStream.swift; sourceTree = "<group>"; };
+		CED754C41F2E7BC8007C97C7 /* DeflaterOutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeflaterOutputStream.swift; path = Sources/DeflaterOutputStream.swift; sourceTree = "<group>"; };
+		CED754C51F2E7BC8007C97C7 /* Delayed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Delayed.swift; path = Sources/Delayed.swift; sourceTree = "<group>"; };
+		CED754C61F2E7BC8007C97C7 /* DelayQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelayQueue.swift; path = Sources/DelayQueue.swift; sourceTree = "<group>"; };
+		CED754C71F2E7BC8007C97C7 /* Deque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deque.swift; path = Sources/Deque.swift; sourceTree = "<group>"; };
+		CED754C81F2E7BC8007C97C7 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/Dictionary.swift; sourceTree = "<group>"; };
+		CED754C91F2E7BC8007C97C7 /* DoubleAccumulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleAccumulator.swift; path = Sources/DoubleAccumulator.swift; sourceTree = "<group>"; };
+		CED754CA1F2E7BC8007C97C7 /* DoubleAdder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleAdder.swift; path = Sources/DoubleAdder.swift; sourceTree = "<group>"; };
+		CED754CB1F2E7BC8007C97C7 /* DoubleBinaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleBinaryOperator.swift; path = Sources/DoubleBinaryOperator.swift; sourceTree = "<group>"; };
+		CED754CC1F2E7BC8007C97C7 /* DoubleConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleConsumer.swift; path = Sources/DoubleConsumer.swift; sourceTree = "<group>"; };
+		CED754CD1F2E7BC8007C97C7 /* DoubleFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleFunction.swift; path = Sources/DoubleFunction.swift; sourceTree = "<group>"; };
+		CED754CE1F2E7BC8007C97C7 /* DoublePredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoublePredicate.swift; path = Sources/DoublePredicate.swift; sourceTree = "<group>"; };
+		CED754CF1F2E7BC8007C97C7 /* DoubleStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleStream.swift; path = Sources/DoubleStream.swift; sourceTree = "<group>"; };
+		CED754D01F2E7BC8007C97C7 /* DoubleSummaryStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleSummaryStatistics.swift; path = Sources/DoubleSummaryStatistics.swift; sourceTree = "<group>"; };
+		CED754D11F2E7BC8007C97C7 /* DoubleSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleSupplier.swift; path = Sources/DoubleSupplier.swift; sourceTree = "<group>"; };
+		CED754D21F2E7BC8007C97C7 /* DoubleToIntFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleToIntFunction.swift; path = Sources/DoubleToIntFunction.swift; sourceTree = "<group>"; };
+		CED754D31F2E7BC8007C97C7 /* DoubleToLongFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleToLongFunction.swift; path = Sources/DoubleToLongFunction.swift; sourceTree = "<group>"; };
+		CED754D41F2E7BC8007C97C7 /* DoubleUnaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleUnaryOperator.swift; path = Sources/DoubleUnaryOperator.swift; sourceTree = "<group>"; };
+		CED754D51F2E7BC8007C97C7 /* DuplicateFormatFlagsException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuplicateFormatFlagsException.swift; path = Sources/DuplicateFormatFlagsException.swift; sourceTree = "<group>"; };
+		CED754D61F2E7BC8007C97C7 /* EmptyStackException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyStackException.swift; path = Sources/EmptyStackException.swift; sourceTree = "<group>"; };
+		CED754D71F2E7BC8007C97C7 /* Enumeration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Enumeration.swift; path = Sources/Enumeration.swift; sourceTree = "<group>"; };
+		CED754D81F2E7BC8007C97C7 /* EnumMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnumMap.swift; path = Sources/EnumMap.swift; sourceTree = "<group>"; };
+		CED754D91F2E7BC8007C97C7 /* EnumSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnumSet.swift; path = Sources/EnumSet.swift; sourceTree = "<group>"; };
+		CED754DA1F2E7BC8007C97C7 /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorManager.swift; path = Sources/ErrorManager.swift; sourceTree = "<group>"; };
+		CED754DB1F2E7BC8007C97C7 /* EventListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventListener.swift; path = Sources/EventListener.swift; sourceTree = "<group>"; };
+		CED754DC1F2E7BC8007C97C7 /* EventListenerProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventListenerProxy.swift; path = Sources/EventListenerProxy.swift; sourceTree = "<group>"; };
+		CED754DD1F2E7BC8007C97C7 /* EventObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventObject.swift; path = Sources/EventObject.swift; sourceTree = "<group>"; };
+		CED754DE1F2E7BC8007C97C7 /* Exchanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exchanger.swift; path = Sources/Exchanger.swift; sourceTree = "<group>"; };
+		CED754DF1F2E7BC8007C97C7 /* ExecutionException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExecutionException.swift; path = Sources/ExecutionException.swift; sourceTree = "<group>"; };
+		CED754E01F2E7BC8007C97C7 /* Executor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Executor.swift; path = Sources/Executor.swift; sourceTree = "<group>"; };
+		CED754E11F2E7BC8007C97C7 /* ExecutorCompletionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExecutorCompletionService.swift; path = Sources/ExecutorCompletionService.swift; sourceTree = "<group>"; };
+		CED754E21F2E7BC8007C97C7 /* Executors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Executors.swift; path = Sources/Executors.swift; sourceTree = "<group>"; };
+		CED754E31F2E7BC8007C97C7 /* ExecutorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExecutorService.swift; path = Sources/ExecutorService.swift; sourceTree = "<group>"; };
+		CED754E41F2E7BC8007C97C7 /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileHandler.swift; path = Sources/FileHandler.swift; sourceTree = "<group>"; };
+		CED754E51F2E7BC8007C97C7 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		CED754E61F2E7BC8007C97C7 /* ForkJoinPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForkJoinPool.swift; path = Sources/ForkJoinPool.swift; sourceTree = "<group>"; };
+		CED754E71F2E7BC8007C97C7 /* ForkJoinTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForkJoinTask.swift; path = Sources/ForkJoinTask.swift; sourceTree = "<group>"; };
+		CED754E81F2E7BC8007C97C7 /* ForkJoinWorkerThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForkJoinWorkerThread.swift; path = Sources/ForkJoinWorkerThread.swift; sourceTree = "<group>"; };
+		CED754E91F2E7BC8007C97C7 /* FormatFlagsConversionMismatchException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatFlagsConversionMismatchException.swift; path = Sources/FormatFlagsConversionMismatchException.swift; sourceTree = "<group>"; };
+		CED754EA1F2E7BC8007C97C7 /* Formattable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Formattable.swift; path = Sources/Formattable.swift; sourceTree = "<group>"; };
+		CED754EB1F2E7BC8007C97C7 /* FormattableFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormattableFlags.swift; path = Sources/FormattableFlags.swift; sourceTree = "<group>"; };
+		CED754EC1F2E7BC8007C97C7 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = Sources/Formatter.swift; sourceTree = "<group>"; };
+		CED754ED1F2E7BC8007C97C7 /* FormatterClosedException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatterClosedException.swift; path = Sources/FormatterClosedException.swift; sourceTree = "<group>"; };
+		CED754EE1F2E7BC8007C97C7 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Function.swift; path = Sources/Function.swift; sourceTree = "<group>"; };
+		CED754EF1F2E7BC8007C97C7 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Future.swift; path = Sources/Future.swift; sourceTree = "<group>"; };
+		CED754F01F2E7BC8007C97C7 /* FutureTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FutureTask.swift; path = Sources/FutureTask.swift; sourceTree = "<group>"; };
+		CED754F11F2E7BC8007C97C7 /* GregorianCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GregorianCalendar.swift; path = Sources/GregorianCalendar.swift; sourceTree = "<group>"; };
+		CED754F21F2E7BC8007C97C7 /* GZIPInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GZIPInputStream.swift; path = Sources/GZIPInputStream.swift; sourceTree = "<group>"; };
+		CED754F31F2E7BC8007C97C7 /* GZIPOutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GZIPOutputStream.swift; path = Sources/GZIPOutputStream.swift; sourceTree = "<group>"; };
+		CED754F41F2E7BC8007C97C7 /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Handler.swift; path = Sources/Handler.swift; sourceTree = "<group>"; };
+		CED754F61F2E7BC8007C97C7 /* HashSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HashSet.swift; path = Sources/HashSet.swift; sourceTree = "<group>"; };
+		CED754F71F2E7BC8007C97C7 /* Hashtable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hashtable.swift; path = Sources/Hashtable.swift; sourceTree = "<group>"; };
+		CED754F81F2E7BC8007C97C7 /* IdentityHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentityHashMap.swift; path = Sources/IdentityHashMap.swift; sourceTree = "<group>"; };
+		CED754F91F2E7BC8007C97C7 /* IllegalFormatCodePointException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IllegalFormatCodePointException.swift; path = Sources/IllegalFormatCodePointException.swift; sourceTree = "<group>"; };
+		CED754FA1F2E7BC8007C97C7 /* IllegalFormatConversionException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IllegalFormatConversionException.swift; path = Sources/IllegalFormatConversionException.swift; sourceTree = "<group>"; };
+		CED754FB1F2E7BC8007C97C7 /* IllegalFormatException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IllegalFormatException.swift; path = Sources/IllegalFormatException.swift; sourceTree = "<group>"; };
+		CED754FC1F2E7BC8007C97C7 /* IllegalFormatFlagsException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IllegalFormatFlagsException.swift; path = Sources/IllegalFormatFlagsException.swift; sourceTree = "<group>"; };
+		CED754FD1F2E7BC8007C97C7 /* IllegalFormatPrecisionException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IllegalFormatPrecisionException.swift; path = Sources/IllegalFormatPrecisionException.swift; sourceTree = "<group>"; };
+		CED754FE1F2E7BC8007C97C7 /* IllegalFormatWidthException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IllegalFormatWidthException.swift; path = Sources/IllegalFormatWidthException.swift; sourceTree = "<group>"; };
+		CED754FF1F2E7BC8007C97C7 /* IllformedLocaleException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IllformedLocaleException.swift; path = Sources/IllformedLocaleException.swift; sourceTree = "<group>"; };
+		CED755001F2E7BC8007C97C7 /* Inflater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Inflater.swift; path = Sources/Inflater.swift; sourceTree = "<group>"; };
+		CED755011F2E7BC8007C97C7 /* InflaterInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InflaterInputStream.swift; path = Sources/InflaterInputStream.swift; sourceTree = "<group>"; };
+		CED755021F2E7BC8007C97C7 /* InflaterOutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InflaterOutputStream.swift; path = Sources/InflaterOutputStream.swift; sourceTree = "<group>"; };
+		CED755031F2E7BC8007C97C7 /* InputMismatchException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputMismatchException.swift; path = Sources/InputMismatchException.swift; sourceTree = "<group>"; };
+		CED755041F2E7BC8007C97C7 /* IntBinaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntBinaryOperator.swift; path = Sources/IntBinaryOperator.swift; sourceTree = "<group>"; };
+		CED755051F2E7BC8007C97C7 /* IntConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntConsumer.swift; path = Sources/IntConsumer.swift; sourceTree = "<group>"; };
+		CED755061F2E7BC8007C97C7 /* IntFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntFunction.swift; path = Sources/IntFunction.swift; sourceTree = "<group>"; };
+		CED755071F2E7BC8007C97C7 /* IntPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntPredicate.swift; path = Sources/IntPredicate.swift; sourceTree = "<group>"; };
+		CED755081F2E7BC8007C97C7 /* IntStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntStream.swift; path = Sources/IntStream.swift; sourceTree = "<group>"; };
+		CED755091F2E7BC8007C97C7 /* IntSummaryStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntSummaryStatistics.swift; path = Sources/IntSummaryStatistics.swift; sourceTree = "<group>"; };
+		CED7550A1F2E7BC8007C97C7 /* IntSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntSupplier.swift; path = Sources/IntSupplier.swift; sourceTree = "<group>"; };
+		CED7550B1F2E7BC8007C97C7 /* IntToDoubleFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntToDoubleFunction.swift; path = Sources/IntToDoubleFunction.swift; sourceTree = "<group>"; };
+		CED7550C1F2E7BC8007C97C7 /* IntToLongFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntToLongFunction.swift; path = Sources/IntToLongFunction.swift; sourceTree = "<group>"; };
+		CED7550D1F2E7BC8007C97C7 /* IntUnaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntUnaryOperator.swift; path = Sources/IntUnaryOperator.swift; sourceTree = "<group>"; };
+		CED7550E1F2E7BC8007C97C7 /* InvalidPreferencesFormatException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvalidPreferencesFormatException.swift; path = Sources/InvalidPreferencesFormatException.swift; sourceTree = "<group>"; };
+		CED7550F1F2E7BC8007C97C7 /* InvalidPropertiesFormatException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvalidPropertiesFormatException.swift; path = Sources/InvalidPropertiesFormatException.swift; sourceTree = "<group>"; };
+		CED755101F2E7BC8007C97C7 /* Iterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Iterator.swift; path = Sources/Iterator.swift; sourceTree = "<group>"; };
+		CED755111F2E7BC8007C97C7 /* JarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JarEntry.swift; path = Sources/JarEntry.swift; sourceTree = "<group>"; };
+		CED755121F2E7BC8007C97C7 /* JarException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JarException.swift; path = Sources/JarException.swift; sourceTree = "<group>"; };
+		CED755131F2E7BC8007C97C7 /* JarFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JarFile.swift; path = Sources/JarFile.swift; sourceTree = "<group>"; };
+		CED755141F2E7BC8007C97C7 /* JarInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JarInputStream.swift; path = Sources/JarInputStream.swift; sourceTree = "<group>"; };
+		CED755151F2E7BC8007C97C7 /* JarOutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JarOutputStream.swift; path = Sources/JarOutputStream.swift; sourceTree = "<group>"; };
+		CED755161F2E7BC8007C97C7 /* JavaComparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JavaComparator.swift; path = Sources/JavaComparator.swift; sourceTree = "<group>"; };
+		CED755171F2E7BC8007C97C7 /* JavaLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JavaLocale.swift; path = Sources/JavaLocale.swift; sourceTree = "<group>"; };
+		CED755191F2E7BC8007C97C7 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Level.swift; path = Sources/Level.swift; sourceTree = "<group>"; };
+		CED7551A1F2E7BC8007C97C7 /* LinkedBlockingDeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedBlockingDeque.swift; path = Sources/LinkedBlockingDeque.swift; sourceTree = "<group>"; };
+		CED7551B1F2E7BC8007C97C7 /* LinkedBlockingQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedBlockingQueue.swift; path = Sources/LinkedBlockingQueue.swift; sourceTree = "<group>"; };
+		CED7551C1F2E7BC8007C97C7 /* LinkedHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedHashMap.swift; path = Sources/LinkedHashMap.swift; sourceTree = "<group>"; };
+		CED7551D1F2E7BC8007C97C7 /* LinkedHashSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedHashSet.swift; path = Sources/LinkedHashSet.swift; sourceTree = "<group>"; };
+		CED7551E1F2E7BC8007C97C7 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedList.swift; path = Sources/LinkedList.swift; sourceTree = "<group>"; };
+		CED7551F1F2E7BC8007C97C7 /* LinkedTransferQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedTransferQueue.swift; path = Sources/LinkedTransferQueue.swift; sourceTree = "<group>"; };
+		CED755201F2E7BC8007C97C7 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = List.swift; path = Sources/List.swift; sourceTree = "<group>"; };
+		CED755211F2E7BC8007C97C7 /* ListIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListIterator.swift; path = Sources/ListIterator.swift; sourceTree = "<group>"; };
+		CED755221F2E7BC8007C97C7 /* ListResourceBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListResourceBundle.swift; path = Sources/ListResourceBundle.swift; sourceTree = "<group>"; };
+		CED755231F2E7BC8007C97C7 /* LocaleNameProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocaleNameProvider.swift; path = Sources/LocaleNameProvider.swift; sourceTree = "<group>"; };
+		CED755241F2E7BC8007C97C7 /* LocaleServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocaleServiceProvider.swift; path = Sources/LocaleServiceProvider.swift; sourceTree = "<group>"; };
+		CED755251F2E7BC8007C97C7 /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lock.swift; path = Sources/Lock.swift; sourceTree = "<group>"; };
+		CED755261F2E7BC8007C97C7 /* LockSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LockSupport.swift; path = Sources/LockSupport.swift; sourceTree = "<group>"; };
+		CED755271F2E7BC8007C97C7 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Sources/Logger.swift; sourceTree = "<group>"; };
+		CED755281F2E7BC8007C97C7 /* logging_Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = logging_Formatter.swift; path = Sources/logging_Formatter.swift; sourceTree = "<group>"; };
+		CED755291F2E7BC8007C97C7 /* LoggingMXBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggingMXBean.swift; path = Sources/LoggingMXBean.swift; sourceTree = "<group>"; };
+		CED7552A1F2E7BC8007C97C7 /* LoggingPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggingPermission.swift; path = Sources/LoggingPermission.swift; sourceTree = "<group>"; };
+		CED7552B1F2E7BC8007C97C7 /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogManager.swift; path = Sources/LogManager.swift; sourceTree = "<group>"; };
+		CED7552C1F2E7BC8007C97C7 /* LogRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogRecord.swift; path = Sources/LogRecord.swift; sourceTree = "<group>"; };
+		CED7552D1F2E7BC8007C97C7 /* LongAccumulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongAccumulator.swift; path = Sources/LongAccumulator.swift; sourceTree = "<group>"; };
+		CED7552E1F2E7BC8007C97C7 /* LongAdder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongAdder.swift; path = Sources/LongAdder.swift; sourceTree = "<group>"; };
+		CED7552F1F2E7BC8007C97C7 /* LongBinaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongBinaryOperator.swift; path = Sources/LongBinaryOperator.swift; sourceTree = "<group>"; };
+		CED755301F2E7BC8007C97C7 /* LongConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongConsumer.swift; path = Sources/LongConsumer.swift; sourceTree = "<group>"; };
+		CED755311F2E7BC8007C97C7 /* LongFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongFunction.swift; path = Sources/LongFunction.swift; sourceTree = "<group>"; };
+		CED755321F2E7BC8007C97C7 /* LongPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongPredicate.swift; path = Sources/LongPredicate.swift; sourceTree = "<group>"; };
+		CED755331F2E7BC8007C97C7 /* LongStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongStream.swift; path = Sources/LongStream.swift; sourceTree = "<group>"; };
+		CED755341F2E7BC8007C97C7 /* LongSummaryStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongSummaryStatistics.swift; path = Sources/LongSummaryStatistics.swift; sourceTree = "<group>"; };
+		CED755351F2E7BC8007C97C7 /* LongSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongSupplier.swift; path = Sources/LongSupplier.swift; sourceTree = "<group>"; };
+		CED755361F2E7BC8007C97C7 /* LongToDoubleFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongToDoubleFunction.swift; path = Sources/LongToDoubleFunction.swift; sourceTree = "<group>"; };
+		CED755371F2E7BC8007C97C7 /* LongToIntFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongToIntFunction.swift; path = Sources/LongToIntFunction.swift; sourceTree = "<group>"; };
+		CED755381F2E7BC8007C97C7 /* LongUnaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongUnaryOperator.swift; path = Sources/LongUnaryOperator.swift; sourceTree = "<group>"; };
+		CED755391F2E7BC8007C97C7 /* Manifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Manifest.swift; path = Sources/Manifest.swift; sourceTree = "<group>"; };
+		CED7553B1F2E7BC8007C97C7 /* Matcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matcher.swift; path = Sources/Matcher.swift; sourceTree = "<group>"; };
+		CED7553C1F2E7BC8007C97C7 /* MatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchResult.swift; path = Sources/MatchResult.swift; sourceTree = "<group>"; };
+		CED7553D1F2E7BC8007C97C7 /* MemoryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryHandler.swift; path = Sources/MemoryHandler.swift; sourceTree = "<group>"; };
+		CED7553E1F2E7BC8007C97C7 /* MissingFormatArgumentException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissingFormatArgumentException.swift; path = Sources/MissingFormatArgumentException.swift; sourceTree = "<group>"; };
+		CED7553F1F2E7BC8007C97C7 /* MissingFormatWidthException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissingFormatWidthException.swift; path = Sources/MissingFormatWidthException.swift; sourceTree = "<group>"; };
+		CED755401F2E7BC8007C97C7 /* MissingResourceException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissingResourceException.swift; path = Sources/MissingResourceException.swift; sourceTree = "<group>"; };
+		CED755411F2E7BC8007C97C7 /* NavigableMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigableMap.swift; path = Sources/NavigableMap.swift; sourceTree = "<group>"; };
+		CED755421F2E7BC8007C97C7 /* NavigableSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigableSet.swift; path = Sources/NavigableSet.swift; sourceTree = "<group>"; };
+		CED755431F2E7BC8007C97C7 /* NodeChangeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NodeChangeEvent.swift; path = Sources/NodeChangeEvent.swift; sourceTree = "<group>"; };
+		CED755441F2E7BC8007C97C7 /* NodeChangeListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NodeChangeListener.swift; path = Sources/NodeChangeListener.swift; sourceTree = "<group>"; };
+		CED755451F2E7BC8007C97C7 /* NoSuchElementException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoSuchElementException.swift; path = Sources/NoSuchElementException.swift; sourceTree = "<group>"; };
+		CED755461F2E7BC8007C97C7 /* ObjDoubleConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjDoubleConsumer.swift; path = Sources/ObjDoubleConsumer.swift; sourceTree = "<group>"; };
+		CED755471F2E7BC8007C97C7 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = Sources/Objects.swift; sourceTree = "<group>"; };
+		CED755481F2E7BC8007C97C7 /* ObjIntConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjIntConsumer.swift; path = Sources/ObjIntConsumer.swift; sourceTree = "<group>"; };
+		CED755491F2E7BC8007C97C7 /* ObjLongConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjLongConsumer.swift; path = Sources/ObjLongConsumer.swift; sourceTree = "<group>"; };
+		CED7554A1F2E7BC8007C97C7 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = Sources/Observable.swift; sourceTree = "<group>"; };
+		CED7554B1F2E7BC8007C97C7 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Observer.swift; path = Sources/Observer.swift; sourceTree = "<group>"; };
+		CED7554C1F2E7BC8007C97C7 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Sources/Optional.swift; sourceTree = "<group>"; };
+		CED7554D1F2E7BC8007C97C7 /* OptionalDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionalDouble.swift; path = Sources/OptionalDouble.swift; sourceTree = "<group>"; };
+		CED7554E1F2E7BC8007C97C7 /* OptionalInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionalInt.swift; path = Sources/OptionalInt.swift; sourceTree = "<group>"; };
+		CED7554F1F2E7BC8007C97C7 /* OptionalLong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionalLong.swift; path = Sources/OptionalLong.swift; sourceTree = "<group>"; };
+		CED755501F2E7BC8007C97C7 /* Pack200.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pack200.swift; path = Sources/Pack200.swift; sourceTree = "<group>"; };
+		CED755511F2E7BC8007C97C7 /* Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		CED755521F2E7BC8007C97C7 /* PatternSyntaxException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternSyntaxException.swift; path = Sources/PatternSyntaxException.swift; sourceTree = "<group>"; };
+		CED755531F2E7BC8007C97C7 /* Phaser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Phaser.swift; path = Sources/Phaser.swift; sourceTree = "<group>"; };
+		CED755541F2E7BC8007C97C7 /* Predicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Predicate.swift; path = Sources/Predicate.swift; sourceTree = "<group>"; };
+		CED755551F2E7BC8007C97C7 /* PreferenceChangeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferenceChangeEvent.swift; path = Sources/PreferenceChangeEvent.swift; sourceTree = "<group>"; };
+		CED755561F2E7BC8007C97C7 /* PreferenceChangeListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferenceChangeListener.swift; path = Sources/PreferenceChangeListener.swift; sourceTree = "<group>"; };
+		CED755571F2E7BC8007C97C7 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = Sources/Preferences.swift; sourceTree = "<group>"; };
+		CED755581F2E7BC8007C97C7 /* PreferencesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesFactory.swift; path = Sources/PreferencesFactory.swift; sourceTree = "<group>"; };
+		CED755591F2E7BC8007C97C7 /* PrimitiveIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimitiveIterator.swift; path = Sources/PrimitiveIterator.swift; sourceTree = "<group>"; };
+		CED7555A1F2E7BC8007C97C7 /* PriorityBlockingQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PriorityBlockingQueue.swift; path = Sources/PriorityBlockingQueue.swift; sourceTree = "<group>"; };
+		CED7555B1F2E7BC8007C97C7 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Sources/PriorityQueue.swift; sourceTree = "<group>"; };
+		CED7555C1F2E7BC8007C97C7 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Properties.swift; path = Sources/Properties.swift; sourceTree = "<group>"; };
+		CED7555D1F2E7BC8007C97C7 /* PropertyPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertyPermission.swift; path = Sources/PropertyPermission.swift; sourceTree = "<group>"; };
+		CED7555E1F2E7BC8007C97C7 /* PropertyResourceBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertyResourceBundle.swift; path = Sources/PropertyResourceBundle.swift; sourceTree = "<group>"; };
+		CED7555F1F2E7BC8007C97C7 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Sources/Queue.swift; sourceTree = "<group>"; };
+		CED755601F2E7BC8007C97C7 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Random.swift; path = Sources/Random.swift; sourceTree = "<group>"; };
+		CED755611F2E7BC8007C97C7 /* RandomAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomAccess.swift; path = Sources/RandomAccess.swift; sourceTree = "<group>"; };
+		CED755621F2E7BC8007C97C7 /* ReadWriteLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReadWriteLock.swift; path = Sources/ReadWriteLock.swift; sourceTree = "<group>"; };
+		CED755631F2E7BC8007C97C7 /* RecursiveAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecursiveAction.swift; path = Sources/RecursiveAction.swift; sourceTree = "<group>"; };
+		CED755641F2E7BC8007C97C7 /* RecursiveTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecursiveTask.swift; path = Sources/RecursiveTask.swift; sourceTree = "<group>"; };
+		CED755651F2E7BC8007C97C7 /* ReentrantLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReentrantLock.swift; path = Sources/ReentrantLock.swift; sourceTree = "<group>"; };
+		CED755661F2E7BC8007C97C7 /* ReentrantReadWriteLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReentrantReadWriteLock.swift; path = Sources/ReentrantReadWriteLock.swift; sourceTree = "<group>"; };
+		CED755671F2E7BC8007C97C7 /* RejectedExecutionException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RejectedExecutionException.swift; path = Sources/RejectedExecutionException.swift; sourceTree = "<group>"; };
+		CED755681F2E7BC8007C97C7 /* RejectedExecutionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RejectedExecutionHandler.swift; path = Sources/RejectedExecutionHandler.swift; sourceTree = "<group>"; };
+		CED755691F2E7BC8007C97C7 /* ResourceBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceBundle.swift; path = Sources/ResourceBundle.swift; sourceTree = "<group>"; };
+		CED7556A1F2E7BC8007C97C7 /* ResourceBundleControlProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceBundleControlProvider.swift; path = Sources/ResourceBundleControlProvider.swift; sourceTree = "<group>"; };
+		CED7556B1F2E7BC8007C97C7 /* RunnableFuture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunnableFuture.swift; path = Sources/RunnableFuture.swift; sourceTree = "<group>"; };
+		CED7556C1F2E7BC8007C97C7 /* RunnableScheduledFuture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RunnableScheduledFuture.swift; path = Sources/RunnableScheduledFuture.swift; sourceTree = "<group>"; };
+		CED7556D1F2E7BC8007C97C7 /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scanner.swift; path = Sources/Scanner.swift; sourceTree = "<group>"; };
+		CED7556E1F2E7BC8007C97C7 /* ScheduledExecutorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduledExecutorService.swift; path = Sources/ScheduledExecutorService.swift; sourceTree = "<group>"; };
+		CED7556F1F2E7BC8007C97C7 /* ScheduledFuture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduledFuture.swift; path = Sources/ScheduledFuture.swift; sourceTree = "<group>"; };
+		CED755701F2E7BC8007C97C7 /* ScheduledThreadPoolExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduledThreadPoolExecutor.swift; path = Sources/ScheduledThreadPoolExecutor.swift; sourceTree = "<group>"; };
+		CED755711F2E7BC8007C97C7 /* Semaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Semaphore.swift; path = Sources/Semaphore.swift; sourceTree = "<group>"; };
+		CED755721F2E7BC8007C97C7 /* ServiceConfigurationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceConfigurationError.swift; path = Sources/ServiceConfigurationError.swift; sourceTree = "<group>"; };
+		CED755731F2E7BC8007C97C7 /* ServiceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceLoader.swift; path = Sources/ServiceLoader.swift; sourceTree = "<group>"; };
+		CED755741F2E7BC8007C97C7 /* SimpleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleFormatter.swift; path = Sources/SimpleFormatter.swift; sourceTree = "<group>"; };
+		CED755751F2E7BC8007C97C7 /* SimpleTimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleTimeZone.swift; path = Sources/SimpleTimeZone.swift; sourceTree = "<group>"; };
+		CED755761F2E7BC8007C97C7 /* SocketHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketHandler.swift; path = Sources/SocketHandler.swift; sourceTree = "<group>"; };
+		CED755771F2E7BC8007C97C7 /* SortedMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortedMap.swift; path = Sources/SortedMap.swift; sourceTree = "<group>"; };
+		CED755781F2E7BC8007C97C7 /* SortedSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortedSet.swift; path = Sources/SortedSet.swift; sourceTree = "<group>"; };
+		CED755791F2E7BC8007C97C7 /* Spliterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Spliterator.swift; path = Sources/Spliterator.swift; sourceTree = "<group>"; };
+		CED7557A1F2E7BC8007C97C7 /* Spliterators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Spliterators.swift; path = Sources/Spliterators.swift; sourceTree = "<group>"; };
+		CED7557B1F2E7BC8007C97C7 /* SplittableRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplittableRandom.swift; path = Sources/SplittableRandom.swift; sourceTree = "<group>"; };
+		CED7557C1F2E7BC8007C97C7 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = Sources/Stack.swift; sourceTree = "<group>"; };
+		CED7557D1F2E7BC8007C97C7 /* StampedLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StampedLock.swift; path = Sources/StampedLock.swift; sourceTree = "<group>"; };
+		CED7557E1F2E7BC8007C97C7 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Sources/Stream.swift; sourceTree = "<group>"; };
+		CED7557F1F2E7BC8007C97C7 /* StreamHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StreamHandler.swift; path = Sources/StreamHandler.swift; sourceTree = "<group>"; };
+		CED755801F2E7BC8007C97C7 /* StreamSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StreamSupport.swift; path = Sources/StreamSupport.swift; sourceTree = "<group>"; };
+		CED755811F2E7BC8007C97C7 /* StringJoiner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringJoiner.swift; path = Sources/StringJoiner.swift; sourceTree = "<group>"; };
+		CED755821F2E7BC8007C97C7 /* StringTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringTokenizer.swift; path = Sources/StringTokenizer.swift; sourceTree = "<group>"; };
+		CED755831F2E7BC8007C97C7 /* Supplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Supplier.swift; path = Sources/Supplier.swift; sourceTree = "<group>"; };
+		CED755841F2E7BC8007C97C7 /* SynchronousQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SynchronousQueue.swift; path = Sources/SynchronousQueue.swift; sourceTree = "<group>"; };
+		CED755851F2E7BC8007C97C7 /* ThreadFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreadFactory.swift; path = Sources/ThreadFactory.swift; sourceTree = "<group>"; };
+		CED755861F2E7BC8007C97C7 /* ThreadLocalRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreadLocalRandom.swift; path = Sources/ThreadLocalRandom.swift; sourceTree = "<group>"; };
+		CED755871F2E7BC8007C97C7 /* ThreadPoolExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreadPoolExecutor.swift; path = Sources/ThreadPoolExecutor.swift; sourceTree = "<group>"; };
+		CED755881F2E7BC8007C97C7 /* TimeoutException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeoutException.swift; path = Sources/TimeoutException.swift; sourceTree = "<group>"; };
+		CED755891F2E7BC8007C97C7 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = Sources/Timer.swift; sourceTree = "<group>"; };
+		CED7558A1F2E7BC8007C97C7 /* TimerTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerTask.swift; path = Sources/TimerTask.swift; sourceTree = "<group>"; };
+		CED7558B1F2E7BC8007C97C7 /* TimeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeUnit.swift; path = Sources/TimeUnit.swift; sourceTree = "<group>"; };
+		CED7558C1F2E7BC8007C97C7 /* TimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZone.swift; path = Sources/TimeZone.swift; sourceTree = "<group>"; };
+		CED7558D1F2E7BC8007C97C7 /* TimeZoneNameProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeZoneNameProvider.swift; path = Sources/TimeZoneNameProvider.swift; sourceTree = "<group>"; };
+		CED7558E1F2E7BC8007C97C7 /* ToDoubleBiFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoubleBiFunction.swift; path = Sources/ToDoubleBiFunction.swift; sourceTree = "<group>"; };
+		CED7558F1F2E7BC8007C97C7 /* ToDoubleFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoubleFunction.swift; path = Sources/ToDoubleFunction.swift; sourceTree = "<group>"; };
+		CED755901F2E7BC8007C97C7 /* ToIntBiFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToIntBiFunction.swift; path = Sources/ToIntBiFunction.swift; sourceTree = "<group>"; };
+		CED755911F2E7BC8007C97C7 /* ToIntFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToIntFunction.swift; path = Sources/ToIntFunction.swift; sourceTree = "<group>"; };
+		CED755921F2E7BC8007C97C7 /* ToLongBiFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToLongBiFunction.swift; path = Sources/ToLongBiFunction.swift; sourceTree = "<group>"; };
+		CED755931F2E7BC8007C97C7 /* ToLongFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToLongFunction.swift; path = Sources/ToLongFunction.swift; sourceTree = "<group>"; };
+		CED755941F2E7BC8007C97C7 /* TooManyListenersException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TooManyListenersException.swift; path = Sources/TooManyListenersException.swift; sourceTree = "<group>"; };
+		CED755951F2E7BC8007C97C7 /* TransferQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransferQueue.swift; path = Sources/TransferQueue.swift; sourceTree = "<group>"; };
+		CED755961F2E7BC8007C97C7 /* TreeMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeMap.swift; path = Sources/TreeMap.swift; sourceTree = "<group>"; };
+		CED755971F2E7BC8007C97C7 /* TreeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeSet.swift; path = Sources/TreeSet.swift; sourceTree = "<group>"; };
+		CED755981F2E7BC8007C97C7 /* UnaryOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnaryOperator.swift; path = Sources/UnaryOperator.swift; sourceTree = "<group>"; };
+		CED755991F2E7BC8007C97C7 /* UnknownFormatConversionException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnknownFormatConversionException.swift; path = Sources/UnknownFormatConversionException.swift; sourceTree = "<group>"; };
+		CED7559A1F2E7BC8007C97C7 /* UnknownFormatFlagsException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnknownFormatFlagsException.swift; path = Sources/UnknownFormatFlagsException.swift; sourceTree = "<group>"; };
+		CED7559B1F2E7BC8007C97C7 /* UUID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UUID.swift; path = Sources/UUID.swift; sourceTree = "<group>"; };
+		CED7559C1F2E7BC8007C97C7 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector.swift; path = Sources/Vector.swift; sourceTree = "<group>"; };
+		CED7559D1F2E7BC8007C97C7 /* WeakHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeakHashMap.swift; path = Sources/WeakHashMap.swift; sourceTree = "<group>"; };
+		CED7559E1F2E7BC8007C97C7 /* XMLFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLFormatter.swift; path = Sources/XMLFormatter.swift; sourceTree = "<group>"; };
+		CED7559F1F2E7BC8007C97C7 /* ZipEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipEntry.swift; path = Sources/ZipEntry.swift; sourceTree = "<group>"; };
+		CED755A01F2E7BC8007C97C7 /* ZipError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipError.swift; path = Sources/ZipError.swift; sourceTree = "<group>"; };
+		CED755A11F2E7BC8007C97C7 /* ZipException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipException.swift; path = Sources/ZipException.swift; sourceTree = "<group>"; };
+		CED755A21F2E7BC8007C97C7 /* ZipFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipFile.swift; path = Sources/ZipFile.swift; sourceTree = "<group>"; };
+		CED755A31F2E7BC8007C97C7 /* ZipInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipInputStream.swift; path = Sources/ZipInputStream.swift; sourceTree = "<group>"; };
+		CED755A41F2E7BC8007C97C7 /* ZipOutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZipOutputStream.swift; path = Sources/ZipOutputStream.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBC140501D49992D0035A039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC140721D4999C30035A039 /* java_lang.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBC1404A1D49992D0035A039 = {
+			isa = PBXGroup;
+			children = (
+				BB19B4331D6633B4002F5586 /* LICENSE */,
+				BBC1406C1D4999860035A039 /* build.log */,
+				BBBF2E461D499E42004142AE /* Info.plist */,
+				BBBF2E471D499E42004142AE /* java_util.h */,
+				BBC1406D1D4999860035A039 /* Package.swift */,
+				BBC1406B1D4999760035A039 /* Sources */,
+				BBC140551D49992D0035A039 /* Products */,
+				BBC140701D4999C30035A039 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBC140551D49992D0035A039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBC140541D49992D0035A039 /* java_util.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBC1406B1D4999760035A039 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CED754741F2E7BC8007C97C7 /* AbstractCollection.swift */,
+				CED754751F2E7BC8007C97C7 /* AbstractExecutorService.swift */,
+				CED754761F2E7BC8007C97C7 /* AbstractList.swift */,
+				CED754771F2E7BC8007C97C7 /* AbstractMap.swift */,
+				CED754781F2E7BC8007C97C7 /* AbstractOwnableSynchronizer.swift */,
+				CED754791F2E7BC8007C97C7 /* AbstractPreferences.swift */,
+				CED7547A1F2E7BC8007C97C7 /* AbstractQueue.swift */,
+				CED7547B1F2E7BC8007C97C7 /* AbstractQueuedLongSynchronizer.swift */,
+				CED7547C1F2E7BC8007C97C7 /* AbstractQueuedSynchronizer.swift */,
+				CED7547D1F2E7BC8007C97C7 /* AbstractSequentialList.swift */,
+				CED7547E1F2E7BC8007C97C7 /* AbstractSet.swift */,
+				CED7547F1F2E7BC8007C97C7 /* Adler32.swift */,
+				CED754801F2E7BC8007C97C7 /* ArrayBlockingQueue.swift */,
+				CED754811F2E7BC8007C97C7 /* ArrayDeque.swift */,
+				CED754821F2E7BC8007C97C7 /* ArrayList.swift */,
+				CED754831F2E7BC8007C97C7 /* Arrays.swift */,
+				CED754841F2E7BC8007C97C7 /* AtomicBoolean.swift */,
+				CED754851F2E7BC8007C97C7 /* AtomicInteger.swift */,
+				CED754861F2E7BC8007C97C7 /* AtomicIntegerArray.swift */,
+				CED754871F2E7BC8007C97C7 /* AtomicIntegerFieldUpdater.swift */,
+				CED754881F2E7BC8007C97C7 /* AtomicLong.swift */,
+				CED754891F2E7BC8007C97C7 /* AtomicLongArray.swift */,
+				CED7548A1F2E7BC8007C97C7 /* AtomicLongFieldUpdater.swift */,
+				CED7548B1F2E7BC8007C97C7 /* AtomicMarkableReference.swift */,
+				CED7548C1F2E7BC8007C97C7 /* AtomicReference.swift */,
+				CED7548D1F2E7BC8007C97C7 /* AtomicReferenceArray.swift */,
+				CED7548E1F2E7BC8007C97C7 /* AtomicReferenceFieldUpdater.swift */,
+				CED7548F1F2E7BC8007C97C7 /* AtomicStampedReference.swift */,
+				CED754901F2E7BC8007C97C7 /* Attributes.swift */,
+				CED754911F2E7BC8007C97C7 /* BackingStoreException.swift */,
+				CED754921F2E7BC8007C97C7 /* Base64.swift */,
+				CED754931F2E7BC8007C97C7 /* BaseStream.swift */,
+				CED754941F2E7BC8007C97C7 /* BiConsumer.swift */,
+				CED754951F2E7BC8007C97C7 /* BiFunction.swift */,
+				CED754961F2E7BC8007C97C7 /* BinaryOperator.swift */,
+				CED754971F2E7BC8007C97C7 /* BiPredicate.swift */,
+				CED754981F2E7BC8007C97C7 /* BitSet.swift */,
+				CED754991F2E7BC8007C97C7 /* BlockingDeque.swift */,
+				CED7549A1F2E7BC8007C97C7 /* BlockingQueue.swift */,
+				CED7549B1F2E7BC8007C97C7 /* BooleanSupplier.swift */,
+				CED7549C1F2E7BC8007C97C7 /* BrokenBarrierException.swift */,
+				CED7549D1F2E7BC8007C97C7 /* Calendar.swift */,
+				CED7549E1F2E7BC8007C97C7 /* CalendarDataProvider.swift */,
+				CED7549F1F2E7BC8007C97C7 /* CalendarNameProvider.swift */,
+				CED754A01F2E7BC8007C97C7 /* Callable.swift */,
+				CED754A11F2E7BC8007C97C7 /* CancellationException.swift */,
+				CED754A21F2E7BC8007C97C7 /* CheckedInputStream.swift */,
+				CED754A31F2E7BC8007C97C7 /* CheckedOutputStream.swift */,
+				CED754A41F2E7BC8007C97C7 /* Checksum.swift */,
+				CED754A51F2E7BC8007C97C7 /* Collection.swift */,
+				CED754A61F2E7BC8007C97C7 /* Collections.swift */,
+				CED754A71F2E7BC8007C97C7 /* Collector.swift */,
+				CED754A81F2E7BC8007C97C7 /* Collectors.swift */,
+				CED754AA1F2E7BC8007C97C7 /* CompletionException.swift */,
+				CED754AB1F2E7BC8007C97C7 /* CompletionService.swift */,
+				CED754AC1F2E7BC8007C97C7 /* CompletionStage.swift */,
+				CED754AD1F2E7BC8007C97C7 /* ConcurrentHashMap.swift */,
+				CED754AE1F2E7BC8007C97C7 /* ConcurrentLinkedDeque.swift */,
+				CED754AF1F2E7BC8007C97C7 /* ConcurrentLinkedQueue.swift */,
+				CED754B01F2E7BC8007C97C7 /* ConcurrentMap.swift */,
+				CED754B11F2E7BC8007C97C7 /* ConcurrentModificationException.swift */,
+				CED754B21F2E7BC8007C97C7 /* ConcurrentNavigableMap.swift */,
+				CED754B31F2E7BC8007C97C7 /* ConcurrentSkipListMap.swift */,
+				CED754B41F2E7BC8007C97C7 /* ConcurrentSkipListSet.swift */,
+				CED754B51F2E7BC8007C97C7 /* Condition.swift */,
+				CED754B61F2E7BC8007C97C7 /* ConsoleHandler.swift */,
+				CED754B71F2E7BC8007C97C7 /* Consumer.swift */,
+				CED754B81F2E7BC8007C97C7 /* CopyOnWriteArrayList.swift */,
+				CED754B91F2E7BC8007C97C7 /* CopyOnWriteArraySet.swift */,
+				CED754BA1F2E7BC8007C97C7 /* CountDownLatch.swift */,
+				CED754BB1F2E7BC8007C97C7 /* CountedCompleter.swift */,
+				CED754BC1F2E7BC8007C97C7 /* CRC32.swift */,
+				CED754BD1F2E7BC8007C97C7 /* Currency.swift */,
+				CED754BE1F2E7BC8007C97C7 /* CurrencyNameProvider.swift */,
+				CED754BF1F2E7BC8007C97C7 /* CyclicBarrier.swift */,
+				CED754C01F2E7BC8007C97C7 /* DataFormatException.swift */,
+				CED754C11F2E7BC8007C97C7 /* Date.swift */,
+				CED754C21F2E7BC8007C97C7 /* Deflater.swift */,
+				CED754C31F2E7BC8007C97C7 /* DeflaterInputStream.swift */,
+				CED754C41F2E7BC8007C97C7 /* DeflaterOutputStream.swift */,
+				CED754C51F2E7BC8007C97C7 /* Delayed.swift */,
+				CED754C61F2E7BC8007C97C7 /* DelayQueue.swift */,
+				CED754C71F2E7BC8007C97C7 /* Deque.swift */,
+				CED754C81F2E7BC8007C97C7 /* Dictionary.swift */,
+				CED754C91F2E7BC8007C97C7 /* DoubleAccumulator.swift */,
+				CED754CA1F2E7BC8007C97C7 /* DoubleAdder.swift */,
+				CED754CB1F2E7BC8007C97C7 /* DoubleBinaryOperator.swift */,
+				CED754CC1F2E7BC8007C97C7 /* DoubleConsumer.swift */,
+				CED754CD1F2E7BC8007C97C7 /* DoubleFunction.swift */,
+				CED754CE1F2E7BC8007C97C7 /* DoublePredicate.swift */,
+				CED754CF1F2E7BC8007C97C7 /* DoubleStream.swift */,
+				CED754D01F2E7BC8007C97C7 /* DoubleSummaryStatistics.swift */,
+				CED754D11F2E7BC8007C97C7 /* DoubleSupplier.swift */,
+				CED754D21F2E7BC8007C97C7 /* DoubleToIntFunction.swift */,
+				CED754D31F2E7BC8007C97C7 /* DoubleToLongFunction.swift */,
+				CED754D41F2E7BC8007C97C7 /* DoubleUnaryOperator.swift */,
+				CED754D51F2E7BC8007C97C7 /* DuplicateFormatFlagsException.swift */,
+				CED754D61F2E7BC8007C97C7 /* EmptyStackException.swift */,
+				CED754D71F2E7BC8007C97C7 /* Enumeration.swift */,
+				CED754D81F2E7BC8007C97C7 /* EnumMap.swift */,
+				CED754D91F2E7BC8007C97C7 /* EnumSet.swift */,
+				CED754DA1F2E7BC8007C97C7 /* ErrorManager.swift */,
+				CED754DB1F2E7BC8007C97C7 /* EventListener.swift */,
+				CED754DC1F2E7BC8007C97C7 /* EventListenerProxy.swift */,
+				CED754DD1F2E7BC8007C97C7 /* EventObject.swift */,
+				CED754DE1F2E7BC8007C97C7 /* Exchanger.swift */,
+				CED754DF1F2E7BC8007C97C7 /* ExecutionException.swift */,
+				CED754E01F2E7BC8007C97C7 /* Executor.swift */,
+				CED754E11F2E7BC8007C97C7 /* ExecutorCompletionService.swift */,
+				CED754E21F2E7BC8007C97C7 /* Executors.swift */,
+				CED754E31F2E7BC8007C97C7 /* ExecutorService.swift */,
+				CED754E41F2E7BC8007C97C7 /* FileHandler.swift */,
+				CED754E51F2E7BC8007C97C7 /* Filter.swift */,
+				CED754E61F2E7BC8007C97C7 /* ForkJoinPool.swift */,
+				CED754E71F2E7BC8007C97C7 /* ForkJoinTask.swift */,
+				CED754E81F2E7BC8007C97C7 /* ForkJoinWorkerThread.swift */,
+				CED754E91F2E7BC8007C97C7 /* FormatFlagsConversionMismatchException.swift */,
+				CED754EA1F2E7BC8007C97C7 /* Formattable.swift */,
+				CED754EB1F2E7BC8007C97C7 /* FormattableFlags.swift */,
+				CED754EC1F2E7BC8007C97C7 /* Formatter.swift */,
+				CED754ED1F2E7BC8007C97C7 /* FormatterClosedException.swift */,
+				CED754EE1F2E7BC8007C97C7 /* Function.swift */,
+				CED754EF1F2E7BC8007C97C7 /* Future.swift */,
+				CED754F01F2E7BC8007C97C7 /* FutureTask.swift */,
+				CED754F11F2E7BC8007C97C7 /* GregorianCalendar.swift */,
+				CED754F21F2E7BC8007C97C7 /* GZIPInputStream.swift */,
+				CED754F31F2E7BC8007C97C7 /* GZIPOutputStream.swift */,
+				CED754F41F2E7BC8007C97C7 /* Handler.swift */,
+				CED754F61F2E7BC8007C97C7 /* HashSet.swift */,
+				CED754F71F2E7BC8007C97C7 /* Hashtable.swift */,
+				CED754F81F2E7BC8007C97C7 /* IdentityHashMap.swift */,
+				CED754F91F2E7BC8007C97C7 /* IllegalFormatCodePointException.swift */,
+				CED754FA1F2E7BC8007C97C7 /* IllegalFormatConversionException.swift */,
+				CED754FB1F2E7BC8007C97C7 /* IllegalFormatException.swift */,
+				CED754FC1F2E7BC8007C97C7 /* IllegalFormatFlagsException.swift */,
+				CED754FD1F2E7BC8007C97C7 /* IllegalFormatPrecisionException.swift */,
+				CED754FE1F2E7BC8007C97C7 /* IllegalFormatWidthException.swift */,
+				CED754FF1F2E7BC8007C97C7 /* IllformedLocaleException.swift */,
+				CED755001F2E7BC8007C97C7 /* Inflater.swift */,
+				CED755011F2E7BC8007C97C7 /* InflaterInputStream.swift */,
+				CED755021F2E7BC8007C97C7 /* InflaterOutputStream.swift */,
+				CED755031F2E7BC8007C97C7 /* InputMismatchException.swift */,
+				CED755041F2E7BC8007C97C7 /* IntBinaryOperator.swift */,
+				CED755051F2E7BC8007C97C7 /* IntConsumer.swift */,
+				CED755061F2E7BC8007C97C7 /* IntFunction.swift */,
+				CED755071F2E7BC8007C97C7 /* IntPredicate.swift */,
+				CED755081F2E7BC8007C97C7 /* IntStream.swift */,
+				CED755091F2E7BC8007C97C7 /* IntSummaryStatistics.swift */,
+				CED7550A1F2E7BC8007C97C7 /* IntSupplier.swift */,
+				CED7550B1F2E7BC8007C97C7 /* IntToDoubleFunction.swift */,
+				CED7550C1F2E7BC8007C97C7 /* IntToLongFunction.swift */,
+				CED7550D1F2E7BC8007C97C7 /* IntUnaryOperator.swift */,
+				CED7550E1F2E7BC8007C97C7 /* InvalidPreferencesFormatException.swift */,
+				CED7550F1F2E7BC8007C97C7 /* InvalidPropertiesFormatException.swift */,
+				CED755101F2E7BC8007C97C7 /* Iterator.swift */,
+				CED755111F2E7BC8007C97C7 /* JarEntry.swift */,
+				CED755121F2E7BC8007C97C7 /* JarException.swift */,
+				CED755131F2E7BC8007C97C7 /* JarFile.swift */,
+				CED755141F2E7BC8007C97C7 /* JarInputStream.swift */,
+				CED755151F2E7BC8007C97C7 /* JarOutputStream.swift */,
+				CED755161F2E7BC8007C97C7 /* JavaComparator.swift */,
+				CED755171F2E7BC8007C97C7 /* JavaLocale.swift */,
+				CED755191F2E7BC8007C97C7 /* Level.swift */,
+				CED7551A1F2E7BC8007C97C7 /* LinkedBlockingDeque.swift */,
+				CED7551B1F2E7BC8007C97C7 /* LinkedBlockingQueue.swift */,
+				CED7551C1F2E7BC8007C97C7 /* LinkedHashMap.swift */,
+				CED7551D1F2E7BC8007C97C7 /* LinkedHashSet.swift */,
+				CED7551E1F2E7BC8007C97C7 /* LinkedList.swift */,
+				CED7551F1F2E7BC8007C97C7 /* LinkedTransferQueue.swift */,
+				CED755201F2E7BC8007C97C7 /* List.swift */,
+				CED755211F2E7BC8007C97C7 /* ListIterator.swift */,
+				CED755221F2E7BC8007C97C7 /* ListResourceBundle.swift */,
+				CED755231F2E7BC8007C97C7 /* LocaleNameProvider.swift */,
+				CED755241F2E7BC8007C97C7 /* LocaleServiceProvider.swift */,
+				CED755251F2E7BC8007C97C7 /* Lock.swift */,
+				CED755261F2E7BC8007C97C7 /* LockSupport.swift */,
+				CED755271F2E7BC8007C97C7 /* Logger.swift */,
+				CED755281F2E7BC8007C97C7 /* logging_Formatter.swift */,
+				CED755291F2E7BC8007C97C7 /* LoggingMXBean.swift */,
+				CED7552A1F2E7BC8007C97C7 /* LoggingPermission.swift */,
+				CED7552B1F2E7BC8007C97C7 /* LogManager.swift */,
+				CED7552C1F2E7BC8007C97C7 /* LogRecord.swift */,
+				CED7552D1F2E7BC8007C97C7 /* LongAccumulator.swift */,
+				CED7552E1F2E7BC8007C97C7 /* LongAdder.swift */,
+				CED7552F1F2E7BC8007C97C7 /* LongBinaryOperator.swift */,
+				CED755301F2E7BC8007C97C7 /* LongConsumer.swift */,
+				CED755311F2E7BC8007C97C7 /* LongFunction.swift */,
+				CED755321F2E7BC8007C97C7 /* LongPredicate.swift */,
+				CED755331F2E7BC8007C97C7 /* LongStream.swift */,
+				CED755341F2E7BC8007C97C7 /* LongSummaryStatistics.swift */,
+				CED755351F2E7BC8007C97C7 /* LongSupplier.swift */,
+				CED755361F2E7BC8007C97C7 /* LongToDoubleFunction.swift */,
+				CED755371F2E7BC8007C97C7 /* LongToIntFunction.swift */,
+				CED755381F2E7BC8007C97C7 /* LongUnaryOperator.swift */,
+				CED755391F2E7BC8007C97C7 /* Manifest.swift */,
+				CED7553B1F2E7BC8007C97C7 /* Matcher.swift */,
+				CED7553C1F2E7BC8007C97C7 /* MatchResult.swift */,
+				CED7553D1F2E7BC8007C97C7 /* MemoryHandler.swift */,
+				CED7553E1F2E7BC8007C97C7 /* MissingFormatArgumentException.swift */,
+				CED7553F1F2E7BC8007C97C7 /* MissingFormatWidthException.swift */,
+				CED755401F2E7BC8007C97C7 /* MissingResourceException.swift */,
+				CED755411F2E7BC8007C97C7 /* NavigableMap.swift */,
+				CED755421F2E7BC8007C97C7 /* NavigableSet.swift */,
+				CED755431F2E7BC8007C97C7 /* NodeChangeEvent.swift */,
+				CED755441F2E7BC8007C97C7 /* NodeChangeListener.swift */,
+				CED755451F2E7BC8007C97C7 /* NoSuchElementException.swift */,
+				CED755461F2E7BC8007C97C7 /* ObjDoubleConsumer.swift */,
+				CED755471F2E7BC8007C97C7 /* Objects.swift */,
+				CED755481F2E7BC8007C97C7 /* ObjIntConsumer.swift */,
+				CED755491F2E7BC8007C97C7 /* ObjLongConsumer.swift */,
+				CED7554A1F2E7BC8007C97C7 /* Observable.swift */,
+				CED7554B1F2E7BC8007C97C7 /* Observer.swift */,
+				CED7554C1F2E7BC8007C97C7 /* Optional.swift */,
+				CED7554D1F2E7BC8007C97C7 /* OptionalDouble.swift */,
+				CED7554E1F2E7BC8007C97C7 /* OptionalInt.swift */,
+				CED7554F1F2E7BC8007C97C7 /* OptionalLong.swift */,
+				CED755501F2E7BC8007C97C7 /* Pack200.swift */,
+				CED755511F2E7BC8007C97C7 /* Pattern.swift */,
+				CED755521F2E7BC8007C97C7 /* PatternSyntaxException.swift */,
+				CED755531F2E7BC8007C97C7 /* Phaser.swift */,
+				CED755541F2E7BC8007C97C7 /* Predicate.swift */,
+				CED755551F2E7BC8007C97C7 /* PreferenceChangeEvent.swift */,
+				CED755561F2E7BC8007C97C7 /* PreferenceChangeListener.swift */,
+				CED755571F2E7BC8007C97C7 /* Preferences.swift */,
+				CED755581F2E7BC8007C97C7 /* PreferencesFactory.swift */,
+				CED755591F2E7BC8007C97C7 /* PrimitiveIterator.swift */,
+				CED7555A1F2E7BC8007C97C7 /* PriorityBlockingQueue.swift */,
+				CED7555B1F2E7BC8007C97C7 /* PriorityQueue.swift */,
+				CED7555C1F2E7BC8007C97C7 /* Properties.swift */,
+				CED7555D1F2E7BC8007C97C7 /* PropertyPermission.swift */,
+				CED7555E1F2E7BC8007C97C7 /* PropertyResourceBundle.swift */,
+				CED7555F1F2E7BC8007C97C7 /* Queue.swift */,
+				CED755601F2E7BC8007C97C7 /* Random.swift */,
+				CED755611F2E7BC8007C97C7 /* RandomAccess.swift */,
+				CED755621F2E7BC8007C97C7 /* ReadWriteLock.swift */,
+				CED755631F2E7BC8007C97C7 /* RecursiveAction.swift */,
+				CED755641F2E7BC8007C97C7 /* RecursiveTask.swift */,
+				CED755651F2E7BC8007C97C7 /* ReentrantLock.swift */,
+				CED755661F2E7BC8007C97C7 /* ReentrantReadWriteLock.swift */,
+				CED755671F2E7BC8007C97C7 /* RejectedExecutionException.swift */,
+				CED755681F2E7BC8007C97C7 /* RejectedExecutionHandler.swift */,
+				CED755691F2E7BC8007C97C7 /* ResourceBundle.swift */,
+				CED7556A1F2E7BC8007C97C7 /* ResourceBundleControlProvider.swift */,
+				CED7556B1F2E7BC8007C97C7 /* RunnableFuture.swift */,
+				CED7556C1F2E7BC8007C97C7 /* RunnableScheduledFuture.swift */,
+				CED7556D1F2E7BC8007C97C7 /* Scanner.swift */,
+				CED7556E1F2E7BC8007C97C7 /* ScheduledExecutorService.swift */,
+				CED7556F1F2E7BC8007C97C7 /* ScheduledFuture.swift */,
+				CED755701F2E7BC8007C97C7 /* ScheduledThreadPoolExecutor.swift */,
+				CED755711F2E7BC8007C97C7 /* Semaphore.swift */,
+				CED755721F2E7BC8007C97C7 /* ServiceConfigurationError.swift */,
+				CED755731F2E7BC8007C97C7 /* ServiceLoader.swift */,
+				CED755741F2E7BC8007C97C7 /* SimpleFormatter.swift */,
+				CED755751F2E7BC8007C97C7 /* SimpleTimeZone.swift */,
+				CED755761F2E7BC8007C97C7 /* SocketHandler.swift */,
+				CED755771F2E7BC8007C97C7 /* SortedMap.swift */,
+				CED755781F2E7BC8007C97C7 /* SortedSet.swift */,
+				CED755791F2E7BC8007C97C7 /* Spliterator.swift */,
+				CED7557A1F2E7BC8007C97C7 /* Spliterators.swift */,
+				CED7557B1F2E7BC8007C97C7 /* SplittableRandom.swift */,
+				CED7557C1F2E7BC8007C97C7 /* Stack.swift */,
+				CED7557D1F2E7BC8007C97C7 /* StampedLock.swift */,
+				CED7557E1F2E7BC8007C97C7 /* Stream.swift */,
+				CED7557F1F2E7BC8007C97C7 /* StreamHandler.swift */,
+				CED755801F2E7BC8007C97C7 /* StreamSupport.swift */,
+				CED755811F2E7BC8007C97C7 /* StringJoiner.swift */,
+				CED755821F2E7BC8007C97C7 /* StringTokenizer.swift */,
+				CED755831F2E7BC8007C97C7 /* Supplier.swift */,
+				CED755841F2E7BC8007C97C7 /* SynchronousQueue.swift */,
+				CED755851F2E7BC8007C97C7 /* ThreadFactory.swift */,
+				CED755861F2E7BC8007C97C7 /* ThreadLocalRandom.swift */,
+				CED755871F2E7BC8007C97C7 /* ThreadPoolExecutor.swift */,
+				CED755881F2E7BC8007C97C7 /* TimeoutException.swift */,
+				CED755891F2E7BC8007C97C7 /* Timer.swift */,
+				CED7558A1F2E7BC8007C97C7 /* TimerTask.swift */,
+				CED7558B1F2E7BC8007C97C7 /* TimeUnit.swift */,
+				CED7558C1F2E7BC8007C97C7 /* TimeZone.swift */,
+				CED7558D1F2E7BC8007C97C7 /* TimeZoneNameProvider.swift */,
+				CED7558E1F2E7BC8007C97C7 /* ToDoubleBiFunction.swift */,
+				CED7558F1F2E7BC8007C97C7 /* ToDoubleFunction.swift */,
+				CED755901F2E7BC8007C97C7 /* ToIntBiFunction.swift */,
+				CED755911F2E7BC8007C97C7 /* ToIntFunction.swift */,
+				CED755921F2E7BC8007C97C7 /* ToLongBiFunction.swift */,
+				CED755931F2E7BC8007C97C7 /* ToLongFunction.swift */,
+				CED755941F2E7BC8007C97C7 /* TooManyListenersException.swift */,
+				CED755951F2E7BC8007C97C7 /* TransferQueue.swift */,
+				CED755961F2E7BC8007C97C7 /* TreeMap.swift */,
+				CED755971F2E7BC8007C97C7 /* TreeSet.swift */,
+				CED755981F2E7BC8007C97C7 /* UnaryOperator.swift */,
+				CED755991F2E7BC8007C97C7 /* UnknownFormatConversionException.swift */,
+				CED7559A1F2E7BC8007C97C7 /* UnknownFormatFlagsException.swift */,
+				CED7559B1F2E7BC8007C97C7 /* UUID.swift */,
+				CED7559C1F2E7BC8007C97C7 /* Vector.swift */,
+				CED7559D1F2E7BC8007C97C7 /* WeakHashMap.swift */,
+				CED7559E1F2E7BC8007C97C7 /* XMLFormatter.swift */,
+				CED7559F1F2E7BC8007C97C7 /* ZipEntry.swift */,
+				CED755A01F2E7BC8007C97C7 /* ZipError.swift */,
+				CED755A11F2E7BC8007C97C7 /* ZipException.swift */,
+				CED755A21F2E7BC8007C97C7 /* ZipFile.swift */,
+				CED755A31F2E7BC8007C97C7 /* ZipInputStream.swift */,
+				CED755A41F2E7BC8007C97C7 /* ZipOutputStream.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BBC140701D4999C30035A039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBC140711D4999C30035A039 /* java_lang.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BBC140511D49992D0035A039 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBF2E491D499E42004142AE /* java_util.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BBC140531D49992D0035A039 /* java_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC1405C1D49992D0035A039 /* Build configuration list for PBXNativeTarget "java_util" */;
+			buildPhases = (
+				BBC1404F1D49992D0035A039 /* Sources */,
+				BBC140501D49992D0035A039 /* Frameworks */,
+				BBC140511D49992D0035A039 /* Headers */,
+				BBC140521D49992D0035A039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = java_util;
+			productName = java_util;
+			productReference = BBC140541D49992D0035A039 /* java_util.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC1404B1D49992D0035A039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "John Holdsworth";
+				TargetAttributes = {
+					BBC140531D49992D0035A039 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeamName = "John Holdsworth";
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = BBC1404E1D49992D0035A039 /* Build configuration list for PBXProject "java_util" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BBC1404A1D49992D0035A039;
+			productRefGroup = BBC140551D49992D0035A039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBC140531D49992D0035A039 /* java_util */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBC140521D49992D0035A039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBC1404F1D49992D0035A039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED755CD1F2E7BC8007C97C7 /* BrokenBarrierException.swift in Sources */,
+				CED755E01F2E7BC8007C97C7 /* ConcurrentLinkedQueue.swift in Sources */,
+				CED755B51F2E7BC8007C97C7 /* AtomicBoolean.swift in Sources */,
+				CED7563D1F2E7BC8007C97C7 /* IntToLongFunction.swift in Sources */,
+				CED756471F2E7BC8007C97C7 /* JavaComparator.swift in Sources */,
+				CED756941F2E7BC8007C97C7 /* RecursiveAction.swift in Sources */,
+				CED756371F2E7BC8007C97C7 /* IntFunction.swift in Sources */,
+				CED756621F2E7BC8007C97C7 /* LongFunction.swift in Sources */,
+				CED7567F1F2E7BC8007C97C7 /* OptionalInt.swift in Sources */,
+				CED756B31F2E7BC8007C97C7 /* StringTokenizer.swift in Sources */,
+				CED755D11F2E7BC8007C97C7 /* Callable.swift in Sources */,
+				CED755A61F2E7BC8007C97C7 /* AbstractExecutorService.swift in Sources */,
+				CED756C01F2E7BC8007C97C7 /* ToDoubleFunction.swift in Sources */,
+				CED756781F2E7BC8007C97C7 /* Objects.swift in Sources */,
+				CED756701F2E7BC8007C97C7 /* MissingFormatWidthException.swift in Sources */,
+				CED756A61F2E7BC8007C97C7 /* SimpleTimeZone.swift in Sources */,
+				CED755D01F2E7BC8007C97C7 /* CalendarNameProvider.swift in Sources */,
+				CED755DD1F2E7BC8007C97C7 /* CompletionStage.swift in Sources */,
+				CED756AB1F2E7BC8007C97C7 /* Spliterators.swift in Sources */,
+				CED756571F2E7BC8007C97C7 /* LockSupport.swift in Sources */,
+				CED756381F2E7BC8007C97C7 /* IntPredicate.swift in Sources */,
+				CED755BD1F2E7BC8007C97C7 /* AtomicReference.swift in Sources */,
+				CED756871F2E7BC8007C97C7 /* PreferenceChangeListener.swift in Sources */,
+				CED755E81F2E7BC8007C97C7 /* Consumer.swift in Sources */,
+				CED7566D1F2E7BC8007C97C7 /* MatchResult.swift in Sources */,
+				CED756561F2E7BC8007C97C7 /* Lock.swift in Sources */,
+				CED7565A1F2E7BC8007C97C7 /* LoggingMXBean.swift in Sources */,
+				CED7562F1F2E7BC8007C97C7 /* IllegalFormatWidthException.swift in Sources */,
+				CED755F71F2E7BC8007C97C7 /* DelayQueue.swift in Sources */,
+				CED756B41F2E7BC8007C97C7 /* Supplier.swift in Sources */,
+				CED755C31F2E7BC8007C97C7 /* Base64.swift in Sources */,
+				CED756D11F2E7BC8007C97C7 /* ZipError.swift in Sources */,
+				CED7569B1F2E7BC8007C97C7 /* ResourceBundleControlProvider.swift in Sources */,
+				CED756221F2E7BC8007C97C7 /* GregorianCalendar.swift in Sources */,
+				CED755B31F2E7BC8007C97C7 /* ArrayList.swift in Sources */,
+				CED7568E1F2E7BC8007C97C7 /* PropertyPermission.swift in Sources */,
+				CED756161F2E7BC8007C97C7 /* Filter.swift in Sources */,
+				CED755D51F2E7BC8007C97C7 /* Checksum.swift in Sources */,
+				CED7565C1F2E7BC8007C97C7 /* LogManager.swift in Sources */,
+				CED756991F2E7BC8007C97C7 /* RejectedExecutionHandler.swift in Sources */,
+				CED7565B1F2E7BC8007C97C7 /* LoggingPermission.swift in Sources */,
+				CED756951F2E7BC8007C97C7 /* RecursiveTask.swift in Sources */,
+				CED756361F2E7BC8007C97C7 /* IntConsumer.swift in Sources */,
+				CED756A51F2E7BC8007C97C7 /* SimpleFormatter.swift in Sources */,
+				CED756101F2E7BC8007C97C7 /* ExecutionException.swift in Sources */,
+				CED7560C1F2E7BC8007C97C7 /* EventListener.swift in Sources */,
+				CED756B01F2E7BC8007C97C7 /* StreamHandler.swift in Sources */,
+				CED756C81F2E7BC8007C97C7 /* TreeSet.swift in Sources */,
+				CED756141F2E7BC8007C97C7 /* ExecutorService.swift in Sources */,
+				CED756821F2E7BC8007C97C7 /* Pattern.swift in Sources */,
+				CED756481F2E7BC8007C97C7 /* JavaLocale.swift in Sources */,
+				CED755FF1F2E7BC8007C97C7 /* DoublePredicate.swift in Sources */,
+				CED7564F1F2E7BC8007C97C7 /* LinkedList.swift in Sources */,
+				CED755BC1F2E7BC8007C97C7 /* AtomicMarkableReference.swift in Sources */,
+				CED7567A1F2E7BC8007C97C7 /* ObjLongConsumer.swift in Sources */,
+				CED756A71F2E7BC8007C97C7 /* SocketHandler.swift in Sources */,
+				CED7564B1F2E7BC8007C97C7 /* LinkedBlockingDeque.swift in Sources */,
+				CED755B91F2E7BC8007C97C7 /* AtomicLong.swift in Sources */,
+				CED7568C1F2E7BC8007C97C7 /* PriorityQueue.swift in Sources */,
+				CED755CA1F2E7BC8007C97C7 /* BlockingDeque.swift in Sources */,
+				CED7568F1F2E7BC8007C97C7 /* PropertyResourceBundle.swift in Sources */,
+				CED756D01F2E7BC8007C97C7 /* ZipEntry.swift in Sources */,
+				CED755BE1F2E7BC8007C97C7 /* AtomicReferenceArray.swift in Sources */,
+				CED756431F2E7BC8007C97C7 /* JarException.swift in Sources */,
+				CED756B61F2E7BC8007C97C7 /* ThreadFactory.swift in Sources */,
+				CED756171F2E7BC8007C97C7 /* ForkJoinPool.swift in Sources */,
+				CED756691F2E7BC8007C97C7 /* LongUnaryOperator.swift in Sources */,
+				CED755B01F2E7BC8007C97C7 /* Adler32.swift in Sources */,
+				CED7569E1F2E7BC8007C97C7 /* Scanner.swift in Sources */,
+				CED756BF1F2E7BC8007C97C7 /* ToDoubleBiFunction.swift in Sources */,
+				CED755A91F2E7BC8007C97C7 /* AbstractOwnableSynchronizer.swift in Sources */,
+				CED7561A1F2E7BC8007C97C7 /* FormatFlagsConversionMismatchException.swift in Sources */,
+				CED755E11F2E7BC8007C97C7 /* ConcurrentMap.swift in Sources */,
+				CED756121F2E7BC8007C97C7 /* ExecutorCompletionService.swift in Sources */,
+				CED755C11F2E7BC8007C97C7 /* Attributes.swift in Sources */,
+				CED756131F2E7BC8007C97C7 /* Executors.swift in Sources */,
+				CED7564C1F2E7BC8007C97C7 /* LinkedBlockingQueue.swift in Sources */,
+				CED755CE1F2E7BC8007C97C7 /* Calendar.swift in Sources */,
+				CED755FD1F2E7BC8007C97C7 /* DoubleConsumer.swift in Sources */,
+				CED756A01F2E7BC8007C97C7 /* ScheduledFuture.swift in Sources */,
+				CED755EE1F2E7BC8007C97C7 /* Currency.swift in Sources */,
+				CED756151F2E7BC8007C97C7 /* FileHandler.swift in Sources */,
+				CED755EC1F2E7BC8007C97C7 /* CountedCompleter.swift in Sources */,
+				CED7563A1F2E7BC8007C97C7 /* IntSummaryStatistics.swift in Sources */,
+				CED756461F2E7BC8007C97C7 /* JarOutputStream.swift in Sources */,
+				CED756911F2E7BC8007C97C7 /* Random.swift in Sources */,
+				CED755FC1F2E7BC8007C97C7 /* DoubleBinaryOperator.swift in Sources */,
+				CED755D31F2E7BC8007C97C7 /* CheckedInputStream.swift in Sources */,
+				CED756AE1F2E7BC8007C97C7 /* StampedLock.swift in Sources */,
+				CED756AD1F2E7BC8007C97C7 /* Stack.swift in Sources */,
+				CED756511F2E7BC8007C97C7 /* List.swift in Sources */,
+				CED756531F2E7BC8007C97C7 /* ListResourceBundle.swift in Sources */,
+				CED756271F2E7BC8007C97C7 /* HashSet.swift in Sources */,
+				CED7561E1F2E7BC8007C97C7 /* FormatterClosedException.swift in Sources */,
+				CED756241F2E7BC8007C97C7 /* GZIPOutputStream.swift in Sources */,
+				CED755D21F2E7BC8007C97C7 /* CancellationException.swift in Sources */,
+				CED756B11F2E7BC8007C97C7 /* StreamSupport.swift in Sources */,
+				CED756B71F2E7BC8007C97C7 /* ThreadLocalRandom.swift in Sources */,
+				CED755B11F2E7BC8007C97C7 /* ArrayBlockingQueue.swift in Sources */,
+				CED755B81F2E7BC8007C97C7 /* AtomicIntegerFieldUpdater.swift in Sources */,
+				CED756AF1F2E7BC8007C97C7 /* Stream.swift in Sources */,
+				CED756521F2E7BC8007C97C7 /* ListIterator.swift in Sources */,
+				CED7567C1F2E7BC8007C97C7 /* Observer.swift in Sources */,
+				CED756B91F2E7BC8007C97C7 /* TimeoutException.swift in Sources */,
+				CED755AF1F2E7BC8007C97C7 /* AbstractSet.swift in Sources */,
+				CED756C41F2E7BC8007C97C7 /* ToLongFunction.swift in Sources */,
+				CED755AC1F2E7BC8007C97C7 /* AbstractQueuedLongSynchronizer.swift in Sources */,
+				CED756CF1F2E7BC8007C97C7 /* XMLFormatter.swift in Sources */,
+				CED755F91F2E7BC8007C97C7 /* Dictionary.swift in Sources */,
+				CED755D91F2E7BC8007C97C7 /* Collectors.swift in Sources */,
+				CED756611F2E7BC8007C97C7 /* LongConsumer.swift in Sources */,
+				CED7562C1F2E7BC8007C97C7 /* IllegalFormatException.swift in Sources */,
+				CED755F51F2E7BC8007C97C7 /* DeflaterOutputStream.swift in Sources */,
+				CED756741F2E7BC8007C97C7 /* NodeChangeEvent.swift in Sources */,
+				CED756071F2E7BC8007C97C7 /* EmptyStackException.swift in Sources */,
+				CED756881F2E7BC8007C97C7 /* Preferences.swift in Sources */,
+				CED756D31F2E7BC8007C97C7 /* ZipFile.swift in Sources */,
+				CED756A91F2E7BC8007C97C7 /* SortedSet.swift in Sources */,
+				CED756331F2E7BC8007C97C7 /* InflaterOutputStream.swift in Sources */,
+				CED755CB1F2E7BC8007C97C7 /* BlockingQueue.swift in Sources */,
+				CED755EF1F2E7BC8007C97C7 /* CurrencyNameProvider.swift in Sources */,
+				CED7565F1F2E7BC8007C97C7 /* LongAdder.swift in Sources */,
+				CED7569A1F2E7BC8007C97C7 /* ResourceBundle.swift in Sources */,
+				CED7566E1F2E7BC8007C97C7 /* MemoryHandler.swift in Sources */,
+				CED755D71F2E7BC8007C97C7 /* Collections.swift in Sources */,
+				CED756AC1F2E7BC8007C97C7 /* SplittableRandom.swift in Sources */,
+				CED756AA1F2E7BC8007C97C7 /* Spliterator.swift in Sources */,
+				CED756B21F2E7BC8007C97C7 /* StringJoiner.swift in Sources */,
+				CED756C51F2E7BC8007C97C7 /* TooManyListenersException.swift in Sources */,
+				CED755B71F2E7BC8007C97C7 /* AtomicIntegerArray.swift in Sources */,
+				CED7566F1F2E7BC8007C97C7 /* MissingFormatArgumentException.swift in Sources */,
+				CED7569C1F2E7BC8007C97C7 /* RunnableFuture.swift in Sources */,
+				CED7568D1F2E7BC8007C97C7 /* Properties.swift in Sources */,
+				CED756BB1F2E7BC8007C97C7 /* TimerTask.swift in Sources */,
+				CED756CD1F2E7BC8007C97C7 /* Vector.swift in Sources */,
+				CED756321F2E7BC8007C97C7 /* InflaterInputStream.swift in Sources */,
+				CED756B51F2E7BC8007C97C7 /* SynchronousQueue.swift in Sources */,
+				CED755C91F2E7BC8007C97C7 /* BitSet.swift in Sources */,
+				CED756851F2E7BC8007C97C7 /* Predicate.swift in Sources */,
+				CED756661F2E7BC8007C97C7 /* LongSupplier.swift in Sources */,
+				CED756721F2E7BC8007C97C7 /* NavigableMap.swift in Sources */,
+				CED756051F2E7BC8007C97C7 /* DoubleUnaryOperator.swift in Sources */,
+				CED756801F2E7BC8007C97C7 /* OptionalLong.swift in Sources */,
+				CED755ED1F2E7BC8007C97C7 /* CRC32.swift in Sources */,
+				CED756BA1F2E7BC8007C97C7 /* Timer.swift in Sources */,
+				CED756771F2E7BC8007C97C7 /* ObjDoubleConsumer.swift in Sources */,
+				CED756441F2E7BC8007C97C7 /* JarFile.swift in Sources */,
+				CED755F61F2E7BC8007C97C7 /* Delayed.swift in Sources */,
+				CED755F21F2E7BC8007C97C7 /* Date.swift in Sources */,
+				CED755DC1F2E7BC8007C97C7 /* CompletionService.swift in Sources */,
+				CED756761F2E7BC8007C97C7 /* NoSuchElementException.swift in Sources */,
+				CED7562B1F2E7BC8007C97C7 /* IllegalFormatConversionException.swift in Sources */,
+				CED7569F1F2E7BC8007C97C7 /* ScheduledExecutorService.swift in Sources */,
+				CED756021F2E7BC8007C97C7 /* DoubleSupplier.swift in Sources */,
+				CED7567B1F2E7BC8007C97C7 /* Observable.swift in Sources */,
+				CED756A31F2E7BC8007C97C7 /* ServiceConfigurationError.swift in Sources */,
+				CED755C81F2E7BC8007C97C7 /* BiPredicate.swift in Sources */,
+				CED755A71F2E7BC8007C97C7 /* AbstractList.swift in Sources */,
+				CED756211F2E7BC8007C97C7 /* FutureTask.swift in Sources */,
+				CED755E91F2E7BC8007C97C7 /* CopyOnWriteArrayList.swift in Sources */,
+				CED755AE1F2E7BC8007C97C7 /* AbstractSequentialList.swift in Sources */,
+				CED755C41F2E7BC8007C97C7 /* BaseStream.swift in Sources */,
+				CED756A21F2E7BC8007C97C7 /* Semaphore.swift in Sources */,
+				CED7563E1F2E7BC8007C97C7 /* IntUnaryOperator.swift in Sources */,
+				CED7567D1F2E7BC8007C97C7 /* Optional.swift in Sources */,
+				CED756731F2E7BC8007C97C7 /* NavigableSet.swift in Sources */,
+				CED7560F1F2E7BC8007C97C7 /* Exchanger.swift in Sources */,
+				CED7568B1F2E7BC8007C97C7 /* PriorityBlockingQueue.swift in Sources */,
+				CED755C21F2E7BC8007C97C7 /* BackingStoreException.swift in Sources */,
+				CED756711F2E7BC8007C97C7 /* MissingResourceException.swift in Sources */,
+				CED756421F2E7BC8007C97C7 /* JarEntry.swift in Sources */,
+				CED756641F2E7BC8007C97C7 /* LongStream.swift in Sources */,
+				CED756191F2E7BC8007C97C7 /* ForkJoinWorkerThread.swift in Sources */,
+				CED756831F2E7BC8007C97C7 /* PatternSyntaxException.swift in Sources */,
+				CED756A11F2E7BC8007C97C7 /* ScheduledThreadPoolExecutor.swift in Sources */,
+				CED755F31F2E7BC8007C97C7 /* Deflater.swift in Sources */,
+				CED756C71F2E7BC8007C97C7 /* TreeMap.swift in Sources */,
+				CED755D61F2E7BC8007C97C7 /* Collection.swift in Sources */,
+				CED756A41F2E7BC8007C97C7 /* ServiceLoader.swift in Sources */,
+				CED756181F2E7BC8007C97C7 /* ForkJoinTask.swift in Sources */,
+				CED756631F2E7BC8007C97C7 /* LongPredicate.swift in Sources */,
+				CED756C61F2E7BC8007C97C7 /* TransferQueue.swift in Sources */,
+				CED7560A1F2E7BC8007C97C7 /* EnumSet.swift in Sources */,
+				CED756651F2E7BC8007C97C7 /* LongSummaryStatistics.swift in Sources */,
+				CED756981F2E7BC8007C97C7 /* RejectedExecutionException.swift in Sources */,
+				CED756501F2E7BC8007C97C7 /* LinkedTransferQueue.swift in Sources */,
+				CED755F81F2E7BC8007C97C7 /* Deque.swift in Sources */,
+				CED756C11F2E7BC8007C97C7 /* ToIntBiFunction.swift in Sources */,
+				CED756B81F2E7BC8007C97C7 /* ThreadPoolExecutor.swift in Sources */,
+				CED755EB1F2E7BC8007C97C7 /* CountDownLatch.swift in Sources */,
+				CED7563B1F2E7BC8007C97C7 /* IntSupplier.swift in Sources */,
+				CED755DE1F2E7BC8007C97C7 /* ConcurrentHashMap.swift in Sources */,
+				CED756C21F2E7BC8007C97C7 /* ToIntFunction.swift in Sources */,
+				CED756841F2E7BC8007C97C7 /* Phaser.swift in Sources */,
+				CED755FB1F2E7BC8007C97C7 /* DoubleAdder.swift in Sources */,
+				CED7561B1F2E7BC8007C97C7 /* Formattable.swift in Sources */,
+				CED755CF1F2E7BC8007C97C7 /* CalendarDataProvider.swift in Sources */,
+				CED756671F2E7BC8007C97C7 /* LongToDoubleFunction.swift in Sources */,
+				CED7565D1F2E7BC8007C97C7 /* LogRecord.swift in Sources */,
+				CED755C71F2E7BC8007C97C7 /* BinaryOperator.swift in Sources */,
+				CED755E41F2E7BC8007C97C7 /* ConcurrentSkipListMap.swift in Sources */,
+				CED756231F2E7BC8007C97C7 /* GZIPInputStream.swift in Sources */,
+				CED755DB1F2E7BC8007C97C7 /* CompletionException.swift in Sources */,
+				CED755B41F2E7BC8007C97C7 /* Arrays.swift in Sources */,
+				CED7563F1F2E7BC8007C97C7 /* InvalidPreferencesFormatException.swift in Sources */,
+				CED756D51F2E7BC8007C97C7 /* ZipOutputStream.swift in Sources */,
+				CED7560B1F2E7BC8007C97C7 /* ErrorManager.swift in Sources */,
+				CED7567E1F2E7BC8007C97C7 /* OptionalDouble.swift in Sources */,
+				CED756BD1F2E7BC8007C97C7 /* TimeZone.swift in Sources */,
+				CED755E71F2E7BC8007C97C7 /* ConsoleHandler.swift in Sources */,
+				CED756791F2E7BC8007C97C7 /* ObjIntConsumer.swift in Sources */,
+				CED755F11F2E7BC8007C97C7 /* DataFormatException.swift in Sources */,
+				CED756891F2E7BC8007C97C7 /* PreferencesFactory.swift in Sources */,
+				CED756C91F2E7BC8007C97C7 /* UnaryOperator.swift in Sources */,
+				CED756011F2E7BC8007C97C7 /* DoubleSummaryStatistics.swift in Sources */,
+				CED756301F2E7BC8007C97C7 /* IllformedLocaleException.swift in Sources */,
+				CED7568A1F2E7BC8007C97C7 /* PrimitiveIterator.swift in Sources */,
+				CED755C01F2E7BC8007C97C7 /* AtomicStampedReference.swift in Sources */,
+				CED756681F2E7BC8007C97C7 /* LongToIntFunction.swift in Sources */,
+				CED755BA1F2E7BC8007C97C7 /* AtomicLongArray.swift in Sources */,
+				CED756861F2E7BC8007C97C7 /* PreferenceChangeEvent.swift in Sources */,
+				CED756BC1F2E7BC8007C97C7 /* TimeUnit.swift in Sources */,
+				CED755A81F2E7BC8007C97C7 /* AbstractMap.swift in Sources */,
+				CED756411F2E7BC8007C97C7 /* Iterator.swift in Sources */,
+				CED756961F2E7BC8007C97C7 /* ReentrantLock.swift in Sources */,
+				CED756451F2E7BC8007C97C7 /* JarInputStream.swift in Sources */,
+				CED7566A1F2E7BC8007C97C7 /* Manifest.swift in Sources */,
+				CED755E31F2E7BC8007C97C7 /* ConcurrentNavigableMap.swift in Sources */,
+				CED7562A1F2E7BC8007C97C7 /* IllegalFormatCodePointException.swift in Sources */,
+				CED7561D1F2E7BC8007C97C7 /* Formatter.swift in Sources */,
+				CED756A81F2E7BC8007C97C7 /* SortedMap.swift in Sources */,
+				CED755C51F2E7BC8007C97C7 /* BiConsumer.swift in Sources */,
+				CED756811F2E7BC8007C97C7 /* Pack200.swift in Sources */,
+				CED755DF1F2E7BC8007C97C7 /* ConcurrentLinkedDeque.swift in Sources */,
+				CED756281F2E7BC8007C97C7 /* Hashtable.swift in Sources */,
+				CED756D41F2E7BC8007C97C7 /* ZipInputStream.swift in Sources */,
+				CED7566C1F2E7BC8007C97C7 /* Matcher.swift in Sources */,
+				CED756111F2E7BC8007C97C7 /* Executor.swift in Sources */,
+				CED756931F2E7BC8007C97C7 /* ReadWriteLock.swift in Sources */,
+				CED756591F2E7BC8007C97C7 /* logging_Formatter.swift in Sources */,
+				CED756041F2E7BC8007C97C7 /* DoubleToLongFunction.swift in Sources */,
+				CED756C31F2E7BC8007C97C7 /* ToLongBiFunction.swift in Sources */,
+				CED756341F2E7BC8007C97C7 /* InputMismatchException.swift in Sources */,
+				CED755AB1F2E7BC8007C97C7 /* AbstractQueue.swift in Sources */,
+				CED755D81F2E7BC8007C97C7 /* Collector.swift in Sources */,
+				CED755BF1F2E7BC8007C97C7 /* AtomicReferenceFieldUpdater.swift in Sources */,
+				CED7562D1F2E7BC8007C97C7 /* IllegalFormatFlagsException.swift in Sources */,
+				CED756971F2E7BC8007C97C7 /* ReentrantReadWriteLock.swift in Sources */,
+				CED755B61F2E7BC8007C97C7 /* AtomicInteger.swift in Sources */,
+				CED755FE1F2E7BC8007C97C7 /* DoubleFunction.swift in Sources */,
+				CED756351F2E7BC8007C97C7 /* IntBinaryOperator.swift in Sources */,
+				CED7569D1F2E7BC8007C97C7 /* RunnableScheduledFuture.swift in Sources */,
+				CED756061F2E7BC8007C97C7 /* DuplicateFormatFlagsException.swift in Sources */,
+				CED756901F2E7BC8007C97C7 /* Queue.swift in Sources */,
+				CED756001F2E7BC8007C97C7 /* DoubleStream.swift in Sources */,
+				CED756CC1F2E7BC8007C97C7 /* UUID.swift in Sources */,
+				CED7563C1F2E7BC8007C97C7 /* IntToDoubleFunction.swift in Sources */,
+				CED756541F2E7BC8007C97C7 /* LocaleNameProvider.swift in Sources */,
+				CED755E61F2E7BC8007C97C7 /* Condition.swift in Sources */,
+				CED7565E1F2E7BC8007C97C7 /* LongAccumulator.swift in Sources */,
+				CED7560E1F2E7BC8007C97C7 /* EventObject.swift in Sources */,
+				CED756031F2E7BC8007C97C7 /* DoubleToIntFunction.swift in Sources */,
+				CED756391F2E7BC8007C97C7 /* IntStream.swift in Sources */,
+				CED755F01F2E7BC8007C97C7 /* CyclicBarrier.swift in Sources */,
+				CED7561C1F2E7BC8007C97C7 /* FormattableFlags.swift in Sources */,
+				CED7564D1F2E7BC8007C97C7 /* LinkedHashMap.swift in Sources */,
+				CED756CE1F2E7BC8007C97C7 /* WeakHashMap.swift in Sources */,
+				CED755D41F2E7BC8007C97C7 /* CheckedOutputStream.swift in Sources */,
+				CED7562E1F2E7BC8007C97C7 /* IllegalFormatPrecisionException.swift in Sources */,
+				CED756311F2E7BC8007C97C7 /* Inflater.swift in Sources */,
+				CED755BB1F2E7BC8007C97C7 /* AtomicLongFieldUpdater.swift in Sources */,
+				CED755AA1F2E7BC8007C97C7 /* AbstractPreferences.swift in Sources */,
+				CED756D21F2E7BC8007C97C7 /* ZipException.swift in Sources */,
+				CED755F41F2E7BC8007C97C7 /* DeflaterInputStream.swift in Sources */,
+				CED755E21F2E7BC8007C97C7 /* ConcurrentModificationException.swift in Sources */,
+				CED756081F2E7BC8007C97C7 /* Enumeration.swift in Sources */,
+				CED7564A1F2E7BC8007C97C7 /* Level.swift in Sources */,
+				CED756401F2E7BC8007C97C7 /* InvalidPropertiesFormatException.swift in Sources */,
+				CED755C61F2E7BC8007C97C7 /* BiFunction.swift in Sources */,
+				CED755CC1F2E7BC8007C97C7 /* BooleanSupplier.swift in Sources */,
+				CED7564E1F2E7BC8007C97C7 /* LinkedHashSet.swift in Sources */,
+				CED756201F2E7BC8007C97C7 /* Future.swift in Sources */,
+				CED756921F2E7BC8007C97C7 /* RandomAccess.swift in Sources */,
+				CED7560D1F2E7BC8007C97C7 /* EventListenerProxy.swift in Sources */,
+				CED756551F2E7BC8007C97C7 /* LocaleServiceProvider.swift in Sources */,
+				CED756751F2E7BC8007C97C7 /* NodeChangeListener.swift in Sources */,
+				CED755A51F2E7BC8007C97C7 /* AbstractCollection.swift in Sources */,
+				CED755E51F2E7BC8007C97C7 /* ConcurrentSkipListSet.swift in Sources */,
+				CED756291F2E7BC8007C97C7 /* IdentityHashMap.swift in Sources */,
+				CED756BE1F2E7BC8007C97C7 /* TimeZoneNameProvider.swift in Sources */,
+				CED7561F1F2E7BC8007C97C7 /* Function.swift in Sources */,
+				CED756601F2E7BC8007C97C7 /* LongBinaryOperator.swift in Sources */,
+				CED755B21F2E7BC8007C97C7 /* ArrayDeque.swift in Sources */,
+				CED755EA1F2E7BC8007C97C7 /* CopyOnWriteArraySet.swift in Sources */,
+				CED756581F2E7BC8007C97C7 /* Logger.swift in Sources */,
+				CED756091F2E7BC8007C97C7 /* EnumMap.swift in Sources */,
+				CED756251F2E7BC8007C97C7 /* Handler.swift in Sources */,
+				CED756CA1F2E7BC8007C97C7 /* UnknownFormatConversionException.swift in Sources */,
+				CED755AD1F2E7BC8007C97C7 /* AbstractQueuedSynchronizer.swift in Sources */,
+				CED756CB1F2E7BC8007C97C7 /* UnknownFormatFlagsException.swift in Sources */,
+				CED755FA1F2E7BC8007C97C7 /* DoubleAccumulator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BBC1405A1D49992D0035A039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BBC1405B1D49992D0035A039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBC1405D1D49992D0035A039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.swiftjava.java-util";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		BBC1405E1D49992D0035A039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.swiftjava.java-util";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBC1404E1D49992D0035A039 /* Build configuration list for PBXProject "java_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC1405A1D49992D0035A039 /* Debug */,
+				BBC1405B1D49992D0035A039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC1405C1D49992D0035A039 /* Build configuration list for PBXNativeTarget "java_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC1405D1D49992D0035A039 /* Debug */,
+				BBC1405E1D49992D0035A039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBC1404B1D49992D0035A039 /* Project object */;
+}

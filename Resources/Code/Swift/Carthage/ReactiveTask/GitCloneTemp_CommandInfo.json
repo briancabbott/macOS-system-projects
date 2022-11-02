@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/ReactiveTask undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/ReactiveTask",
+    "repo": "https://github.com/Carthage/ReactiveTask",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/ReactiveTask",
+    "startTime": "2022-10-04T16:27:25.226Z",
+    "endTime": "2022-10-04T16:27:26.169Z",
+    "childProcessPid": 95056,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--ReactiveTask--95056",
+    "executionErrors": []
+}

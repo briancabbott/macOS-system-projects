@@ -1,0 +1,31 @@
+{
+    "title": "PureSwift",
+    "subtitle": "Pure Swift libraries",
+    "publisherName": "Alsey Coleman Miller",
+    "feedIdentifier": "org.pureswift.playgrounds",
+    "contactURL": "https://github.com/pureswift",
+    "formatVersion": "1.2",
+    "documents": [
+        {
+            "title": "Bluetooth",
+            "overviewSubtitle": "Bluetooth examples",
+            "description": "Bluetooth examples",
+            "contentIdentifier": "org.pureswift.playgrounds.bluetooth",
+            "contentVersion": "0.0.1",
+            "url": "https://pureswift.github.io/swift-playgrounds/Bluetooth.playgroundbook.zip",
+            "publishedDate": "2020-10-27T03:26:00+0900",
+            "lastUpdatedDate": "2020-10-27T03:26:00+0900",
+            "thumbnailURL": "https://pureswift.github.io/swift-playgrounds/PureSwiftBluetooth.png",
+            "bannerImageURL": "PureSwiftBluetooth.png",
+            "previewImageURLs": [
+                "PureSwiftBluetooth.png"
+            ],
+            "additionalInformation": [
+                {
+                    "name": "Languages",
+                    "value": "English"
+                }
+            ]
+        }
+    ]
+}

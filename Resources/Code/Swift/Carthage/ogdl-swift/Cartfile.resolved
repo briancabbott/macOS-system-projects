@@ -1,0 +1,7 @@
+github "robrix/Box" "1.0.1"
+github "robrix/Either" "1.1"
+github "robrix/Madness" "b5e2882e924b2377da83adcdb59592ba7fdab52a"
+github "Quick/Nimble" "v0.2.0"
+github "robrix/Prelude" "1.4"
+github "Quick/Quick" "v0.2.2"
+github "jspahrsummers/xcconfigs" "0.7.1"

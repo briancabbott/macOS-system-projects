@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+    --carthage-orange: rgb(246,176,111);
+    --carthage-red: rgb(255,93,91);
+    --carthage-blue: rgb(70,126,190);
+}
+
+.page-header {
+    background-color: var(--carthage-red);
+    background-image: linear-gradient(120deg, var(--carthage-orange), var(--carthage-red), var(--carthage-blue));
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+    color: var(--carthage-blue)
+}

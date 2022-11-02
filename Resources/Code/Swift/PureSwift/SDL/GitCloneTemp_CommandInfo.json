@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/SDL undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SDL",
+    "repo": "https://github.com/PureSwift/SDL",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/SDL",
+    "startTime": "2022-10-04T21:34:46.764Z",
+    "endTime": "2022-10-04T21:34:47.560Z",
+    "childProcessPid": 12728,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--SDL--12728",
+    "executionErrors": []
+}

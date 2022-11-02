@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00F9CDB1A5DC12500B4851E /* OGDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CD01A5DC12500B4851E /* OGDL.framework */; };
+		D00F9CEA1A5DC1C900B4851E /* OGDL.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BBBFC01A5DBF26007913DA /* OGDL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D00F9CEF1A5DC45D00B4851E /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CEB1A5DC45D00B4851E /* Box.framework */; };
+		D00F9CF01A5DC45D00B4851E /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CEC1A5DC45D00B4851E /* Either.framework */; };
+		D00F9CF11A5DC45D00B4851E /* Madness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CED1A5DC45D00B4851E /* Madness.framework */; };
+		D00F9CF21A5DC45D00B4851E /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CEE1A5DC45D00B4851E /* Prelude.framework */; };
+		D00F9CF31A5DC47500B4851E /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CEB1A5DC45D00B4851E /* Box.framework */; };
+		D00F9CF41A5DC47500B4851E /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CEC1A5DC45D00B4851E /* Either.framework */; };
+		D00F9CF51A5DC47500B4851E /* Madness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CED1A5DC45D00B4851E /* Madness.framework */; };
+		D00F9CF61A5DC47500B4851E /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CEE1A5DC45D00B4851E /* Prelude.framework */; };
+		D00F9CFD1A5DC51300B4851E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CFB1A5DC51300B4851E /* Nimble.framework */; };
+		D00F9CFE1A5DC51300B4851E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CFC1A5DC51300B4851E /* Quick.framework */; };
+		D00F9CFF1A5DC51600B4851E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CFB1A5DC51300B4851E /* Nimble.framework */; };
+		D00F9D001A5DC51800B4851E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F9CFC1A5DC51300B4851E /* Quick.framework */; };
+		D00F9D021A5DE12100B4851E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F9D011A5DE12100B4851E /* Parser.swift */; };
+		D00F9D031A5DE12100B4851E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F9D011A5DE12100B4851E /* Parser.swift */; };
+		D00F9D051A5DF4B900B4851E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F9D041A5DF4B900B4851E /* Graph.swift */; };
+		D00F9D061A5DF4B900B4851E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00F9D041A5DF4B900B4851E /* Graph.swift */; };
+		D095A8381A5E03C3003D7787 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = D095A8371A5E03C3003D7787 /* Samples */; };
+		D095A8391A5E03C3003D7787 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = D095A8371A5E03C3003D7787 /* Samples */; };
+		D095A83B1A5E0421003D7787 /* ParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095A83A1A5E0421003D7787 /* ParserSpec.swift */; };
+		D095A83C1A5E0421003D7787 /* ParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095A83A1A5E0421003D7787 /* ParserSpec.swift */; };
+		D0BBBFC11A5DBF26007913DA /* OGDL.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BBBFC01A5DBF26007913DA /* OGDL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0BBBFC71A5DBF26007913DA /* OGDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BBBFBB1A5DBF26007913DA /* OGDL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D00F9CDC1A5DC12500B4851E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0BBBFB21A5DBF26007913DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00F9CCF1A5DC12500B4851E;
+			remoteInfo = OGDL;
+		};
+		D0BBBFC81A5DBF26007913DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0BBBFB21A5DBF26007913DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0BBBFBA1A5DBF26007913DA;
+			remoteInfo = OGDL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D00F9CB51A5DC0CA00B4851E /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		D00F9CB71A5DC0CA00B4851E /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		D00F9CB81A5DC0CA00B4851E /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		D00F9CB91A5DC0CA00B4851E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		D00F9CBA1A5DC0CA00B4851E /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		D00F9CBC1A5DC0CA00B4851E /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		D00F9CBD1A5DC0CA00B4851E /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		D00F9CBE1A5DC0CA00B4851E /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		D00F9CC01A5DC0CA00B4851E /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC11A5DC0CA00B4851E /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC21A5DC0CA00B4851E /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC31A5DC0CA00B4851E /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC51A5DC0CA00B4851E /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC61A5DC0CA00B4851E /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC71A5DC0CA00B4851E /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC81A5DC0CA00B4851E /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		D00F9CC91A5DC0CA00B4851E /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		D00F9CCA1A5DC0CA00B4851E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D00F9CD01A5DC12500B4851E /* OGDL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OGDL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9CDA1A5DC12500B4851E /* OGDL-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OGDL-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9CEB1A5DC45D00B4851E /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9CEC1A5DC45D00B4851E /* Either.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Either.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9CED1A5DC45D00B4851E /* Madness.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Madness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9CEE1A5DC45D00B4851E /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9CFB1A5DC51300B4851E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9CFC1A5DC51300B4851E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00F9D011A5DE12100B4851E /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		D00F9D041A5DF4B900B4851E /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		D095A8371A5E03C3003D7787 /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
+		D095A83A1A5E0421003D7787 /* ParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserSpec.swift; sourceTree = "<group>"; };
+		D0BBBFBB1A5DBF26007913DA /* OGDL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OGDL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BBBFBF1A5DBF26007913DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BBBFC01A5DBF26007913DA /* OGDL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGDL.h; sourceTree = "<group>"; };
+		D0BBBFC61A5DBF26007913DA /* OGDL-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OGDL-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BBBFCC1A5DBF26007913DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00F9CCC1A5DC12500B4851E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00F9CD71A5DC12500B4851E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00F9CDB1A5DC12500B4851E /* OGDL.framework in Frameworks */,
+				D00F9CFF1A5DC51600B4851E /* Nimble.framework in Frameworks */,
+				D00F9D001A5DC51800B4851E /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BBBFB71A5DBF26007913DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00F9CEF1A5DC45D00B4851E /* Box.framework in Frameworks */,
+				D00F9CF01A5DC45D00B4851E /* Either.framework in Frameworks */,
+				D00F9CF11A5DC45D00B4851E /* Madness.framework in Frameworks */,
+				D00F9CF21A5DC45D00B4851E /* Prelude.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BBBFC31A5DBF26007913DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BBBFC71A5DBF26007913DA /* OGDL.framework in Frameworks */,
+				D00F9CF31A5DC47500B4851E /* Box.framework in Frameworks */,
+				D00F9CF41A5DC47500B4851E /* Either.framework in Frameworks */,
+				D00F9CFD1A5DC51300B4851E /* Nimble.framework in Frameworks */,
+				D00F9CF51A5DC47500B4851E /* Madness.framework in Frameworks */,
+				D00F9CF61A5DC47500B4851E /* Prelude.framework in Frameworks */,
+				D00F9CFE1A5DC51300B4851E /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D00F9CB31A5DC0CA00B4851E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D00F9CB41A5DC0CA00B4851E /* Base */,
+				D00F9CBF1A5DC0CA00B4851E /* iOS */,
+				D00F9CC41A5DC0CA00B4851E /* Mac OS X */,
+				D00F9CCA1A5DC0CA00B4851E /* README.md */,
+			);
+			name = Configuration;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		D00F9CB41A5DC0CA00B4851E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D00F9CB51A5DC0CA00B4851E /* Common.xcconfig */,
+				D00F9CB61A5DC0CA00B4851E /* Configurations */,
+				D00F9CBB1A5DC0CA00B4851E /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D00F9CB61A5DC0CA00B4851E /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				D00F9CB71A5DC0CA00B4851E /* Debug.xcconfig */,
+				D00F9CB81A5DC0CA00B4851E /* Profile.xcconfig */,
+				D00F9CB91A5DC0CA00B4851E /* Release.xcconfig */,
+				D00F9CBA1A5DC0CA00B4851E /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		D00F9CBB1A5DC0CA00B4851E /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				D00F9CBC1A5DC0CA00B4851E /* Application.xcconfig */,
+				D00F9CBD1A5DC0CA00B4851E /* Framework.xcconfig */,
+				D00F9CBE1A5DC0CA00B4851E /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		D00F9CBF1A5DC0CA00B4851E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D00F9CC01A5DC0CA00B4851E /* iOS-Application.xcconfig */,
+				D00F9CC11A5DC0CA00B4851E /* iOS-Base.xcconfig */,
+				D00F9CC21A5DC0CA00B4851E /* iOS-Framework.xcconfig */,
+				D00F9CC31A5DC0CA00B4851E /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D00F9CC41A5DC0CA00B4851E /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				D00F9CC51A5DC0CA00B4851E /* Mac-Application.xcconfig */,
+				D00F9CC61A5DC0CA00B4851E /* Mac-Base.xcconfig */,
+				D00F9CC71A5DC0CA00B4851E /* Mac-DynamicLibrary.xcconfig */,
+				D00F9CC81A5DC0CA00B4851E /* Mac-Framework.xcconfig */,
+				D00F9CC91A5DC0CA00B4851E /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		D0BBBFB11A5DBF26007913DA = {
+			isa = PBXGroup;
+			children = (
+				D0BBBFBD1A5DBF26007913DA /* OGDL */,
+				D0BBBFCA1A5DBF26007913DA /* OGDLTests */,
+				D00F9CB31A5DC0CA00B4851E /* Configuration */,
+				D0BBBFBC1A5DBF26007913DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0BBBFBC1A5DBF26007913DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBBFBB1A5DBF26007913DA /* OGDL.framework */,
+				D0BBBFC61A5DBF26007913DA /* OGDL-MacTests.xctest */,
+				D00F9CD01A5DC12500B4851E /* OGDL.framework */,
+				D00F9CDA1A5DC12500B4851E /* OGDL-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0BBBFBD1A5DBF26007913DA /* OGDL */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBBFC01A5DBF26007913DA /* OGDL.h */,
+				D00F9D041A5DF4B900B4851E /* Graph.swift */,
+				D00F9D011A5DE12100B4851E /* Parser.swift */,
+				D0BBBFBE1A5DBF26007913DA /* Supporting Files */,
+			);
+			path = OGDL;
+			sourceTree = "<group>";
+		};
+		D0BBBFBE1A5DBF26007913DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D00F9CEB1A5DC45D00B4851E /* Box.framework */,
+				D00F9CEC1A5DC45D00B4851E /* Either.framework */,
+				D00F9CED1A5DC45D00B4851E /* Madness.framework */,
+				D00F9CEE1A5DC45D00B4851E /* Prelude.framework */,
+				D0BBBFBF1A5DBF26007913DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0BBBFCA1A5DBF26007913DA /* OGDLTests */ = {
+			isa = PBXGroup;
+			children = (
+				D095A83A1A5E0421003D7787 /* ParserSpec.swift */,
+				D0BBBFCB1A5DBF26007913DA /* Supporting Files */,
+			);
+			path = OGDLTests;
+			sourceTree = "<group>";
+		};
+		D0BBBFCB1A5DBF26007913DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D095A8371A5E03C3003D7787 /* Samples */,
+				D00F9CFB1A5DC51300B4851E /* Nimble.framework */,
+				D00F9CFC1A5DC51300B4851E /* Quick.framework */,
+				D0BBBFCC1A5DBF26007913DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D00F9CCD1A5DC12500B4851E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00F9CEA1A5DC1C900B4851E /* OGDL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BBBFB81A5DBF26007913DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BBBFC11A5DBF26007913DA /* OGDL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D00F9CCF1A5DC12500B4851E /* OGDL-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00F9CE71A5DC12500B4851E /* Build configuration list for PBXNativeTarget "OGDL-iOS" */;
+			buildPhases = (
+				D00F9CCB1A5DC12500B4851E /* Sources */,
+				D00F9CCC1A5DC12500B4851E /* Frameworks */,
+				D00F9CCD1A5DC12500B4851E /* Headers */,
+				D00F9CCE1A5DC12500B4851E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OGDL-iOS";
+			productName = OGDL;
+			productReference = D00F9CD01A5DC12500B4851E /* OGDL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D00F9CD91A5DC12500B4851E /* OGDL-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00F9CE81A5DC12500B4851E /* Build configuration list for PBXNativeTarget "OGDL-iOSTests" */;
+			buildPhases = (
+				D00F9CD61A5DC12500B4851E /* Sources */,
+				D00F9CD71A5DC12500B4851E /* Frameworks */,
+				D00F9CD81A5DC12500B4851E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00F9CDD1A5DC12500B4851E /* PBXTargetDependency */,
+			);
+			name = "OGDL-iOSTests";
+			productName = OGDLTests;
+			productReference = D00F9CDA1A5DC12500B4851E /* OGDL-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0BBBFBA1A5DBF26007913DA /* OGDL-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BBBFD11A5DBF26007913DA /* Build configuration list for PBXNativeTarget "OGDL-Mac" */;
+			buildPhases = (
+				D0BBBFB61A5DBF26007913DA /* Sources */,
+				D0BBBFB71A5DBF26007913DA /* Frameworks */,
+				D0BBBFB81A5DBF26007913DA /* Headers */,
+				D0BBBFB91A5DBF26007913DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OGDL-Mac";
+			productName = OGDL;
+			productReference = D0BBBFBB1A5DBF26007913DA /* OGDL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0BBBFC51A5DBF26007913DA /* OGDL-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BBBFD41A5DBF26007913DA /* Build configuration list for PBXNativeTarget "OGDL-MacTests" */;
+			buildPhases = (
+				D0BBBFC21A5DBF26007913DA /* Sources */,
+				D0BBBFC31A5DBF26007913DA /* Frameworks */,
+				D0BBBFC41A5DBF26007913DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0BBBFC91A5DBF26007913DA /* PBXTargetDependency */,
+			);
+			name = "OGDL-MacTests";
+			productName = OGDLTests;
+			productReference = D0BBBFC61A5DBF26007913DA /* OGDL-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0BBBFB21A5DBF26007913DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Carthage;
+				TargetAttributes = {
+					D00F9CCF1A5DC12500B4851E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D00F9CD91A5DC12500B4851E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D0BBBFBA1A5DBF26007913DA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D0BBBFC51A5DBF26007913DA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = D0BBBFB51A5DBF26007913DA /* Build configuration list for PBXProject "OGDL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0BBBFB11A5DBF26007913DA;
+			productRefGroup = D0BBBFBC1A5DBF26007913DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0BBBFBA1A5DBF26007913DA /* OGDL-Mac */,
+				D0BBBFC51A5DBF26007913DA /* OGDL-MacTests */,
+				D00F9CCF1A5DC12500B4851E /* OGDL-iOS */,
+				D00F9CD91A5DC12500B4851E /* OGDL-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00F9CCE1A5DC12500B4851E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00F9CD81A5DC12500B4851E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095A8391A5E03C3003D7787 /* Samples in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BBBFB91A5DBF26007913DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BBBFC41A5DBF26007913DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095A8381A5E03C3003D7787 /* Samples in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00F9CCB1A5DC12500B4851E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00F9D061A5DF4B900B4851E /* Graph.swift in Sources */,
+				D00F9D031A5DE12100B4851E /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00F9CD61A5DC12500B4851E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095A83C1A5E0421003D7787 /* ParserSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BBBFB61A5DBF26007913DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00F9D051A5DF4B900B4851E /* Graph.swift in Sources */,
+				D00F9D021A5DE12100B4851E /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BBBFC21A5DBF26007913DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D095A83B1A5E0421003D7787 /* ParserSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D00F9CDD1A5DC12500B4851E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00F9CCF1A5DC12500B4851E /* OGDL-iOS */;
+			targetProxy = D00F9CDC1A5DC12500B4851E /* PBXContainerItemProxy */;
+		};
+		D0BBBFC91A5DBF26007913DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0BBBFBA1A5DBF26007913DA /* OGDL-Mac */;
+			targetProxy = D0BBBFC81A5DBF26007913DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D00F9CE31A5DC12500B4851E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC21A5DC0CA00B4851E /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = OGDL/Info.plist;
+			};
+			name = Debug;
+		};
+		D00F9CE41A5DC12500B4851E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC21A5DC0CA00B4851E /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = OGDL/Info.plist;
+			};
+			name = Release;
+		};
+		D00F9CE51A5DC12500B4851E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC01A5DC0CA00B4851E /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OGDLTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D00F9CE61A5DC12500B4851E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC01A5DC0CA00B4851E /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OGDLTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0BBBFCF1A5DBF26007913DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CB71A5DC0CA00B4851E /* Debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0BBBFD01A5DBF26007913DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CB91A5DC0CA00B4851E /* Release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0BBBFD21A5DBF26007913DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC81A5DC0CA00B4851E /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OGDL/Info.plist;
+			};
+			name = Debug;
+		};
+		D0BBBFD31A5DBF26007913DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC81A5DC0CA00B4851E /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OGDL/Info.plist;
+			};
+			name = Release;
+		};
+		D0BBBFD51A5DBF26007913DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC51A5DC0CA00B4851E /* Mac-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OGDLTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0BBBFD61A5DBF26007913DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00F9CC51A5DC0CA00B4851E /* Mac-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OGDLTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D00F9CE71A5DC12500B4851E /* Build configuration list for PBXNativeTarget "OGDL-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00F9CE31A5DC12500B4851E /* Debug */,
+				D00F9CE41A5DC12500B4851E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00F9CE81A5DC12500B4851E /* Build configuration list for PBXNativeTarget "OGDL-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00F9CE51A5DC12500B4851E /* Debug */,
+				D00F9CE61A5DC12500B4851E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BBBFB51A5DBF26007913DA /* Build configuration list for PBXProject "OGDL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BBBFCF1A5DBF26007913DA /* Debug */,
+				D0BBBFD01A5DBF26007913DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BBBFD11A5DBF26007913DA /* Build configuration list for PBXNativeTarget "OGDL-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BBBFD21A5DBF26007913DA /* Debug */,
+				D0BBBFD31A5DBF26007913DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BBBFD41A5DBF26007913DA /* Build configuration list for PBXNativeTarget "OGDL-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BBBFD51A5DBF26007913DA /* Debug */,
+				D0BBBFD61A5DBF26007913DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0BBBFB21A5DBF26007913DA /* Project object */;
+}

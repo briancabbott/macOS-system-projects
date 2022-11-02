@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CMinizip undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CMinizip",
+    "repo": "https://github.com/PureSwift/CMinizip",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CMinizip",
+    "startTime": "2022-10-04T21:34:15.302Z",
+    "endTime": "2022-10-04T21:34:15.905Z",
+    "childProcessPid": 12477,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CMinizip--12477",
+    "executionErrors": []
+}

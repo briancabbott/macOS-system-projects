@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/Carthage/Commandant undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/Commandant",
+    "repo": "https://github.com/Carthage/Commandant",
+    "targetPath": "undefined\\C--10-04-2022--qbZVVpGB653exoUH4cfaZg/Commandant",
+    "startTime": "2022-10-04T16:27:20.945Z",
+    "endTime": "2022-10-04T16:27:21.922Z",
+    "childProcessPid": 95026,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--Carthage--Commandant--95026",
+    "executionErrors": []
+}

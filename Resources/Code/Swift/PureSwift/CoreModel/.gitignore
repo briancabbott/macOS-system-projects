@@ -1,0 +1,6 @@
+.build
+Packages
+Carthage/*
+Xcode/CoreModel/CoreModel.xcodeproj/project.xcworkspace/xcuserdata
+*.xcuserdatad
+CoreModel.xcodeproj/*

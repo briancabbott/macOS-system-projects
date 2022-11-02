@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/HAP undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/HAP",
+    "repo": "https://github.com/PureSwift/HAP",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/HAP",
+    "startTime": "2022-10-04T21:34:33.727Z",
+    "endTime": "2022-10-04T21:34:34.349Z",
+    "childProcessPid": 12623,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--HAP--12623",
+    "executionErrors": []
+}

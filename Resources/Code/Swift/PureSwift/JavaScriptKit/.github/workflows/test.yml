@@ -1,0 +1,28 @@
+name: Run unit tests
+on: [push, pull_request]
+jobs:
+  test:
+    name: Build and Test
+    strategy:
+      matrix:
+        os: [macOS-10.15]
+        include:
+          - os: macOS-10.15
+            toolchain: https://github.com/swiftwasm/swift/releases/download/swift-wasm-DEVELOPMENT-SNAPSHOT-2020-06-03-a/swift-wasm-DEVELOPMENT-SNAPSHOT-2020-06-03-a-osx.tar.gz
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: Run Test
+        run: |
+          git clone https://github.com/kylef/swiftenv.git ~/.swiftenv
+          export SWIFTENV_ROOT="$HOME/.swiftenv"
+          export PATH="$SWIFTENV_ROOT/bin:$PATH"
+          eval "$(swiftenv init -)"
+          swiftenv install $TOOLCHAIN_DOWNLOAD
+          make bootstrap
+          make test
+        env:
+          TOOLCHAIN_DOWNLOAD: ${{ matrix.toolchain }}

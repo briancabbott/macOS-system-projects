@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Kronos undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Kronos",
+    "repo": "https://github.com/PureSwift/Kronos",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Kronos",
+    "startTime": "2022-10-04T21:34:38.897Z",
+    "endTime": "2022-10-04T21:34:39.698Z",
+    "childProcessPid": 12666,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Kronos--12666",
+    "executionErrors": []
+}

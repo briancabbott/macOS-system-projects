@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CBSON undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CBSON",
+    "repo": "https://github.com/PureSwift/CBSON",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CBSON",
+    "startTime": "2022-10-04T21:34:08.301Z",
+    "endTime": "2022-10-04T21:34:08.907Z",
+    "childProcessPid": 12412,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CBSON--12412",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/BluetoothDarwin undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/BluetoothDarwin",
+    "repo": "https://github.com/PureSwift/BluetoothDarwin",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/BluetoothDarwin",
+    "startTime": "2022-10-04T21:34:03.660Z",
+    "endTime": "2022-10-04T21:34:04.448Z",
+    "childProcessPid": 12385,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--BluetoothDarwin--12385",
+    "executionErrors": []
+}

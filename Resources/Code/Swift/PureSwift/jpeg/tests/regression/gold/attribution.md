@@ -1,0 +1,1 @@
+../../integration/decode/attribution.md

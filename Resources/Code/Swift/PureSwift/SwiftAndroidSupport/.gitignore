@@ -1,0 +1,9 @@
+.gradle/
+.idea/
+SwiftAndroidSupport.iml
+
+build/
+gradlew
+gradlew.bat
+local.properties
+libs/

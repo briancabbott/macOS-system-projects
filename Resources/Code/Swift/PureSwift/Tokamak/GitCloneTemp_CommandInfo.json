@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Tokamak undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Tokamak",
+    "repo": "https://github.com/PureSwift/Tokamak",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Tokamak",
+    "startTime": "2022-10-04T21:35:03.773Z",
+    "endTime": "2022-10-04T21:35:05.099Z",
+    "childProcessPid": 12827,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Tokamak--12827",
+    "executionErrors": []
+}

@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CMySQL undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CMySQL",
+    "repo": "https://github.com/PureSwift/CMySQL",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CMySQL",
+    "startTime": "2022-10-04T21:34:16.521Z",
+    "endTime": "2022-10-04T21:34:17.132Z",
+    "childProcessPid": 12490,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CMySQL--12490",
+    "executionErrors": []
+}

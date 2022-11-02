@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CDBus",
+        "repositoryURL": "https://github.com/PureSwift/CDBus.git",
+        "state": {
+          "branch": "master",
+          "revision": "ccffce2e8469e89589d24234eed31c067104722a",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

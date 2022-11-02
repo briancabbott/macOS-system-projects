@@ -1,0 +1,17 @@
+stages:
+    - build
+    - test
+
+build-macos:
+    stage: build
+    script: swift build
+    tags:
+        - osx
+        - swift5
+
+test-macos:
+    stage: test
+    script: swift test
+    tags:
+        - osx
+        - swift5

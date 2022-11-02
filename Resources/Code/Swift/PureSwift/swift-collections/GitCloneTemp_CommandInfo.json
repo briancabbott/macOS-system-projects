@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/swift-collections undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-collections",
+    "repo": "https://github.com/PureSwift/swift-collections",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-collections",
+    "startTime": "2022-10-04T21:35:53.010Z",
+    "endTime": "2022-10-04T21:35:54.416Z",
+    "childProcessPid": 13027,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--swift-collections--13027",
+    "executionErrors": []
+}

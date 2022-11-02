@@ -1,0 +1,7 @@
+.build
+Packages
+Cacao.xcodeproj
+
+*.xcuserstate
+*.xcworkspacedata
+*.xcuserdatad

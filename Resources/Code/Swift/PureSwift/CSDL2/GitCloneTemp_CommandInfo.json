@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CSDL2 undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CSDL2",
+    "repo": "https://github.com/PureSwift/CSDL2",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CSDL2",
+    "startTime": "2022-10-04T21:34:19.198Z",
+    "endTime": "2022-10-04T21:34:19.846Z",
+    "childProcessPid": 12512,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CSDL2--12512",
+    "executionErrors": []
+}

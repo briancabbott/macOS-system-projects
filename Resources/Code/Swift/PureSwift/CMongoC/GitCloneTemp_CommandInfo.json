@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CMongoC undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CMongoC",
+    "repo": "https://github.com/PureSwift/CMongoC",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CMongoC",
+    "startTime": "2022-10-04T21:34:15.905Z",
+    "endTime": "2022-10-04T21:34:16.520Z",
+    "childProcessPid": 12482,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CMongoC--12482",
+    "executionErrors": []
+}

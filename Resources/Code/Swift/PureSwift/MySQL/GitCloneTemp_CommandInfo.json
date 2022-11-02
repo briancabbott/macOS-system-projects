@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/MySQL undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/MySQL",
+    "repo": "https://github.com/PureSwift/MySQL",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/MySQL",
+    "startTime": "2022-10-04T21:34:41.273Z",
+    "endTime": "2022-10-04T21:34:42.156Z",
+    "childProcessPid": 12683,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--MySQL--12683",
+    "executionErrors": []
+}

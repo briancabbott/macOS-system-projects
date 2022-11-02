@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Bluetooth undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Bluetooth",
+    "repo": "https://github.com/PureSwift/Bluetooth",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Bluetooth",
+    "startTime": "2022-10-04T21:34:01.273Z",
+    "endTime": "2022-10-04T21:34:03.659Z",
+    "childProcessPid": 12351,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Bluetooth--12351",
+    "executionErrors": []
+}

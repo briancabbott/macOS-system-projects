@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/LittleCMS undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/LittleCMS",
+    "repo": "https://github.com/PureSwift/LittleCMS",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/LittleCMS",
+    "startTime": "2022-10-04T21:34:39.698Z",
+    "endTime": "2022-10-04T21:34:40.480Z",
+    "childProcessPid": 12671,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--LittleCMS--12671",
+    "executionErrors": []
+}

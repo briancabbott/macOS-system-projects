@@ -1,0 +1,6 @@
+add_subdirectory(Benchmark)
+if(BUILD_EXAMPLES)
+  add_subdirectory(BenchmarkMinimalExample)
+  add_subdirectory(BenchmarkSuiteExample)
+  add_subdirectory(BenchmarkSuiteExampleMain)
+endif()

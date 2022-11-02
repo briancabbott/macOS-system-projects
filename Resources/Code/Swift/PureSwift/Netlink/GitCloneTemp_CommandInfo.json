@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/Netlink undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Netlink",
+    "repo": "https://github.com/PureSwift/Netlink",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/Netlink",
+    "startTime": "2022-10-04T21:34:42.769Z",
+    "endTime": "2022-10-04T21:34:43.702Z",
+    "childProcessPid": 12695,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--Netlink--12695",
+    "executionErrors": []
+}

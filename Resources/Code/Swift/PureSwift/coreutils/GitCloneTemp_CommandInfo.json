@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/coreutils undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/coreutils",
+    "repo": "https://github.com/PureSwift/coreutils",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/coreutils",
+    "startTime": "2022-10-04T21:35:10.059Z",
+    "endTime": "2022-10-04T21:35:14.928Z",
+    "childProcessPid": 12859,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--coreutils--12859",
+    "executionErrors": []
+}

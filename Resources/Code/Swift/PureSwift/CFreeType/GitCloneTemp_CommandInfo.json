@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CFreeType undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CFreeType",
+    "repo": "https://github.com/PureSwift/CFreeType",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CFreeType",
+    "startTime": "2022-10-04T21:34:11.920Z",
+    "endTime": "2022-10-04T21:34:12.686Z",
+    "childProcessPid": 12439,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CFreeType--12439",
+    "executionErrors": []
+}

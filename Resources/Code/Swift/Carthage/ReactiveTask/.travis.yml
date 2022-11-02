@@ -1,0 +1,48 @@
+language: objective-c
+xcode_workspace: ReactiveTask.xcworkspace
+branches:
+  only:
+    - master
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10.2
+      xcode_scheme: ReactiveTask
+      script:
+        - set -o pipefail && xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" test | xcpretty
+      env: JOB=Xcode10.2
+    - os: osx
+      osx_image: xcode10.2
+      script:
+        - swift --version
+        - swift build
+        - swift test
+      git:
+        submodules: false
+      env: JOB=SWIFTPM_DARWIN
+    - os: osx
+      osx_image: xcode10.2
+      script:
+        - gem update cocoapods
+        - pod repo update
+        - pod lib lint
+notifications:
+  email: false
+  slack:
+    secure: Nh1mbn1RzYrI5tIY52gNrMy+PX1hdq2rIAJHxJjeiWjQDYfIoynhQ/2NIKs6Y0b0E5GIQEtF1fereyWdxcoEFGloY3cq4HZ7dgqr9kzOHrlDMp80fWbcoTqrgbOsKreFFtrv413d5+YcNkJvkYRfnxbuWLPZPszrcbw82TyRL60=
+before_deploy:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+  - carthage version
+  - carthage build --no-skip-current --platform mac
+  - carthage archive ReactiveTask
+deploy:
+  provider: releases
+  api_key:
+    secure: HL8FyVudN7johEi0hFOVR58NSVB8lFpx4HLzeZZoCz7nabj3LtavDoPF7c72nOYdrV6bhQiLiF2ocsYlfTrAyX5whO3532Lih3mE9NRePRGMyqnVD+4CnJUXusPxbesHq4IkMfEsq40KiqXKBa4XsiHZPhrQhmE+u7I4YIzjOYo=
+  file: ReactiveTask.framework.zip
+  skip_cleanup: true
+  on:
+    repo: Carthage/ReactiveTask
+    tags: true
+    condition: $JOB = Xcode10.2

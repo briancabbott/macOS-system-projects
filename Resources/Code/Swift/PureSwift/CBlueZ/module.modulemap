@@ -1,0 +1,18 @@
+module CBlueZ [system] {
+    header "/usr/include/bluetooth/bluetooth.h"
+    header "/usr/include/bluetooth/a2mp.h"
+    header "/usr/include/bluetooth/bnep.h"
+    header "/usr/include/bluetooth/cmtp.h"
+    header "/usr/include/bluetooth/hci.h"
+    header "/usr/include/bluetooth/hci_lib.h"
+    header "/usr/include/bluetooth/hidp.h"
+    header "/usr/include/bluetooth/l2cap.h"
+    header "/usr/include/bluetooth/mgmt.h"
+    header "/usr/include/bluetooth/rfcomm.h"
+    header "/usr/include/bluetooth/sco.h"
+    header "/usr/include/bluetooth/sdp.h"
+    header "/usr/include/bluetooth/sdp_lib.h"
+    header "/usr/include/bluetooth/uuid.h"
+    link "bluetooth"
+    export *
+}

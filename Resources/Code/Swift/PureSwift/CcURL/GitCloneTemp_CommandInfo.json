@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CcURL undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CcURL",
+    "repo": "https://github.com/PureSwift/CcURL",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CcURL",
+    "startTime": "2022-10-04T21:34:26.206Z",
+    "endTime": "2022-10-04T21:34:26.990Z",
+    "childProcessPid": 12567,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CcURL--12567",
+    "executionErrors": []
+}

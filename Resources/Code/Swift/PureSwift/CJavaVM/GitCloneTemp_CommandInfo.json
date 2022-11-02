@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CJavaVM undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CJavaVM",
+    "repo": "https://github.com/PureSwift/CJavaVM",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CJavaVM",
+    "startTime": "2022-10-04T21:34:13.292Z",
+    "endTime": "2022-10-04T21:34:13.991Z",
+    "childProcessPid": 12457,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CJavaVM--12457",
+    "executionErrors": []
+}

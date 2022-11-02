@@ -1,0 +1,13 @@
+.DS_Store
+Package.resolved
+/.build
+/Packages
+/*.xcodeproj
+.xcode
+DerivedData
+.swiftpm
+
+.SourceKitten/
+docs/
+
+.*.sw?

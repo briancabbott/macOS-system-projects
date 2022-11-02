@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/swift-benchmark undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-benchmark",
+    "repo": "https://github.com/PureSwift/swift-benchmark",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/swift-benchmark",
+    "startTime": "2022-10-04T21:35:50.094Z",
+    "endTime": "2022-10-04T21:35:51.020Z",
+    "childProcessPid": 13009,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--swift-benchmark--13009",
+    "executionErrors": []
+}

@@ -1,0 +1,51 @@
+name: coverage
+
+on:
+  push:
+    branches:
+       - main
+    paths:
+      - '**/*.swift'
+      - '.github/workflows/coverage.yml'
+      - '!Examples/**/*.swift'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**/*.swift'
+      - '.github/workflows/coverage.yml'
+      - '!Examples/**/*.swift'
+  workflow_dispatch:
+
+jobs:
+  coverage:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        include:
+          - branch: development
+            tag: DEVELOPMENT-SNAPSHOT-2022-07-20-a
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: seanmiddleditch/gha-setup-vsdevenv@master
+    - uses: compnerd/gha-setup-swift@main
+      with:
+        tag: ${{ matrix.tag }}
+        branch: ${{ matrix.branch }}
+
+    - name: Build
+      run: swift build -v
+
+    - name: Run tests
+      run: swift test -v -Xswiftc -DENABLE_TESTING --enable-code-coverage
+
+    - name: Process Coverage
+      run: |
+        llvm-cov export -format lcov -ignore-filename-regex ".build|Tests|Examples" -instr-profile .build\x86_64-unknown-windows-msvc\debug\codecov\default.profdata .build\x86_64-unknown-windows-msvc\debug\SwiftWin32PackageTests.xctest > coverage.lcov
+
+    - uses: codecov/codecov-action@v1.5.0
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: coverage.lcov

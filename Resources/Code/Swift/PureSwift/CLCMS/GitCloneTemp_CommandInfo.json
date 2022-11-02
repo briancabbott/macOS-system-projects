@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/PureSwift/CLCMS undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CLCMS",
+    "repo": "https://github.com/PureSwift/CLCMS",
+    "targetPath": "undefined\\pure--10-04-2022--36Pe7feZL2b2HqgQP7JU95/CLCMS",
+    "startTime": "2022-10-04T21:34:13.992Z",
+    "endTime": "2022-10-04T21:34:14.635Z",
+    "childProcessPid": 12466,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/workingdir/--PureSwift--CLCMS--12466",
+    "executionErrors": []
+}
