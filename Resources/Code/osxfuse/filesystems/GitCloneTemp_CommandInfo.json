@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/osxfuse/filesystems undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/filesystems",
+    "repo": "https://github.com/osxfuse/filesystems",
+    "targetPath": "undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/filesystems",
+    "startTime": "2022-09-03T14:31:42.140Z",
+    "endTime": "2022-09-03T14:31:43.862Z",
+    "childProcessPid": 10835,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/workingdir/--osxfuse--filesystems--10835",
+    "executionErrors": []
+}

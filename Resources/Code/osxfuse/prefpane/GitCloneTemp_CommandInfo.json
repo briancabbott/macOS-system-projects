@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/osxfuse/prefpane undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/prefpane",
+    "repo": "https://github.com/osxfuse/prefpane",
+    "targetPath": "undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/prefpane",
+    "startTime": "2022-09-03T14:31:49.005Z",
+    "endTime": "2022-09-03T14:31:50.207Z",
+    "childProcessPid": 10909,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/workingdir/--osxfuse--prefpane--10909",
+    "executionErrors": []
+}

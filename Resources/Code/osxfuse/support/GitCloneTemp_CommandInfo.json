@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/osxfuse/support undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/support",
+    "repo": "https://github.com/osxfuse/support",
+    "targetPath": "undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/support",
+    "startTime": "2022-09-03T14:31:50.764Z",
+    "endTime": "2022-09-03T14:31:51.627Z",
+    "childProcessPid": 10932,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/workingdir/--osxfuse--support--10932",
+    "executionErrors": []
+}

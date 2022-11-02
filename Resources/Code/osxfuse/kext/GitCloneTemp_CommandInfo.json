@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/osxfuse/kext undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/kext",
+    "repo": "https://github.com/osxfuse/kext",
+    "targetPath": "undefined\\osxf--09-03-2022--a9DCD3vanjyyZQpDgPHpE2/kext",
+    "startTime": "2022-09-03T14:31:45.921Z",
+    "endTime": "2022-09-03T14:31:46.814Z",
+    "childProcessPid": 10877,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/workingdir/--osxfuse--kext--10877",
+    "executionErrors": []
+}
