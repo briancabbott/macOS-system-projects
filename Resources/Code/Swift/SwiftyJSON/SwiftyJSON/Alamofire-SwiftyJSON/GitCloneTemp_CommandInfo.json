@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/SwiftyJSON/Alamofire-SwiftyJSON undefined\\SJSON--10-04-2022--g8qnMHPgszk9tzY32AFrqH/Alamofire-SwiftyJSON",
+    "repo": "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON",
+    "targetPath": "undefined\\SJSON--10-04-2022--g8qnMHPgszk9tzY32AFrqH/Alamofire-SwiftyJSON",
+    "startTime": "2022-10-04T15:48:55.216Z",
+    "endTime": "2022-10-04T15:48:56.201Z",
+    "childProcessPid": 89911,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/SwiftyJSON/workingdir/--SwiftyJSON--Alamofire-SwiftyJSON--89911",
+    "executionErrors": []
+}

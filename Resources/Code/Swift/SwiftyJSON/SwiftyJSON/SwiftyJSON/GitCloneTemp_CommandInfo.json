@@ -1,0 +1,10 @@
+{
+    "commandText": "git clone --progress --verbose https://github.com/SwiftyJSON/SwiftyJSON undefined\\SJSON--10-04-2022--g8qnMHPgszk9tzY32AFrqH/SwiftyJSON",
+    "repo": "https://github.com/SwiftyJSON/SwiftyJSON",
+    "targetPath": "undefined\\SJSON--10-04-2022--g8qnMHPgszk9tzY32AFrqH/SwiftyJSON",
+    "startTime": "2022-10-04T15:48:56.202Z",
+    "endTime": "2022-10-04T15:48:57.407Z",
+    "childProcessPid": 89917,
+    "commandLogFilePath": "/Users/brian/dev_space/GitHub-briancabbott/macOS-system-projects/Resources/Code/Swift/SwiftyJSON/workingdir/--SwiftyJSON--SwiftyJSON--89917",
+    "executionErrors": []
+}
