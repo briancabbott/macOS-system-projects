@@ -1,0 +1,6 @@
+docs*
+!docsify
+dist*
+node_modules
+.DS_Store
+diffs/**
