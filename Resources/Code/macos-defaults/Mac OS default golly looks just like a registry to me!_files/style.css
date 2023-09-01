@@ -1,0 +1,57 @@
+/*   see http://csslint.net
+12/09/22 z 90%
+12/03/22 add <z>  z   {font-family:menlo} for slashed zero. example <code>the retturn code is <z>0</z></code>.
+06/22/22 <TD> border-style:dotted ??
+01/23/22 s {text-decoration:none;font-family:sans-serif} good for embedded iun pre
+04/20/21  lost   : code { font-size:120%} & tt   { font-size:120%} if favor of default but bold or bigger look better
+
+12/30/18 table border-spacing:0  ; TD padding-left:.5em   
+12/07/19 changed code to specify courier 
+12/30/19 change pre to specify courier 
+
+S {I never use i for italics but frequently use i class=x for gray, 90% so have just i do that  6/24/18  use em  for emphsis}
+*/
+body  {font-family:verdana,arial,sans-serif}
+h1,h2 { margin:4px}
+h3,h4 { margin:2px}
+h5,h6 { margin:1px}
+a.u  {text-decoration:underline}
+a.nu {text-decoration:none}
+p    { margin-left:0}
+dl   { margin:0}
+dt   { float:left;font-family:monospace;font-size:120%;font-weight:bold;margin-right:1em;}
+dd   { margin-left:7em;margin-bottom:1em}
+pre  { font-family:courier; }
+code { font-family:courier;font-size:120% }
+z    { font-family:menlo;font-size:90%}
+var  { font-family:serif;font-size:90%}
+q    { color:silver} 
+s {text-decoration:none;font-family:sans-serif}
+i        {color:silver;font-size:90%;font-style:normal;font-weight:normal} /* used for [ | ] ndicating optional or choice */
+i.x      {color:silver;font-size:90%;font-style:normal;font-weight:normal}
+i.syntax {color:gray;  font-size:90%;font-style:normal} 
+i.star   {color:green;cursor:help;font-weight:normal;font-style:normal;font-size:100%}
+i.d      {color:green;cursor:help;font-weight:normal;font-style:normal;font-size:100%}
+
+a.h      {color:green;cursor:help;font-weight:normal;background-color:honeydew;text-decoration:none}  
+b.h      {color:green;cursor:help;font-weight:normal;background-color:honeydew}  
+b.hs     {color:green;cursor:help;font-weight:normal;background-color:honeydew;vertical-align:super}  
+b.s      {color:green;cursor:help;font-weight:normal;vertical-align:super}  
+i.h      {color:green;cursor:help;font-style:normal}  
+sup.h    {color:green;cursor:help;font-weight:bold;font-family:serif}
+
+table   {border-width:1px;border-style:solid;border-spacing:0}
+tr      {vertical-align:top}
+tr.root {color:brown}
+td      {padding-left:.5em;padding-right:1em;padding-top:0;padding-bottom:0;vertical-align:top;border-width:.5px;border-style:dotted;} 
+.noborder {border-style:none}
+.nb       {border-style:none}
+
+pre.samp    {background-color:azure; padding:0;padding-left:1em;padding-bottom:.5em }
+blockquote {background-color:azure;font-family:monospace;font-size:100%;font-weight:bold;
+            padding-left:1em;padding-right:1em;
+            margin-left:1em;margin-right:0;
+            padding-top:2px;padding-bottom:2px;}
+
+ul {margin-top:0;margin-bottom:0}
+.CC  {font-family:monospace;font-size:160%} /* as in Control Characters */

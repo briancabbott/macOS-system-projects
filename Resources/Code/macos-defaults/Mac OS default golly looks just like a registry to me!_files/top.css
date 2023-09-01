@@ -1,0 +1,17 @@
+#topBtn {
+    display: none;          /* Hidden by default */
+    position: fixed;        /* Fixed/sticky position */
+    bottom: 55px;           /* Place the button from the bottom */
+    right: 10px;            /* Place the button from the right */
+    z-index: 99;            /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: lightYellow;
+    color: #0000C0;
+    cursor: pointer;        /* Add a mouse pointer on hover */
+    padding: 10px;          /* Some padding */
+    border-radius: 10px;    /* Rounded corners */
+}
+
+#topBtn:hover { background-color: yellow /* Add a darker background on hover */
+}
