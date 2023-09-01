@@ -1,0 +1,212 @@
+//===--- DiagnosticsClangImporter.def - Diagnostics Text --------*- C++ -*-===//
+//
+// This source file is part of the Swift.org open source project
+//
+// Copyright (c) 2014 - 2017 Apple Inc. and the Swift project authors
+// Licensed under Apache License v2.0 with Runtime Library Exception
+//
+// See https://swift.org/LICENSE.txt for license information
+// See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
+//
+//===----------------------------------------------------------------------===//
+//
+//  This file defines diagnostics for the Clang importer.
+//  Each diagnostic is described using one of three kinds (error, warning, or
+//  note) along with a unique identifier, category, options, and text, and is
+//  followed by a signature describing the diagnostic argument kinds.
+//
+//===----------------------------------------------------------------------===//
+
+#define DEFINE_DIAGNOSTIC_MACROS
+#include "DefineDiagnosticMacros.h"
+
+WARNING(warning_from_clang,none,
+  "%0", (StringRef))
+ERROR(error_from_clang,none,
+  "%0", (StringRef))
+NOTE(note_from_clang,none,
+  "%0", (StringRef))
+REMARK(remark_from_clang,none,
+  "%0", (StringRef))
+
+ERROR(clang_cannot_build_module,Fatal,
+  "could not build %select{C|Objective-C}0 module '%1'", (bool, StringRef))
+
+ERROR(bridging_header_missing,Fatal,
+  "bridging header '%0' does not exist", (StringRef))
+ERROR(bridging_header_error,Fatal,
+  "failed to import bridging header '%0'", (StringRef))
+WARNING(could_not_rewrite_bridging_header,none,
+  "failed to serialize bridging header; "
+  "target may not be debuggable outside of its original project", ())
+ERROR(bridging_header_pch_error,Fatal,
+   "failed to emit precompiled header '%0' for bridging header '%1'",
+   (StringRef, StringRef))
+
+ERROR(emit_pcm_error,Fatal,
+   "failed to emit precompiled module '%0' for module map '%1'",
+   (StringRef, StringRef))
+ERROR(dump_pcm_error,Fatal,
+   "failed to dump precompiled module '%0'", (StringRef))
+
+WARNING(invalid_swift_name_method,none,
+  "too %select{few|many}0 parameters in swift_name attribute (expected %1; "
+  "got %2)", (bool, unsigned, unsigned))
+
+NOTE(note_while_importing, none, "while importing '%0'", (StringRef))
+ERROR(swift_name_protocol_static, none, "swift_name cannot be used to define "
+                                         "%select{static member|init}0 on "
+                                         "protocol",
+      (bool))
+ERROR(swift_name_no_prototype, none,
+      "swift_name cannot be used on a non-prototyped function declaration", ())
+
+WARNING(inconsistent_swift_name,none,
+        "inconsistent Swift name for Objective-C %select{method|property}0 "
+        "'%1' in '%2' (%3 in '%4' vs. %5 in '%6')",
+        (bool, StringRef, StringRef, DeclName, StringRef, DeclName,
+         StringRef))
+
+WARNING(swift_name_circular_context_import,none,
+        "cycle detected while resolving '%0' in swift_name attribute for '%1'",
+        (StringRef, StringRef))
+NOTE(swift_name_circular_context_import_other,none,
+     "while resolving '%0' in swift_name attribute for '%1'",
+     (StringRef, StringRef))
+
+WARNING(unresolvable_clang_decl,none,
+        "imported declaration '%0' could not be mapped to '%1'",
+        (StringRef, StringRef))
+
+NOTE(unresolvable_clang_decl_is_a_framework_bug,none,
+     "please report this issue to the owners of '%0'",
+     (StringRef))
+
+WARNING(clang_swift_attr_unhandled,none,
+        "Ignoring unknown Swift attribute or modifier '%0'", (StringRef))
+
+WARNING(clang_error_code_must_be_sendable,none,
+        "cannot make error code type '%0' non-sendable because Swift errors "
+        "are always sendable", (StringRef))
+
+WARNING(clang_ignored_sendable_attr,none,
+        "cannot make type %0 sendable because '@Sendable' and '& Sendable' "
+        "cannot be added to it",
+        (Type))
+NOTE(clang_param_should_be_implicitly_sendable,none,
+     "parameter should be implicitly 'Sendable' because it is a completion "
+     "handler", ())
+
+WARNING(implicit_bridging_header_imported_from_module,none,
+        "implicit import of bridging header '%0' via module %1 "
+        "is deprecated and will be removed in a later version of Swift",
+        (StringRef, Identifier))
+
+WARNING(import_multiple_mainactor_attr,none,
+      "this attribute for global actor '%0' is invalid; the declaration already has attribute for global actor '%1'",
+      (StringRef, StringRef))
+
+WARNING(contradicting_mutation_attrs,none,
+        "attribute '%0' is ignored when combined with attribute '%1'",
+        (StringRef, StringRef))
+
+WARNING(nonmutating_without_const,none,
+        "attribute 'nonmutating' has no effect on non-const method", ())
+
+WARNING(nonmutating_without_mutable_fields,none,
+        "attribute 'nonmutating' has no effect without any mutable fields", ())
+
+ERROR(module_map_not_found, none, "module map file '%0' not found", (StringRef))
+
+WARNING(glibc_not_found, none,
+        "glibc not found for '%0'; C stdlib may be unavailable",
+        (StringRef))
+WARNING(libstdcxx_not_found, none,
+        "libstdc++ not found for '%0'; C++ stdlib may be unavailable",
+        (StringRef))
+
+WARNING(too_many_class_template_instantiations, none,
+        "template instantiation for '%0' not imported: too many instantiations",
+        (StringRef))
+
+WARNING(api_pattern_attr_ignored, none,
+        "'%0' swift attribute ignored on type '%1': type is not copyable or destructible",
+        (StringRef, StringRef))
+
+ERROR(objc_implementation_two_impls, none,
+      "duplicate implementation of Objective-C %select{|category %0 on }0"
+      "class %1",
+      (Identifier, ValueDecl *))
+NOTE(previous_objc_implementation, none,
+     "previously implemented by extension here", ())
+
+NOTE(macro_not_imported_unsupported_operator, none, "operator not supported in macro arithmetic", ())
+NOTE(macro_not_imported_unsupported_named_operator, none, "operator '%0' not supported in macro arithmetic", (StringRef))
+NOTE(macro_not_imported_invalid_string_literal, none, "invalid string literal", ())
+NOTE(macro_not_imported_invalid_numeric_literal, none, "invalid numeric literal", ())
+NOTE(macro_not_imported_unsupported_literal, none, "only numeric and string macro literals supported", ())
+NOTE(macro_not_imported_nested_cast, none, "non-null nested casts not supported", ())
+
+NOTE(macro_not_imported_function_like, none, "macro '%0' not imported: function like macros not supported", (StringRef))
+NOTE(macro_not_imported_unsupported_structure, none, "macro '%0' not imported: structure not supported", (StringRef))
+NOTE(macro_not_imported, none, "macro '%0' not imported", (StringRef))
+
+NOTE(return_type_not_imported, none, "return type not imported", ())
+NOTE(parameter_type_not_imported, none, "parameter %0 not imported", (const clang::NamedDecl*))
+NOTE(incomplete_interface, none, "interface %0 is incomplete", (const clang::NamedDecl*))
+NOTE(incomplete_protocol, none, "protocol %0 is incomplete", (const clang::NamedDecl*))
+NOTE(incomplete_record, none, "record '%0' is not defined (incomplete)", (StringRef))
+NOTE(record_over_aligned, none, "record '%0' is over aligned", (StringRef))
+NOTE(record_non_trivial_copy_destroy, none, "record '%0' is not trivial to copy/destroy", (StringRef))
+NOTE(record_is_dependent, none, "record '%0' is dependent", (StringRef))
+NOTE(record_parent_unimportable, none, "record %0's parent is not importable", (StringRef))
+NOTE(reference_passed_by_value, none, "function uses foreign reference type "
+                                      "'%0' as a value in %1 types which breaks "
+                                      "'import_reference' contract (outlined in "
+                                      "C++ Interop User Manual).",
+     (StringRef, StringRef))
+NOTE(record_not_automatically_importable, none, "record '%0' is not "
+                                                "automatically importable: %1. "
+                                                "Refer to the C++ Interop User "
+                                                "Manual to classify this type.",
+     (StringRef, StringRef))
+NOTE(projection_not_imported, none, "C++ method '%0' that returns unsafe "
+                                    "projection of type '%1' not imported",
+     (StringRef, StringRef))
+NOTE(dont_use_iterator_api, none, "C++ method '%0' that returns an unsafe "
+                                  "iterator not imported: use Swift Sequence "
+                                  "APIs instead",
+     (StringRef))
+
+ERROR(reference_type_must_have_retain_attr,none,
+      "reference type '%0' must have 'retain:' swift attribute.", (StringRef))
+ERROR(reference_type_must_have_release_attr,none,
+      "reference type '%0' must have 'release:' swift attribute.", (StringRef))
+ERROR(foreign_reference_types_cannot_find_retain,none,
+      "cannot find retain function '%0' for reference type '%1'.", (StringRef, StringRef))
+ERROR(foreign_reference_types_cannot_find_release,none,
+      "cannot find release function '%0' for reference type '%1'.", (StringRef, StringRef))
+ERROR(too_many_reference_type_retain_operations,none,
+      "too many functions with name '%0'. There must be exactly one retain "
+      "function for reference type '%1'.", (StringRef, StringRef))
+ERROR(too_many_reference_type_release_operations,none,
+      "too many functions with name '%0'. There must be exactly one release "
+      "function for reference type '%1'.", (StringRef, StringRef))
+ERROR(foreign_reference_types_invalid_retain,none,
+      "specified retain function '%0' is invalid. Retain must have exactly one "
+      "argument of type '%1'", (StringRef, StringRef))
+ERROR(foreign_reference_types_invalid_release,none,
+      "specified release function '%0' is invalid. Release must have exactly "
+      "one argument of type '%1'", (StringRef, StringRef))
+
+NOTE(unsupported_builtin_type, none, "built-in type '%0' not supported", (StringRef))
+NOTE(record_field_not_imported, none, "field %0 not imported", (const clang::NamedDecl*))
+NOTE(invoked_func_not_imported, none, "function %0 not imported", (const clang::NamedDecl*))
+NOTE(record_method_not_imported, none, "method %0 not imported", (const clang::NamedDecl*))
+NOTE(objc_property_not_imported, none, "property %0 not imported", (const clang::NamedDecl*))
+
+NOTE(forward_declared_interface_label, none, "interface %0 forward declared here", (const clang::NamedDecl*))
+NOTE(forward_declared_protocol_label, none, "protocol %0 forward declared here", (const clang::NamedDecl*))
+
+#define UNDEFINE_DIAGNOSTIC_MACROS
+#include "DefineDiagnosticMacros.h"

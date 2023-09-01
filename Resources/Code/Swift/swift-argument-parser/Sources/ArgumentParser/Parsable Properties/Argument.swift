@@ -544,7 +544,7 @@ extension Argument {
         container: Array<T>.self,
         key: key,
         kind: .positional,
-        help: help,
+        help: help??,
         parsingStrategy: parsingStrategy.base,
         transform: transform,
         initial: wrappedValue,
